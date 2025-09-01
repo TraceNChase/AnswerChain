@@ -1,22 +1,75 @@
-# Byte-compiled / caches
+# =========================
+# Root .gitignore (full)
+# =========================
+
+# --- Python environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# --- Python bytecode / caches
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
-# Virtual envs
-.venv/
-env/
-venv/
+# --- Type checking / linters / analysis
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
 
-# Build / dist
+# --- Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Build & packaging
 build/
 dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+sdist/
+wheels/
 
-# Local libs & vendor caches
-libs/
+# --- Tool caches
+.tox/
+.nox/
+.cache/
+
+# --- Jupyter
+.ipynb_checkpoints/
+
+# --- Node (if present anywhere)
 node_modules/
-bridge/vendor/
+.pnp
+.pnp.js
+.pnp.cjs
 
-# IDE
+# --- IDE / Editor
 .vscode/
 .idea/
+.spyproject
+.ropeproject
+*.code-workspace
+
+# --- OS files (Windows/macOS)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# --- Logs & env files
+*.log
+.env
+.env.*
+*.env
+
+# --- Site/docs output (e.g., MkDocs)
+site/
