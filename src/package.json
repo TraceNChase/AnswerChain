@@ -1,0 +1,12 @@
+{
+  "name": "secq-cli-bridge",
+  "version": "1.0.0",
+  "description": "Dependencies for JS bridges",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@noble/ciphers": "^0.5.0",
+    "@noble/hashes": "^1.4.0",
+    "shamir-secret-sharing": "^1.0.1"
+  }
+}

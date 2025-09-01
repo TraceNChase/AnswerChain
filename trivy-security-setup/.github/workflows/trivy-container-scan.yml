@@ -1,0 +1,55 @@
+name: Trivy Container Scan
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'Dockerfile'
+      - '**.dockerfile'
+      - 'docker-compose*.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'Dockerfile'
+      - '**.dockerfile'
+      - 'docker-compose*.yml'
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: Container Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      packages: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build docker image
+        run: |
+          if [ -f "Dockerfile" ]; then
+            docker build -t trivy-scan-target:${{ github.sha }} .
+          else
+            echo "No Dockerfile found, skipping build"
+            exit 0
+          fi
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'trivy-scan-target:${{ github.sha }}'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL,HIGH'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'
+          category: 'trivy-container'

@@ -1,0 +1,43 @@
+{
+  "scanSettings": {
+    "baseBranch": "main",
+    "enableLicenseViolations": true,
+    "enableDependencyVulnerabilities": true,
+    "enableWorkflowVulnerabilities": true,
+    "minSeverity": "low"
+  },
+  "checks": {
+    "third-party-action-pinning": {
+      "enabled": true,
+      "pinningStrategy": "sha"
+    },
+    "github-token-permissions": {
+      "enabled": true,
+      "maxPermissions": "write-all"
+    },
+    "script-injection": {
+      "enabled": true
+    },
+    "insecure-downloads": {
+      "enabled": true
+    },
+    "credentials-exposure": {
+      "enabled": true
+    },
+    "self-hosted-runner-security": {
+      "enabled": true
+    },
+    "protected-branch-workflow": {
+      "enabled": true
+    }
+  },
+  "ignores": {
+    // Example of ignoring specific findings
+    // "workflow-files": [
+    //   ".github/workflows/release.yml"
+    // ],
+    // "rule-ids": [
+    //   "snyk-actions-001"
+    // ]
+  }
+}

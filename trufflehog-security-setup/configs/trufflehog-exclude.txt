@@ -1,0 +1,24 @@
+# TruffleHog exclude patterns
+# Paths and patterns to exclude from secret scanning
+
+# Test files often contain fake credentials
+test/fixtures/**
+**/test/fixtures/**
+**/*_test.go
+**/*_mock.go
+
+# Documentation examples
+**/examples/**
+**/docs/**
+**/README.md
+
+# Build and binary files
+**/*.min.js
+**/dist/**
+**/build/**
+**/node_modules/**
+**/vendor/**
+
+# Special files that might contain credential-like strings that are not actual secrets
+**/*_test_constants.go
+**/testdata/**

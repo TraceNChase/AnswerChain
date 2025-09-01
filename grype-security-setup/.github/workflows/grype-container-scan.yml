@@ -1,0 +1,56 @@
+name: Grype Container Scan
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'Dockerfile'
+      - '**.dockerfile'
+      - 'docker/**'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'Dockerfile'
+      - '**.dockerfile'
+      - 'docker/**'
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: Scan Container Images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          load: true
+          tags: grype-scan:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Scan image with Grype
+        uses: anchore/scan-action@v3
+        with:
+          image: grype-scan:${{ github.sha }}
+          fail-build: false
+          severity-cutoff: high
+          output-format: sarif
+
+      - name: Upload scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+          category: grype-container

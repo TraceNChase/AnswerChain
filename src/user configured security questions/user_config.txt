@@ -1,0 +1,80 @@
+--- CRYPTOGRAPHIC CONFIGURATION ---
+Secret: [encrypted via SSS; not stored in JSON]
+Shamir Threshold: 6
+Pad Size: 128
+Argon2id Parameters:
+  - Time Cost: 3
+  - Memory Cost: 65536 KiB
+  - Parallelism: 4
+
+--- SECURITY QUESTIONS ---
+
+[Question 1] What is your name? (Type: CRITICAL)
+
+A) Ida
+B) Jocke
+C) Nina
+D) Pelle
+E) Sara
+F) Tilde
+
+---
+
+[Question 2] How old are you? (Type: STANDARD)
+
+A) 22
+B) 25
+C) 21
+D) 24
+E) 55
+
+---
+
+[Question 3] Favourite food? (Type: CRITICAL)
+
+A) Beer
+B) Whiskey
+
+---
+
+[Question 4] Favorite color? (Type: STANDARD)
+
+A) Blue
+B) Red
+C) Green
+
+---
+
+[Question 5] Coffee or tea? (Type: STANDARD)
+
+A) Coffee
+B) Tea
+C) Neither
+
+---
+
+[Question 6] Favorite season? (Type: STANDARD)
+
+A) Summer
+B) Winter
+C) Autumn
+
+---
+
+[Question 7] Morning or night? (Type: STANDARD)
+
+A) Morning
+B) Night
+C) Both
+
+---
+
+[Question 8] Dogs or cats? (Type: STANDARD)
+
+A) Dogs
+B) Cats
+C) Both
+D) Other
+
+---
+

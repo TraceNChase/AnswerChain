@@ -1,0 +1,76 @@
+name: "CodeQL Security Analysis"
+
+on:
+  push:
+    branches: ["main", "master", "develop"]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+      - ".github/workflows/*.yml"
+      - "!.github/workflows/codeql.yml"
+  pull_request:
+    branches: ["main", "master", "develop"]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+  schedule:
+    - cron: "14 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ javascript, python, go, cpp, java ]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go (for Go only)
+        if: matrix.language == 'go'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Setup Java (for Java only)
+        if: matrix.language == 'java'
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          config-file: ./.github/codeql/config/${{ matrix.language }}.yml
+          # Enable debug logging to see which files are being analyzed
+          debug: true
+
+      - name: Autobuild (for compiled languages)
+        if: matrix.language == 'cpp' || matrix.language == 'java' || matrix.language == 'go'
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"
+          # Upload results even if the analysis fails
+          upload: always
+          # Add snippets to the SARIF output
+          add-snippets: true

@@ -1,0 +1,935 @@
+{
+  "timestamp": "2025-08-31T12:36:48.249358",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-08-31T12:36:51.148539",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting demonstration flow (Option 2)...",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.152180",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite hobbies?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.152677",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite subject in school?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.153308",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of food do you like?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.153754",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite mode of transportation?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.154190",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which language(s) would you like to learn?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.154622",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of places do you enjoy visiting?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.155114",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of beverages do you prefer?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.155571",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which color(s) do you like the most?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.155999",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of movies do you enjoy?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.156428",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of games do you like to play?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.156886",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of music instruments do you enjoy playing or listening to?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.157346",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite types of flowers?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.157778",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of clothes do you prefer wearing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.158223",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of pets would you like to have?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.158674",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of dessert?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.159130",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of jobs or careers are you interested in?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.159557",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite kinds of drinks?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.159982",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of landscapes do you find most beautiful?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.160411",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite fruits to eat?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.160842",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of places do you like to shop at?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.161303",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of animals do you find fascinating?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.161748",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of beverage?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.162309",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which outdoor place(s) would you love to explore?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.162744",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of cuisine?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:51.163188",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which kind of exercise do you enjoy doing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:53.276406",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "User int input valid: 10",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:55.568821",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q1 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:55.569981",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q1: text='What are your favorite hobbies?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:56.862120",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q2 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:56.863255",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q2: text='What is your favorite subject in school?' => user_picks=4 selected; local counts: correct=4, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:58.090045",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q3 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:58.091277",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q3: text='What type of food do you like?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:59.135789",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q4 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:36:59.136954",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q4: text='What is your favorite mode of transportation?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:00.430980",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q5 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:00.432084",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q5: text='Which language(s) would you like to learn?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:01.540023",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q6 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:01.541140",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q6: text='What kind of places do you enjoy visiting?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:03.139225",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q7 picks. Type=CRITICAL",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:03.140489",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q7: text='What kind of beverages do you prefer?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:04.370527",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q8 picks. Type=CRITICAL",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:04.371650",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q8: text='Which color(s) do you like the most?' => user_picks=2 selected; local counts: correct=2, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:05.292574",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q9 picks. Type=CRITICAL",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:05.293669",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q9: text='What kind of movies do you enjoy?' => user_picks=1 selected; local counts: correct=1, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:05.908325",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q10 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:05.909452",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q10: text='What type of games do you like to play?' => user_picks=1 selected; local counts: correct=1, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.468179",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q1: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.468922",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q2: c=4, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.469412",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q3: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.469880",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q4: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.470338",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q5: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.471056",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q6: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.471556",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q7: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.472044",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q8: c=2, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.472572",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q9: c=1, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.473095",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q10: c=1, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:09.473579",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "FINAL TALLY => c_count=21, i_count=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:15.329968",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using PAD size: 128",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:17.463687",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Splitting real secret: correct_count=21, threshold=13, pad=128",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T12:37:17.464427",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 4,
+    "shares": 21,
+    "threshold": 13,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-08-31T12:37:17.541536",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      23,
+      94,
+      92,
+      201,
+      69,
+      171,
+      27,
+      40,
+      237,
+      147,
+      42,
+      132,
+      117,
+      12,
+      142,
+      231,
+      148,
+      25,
+      84,
+      112,
+      88
+    ],
+    "sample_share_hashes": [
+      "4db09b480493a20c79ce5402c5073076b1596def664930ec9df9e32a61407234",
+      "03d9378994911d2a543900546ebf90661c3d95a2e57e7ddbef21c263e96c6bec",
+      "9ba7cee22643b7e146d57592d7ee8f4020ebdaac6c4c488662a69d7133832ad0"
+    ]
+  }
+}
+{
+  "timestamp": "2025-08-31T12:37:17.542298",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "SSS split summary (beta clear logging).",
+  "details": {
+    "share_len": 129,
+    "pad": 128,
+    "threshold": 13,
+    "real_count": 21,
+    "dummy_count": 0,
+    "real_xcoords": [
+      23,
+      94,
+      92,
+      201,
+      69,
+      171,
+      27,
+      40,
+      237,
+      147,
+      42,
+      132,
+      117,
+      12,
+      142,
+      231,
+      148,
+      25,
+      84,
+      112,
+      88
+    ],
+    "dummy_xcoords": [],
+    "real_share_sha3_256": [
+      "4db09b480493a20c79ce5402c5073076b1596def664930ec9df9e32a61407234",
+      "03d9378994911d2a543900546ebf90661c3d95a2e57e7ddbef21c263e96c6bec",
+      "9ba7cee22643b7e146d57592d7ee8f4020ebdaac6c4c488662a69d7133832ad0",
+      "2334da6530a79a4f405a48284bf7cb1c923568c182cce6c40aaccec9bf0fe971",
+      "e725acd1d40aefc6aee4cd685673d6fa3f31457a502e255b335df36f7cbbb0ca",
+      "c578352d657bb0b29a46559d6269515ff77e7ed31adcde20c3d14cc62f297793",
+      "101446309126025c83dc4c2b1dc83de04a869209571c37a6704f90ea7200fce2",
+      "16edcfcfee8a8557bbd866386f454f9373156c304ea8e284ebcd9c99afb84a41",
+      "7000927525cd5075558ba22bd7f8c3386d702b62f78781236617dcbeb5190f15",
+      "dc9d079a2abd1f9b1a52ca5fa7080090edefc9a808c8b8c86281aa7c8e5a15ac",
+      "5b0167b0a37f5bdccd682ab887a6ae287628b728dff5addcfe30fd5e00ea507f",
+      "1a68915ed01f950788096444b03e35bf592902cddd44c11ea9948b289129ab57",
+      "0f180d6955614358a54dc5a1f02b8bcb6628d89f306ee97b4d511920e9bc2223",
+      "d05001b02a7b6fde58055c68d6c7b8de4971f95909b8dbbf9ddb03a43593a579",
+      "f154ae02123f610241438b13a1c32dc1e2ee30d311d8068a5118663b536d2b50",
+      "e5983e8f4bc88654763670cf7486d900f97408986bedf581937c278117982526",
+      "cfa25c31584f704dc0f2b193087ead333a40fc42b446ae97e0885b31c93bd130",
+      "ba93da63b8a67d5b6f51b0919a53513ab05a4c62241fa8ca9de67fd3fcdcc98f",
+      "b1b1f8259d291a4815806e2827f46bb474d2230f017fc0908008fbbca0963387",
+      "a9c90b9657275c0cbce5b8868d03c3b1afeb36501827cf2ddf418600de44dd0d",
+      "2cb4447f7b305c1ad802b21871dc740c3920d50b5f9abb4dc0995a8181ab9f4b"
+    ],
+    "dummy_share_sha3_256": []
+  }
+}
+{
+  "timestamp": "2025-08-31T12:37:17.601051",
+  "run_id": "b00731d2-2381-473a-b546-14c5de700622",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 237
+  },
+  "message": "Fatal error in main()",
+  "details": {
+    "exception_type": "RuntimeError",
+    "exception_str": "Bridge failed: node:internal/modules/cjs/loader:1368\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\bridge\\crypto-bridge.js'\r\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1365:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1021:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1026:22)\r\n    at Function._load (node:internal/modules/cjs/loader:1175:37)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  code: 'MODULE_NOT_FOUND',\r\n  requireStack: []\r\n}\r\n\r\nNode.js v22.18.0\r\n",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 1324, in main\n    enc_full = ephemeral_encrypt(share_data, q_obj[\"text\"], alt_text, secrets.choice([\"chacha20poly1305\", \"aes256gcm\"]), q_obj[\"alternatives\"])\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 1286, in ephemeral_encrypt\n    ephemeral_pass = base64.b64encode(random_bytes(12)).decode()\n                                      ~~~~~~~~~~~~^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 80, in random_bytes\n    res = asyncio.run(_bridge(\"random_bytes\", n=n))\n  File \"C:\\Users\\deskt\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 195, in run\n    return runner.run(main)\n           ~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\deskt\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\deskt\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 24, in _bridge\n    raise RuntimeError(f\"Bridge failed: {stderr.decode('utf8', 'replace')}\")\nRuntimeError: Bridge failed: node:internal/modules/cjs/loader:1368\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\bridge\\crypto-bridge.js'\r\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1365:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1021:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1026:22)\r\n    at Function._load (node:internal/modules/cjs/loader:1175:37)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  code: 'MODULE_NOT_FOUND',\r\n  requireStack: []\r\n}\r\n\r\nNode.js v22.18.0\r\n\n"
+  }
+}

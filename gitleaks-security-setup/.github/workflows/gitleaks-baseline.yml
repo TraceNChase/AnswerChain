@@ -1,0 +1,76 @@
+name: Gitleaks Baseline Generation
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to generate baseline from'
+        required: true
+        default: 'main'
+
+jobs:
+  baseline:
+    name: Generate Baseline
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+          fetch-depth: 0  # Get all commits
+
+      - name: Install Gitleaks
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/gitleaks/gitleaks/master/install.sh | sh -s -- -b /usr/local/bin
+          gitleaks version
+
+      - name: Generate baseline
+        id: generate-baseline
+        run: |
+          # Run scan to generate baseline
+          gitleaks detect \
+            --source=. \
+            --config=gitleaks-security-setup/configs/gitleaks.toml \
+            --report-format=json \
+            --report-path=gitleaks-baseline.json \
+            --verbose \
+            --no-git || true
+          
+          # Count findings
+          if [ -s gitleaks-baseline.json ]; then
+            FINDINGS=$(jq '. | length' gitleaks-baseline.json)
+            echo "FINDINGS_COUNT=$FINDINGS" >> $GITHUB_OUTPUT
+          else
+            echo "[]" > gitleaks-baseline.json
+            echo "FINDINGS_COUNT=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update Gitleaks baseline"
+          title: "chore: update Gitleaks baseline (${{ steps.generate-baseline.outputs.FINDINGS_COUNT }} known findings)"
+          body: |
+            This PR updates the Gitleaks baseline file with ${{ steps.generate-baseline.outputs.FINDINGS_COUNT }} known findings.
+            
+            These findings have been reviewed and are either false positives or acceptable risks. Future scans will use this baseline to avoid reporting these issues again.
+            
+            ## Baseline Details
+            
+            - Generated from branch: `${{ github.event.inputs.branch }}`
+            - Date: `$(date)`
+            - Findings count: `${{ steps.generate-baseline.outputs.FINDINGS_COUNT }}`
+            
+            To review the actual findings, please check the `gitleaks-baseline.json` file.
+          branch: update-gitleaks-baseline
+          base: ${{ github.event.inputs.branch }}
+          add-paths: |
+            gitleaks-baseline.json
+          labels: |
+            security
+            automated-pr

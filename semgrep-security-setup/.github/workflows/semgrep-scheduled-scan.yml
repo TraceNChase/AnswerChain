@@ -1,0 +1,147 @@
+name: Semgrep Scheduled Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 3'  # Every Wednesday at midnight
+  workflow_dispatch:
+
+jobs:
+  semgrep-full-scan:
+    name: Comprehensive Semgrep Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      issues: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Semgrep
+        run: |
+          pip install semgrep
+          semgrep --version
+
+      - name: Run comprehensive scan
+        id: scan
+        run: |
+          # Create output directory
+          mkdir -p semgrep-results
+          
+          # Run scan with multiple rulesets
+          semgrep \
+            --config=p/default \
+            --config=p/security-audit \
+            --config=p/owasp-top-ten \
+            --config=p/cwe-top-25 \
+            --config=p/supply-chain \
+            --config=p/ci \
+            --config=p/secrets \
+            --config=semgrep-security-setup/configs/semgrep-rules.yaml \
+            --json > semgrep-results/full-scan.json \
+            --output=semgrep-results/full-scan.txt \
+            --sarif > semgrep-results/full-scan.sarif
+          
+          # Check if any issues were found
+          if grep -q '"results":' semgrep-results/full-scan.json && [ "$(jq '.results | length' semgrep-results/full-scan.json)" -gt 0 ]; then
+            FINDINGS=$(jq '.results | length' semgrep-results/full-scan.json)
+            echo "ISSUES_FOUND=true" >> $GITHUB_OUTPUT
+            echo "FINDINGS_COUNT=$FINDINGS" >> $GITHUB_OUTPUT
+            
+            # Generate HTML report
+            echo "<html><head><title>Semgrep Analysis Results</title>" > semgrep-results/report.html
+            echo "<style>body{font-family:sans-serif;max-width:1200px;margin:0 auto;padding:20px}h1{color:#2d68c4}h2{color:#2b4283}table{width:100%;border-collapse:collapse}th{background:#f2f5fa;text-align:left;padding:8px}td{padding:8px;border-top:1px solid #ddd}tr:nth-child(even){background:#f9f9f9}.error{color:#cc0000}.warning{color:#f0ad4e}.info{color:#5bc0de}.code{font-family:monospace;background:#f5f5f5;padding:10px;border:1px solid #ddd;border-radius:3px;overflow:auto}</style>" >> semgrep-results/report.html
+            echo "</head><body>" >> semgrep-results/report.html
+            echo "<h1>Semgrep Security Analysis Report</h1>" >> semgrep-results/report.html
+            echo "<p>Scan date: $(date)</p>" >> semgrep-results/report.html
+            echo "<p>Total findings: $FINDINGS</p>" >> semgrep-results/report.html
+            
+            # Count by severity
+            echo "<h2>Results by Severity</h2>" >> semgrep-results/report.html
+            echo "<table><thead><tr><th>Severity</th><th>Count</th></tr></thead><tbody>" >> semgrep-results/report.html
+            critical=$(jq '[.results[] | select(.extra.severity == "ERROR" or .extra.severity == "CRITICAL")] | length' semgrep-results/full-scan.json)
+            high=$(jq '[.results[] | select(.extra.severity == "WARNING" or .extra.severity == "HIGH")] | length' semgrep-results/full-scan.json)
+            medium=$(jq '[.results[] | select(.extra.severity == "INFO" or .extra.severity == "MEDIUM")] | length' semgrep-results/full-scan.json)
+            low=$(jq '[.results[] | select(.extra.severity == "LOW")] | length' semgrep-results/full-scan.json)
+            
+            echo "<tr><td class=\"error\">Critical/Error</td><td>$critical</td></tr>" >> semgrep-results/report.html
+            echo "<tr><td class=\"warning\">High/Warning</td><td>$high</td></tr>" >> semgrep-results/report.html
+            echo "<tr><td class=\"info\">Medium/Info</td><td>$medium</td></tr>" >> semgrep-results/report.html
+            echo "<tr><td>Low</td><td>$low</td></tr>" >> semgrep-results/report.html
+            echo "</tbody></table>" >> semgrep-results/report.html
+            
+            # Results by file
+            echo "<h2>Results by File</h2>" >> semgrep-results/report.html
+            echo "<table><thead><tr><th>File</th><th>Issues</th></tr></thead><tbody>" >> semgrep-results/report.html
+            jq -r '.results | group_by(.path) | map({path: .[0].path, count: length}) | sort_by(.count) | reverse | .[] | "<tr><td>\(.path)</td><td>\(.count)</td></tr>"' semgrep-results/full-scan.json >> semgrep-results/report.html
+            echo "</tbody></table>" >> semgrep-results/report.html
+            
+            # Detailed findings
+            echo "<h2>Detailed Findings</h2>" >> semgrep-results/report.html
+            jq -r '.results[] | "<div><h3>\(.check_id)</h3><p><strong>Severity:</strong> <span class=\"\(.extra.severity | ascii_downcase)\">\(.extra.severity)</span></p><p><strong>File:</strong> \(.path) (lines \(.start.line)-\(.end.line))</p><p><strong>Message:</strong> \(.extra.message)</p><div class=\"code\">\(.extra.lines)</div></div><hr>"' semgrep-results/full-scan.json >> semgrep-results/report.html
+            
+            echo "</body></html>" >> semgrep-results/report.html
+          else
+            echo "ISSUES_FOUND=false" >> $GITHUB_OUTPUT
+            echo "FINDINGS_COUNT=0" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        if: steps.scan.outputs.ISSUES_FOUND == 'true'
+        with:
+          sarif_file: semgrep-results/full-scan.sarif
+          category: semgrep-scheduled
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v3
+        if: steps.scan.outputs.ISSUES_FOUND == 'true'
+        with:
+          name: semgrep-analysis-report
+          path: semgrep-results/report.html
+          retention-days: 90
+
+      - name: Create issue if issues found
+        uses: actions/github-script@v6
+        if: steps.scan.outputs.ISSUES_FOUND == 'true'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            
+            // Create issue title with finding count
+            const findingsCount = process.env.FINDINGS_COUNT;
+            const issueTitle = `🔍 Semgrep detected ${findingsCount} potential security issues`;
+            
+            // Create issue body
+            let issueBody = `## Semgrep Security Analysis Results\n\n`;
+            issueBody += `The scheduled Semgrep scan has detected ${findingsCount} potential security issues in the repository.\n\n`;
+            
+            // Add severity breakdown
+            const critical = parseInt('${{ steps.scan.outputs.CRITICAL_COUNT || 0 }}');
+            const high = parseInt('${{ steps.scan.outputs.HIGH_COUNT || 0 }}');
+            const medium = parseInt('${{ steps.scan.outputs.MEDIUM_COUNT || 0 }}');
+            const low = parseInt('${{ steps.scan.outputs.LOW_COUNT || 0 }}');
+            
+            issueBody += `### Severity Breakdown\n\n`;
+            issueBody += `- 🔴 Critical/Error: ${critical}\n`;
+            issueBody += `- 🟠 High/Warning: ${high}\n`;
+            issueBody += `- 🟡 Medium/Info: ${medium}\n`;
+            issueBody += `- 🟢 Low: ${low}\n\n`;
+            
+            issueBody += `### Next Steps\n\n`;
+            issueBody += `1. Download the HTML report from the GitHub Actions artifacts\n`;
+            issueBody += `2. Review each finding to confirm if it's an actual issue\n`;
+            issueBody += `3. Fix the confirmed issues in the codebase\n`;
+            issueBody += `4. Consider implementing secure coding practices to prevent similar issues\n\n`;
+            issueBody += `> View the full scan details in the [Actions tab](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID})`;
+            
+            // Create the issue
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: issueTitle,
+              body: issueBody,
+              labels: ['security', 'code-quality']
+            });

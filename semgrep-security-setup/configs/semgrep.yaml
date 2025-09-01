@@ -1,0 +1,44 @@
+# Semgrep Configuration File
+# For more info: https://semgrep.dev/docs/writing-rules/configuration-files/
+
+include:
+  - p/default
+  - p/security-audit
+  - p/owasp-top-ten
+  - p/cwe-top-25
+  - p/supply-chain
+  - p/ci
+  - p/secrets
+  - semgrep-security-setup/configs/semgrep-rules.yaml
+
+exclude:
+  - node_modules
+  - .git
+  - build
+  - dist
+  - vendor
+  - '**/*_test.go'
+  - '**/test_*.py'
+  - '**/*.test.js'
+  - '**/*.test.ts'
+  - '**/*.min.js'
+  - '**/fixtures/**'
+  - '**/tests/**'
+
+# Define rule exceptions - rules that should not be applied to certain files/directories
+exceptions:
+  - id: javascript.express.security.audit.express-open-redirect
+    paths:
+      - "**/test-utils/**"
+      - "**/examples/**"
+
+  - id: javascript.lang.security.audit.detect-eval-with-expression
+    paths:
+      - "**/vm-sandbox/**"
+
+# Metrics and telemetry settings
+metrics: false
+
+# Output formats (when running manually)
+output: normal
+error: true

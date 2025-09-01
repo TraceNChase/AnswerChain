@@ -1,0 +1,46 @@
+== CodeQL setup run: 2025-08-27T18:44:42 ==
+[INFO] Repo root: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI
+[INFO] Log file : C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\logs\codeql-setup-20250827T184442Z.txt
+[OK]   Ensured dir: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github
+[OK]   Ensured dir: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows
+[OK]   Ensured dir: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql
+[OK]   Ensured dir: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config
+[OK]   Ensured dir: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups
+[ERR]  Failed to normalize CodeQL dir casing: Destination path cannot be a subdirectory of the source or the source itself: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\compliance\compliance.
+[OK]   Backed up .github/workflows/codeql.yml -> C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\safe-20250827T184442Z\.github\workflows\codeql.yml
+[OK]   Backed up .github/codeql/config/javascript.yml -> C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\safe-20250827T184442Z\.github\codeql\config\javascript.yml
+[OK]   Backed up .github/codeql/config/python.yml -> C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\safe-20250827T184442Z\.github\codeql\config\python.yml
+[OK]   Backed up .github/codeql/config/go.yml -> C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\safe-20250827T184442Z\.github\codeql\config\go.yml
+[OK]   Backed up .github/codeql/config/cpp.yml -> C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\safe-20250827T184442Z\.github\codeql\config\cpp.yml
+[OK]   Wrote .github/workflows/codeql.yml
+[OK]   Wrote .github/codeql/config/javascript.yml
+[OK]   Wrote .github/codeql/config/python.yml
+[OK]   Wrote .github/codeql/config/go.yml
+[OK]   Wrote .github/codeql/config/cpp.yml
+[INFO] Starting verification...
+[OK]   Verify: 'language:\s*\[\s*javascript,\s*python,\s*go,\s*cpp\s*\]' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'Setup Go \(for Go only\)' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'if:\s*matrix\.language\s*==\s*'go'' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'Initialize CodeQL' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'config-file:\s*\./\.github/codeql/config/\$\{\{\s*matrix\.language\s*\}\}\.yml' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'Autobuild \(C/C\+\+ only\)' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'if:\s*matrix\.language\s*==\s*'cpp'' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'github/codeql-action/init@v3' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'github/codeql-action/analyze@v3' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\workflows\codeql.yml
+[OK]   Verify: 'queries:\s*\r?\n\s*-\s*uses:\s*security-extended' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\javascript.yml
+[OK]   Verify: 'queries:\s*[\s\S]*security-and-quality' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\javascript.yml
+[OK]   Verify: 'paths:\s*\r?\n\s*-\s*"src/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\javascript.yml
+[OK]   Verify: 'paths:\s*[\s\S]*"bridge/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\javascript.yml
+[OK]   Verify: 'queries:\s*\r?\n\s*-\s*uses:\s*security-extended' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\python.yml
+[OK]   Verify: 'queries:\s*[\s\S]*security-and-quality' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\python.yml
+[OK]   Verify: 'paths:\s*\r?\n\s*-\s*"src/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\python.yml
+[OK]   Verify: 'paths:\s*[\s\S]*"bridge/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\python.yml
+[OK]   Verify: 'queries:\s*\r?\n\s*-\s*uses:\s*security-extended' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\go.yml
+[OK]   Verify: 'queries:\s*[\s\S]*security-and-quality' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\go.yml
+[OK]   Verify: 'paths:\s*\r?\n\s*-\s*"src/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\go.yml
+[OK]   Verify: 'paths:\s*[\s\S]*"bridge/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\go.yml
+[OK]   Verify: 'queries:\s*\r?\n\s*-\s*uses:\s*security-extended' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\cpp.yml
+[OK]   Verify: 'queries:\s*[\s\S]*security-and-quality' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\cpp.yml
+[OK]   Verify: 'paths:\s*\r?\n\s*-\s*"src/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\cpp.yml
+[OK]   Verify: 'paths:\s*[\s\S]*"bridge/"' found in C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\codeql\config\cpp.yml
+[ERR]  Verification completed: SOME CHECKS FAILED. See log: C:\Users\deskt\Desktop\Project_SECQ_CLI\SECQ_CLI\.github\backups\logs\codeql-setup-20250827T184442Z.txt

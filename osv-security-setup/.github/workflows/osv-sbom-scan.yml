@@ -1,0 +1,60 @@
+name: OSV SBOM Generation & Scan
+
+on:
+  push:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 0 * * 4'  # Every Thursday at midnight
+  workflow_dispatch:
+
+jobs:
+  sbom:
+    name: Generate & Scan SBOM
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          check-latest: true
+
+      - name: Install CycloneDX generator
+        run: |
+          go install github.com/CycloneDX/cyclonedx-gomod/cmd/cyclonedx-gomod@latest
+
+      - name: Generate SBOM
+        run: |
+          mkdir -p sbom
+          cyclonedx-gomod mod -output sbom/cyclonedx.json
+
+      - name: Install OSV Scanner
+        run: |
+          go install github.com/google/osv-scanner/cmd/osv-scanner@latest
+
+      - name: Scan SBOM for vulnerabilities
+        run: |
+          osv-scanner --sbom sbom/cyclonedx.json --format sarif > osv-sbom-results.sarif
+          osv-scanner --sbom sbom/cyclonedx.json --format json > osv-sbom-results.json
+        continue-on-error: true
+
+      - name: Upload SARIF results
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: osv-sbom-results.sarif
+          category: osv-sbom-scanner
+
+      - name: Upload SBOM and scan results
+        uses: actions/upload-artifact@v3
+        with:
+          name: sbom-and-scan-results
+          path: |
+            sbom/cyclonedx.json
+            osv-sbom-results.json
+          retention-days: 90

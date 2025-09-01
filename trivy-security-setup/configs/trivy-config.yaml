@@ -1,0 +1,44 @@
+# Trivy Configuration File
+
+# General configurations
+timeout: 10m
+exit-code: 1
+format: sarif
+output: trivy-results.sarif
+
+# Vulnerability scanning configurations
+severity: [CRITICAL, HIGH, MEDIUM]
+vuln-type: [os, library]
+ignore-unfixed: false
+
+# Cache configurations
+cache:
+  dir: .trivy-cache
+
+# Security check configurations
+security-checks:
+  - vuln
+  - config
+  - secret
+
+# Misc configurations
+skip-dirs:
+  - node_modules
+  - vendor
+  - .git
+
+# Licensing scanning
+licenses:
+  denied:
+    - GPL-3.0
+  full-report: true
+
+# GitHub Security Advisory database is used by default
+db:
+  download-db-only: false
+  skip-db-update: false
+  no-progress: false
+
+# Use globally allowed/denied CVEs
+vulnerability:
+  ignore-file: .trivyignore

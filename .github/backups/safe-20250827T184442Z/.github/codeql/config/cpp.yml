@@ -1,0 +1,21 @@
+name: "CodeQL C/C++ Configuration"
+
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+
+paths:
+  - "**/*.c"
+  - "**/*.cpp"
+  - "**/*.cc"
+  - "**/*.cxx"
+  - "**/*.h"
+  - "**/*.hpp"
+
+paths-ignore:
+  - "build"
+  - "vendor"
+  - "third_party"
+  - "**/*.generated.*"
+
+disable-default-path-filters: true

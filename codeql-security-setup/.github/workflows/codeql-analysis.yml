@@ -1,0 +1,48 @@
+# CodeQL Analysis Workflow
+name: "CodeQL Analysis"
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 0 * * 0'  # Run every Sunday at midnight
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript', 'typescript', 'python' ]
+        # CodeQL supports: javascript, typescript, python, java, go, cpp, ruby, csharp
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: ./  # Use local action since we're in the codeql-action repo
+      with:
+        languages: ${{ matrix.language }}
+        queries: security-extended,security-and-quality
+        config-file: ./codeql-security-setup/codeql-config.yml
+
+    # Autobuild attempts to build any compiled languages
+    - name: Autobuild
+      uses: ./action/autobuild  # Use local action since we're in the codeql-action repo
+
+    # Perform the analysis and upload results
+    - name: Perform CodeQL Analysis
+      uses: ./action/analyze  # Use local action since we're in the codeql-action repo
+      with:
+        category: "/language:${{matrix.language}}"

@@ -1,0 +1,196 @@
+[2025-08-31T10:14:02.120815] [INFO] [SYSTEM] Start new run (run_id=e2faa704-162e-4fa5-87e8-eee2b0850f65)
+[2025-08-31T10:14:03.874892] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Starting demonstration flow (Option 2)...
+[2025-08-31T10:14:03.876523] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What are your favorite hobbies?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.877016] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What is your favorite subject in school?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.877627] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What type of food do you like?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.878099] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What is your favorite mode of transportation?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.878536] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'Which language(s) would you like to learn?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.878968] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of places do you enjoy visiting?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.879408] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of beverages do you prefer?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.879842] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'Which color(s) do you like the most?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.880267] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of movies do you enjoy?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.880698] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What type of games do you like to play?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.881164] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of music instruments do you enjoy playing or listening to?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.881610] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What are your favorite types of flowers?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.882042] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of clothes do you prefer wearing?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.882471] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of pets would you like to have?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.882898] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What is your favorite type of dessert?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.883335] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What type of jobs or careers are you interested in?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.883771] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What are your favorite kinds of drinks?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.884211] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of landscapes do you find most beautiful?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.884661] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What are your favorite fruits to eat?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.885115] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of places do you like to shop at?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.885571] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What kind of animals do you find fascinating?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.886020] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What is your favorite type of beverage?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.886452] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'Which outdoor place(s) would you love to explore?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.886875] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'What is your favorite type of cuisine?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:03.887310] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Question 'Which kind of exercise do you enjoy doing?' had empty 'correct_answers'. Now set them all as correct.
+[2025-08-31T10:14:06.269300] [INFO] [GENERAL] debug_utils.py:log_debug:189 - User int input valid: 10
+[2025-08-31T10:14:08.073799] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q1 picks. Type=STANDARD
+[2025-08-31T10:14:08.074887] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q1: text='What are your favorite hobbies?' => user_picks=3 selected; local counts: correct=3, incorrect=0
+[2025-08-31T10:14:09.194085] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q2 picks. Type=STANDARD
+[2025-08-31T10:14:09.195210] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q2: text='What is your favorite subject in school?' => user_picks=2 selected; local counts: correct=2, incorrect=0
+[2025-08-31T10:14:11.173978] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q3 picks. Type=STANDARD
+[2025-08-31T10:14:11.175200] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q3: text='What type of food do you like?' => user_picks=2 selected; local counts: correct=2, incorrect=0
+[2025-08-31T10:14:12.793190] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q4 picks. Type=CRITICAL
+[2025-08-31T10:14:12.794273] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q4: text='What is your favorite mode of transportation?' => user_picks=2 selected; local counts: correct=2, incorrect=0
+[2025-08-31T10:14:14.409215] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q5 picks. Type=CRITICAL
+[2025-08-31T10:14:14.410337] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q5: text='Which language(s) would you like to learn?' => user_picks=2 selected; local counts: correct=2, incorrect=0
+[2025-08-31T10:14:16.282514] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q6 picks. Type=CRITICAL
+[2025-08-31T10:14:16.283556] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q6: text='What kind of places do you enjoy visiting?' => user_picks=1 selected; local counts: correct=1, incorrect=0
+[2025-08-31T10:14:17.964273] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q7 picks. Type=STANDARD
+[2025-08-31T10:14:17.965411] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q7: text='What kind of beverages do you prefer?' => user_picks=2 selected; local counts: correct=2, incorrect=0
+[2025-08-31T10:14:19.639933] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q8 picks. Type=CRITICAL
+[2025-08-31T10:14:19.641027] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q8: text='Which color(s) do you like the most?' => user_picks=3 selected; local counts: correct=3, incorrect=0
+[2025-08-31T10:14:20.636034] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q9 picks. Type=STANDARD
+[2025-08-31T10:14:20.637180] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q9: text='What kind of movies do you enjoy?' => user_picks=1 selected; local counts: correct=1, incorrect=0
+[2025-08-31T10:14:21.518252] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q10 picks. Type=STANDARD
+[2025-08-31T10:14:21.519374] [DEBUG] [GENERAL] debug_utils.py:log_debug:189 - Q10: text='What type of games do you like to play?' => user_picks=1 selected; local counts: correct=1, incorrect=0
+[2025-08-31T10:14:23.715902] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q1: c=3, i=0
+[2025-08-31T10:14:23.716690] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q2: c=2, i=0
+[2025-08-31T10:14:23.717174] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q3: c=2, i=0
+[2025-08-31T10:14:23.717607] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q4: c=2, i=0
+[2025-08-31T10:14:23.718061] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q5: c=2, i=0
+[2025-08-31T10:14:23.718496] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q6: c=1, i=0
+[2025-08-31T10:14:23.718930] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q7: c=2, i=0
+[2025-08-31T10:14:23.719363] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q8: c=3, i=0
+[2025-08-31T10:14:23.719795] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q9: c=1, i=0
+[2025-08-31T10:14:23.720250] [INFO] [GENERAL] debug_utils.py:log_debug:189 - After re-edit Q10: c=1, i=0
+[2025-08-31T10:14:23.720689] [INFO] [GENERAL] debug_utils.py:log_debug:189 - FINAL TALLY => c_count=19, i_count=0
+[2025-08-31T10:14:29.802774] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Using PAD size: 128
+[2025-08-31T10:14:31.657438] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Splitting real secret: correct_count=19, threshold=12, pad=128
+[2025-08-31T10:14:31.658145] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - sss_split() via node-bridge
+[2025-08-31T10:14:31.729549] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - sss_split() complete.
+[2025-08-31T10:14:31.730228] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - SSS split summary (beta clear logging).
+[2025-08-31T10:14:31.927594] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='btwzTDHwfv1bXTDe' (raw).
+[2025-08-31T10:14:31.928262] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='btwzTDHwfv1bXTDe', salt(b64)='CCRasJF+gcRasZt4d+cTIQ=='
+[2025-08-31T10:14:32.306894] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:32.499300] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:32.692881] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='ChNc4s16dFX/ASpz' (raw).
+[2025-08-31T10:14:32.693610] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='ChNc4s16dFX/ASpz', salt(b64)='Cm0sOJHFnDCSXFtEuBafew=='
+[2025-08-31T10:14:33.072865] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:33.265660] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:33.458025] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='V2ypWfPJdvt8mazR' (raw).
+[2025-08-31T10:14:33.458809] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='V2ypWfPJdvt8mazR', salt(b64)='zN+QwNzzvPGCTgtv2EWxNA=='
+[2025-08-31T10:14:33.816918] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:34.012741] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:34.207849] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='sOQgtT42KrNvFR67' (raw).
+[2025-08-31T10:14:34.208556] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='sOQgtT42KrNvFR67', salt(b64)='frcEY14nBZObbYp1xcUP8g=='
+[2025-08-31T10:14:34.590818] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:34.784104] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:34.976172] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='WfMzUyZzahR17Y6C' (raw).
+[2025-08-31T10:14:34.976926] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='WfMzUyZzahR17Y6C', salt(b64)='/pyqiUCP0zU2AV0UnzsCGA=='
+[2025-08-31T10:14:35.356771] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:35.549409] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:35.741171] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='ckJFAA5J2737SHma' (raw).
+[2025-08-31T10:14:35.741957] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='ckJFAA5J2737SHma', salt(b64)='y7METMmm75o8VccqK6RdxQ=='
+[2025-08-31T10:14:36.084229] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:36.283244] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:36.479994] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='g1YTxzEvrxc5YvmU' (raw).
+[2025-08-31T10:14:36.480689] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='g1YTxzEvrxc5YvmU', salt(b64)='NqWSfLHwXBeLDKzUnNq5Ag=='
+[2025-08-31T10:14:36.860179] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:37.054828] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:37.246601] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='HIzQPfgJcDA+HLyB' (raw).
+[2025-08-31T10:14:37.247346] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='HIzQPfgJcDA+HLyB', salt(b64)='PFPh3hw0MmJkk+ItPKbhAg=='
+[2025-08-31T10:14:37.630861] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:37.832190] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:38.039795] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='gPNXv35Cfyj6TjZD' (raw).
+[2025-08-31T10:14:38.040520] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='gPNXv35Cfyj6TjZD', salt(b64)='DG8ZdjIUbj/J/3o78t3dsg=='
+[2025-08-31T10:14:38.401517] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:38.608123] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:38.802123] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='lEKgtyQSlH+luXzV' (raw).
+[2025-08-31T10:14:38.802849] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='lEKgtyQSlH+luXzV', salt(b64)='GBB0wV1aYmqitlHKpuRSjA=='
+[2025-08-31T10:14:39.181947] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:39.385354] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:39.579048] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='j6RHJiTjwo1Tt3vx' (raw).
+[2025-08-31T10:14:39.579785] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='j6RHJiTjwo1Tt3vx', salt(b64)='a/MWxLIjoKM12WJ/Sqghqg=='
+[2025-08-31T10:14:39.962183] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:40.155780] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:40.352987] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='bwE1FnXd2btm8yY9' (raw).
+[2025-08-31T10:14:40.353740] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='bwE1FnXd2btm8yY9', salt(b64)='ETwgOE6LgoAydO9wPBcpbg=='
+[2025-08-31T10:14:40.720950] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:40.916987] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:41.109880] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='fgrJPmkQ+d+YWGPB' (raw).
+[2025-08-31T10:14:41.110544] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='fgrJPmkQ+d+YWGPB', salt(b64)='b2B/HQgJIGa5+6TJz2izvw=='
+[2025-08-31T10:14:41.466391] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:41.658690] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:41.849828] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='sryf82N+X31GwdCn' (raw).
+[2025-08-31T10:14:41.850583] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='sryf82N+X31GwdCn', salt(b64)='Ackhz+vozLb20Ui4Xln+KQ=='
+[2025-08-31T10:14:42.238770] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:42.432742] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:42.629272] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='ENKlAvR8UyQHw7LZ' (raw).
+[2025-08-31T10:14:42.629944] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='ENKlAvR8UyQHw7LZ', salt(b64)='aiLpIftasBUBypeuRDKWMw=='
+[2025-08-31T10:14:42.991516] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:43.190073] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:43.392102] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='mHIAYnQTJSHxQJQh' (raw).
+[2025-08-31T10:14:43.392822] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='mHIAYnQTJSHxQJQh', salt(b64)='qN2cSp0zvPZ8jzpphcrKBw=='
+[2025-08-31T10:14:43.755357] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:43.952871] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:44.159695] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='tYaMrBb/B2XTbWwY' (raw).
+[2025-08-31T10:14:44.160392] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='tYaMrBb/B2XTbWwY', salt(b64)='T/GpswObJexj84a+BWvSJw=='
+[2025-08-31T10:14:44.510719] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:44.706254] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:44.899384] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='yUJEF9uHIG4r1/Y8' (raw).
+[2025-08-31T10:14:44.900161] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='yUJEF9uHIG4r1/Y8', salt(b64)='k5DohWLo06aiW/adWzJzKw=='
+[2025-08-31T10:14:45.283763] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:45.479118] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:45.670683] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='HKD+mSc0cEaA1UdU' (raw).
+[2025-08-31T10:14:45.671414] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='HKD+mSc0cEaA1UdU', salt(b64)='N5GtdcWc8ukOTYjL5dLpvw=='
+[2025-08-31T10:14:46.040923] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:14:46.234194] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:07.369215] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q1 final picks
+[2025-08-31T10:15:10.856110] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q2 final picks
+[2025-08-31T10:15:14.212466] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q3 final picks
+[2025-08-31T10:15:16.391970] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q4 final picks
+[2025-08-31T10:15:18.508406] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q5 final picks
+[2025-08-31T10:15:20.624570] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q6 final picks
+[2025-08-31T10:15:22.491800] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q7 final picks
+[2025-08-31T10:15:23.553907] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q8 final picks
+[2025-08-31T10:15:25.478616] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q9 final picks
+[2025-08-31T10:15:27.588226] [INFO] [GENERAL] debug_utils.py:log_debug:189 - Q10 final picks
+[2025-08-31T10:15:29.591184] [INFO] [GENERAL] debug_utils.py:log_debug:189 - User finalize => combine secrets now.
+[2025-08-31T10:15:29.592137] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='ChNc4s16dFX/ASpz' (raw).
+[2025-08-31T10:15:29.592686] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='ChNc4s16dFX/ASpz', salt(b64)='Cm0sOJHFnDCSXFtEuBafew=='
+[2025-08-31T10:15:29.938926] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:29.939812] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:30.036635] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:30.037381] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='bwE1FnXd2btm8yY9' (raw).
+[2025-08-31T10:15:30.037841] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='bwE1FnXd2btm8yY9', salt(b64)='ETwgOE6LgoAydO9wPBcpbg=='
+[2025-08-31T10:15:30.415539] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:30.416315] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:30.513124] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:30.513817] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='ENKlAvR8UyQHw7LZ' (raw).
+[2025-08-31T10:15:30.514266] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='ENKlAvR8UyQHw7LZ', salt(b64)='aiLpIftasBUBypeuRDKWMw=='
+[2025-08-31T10:15:30.854685] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:30.855411] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:30.951857] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:30.952596] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='HIzQPfgJcDA+HLyB' (raw).
+[2025-08-31T10:15:30.953049] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='HIzQPfgJcDA+HLyB', salt(b64)='PFPh3hw0MmJkk+ItPKbhAg=='
+[2025-08-31T10:15:31.333249] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:31.334087] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:31.430586] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:31.431282] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='tYaMrBb/B2XTbWwY' (raw).
+[2025-08-31T10:15:31.431719] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='tYaMrBb/B2XTbWwY', salt(b64)='T/GpswObJexj84a+BWvSJw=='
+[2025-08-31T10:15:31.808932] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:31.809598] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:31.910900] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:31.911681] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='yUJEF9uHIG4r1/Y8' (raw).
+[2025-08-31T10:15:31.912153] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='yUJEF9uHIG4r1/Y8', salt(b64)='k5DohWLo06aiW/adWzJzKw=='
+[2025-08-31T10:15:32.291318] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:32.292031] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:32.388268] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:32.389011] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='HKD+mSc0cEaA1UdU' (raw).
+[2025-08-31T10:15:32.389548] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='HKD+mSc0cEaA1UdU', salt(b64)='N5GtdcWc8ukOTYjL5dLpvw=='
+[2025-08-31T10:15:32.754486] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:32.755327] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:32.851541] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:32.852388] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='lEKgtyQSlH+luXzV' (raw).
+[2025-08-31T10:15:32.852877] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='lEKgtyQSlH+luXzV', salt(b64)='GBB0wV1aYmqitlHKpuRSjA=='
+[2025-08-31T10:15:33.193034] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:33.193782] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:33.290306] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.
+[2025-08-31T10:15:33.291109] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Using ephemeral password='j6RHJiTjwo1Tt3vx' (raw).
+[2025-08-31T10:15:33.291599] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Starting Argon2id KDF (Noble). pass='j6RHJiTjwo1Tt3vx', salt(b64)='a/MWxLIjoKM12WJ/Sqghqg=='
+[2025-08-31T10:15:33.656538] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:33.657381] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:218 - Crypto operation
+[2025-08-31T10:15:33.756988] [INFO] [CRYPTO] debug_utils.py:log_debug:189 - Demo path decrypted share.

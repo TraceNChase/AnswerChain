@@ -1,0 +1,103 @@
+name: TruffleHog PR Secret Check
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  scan:
+    name: Check PR for Secrets
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to scan all commits
+
+      - name: Scan PR with TruffleHog
+        id: trufflehog
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.pull_request.base.ref }}
+          head: ${{ github.event.pull_request.head.ref }}
+          extra_args: --only-verified --json
+        continue-on-error: true
+
+      - name: Process scan results
+        id: process-results
+        if: steps.trufflehog.outcome == 'failure'
+        run: |
+          echo "Found potential secrets in this PR. Creating report..."
+          mkdir -p trufflehog-results
+          
+          # Run trufflehog again to generate a report
+          trufflehog git file://. \
+            --since-commit ${{ github.event.pull_request.base.sha }} \
+            --branch ${{ github.event.pull_request.head.ref }} \
+            --no-update \
+            --only-verified \
+            --json > trufflehog-results/pr-scan.json
+          
+          # Create markdown report
+          echo "## 🔒 TruffleHog Secret Detection Results" > trufflehog-results/report.md
+          echo "" >> trufflehog-results/report.md
+          echo "⚠️ **Potential secrets were detected in this PR**" >> trufflehog-results/report.md
+          echo "" >> trufflehog-results/report.md
+          echo "### Detected Secrets" >> trufflehog-results/report.md
+          echo "" >> trufflehog-results/report.md
+          
+          # Parse JSON and format findings
+          cat trufflehog-results/pr-scan.json | jq -r '.[] | "- **Secret Type**: \(.DetectorType)\n  - **File**: \(.SourceMetadata.Data.Filesystem.file)\n  - **Line**: \(.SourceMetadata.Data.Filesystem.line_number)\n  - **Commit**: \(.SourceMetadata.Data.Git.commit)\n  - **Commit Message**: \(.SourceMetadata.Data.Git.message)\n  - **Commit Author**: \(.SourceMetadata.Data.Git.email)\n\n"' >> trufflehog-results/report.md
+          
+          echo "### Next Steps" >> trufflehog-results/report.md
+          echo "" >> trufflehog-results/report.md
+          echo "1. Review each finding and confirm if it's a real secret" >> trufflehog-results/report.md
+          echo "2. Remove any genuine secrets and rotate credentials immediately" >> trufflehog-results/report.md
+          echo "3. Consider using environment variables or secret management solutions" >> trufflehog-results/report.md
+          echo "4. If these are false positives, document why in your PR" >> trufflehog-results/report.md
+          
+          echo "SECRETS_FOUND=true" >> $GITHUB_OUTPUT
+
+      - name: Comment on PR
+        uses: actions/github-script@v6
+        if: steps.process-results.outputs.SECRETS_FOUND == 'true'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const reportContent = fs.readFileSync('trufflehog-results/report.md', 'utf8');
+            
+            const issueNumber = context.issue.number;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: reportContent
+            });
+            
+            // Add label to the PR
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['security-review-needed', 'contains-secrets']
+            });
+
+      - name: Add passing comment
+        uses: actions/github-script@v6
+        if: steps.trufflehog.outcome == 'success'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = context.issue.number;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: "## 🔒 TruffleHog Secret Detection Results\n\n✅ No secrets were detected in this PR. Good job!"
+            });

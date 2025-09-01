@@ -1,0 +1,210 @@
+# Custom Semgrep rules configuration
+rules:
+  - id: hardcoded-credentials
+    pattern: |
+      $X = "..."
+    pattern-inside: |
+      $CREDENTIAL = "..."
+    paths:
+      include:
+        - "*.py"
+        - "*.js"
+        - "*.ts"
+        - "*.go"
+        - "*.java"
+        - "*.rb"
+      exclude:
+        - "**/*test*"
+        - "**/*mock*"
+        - "**/node_modules/**"
+        - "**/vendor/**"
+    message: >-
+      Hardcoded credential detected. Store credentials in environment
+      variables or a secure credential storage system.
+    languages: [python, javascript, typescript, go, java, ruby]
+    severity: ERROR
+
+  - id: insecure-md5-hash
+    pattern-either:
+      - pattern: hashlib.md5(...)
+      - pattern: import md5
+      - pattern: from hashlib import md5
+      - pattern: crypto.createHash("md5")
+      - pattern: require("crypto").createHash("md5")
+      - pattern: CryptoJS.MD5(...)
+    paths:
+      include:
+        - "*.py"
+        - "*.js"
+        - "*.ts"
+        - "*.jsx"
+        - "*.tsx"
+    message: >-
+      MD5 is a cryptographically broken hash function.
+      Use a secure hashing function like SHA-256 or better.
+    languages: [python, javascript, typescript]
+    severity: WARNING
+
+  - id: insecure-random
+    pattern-either:
+      - pattern: random.random(...)
+      - pattern: Math.random(...)
+      - pattern: new Random(...)
+    paths:
+      include:
+        - "*.py"
+        - "*.js"
+        - "*.ts"
+        - "*.java"
+        - "*.go"
+    message: >-
+      Using insecure random number generator. Use a cryptographically
+      secure random number generator instead.
+    languages: [python, javascript, typescript, java, go]
+    severity: WARNING
+
+  - id: no-eval
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: exec(...)
+      - pattern: Function(...)
+      - pattern: new Function(...)
+    paths:
+      include:
+        - "*.js"
+        - "*.ts"
+        - "*.jsx"
+        - "*.tsx"
+        - "*.py"
+    message: >-
+      Detected use of 'eval' or similar function which can lead to code
+      injection vulnerabilities. Avoid using eval where possible.
+    languages: [javascript, typescript, python]
+    severity: ERROR
+
+  - id: sql-injection
+    pattern-either:
+      - pattern: |
+          "SELECT ... " + $X + " ..."
+      - pattern: |
+          'SELECT ... ' + $X + ' ...'
+      - pattern: |
+          `SELECT ... ${$X} ...`
+      - pattern: |
+          "INSERT ... " + $X + " ..."
+      - pattern: |
+          "UPDATE ... " + $X + " ..."
+      - pattern: |
+          "DELETE ... " + $X + " ..."
+    paths:
+      include:
+        - "*.js"
+        - "*.ts"
+        - "*.py"
+        - "*.java"
+        - "*.go"
+        - "*.rb"
+    message: >-
+      Potential SQL injection detected. Use parameterized queries
+      or prepared statements instead of string concatenation.
+    languages: [javascript, typescript, python, java, go, ruby]
+    severity: ERROR
+
+  - id: xss-detection
+    pattern-either:
+      - pattern: |
+          $ELEMENT.innerHTML = $X
+      - pattern: |
+          $ELEMENT.outerHTML = $X
+      - pattern: |
+          document.write($X)
+      - pattern: |
+          $ELEMENT.insertAdjacentHTML(..., $X)
+    paths:
+      include:
+        - "*.js"
+        - "*.ts"
+        - "*.jsx"
+        - "*.tsx"
+    message: >-
+      Potential Cross-Site Scripting (XSS) vulnerability detected.
+      User-controlled data should be sanitized before being inserted into the DOM.
+    languages: [javascript, typescript]
+    severity: ERROR
+
+  - id: insecure-file-permission
+    pattern-either:
+      - pattern: |
+          chmod(..., 0777)
+      - pattern: |
+          os.chmod(..., 0o777)
+      - pattern: |
+          fs.chmod...(0777)
+      - pattern: |
+          os.chmod(..., 511)
+    paths:
+      include:
+        - "*.js"
+        - "*.py"
+        - "*.sh"
+        - "*.go"
+    message: >-
+      Insecure file permission (777) detected. This gives all users
+      read, write, and execute permissions, which is a security risk.
+    languages: [javascript, python, bash, go]
+    severity: WARNING
+
+  - id: path-traversal
+    pattern-either:
+      - pattern: |
+          open("../" + $X, ...)
+      - pattern: |
+          open('../' + $X, ...)
+      - pattern: |
+          open(`../${$X}`, ...)
+      - pattern: |
+          fs.read...(path.join(..., "../" + $X), ...)
+    paths:
+      include:
+        - "*.js"
+        - "*.ts"
+        - "*.py"
+        - "*.go"
+        - "*.java"
+    message: >-
+      Potential path traversal vulnerability detected.
+      User input should be sanitized before using it in file operations.
+    languages: [javascript, typescript, python, go, java]
+    severity: ERROR
+
+  - id: no-secrets-in-logs
+    pattern-either:
+      - pattern: |
+          console.log($X, $PASSWORD, $Y)
+      - pattern: |
+          console.log($X, $SECRET, $Y)
+      - pattern: |
+          console.log($X, $TOKEN, $Y)
+      - pattern: |
+          console.log($X, $KEY, $Y)
+      - pattern: |
+          print($X, $PASSWORD, $Y)
+      - pattern: |
+          println($X, $SECRET, $Y)
+      - pattern: |
+          log.info($X, $TOKEN, $Y)
+    paths:
+      include:
+        - "*.js"
+        - "*.ts"
+        - "*.py"
+        - "*.java"
+        - "*.go"
+        - "*.rb"
+    message: >-
+      Potential logging of sensitive information detected.
+      Avoid logging passwords, secrets, tokens, and keys.
+    languages: [javascript, typescript, python, java, go, ruby]
+    severity: ERROR
+
+  # Add more custom rules here

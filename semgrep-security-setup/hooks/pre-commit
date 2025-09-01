@@ -1,0 +1,65 @@
+#!/bin/bash
+#
+# Semgrep pre-commit hook
+# Scans staged files for security issues before committing
+
+# Check if Semgrep is installed
+if ! command -v semgrep &> /dev/null; then
+    echo "⚠️  Semgrep not found. Security scanning will be skipped."
+    echo "Please install Semgrep for security scanning: pip install semgrep"
+    exit 0
+fi
+
+echo "🔍 Scanning for security issues in staged changes..."
+
+# Get list of staged files
+staged_files=$(git diff --cached --name-only)
+
+if [ -z "$staged_files" ]; then
+    echo "No staged changes found. Nothing to scan."
+    exit 0
+fi
+
+# Create temporary file with list of staged files
+tmp_file=$(mktemp)
+echo "$staged_files" > "$tmp_file"
+
+# Run semgrep on staged files
+echo "Running Semgrep on staged files..."
+semgrep --config=p/security-audit --config=auto --include="$(cat $tmp_file | tr '\n' ',')" > /tmp/semgrep-output.txt
+
+# Check exit code to see if issues were found
+SEMGREP_EXIT=$?
+
+# Display results
+if [ $SEMGREP_EXIT -eq 1 ]; then
+    echo "❌ ERROR: Security issues found in your staged changes!"
+    echo "Please review and fix these issues before committing:"
+    echo ""
+    cat /tmp/semgrep-output.txt
+    
+    # Clean up
+    rm "$tmp_file"
+    rm /tmp/semgrep-output.txt
+    
+    # Ask if user wants to commit anyway
+    echo ""
+    echo "Would you like to commit anyway? (y/n)"
+    read -r commit_anyway
+    
+    if [[ $commit_anyway == "y" || $commit_anyway == "Y" ]]; then
+        echo "Proceeding with commit despite security issues..."
+        exit 0
+    else
+        echo "Commit aborted."
+        exit 1
+    fi
+else
+    echo "✅ No security issues found in staged changes!"
+    
+    # Clean up
+    rm "$tmp_file"
+    rm -f /tmp/semgrep-output.txt
+    
+    exit 0
+fi

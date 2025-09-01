@@ -1,0 +1,8 @@
+# Custom CodeQL query suite for JavaScript
+- import: codeql-suites/javascript-security-extended.qls
+  from: codeql-javascript
+- import: codeql-suites/javascript-security-and-quality.qls
+  from: codeql-javascript
+- include:
+    id:
+      - js/unsafe-exec

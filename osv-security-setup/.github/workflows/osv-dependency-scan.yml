@@ -1,0 +1,79 @@
+name: OSV Dependency Scan
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**/*.lock'
+      - '**/go.mod'
+      - '**/go.sum'
+      - '**/package.json'
+      - '**/package-lock.json'
+      - '**/requirements.txt'
+      - '**/poetry.lock'
+      - '**/Cargo.lock'
+      - '**/Gemfile.lock'
+      - '**/*.gradle'
+      - '**/*.gradle.kts'
+      - '**/pom.xml'
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: Dependency Vulnerability Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Full git history is needed to get a proper list of changed files
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+            **/*.lock
+            **/go.mod
+            **/go.sum
+            **/package.json
+            **/package-lock.json
+            **/requirements.txt
+            **/poetry.lock
+            **/Cargo.lock
+            **/Gemfile.lock
+            **/*.gradle
+            **/*.gradle.kts
+            **/pom.xml
+
+      - name: OSV Scanner
+        uses: google/osv-scanner/actions/scanner@main
+        with:
+          to-scan: ${{ steps.changed-files.outputs.all_changed_files }}
+          config: osv-security-setup/configs/osv-scanner.toml
+          download-maven-central: true
+          download-golang-proxy: true
+
+      - name: Run OSV Scanner with SARIF output
+        id: scan-sarif
+        run: |
+          # Install osv-scanner
+          go install github.com/google/osv-scanner/cmd/osv-scanner@latest
+          
+          # Run scan with SARIF output
+          osv-scanner --format sarif --config osv-security-setup/configs/osv-scanner.toml . > osv-results.sarif
+        continue-on-error: true
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        if: success() || steps.scan-sarif.outcome == 'failure'
+        with:
+          sarif_file: osv-results.sarif
+          category: osv-scanner

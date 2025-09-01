@@ -1,0 +1,57 @@
+name: Grype SBOM Generation & Scan
+
+on:
+  push:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 0 * * 3'  # Every Wednesday at midnight
+  workflow_dispatch:
+
+jobs:
+  sbom:
+    name: Generate & Scan SBOM
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      packages: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Syft
+        uses: anchore/sbom-action/download-syft@v0
+        with:
+          syft-version: "latest"
+
+      - name: Generate SBOM
+        id: generate-sbom
+        run: |
+          syft dir:. -o cyclonedx-json > sbom.cyclonedx.json
+          syft dir:. -o spdx-json > sbom.spdx.json
+        
+      - name: Upload SBOM as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: sbom-files
+          path: |
+            sbom.cyclonedx.json
+            sbom.spdx.json
+          retention-days: 30
+
+      - name: Install Grype
+        uses: anchore/scan-action/download-grype@v3
+        with:
+          grype-version: "latest"
+
+      - name: Scan SBOM for vulnerabilities
+        id: scan-sbom
+        run: |
+          grype sbom:sbom.cyclonedx.json -o sarif > grype-sbom-results.sarif
+
+      - name: Upload scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: grype-sbom-results.sarif
+          category: grype-sbom

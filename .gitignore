@@ -1,0 +1,22 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual envs
+.venv/
+env/
+venv/
+
+# Build / dist
+build/
+dist/
+
+# Local libs & vendor caches
+libs/
+node_modules/
+bridge/vendor/
+
+# IDE
+.vscode/
+.idea/

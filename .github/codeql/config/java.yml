@@ -1,0 +1,19 @@
+name: "CodeQL Java Configuration"
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+paths:
+  - "src/"
+  - "bridge/"
+paths-ignore:
+  - "target"
+  - "build"
+  - "**/target/**"
+  - "**/build/**"
+  - ".gradle"
+  - ".mvn"
+  - "**/generated/**"
+  - "**/*.generated.*"
+  - "vendor"
+  - "third_party"
+disable-default-path-filters: true

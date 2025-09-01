@@ -1,0 +1,6592 @@
+{
+  "timestamp": "2025-08-31T09:52:26.963379",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:29.726506",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting demonstration flow (Option 2)...",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.730751",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite hobbies?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.731233",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite subject in school?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.731896",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of food do you like?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.732378",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite mode of transportation?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.732820",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which language(s) would you like to learn?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.733262",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of places do you enjoy visiting?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.733700",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of beverages do you prefer?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.734153",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which color(s) do you like the most?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.734584",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of movies do you enjoy?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.735014",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of games do you like to play?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.735469",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of music instruments do you enjoy playing or listening to?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.735911",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite types of flowers?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.736347",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of clothes do you prefer wearing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.736773",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of pets would you like to have?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.737217",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of dessert?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.737715",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What type of jobs or careers are you interested in?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.738143",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite kinds of drinks?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.738568",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of landscapes do you find most beautiful?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.738993",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What are your favorite fruits to eat?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.739421",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of places do you like to shop at?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.739870",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What kind of animals do you find fascinating?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.740310",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of beverage?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.740753",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which outdoor place(s) would you love to explore?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.741173",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'What is your favorite type of cuisine?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:29.741604",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Question 'Which kind of exercise do you enjoy doing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:31.909297",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "User int input valid: 10",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:33.879772",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q1 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:33.881001",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q1: text='What are your favorite hobbies?' => user_picks=4 selected; local counts: correct=4, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:35.292745",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q2 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:35.293872",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q2: text='What is your favorite subject in school?' => user_picks=4 selected; local counts: correct=4, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:36.772653",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q3 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:36.776492",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q3: text='What type of food do you like?' => user_picks=4 selected; local counts: correct=4, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:38.133437",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q4 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:38.134803",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q4: text='What is your favorite mode of transportation?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:39.676519",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q5 picks. Type=CRITICAL",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:39.677632",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q5: text='Which language(s) would you like to learn?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:40.907040",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q6 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:40.908211",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q6: text='What kind of places do you enjoy visiting?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:42.318433",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q7 picks. Type=CRITICAL",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:42.319404",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q7: text='What kind of beverages do you prefer?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:43.668669",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q8 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:43.669849",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q8: text='Which color(s) do you like the most?' => user_picks=3 selected; local counts: correct=3, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:44.283706",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q9 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:44.284770",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q9: text='What kind of movies do you enjoy?' => user_picks=1 selected; local counts: correct=1, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:44.651743",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q10 picks. Type=STANDARD",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:44.652889",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q10: text='What type of games do you like to play?' => user_picks=1 selected; local counts: correct=1, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.803917",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q1: c=4, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.804625",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q2: c=4, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.805105",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q3: c=4, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.805540",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q4: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.806000",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q5: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.806425",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q6: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.806847",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q7: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.807268",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q8: c=3, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.807695",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q9: c=1, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.808151",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "After re-edit Q10: c=1, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:46.808583",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "FINAL TALLY => c_count=29, i_count=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:52.185890",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using PAD size: 128",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:53.778690",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Splitting real secret: correct_count=29, threshold=14, pad=128",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:53.779446",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 4,
+    "shares": 29,
+    "threshold": 14,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:53.853455",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      7,
+      165,
+      196,
+      169,
+      86,
+      163,
+      82,
+      171,
+      167,
+      88,
+      125,
+      151,
+      48,
+      214,
+      128,
+      202,
+      5,
+      112,
+      60,
+      63,
+      176,
+      10,
+      194,
+      25,
+      18,
+      111,
+      121,
+      40,
+      153
+    ],
+    "sample_share_hashes": [
+      "f178f4beba626056b7d103c316c663d98ab383eb9655df0dbad97059ea303d5b",
+      "25d8d06b11013008868e4f8f7801cd1cffc3da09cb47b114b2038a1fd343fd11",
+      "8469e89f2179c900b294195fb52c2f1de0138ab33186cc5b3b4a0c1e863a1a4b"
+    ]
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:53.854241",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "SSS split summary (beta clear logging).",
+  "details": {
+    "share_len": 129,
+    "pad": 128,
+    "threshold": 14,
+    "real_count": 29,
+    "dummy_count": 0,
+    "real_xcoords": [
+      7,
+      165,
+      196,
+      169,
+      86,
+      163,
+      82,
+      171,
+      167,
+      88,
+      125,
+      151,
+      48,
+      214,
+      128,
+      202,
+      5,
+      112,
+      60,
+      63,
+      176,
+      10,
+      194,
+      25,
+      18,
+      111,
+      121,
+      40,
+      153
+    ],
+    "dummy_xcoords": [],
+    "real_share_sha3_256": [
+      "f178f4beba626056b7d103c316c663d98ab383eb9655df0dbad97059ea303d5b",
+      "25d8d06b11013008868e4f8f7801cd1cffc3da09cb47b114b2038a1fd343fd11",
+      "8469e89f2179c900b294195fb52c2f1de0138ab33186cc5b3b4a0c1e863a1a4b",
+      "7b1b8d674d2687c1c920e9b1104efdb8788b5a4c07534e3e097dce59b7700fa1",
+      "f282fa388ed03ed450e272cbb85c5552f066c558cd7431c605fd48054238fd83",
+      "6e5879b8b003ad5a247235f1c92301fd0fb03f04e225ba2ccdadc64c32cb3358",
+      "c9a3d8968cffcddce680aca4301de3c08dac6843eb22f174ba9e7062bbfe53b4",
+      "147a05f6e0c9d6b3f4d0948ec85f26c59e83d2029e9f05b38a80f48965bfe8a1",
+      "468e73267b16b6e23fb7f34ee667025488d99194ba14410ba3fe5ad870a175d9",
+      "e40259e4a2956b186125c1479e8942c1b6444e2243c8ee837b6e86394b85fa0a",
+      "28d7f23100d0225656e204ba72c180b538113bdd5626282f27326db57a57b604",
+      "afe64fb7b50879ed06949c50cdb42718ca9e1f3d688548301b6eb357b1788f54",
+      "25b0b57d0612e4217557d8d52f02aa69c5f79d0de75fd80cc6058167409f384b",
+      "859e99126114af8eb0dcd84d8b6a92031bb266d6a5aca98a6947f2f894fab324",
+      "65f797fe384c4a766b773425e7d348768f82e68baf06c1c91d4afb561b94c256",
+      "87365555b8ff0d010dc0628525329efa29fd07d93536e40b5b06cbbfc8b2652b",
+      "a663ab5b46d0167d5e3fcc54b8bcb18d62b39fb7e7b93f34c52504a1e9956c8c",
+      "31df90a1c373e3e07fbe99c4c61430ad60e61b1880e2e861aa5c6b72be97cd77",
+      "558ec8570520e6929accc84203dc0aba7a4a4b25d1d92d3237d1e98d7687db1f",
+      "4c893259d934ca90ea791824f60cb2cd5e1a98618e8801d7bc714c6dbf2c362a",
+      "184506c6d7b87631bbf4b6f7f3f7f767a08408aaedb42bf44a2302f9eabb88d7",
+      "c63b0ee0babd9ff7e45fe897e09f03d223c1c8f4bf1f77a955c5045e262b9f06",
+      "65a78385017f26eb52e6354356c9270cd1d1ecdf0b8a7a067c2e535c95e5389b",
+      "c372d365088d96c4ec190ce9c0f7024bf2f2228fb8f07924fc7bed096c9f54f7",
+      "68883c2a9f70c252774d4570dc99bd99a00414b918125543e2b4c634f2d9fcfa",
+      "479be59956f96d13ddf318b97ca2dca56fa78f42d23a8e80ae605ea0e4ed248b",
+      "7d10579a6d1f8d3a33ab28abf7ab7e08f0cecb1643631e6dcd3a6ff849e547bf",
+      "d92f9320fcef1abb355ba95961bfab3b5f39c031ecae7479eb0d26db267c65ce",
+      "957b348dea20a8fd4156a1c37f07eb856bec6cd9ec2a840e784184b36c97e76d"
+    ],
+    "dummy_share_sha3_256": []
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:54.047481",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='KueAPRxvOaQxPqci' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:54.048189",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='KueAPRxvOaQxPqci', salt(b64)='U/M5TIbnQW0YDC9eE9CDNA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:54.680128",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "U/M5TIbnQW0YDC9eE9CDNA==",
+      "ephemeral_password": "KueAPRxvOaQxPqci"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE=",
+      "derived_key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:54.876750",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "6RW7pxgXa2znD29r",
+    "Ciphertext(base64)": "qDMlIL1KE4RgtGm+j5BkHX3j2aJWM9XVvFXDDnSRQNgdLsGligC9d/Bv+f8AdQdotuVb0wMiZ1pH91GH5xHkkM7j3BRT1hCap1bSgl6MrVoueipN2wnM4tJfPGy3qEDR0GHYdwrQlaeyKPcu+L8AsX72MDUn3k/BF1fPoAMli1XWeuNem2rZfDYbFikaiSqtWQ==",
+    "AAD_len": 148,
+    "ephemeral_password": "KueAPRxvOaQxPqci",
+    "ephemeral_salt_b64": "U/M5TIbnQW0YDC9eE9CDNA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:55.070336",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='IypXgaEkHQgj69HN' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:55.071069",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='IypXgaEkHQgj69HN', salt(b64)='KW8lzxwy434rQcJosxs1xA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:55.707311",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "KW8lzxwy434rQcJosxs1xA==",
+      "ephemeral_password": "IypXgaEkHQgj69HN"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M=",
+      "derived_key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:55.902802",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1cKx5M7PTBH9sinv",
+    "Ciphertext(base64)": "o9KdBR7v80hCxWKh53h7tzTKfXN+84AgVgkkceXwnCQIf7fylWl8aQLfTslb+coK2offKmjE9LmFS4flZ/YUPU5ko2iO9GNH1siaSKcchRZZTPzysb32iI3s/uk46n7fGaIzbnR1iXa36uB52kN6RHiIIjX+7CBcvzLVwjasc7cT",
+    "Tag(base64)": "zk88L/llAnOq97o2c855EA==",
+    "AAD_len": 141,
+    "ephemeral_password": "IypXgaEkHQgj69HN",
+    "ephemeral_salt_b64": "KW8lzxwy434rQcJosxs1xA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:56.096191",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='XwDmBO/pw0DAp8M8' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:56.097030",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='XwDmBO/pw0DAp8M8', salt(b64)='bcNZ9OTWxBuOmAb+bz7k2g=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:56.734024",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "bcNZ9OTWxBuOmAb+bz7k2g==",
+      "ephemeral_password": "XwDmBO/pw0DAp8M8"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI=",
+      "derived_key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:56.929648",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "y1uz66WzkGbkc+tM",
+    "Ciphertext(base64)": "NhwhzLBlF0cxk+OZt+PdqeMt5ePEUG6cA/yGj7WLkKRctN9yNsI3TibWHtwZIGdO/JsaNDBaxcyxfPc6CeI5WlOkPbsHCV9hvJ77U9zNmkDbML1VbhIC2SoI+5XlzsUoL8+W9f4eSe/3Ac7Cz010qWPkQjGF/rBHm+Jd1mMtPgFRHelxVDPdN8mpqKtTphb3hw==",
+    "AAD_len": 148,
+    "ephemeral_password": "XwDmBO/pw0DAp8M8",
+    "ephemeral_salt_b64": "bcNZ9OTWxBuOmAb+bz7k2g==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:57.125203",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='ahys0nGDn8uVrzix' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:57.125847",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='ahys0nGDn8uVrzix', salt(b64)='ACq31CroOdb4/ssyJZBRrA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:57.762191",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "ACq31CroOdb4/ssyJZBRrA==",
+      "ephemeral_password": "ahys0nGDn8uVrzix"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk=",
+      "derived_key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:57.966048",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "DM9ep39bAuoG2TjO",
+    "Ciphertext(base64)": "xKZ/pVZ6ladjJCMsGmDLqf7VD80HE82Zb+6twXPVHjWd/IvRHyf8+USGa6OA0XJ8pCf2IVphBNzxqk+blIp4tBjiDR65cE1KfsQIhxTapX3UN9n99J+rO1pf8CYVk31kWuH62qI+ATjp/bXMYFgKINuXvRMPXnW5/sGCqtUTBZ/E",
+    "Tag(base64)": "GZLpGJ6+7OlOArSierB1Bg==",
+    "AAD_len": 141,
+    "ephemeral_password": "ahys0nGDn8uVrzix",
+    "ephemeral_salt_b64": "ACq31CroOdb4/ssyJZBRrA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:58.163625",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='0WXHR+KCvv/dwsBa' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:58.164324",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='0WXHR+KCvv/dwsBa', salt(b64)='LiIVpfeIj9h4bbYKAYuvqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:58.758221",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "LiIVpfeIj9h4bbYKAYuvqA==",
+      "ephemeral_password": "0WXHR+KCvv/dwsBa"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60=",
+      "derived_key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:58.953170",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "c/Kvuq3tH+MadsFg",
+    "Ciphertext(base64)": "lvHuRQCXwW9mKw1uJ/OD9dlHMNAoTV+CPTdX7e2lwFRnE5JzOsAQ6uo9P8ISeQ9W0F2cyoMJ44qDvmH8DP+L0wiyGJZzU3mI8NQLcmGr84K0LvNFgNJ/4311o8BQwepKpu+6AZKMq9vo6hLkoVrBiuUr+xEqufhSRhMOwfgFY9Il4xIm0AaC0vBJw1yUqCR7wA==",
+    "AAD_len": 148,
+    "ephemeral_password": "0WXHR+KCvv/dwsBa",
+    "ephemeral_salt_b64": "LiIVpfeIj9h4bbYKAYuvqA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:59.148792",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='BKOdFAshKzMrCxwV' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:59.149585",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='BKOdFAshKzMrCxwV', salt(b64)='m6cSeKyeqAB8rI/C1AWcOg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:52:59.786694",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "m6cSeKyeqAB8rI/C1AWcOg==",
+      "ephemeral_password": "BKOdFAshKzMrCxwV"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs=",
+      "derived_key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:52:59.981617",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "fo0y+T83OccXbx+N",
+    "Ciphertext(base64)": "GGrDUfoMQBib6qTM3JlMbPqQiEyhj2fH5ix3qbi78o2JoMGcccQCUuv7PB8603ocJLXc6KoEyKClhzCQAwthJM/AFClHTUJblQnatiOTQGcJJhou2/22MXM2ORJLPpAANWF26lKLguVoy7zMb56nd5RzmXqZ4u9jMAvdjbiL0K/VGNM/ZMHHxZhZL/gWAkWetg==",
+    "AAD_len": 148,
+    "ephemeral_password": "BKOdFAshKzMrCxwV",
+    "ephemeral_salt_b64": "m6cSeKyeqAB8rI/C1AWcOg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:00.183640",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='vaV9llFZzUhNS9vq' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:00.184390",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='vaV9llFZzUhNS9vq', salt(b64)='Wxxe72mSZdsNdfedybznKQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:00.757605",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Wxxe72mSZdsNdfedybznKQ==",
+      "ephemeral_password": "vaV9llFZzUhNS9vq"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM=",
+      "derived_key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:00.953422",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "WjFz/ckpU3s46Q9k",
+    "Ciphertext(base64)": "m3BdjmIq3N5JNyjdveXEPn4fK/lt62ltxR9bxZ3/gR2wH3Z6E9iwnv4mhEcfwox0XlfJH6P6tjzgfTx0jnFzPbot+i9AnC4+yNHCGo0jXkZcIaSkboTjhYdlo59Zc+57VFTpqbmYJPWSHUJ2pPBmsfCaYqlKhwQTiWPWoM/ZlWO+1rYCb/YjCBfmFz0RzNQBkw==",
+    "AAD_len": 148,
+    "ephemeral_password": "vaV9llFZzUhNS9vq",
+    "ephemeral_salt_b64": "Wxxe72mSZdsNdfedybznKQ==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:01.151958",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='slsijp29QxZi+qWo' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:01.152738",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='slsijp29QxZi+qWo', salt(b64)='p1OtBE1RgJC2auu60TmjGg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:01.766241",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "p1OtBE1RgJC2auu60TmjGg==",
+      "ephemeral_password": "slsijp29QxZi+qWo"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0=",
+      "derived_key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:01.961939",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "wXW5LkN1lc5LiYkZ",
+    "Ciphertext(base64)": "uap1qv9s9jr6co9DhOl4LQaiJh/mbyzH0z/jfmXvwyNTttdfcgnZnqjYsy3beDF2QI6Q3arU31wAScxmeZfX8D6pKRgP1+swdQJ1Or4jkHwZGGw/PP45tGDMd5RXZ5QRSncnZUR1dk5gAkVOTMq7rEqwz7OkyYGItCMBlIHfm5+L",
+    "Tag(base64)": "pjWcy/orr68WghTy2C5X5g==",
+    "AAD_len": 141,
+    "ephemeral_password": "slsijp29QxZi+qWo",
+    "ephemeral_salt_b64": "p1OtBE1RgJC2auu60TmjGg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:02.159071",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='TLi2L/XwyAE0c4rj' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:02.159757",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='TLi2L/XwyAE0c4rj', salt(b64)='aKtxo++vLnEmm5r788u5EA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:02.777777",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "aKtxo++vLnEmm5r788u5EA==",
+      "ephemeral_password": "TLi2L/XwyAE0c4rj"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM=",
+      "derived_key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:02.973401",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1M7jD6cnL2mpsVyp",
+    "Ciphertext(base64)": "DtqsBwY82RJlD+zwmz7ICX8qA+gpjoCwytYwUCFmr2fXKGxTTxj5b9bCkAiOLYOLlYW3oZ1+MN45RVBmZBHBlT+YLsYgUUT8Qky2W2VMmJlEiB/NeZnnQQV1e0rFWr9OLXxg0VxvA50q46+3FxbreFVOrxPzM4Ec9CDFmF5OhjaL7m43HypMVMAw9kLzqNRA8Q==",
+    "AAD_len": 148,
+    "ephemeral_password": "TLi2L/XwyAE0c4rj",
+    "ephemeral_salt_b64": "aKtxo++vLnEmm5r788u5EA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:03.169229",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='AoMH/W9L1pnbhSbJ' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:03.169965",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='AoMH/W9L1pnbhSbJ', salt(b64)='YW90SPJL8SmRwlcQkLU0aA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:03.813213",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "YW90SPJL8SmRwlcQkLU0aA==",
+      "ephemeral_password": "AoMH/W9L1pnbhSbJ"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE=",
+      "derived_key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:04.007367",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "C61NgZLalMQq6Vdq",
+    "Ciphertext(base64)": "7ei4B1PPW2E5TPqEThf00lGAXVNMBQKGfKu+nmjLWV1l2nuBupdOpDzYIETIMs3Y9SzrB0yHKlYCRyZ4hTA2oK2tEmQfEjzAv74xiAsGj3iEAj3TJEkXwYnEkHPU9O9ulSCTVX3w7NSvfsBBTT/6D0Z5qZT7qlYbBT/lqXRNl7zuRM+are7rhKtof5edBWSGWA==",
+    "AAD_len": 148,
+    "ephemeral_password": "AoMH/W9L1pnbhSbJ",
+    "ephemeral_salt_b64": "YW90SPJL8SmRwlcQkLU0aA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:04.201413",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='2o6LUW3GpQv0K7Uz' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:04.202157",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='2o6LUW3GpQv0K7Uz', salt(b64)='7RWclGvtHkhqXP1MrFjkpg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:04.761290",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "7RWclGvtHkhqXP1MrFjkpg==",
+      "ephemeral_password": "2o6LUW3GpQv0K7Uz"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo=",
+      "derived_key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:04.954463",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "dbUDA76bJBuVy/fQ",
+    "Ciphertext(base64)": "1AlvSoy2jwgxz/plcqTNoiTjgr9X8r9h3MDBQ3D1TngfJNZsEapUNnA1SJRYekmPHSddeoTfTzQ7MNwSplqZjL/ALGFKPuJbQS/V6q0PJiL9VIsptpwWCZ8YlXalQdi74NKt6AqnNcvnqqNQf3825R84GG+LPXMHytTx+mSsMxRt",
+    "Tag(base64)": "DiC/5sVqZE9bcw+pjdPlLg==",
+    "AAD_len": 141,
+    "ephemeral_password": "2o6LUW3GpQv0K7Uz",
+    "ephemeral_salt_b64": "7RWclGvtHkhqXP1MrFjkpg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:05.148684",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='SYarLc/nulSsv19Y' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:05.149388",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SYarLc/nulSsv19Y', salt(b64)='MVW7fu3if3cjNd7eAiyAlg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:05.750864",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "MVW7fu3if3cjNd7eAiyAlg==",
+      "ephemeral_password": "SYarLc/nulSsv19Y"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM=",
+      "derived_key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:05.950291",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "/NOgxwt4o4PAsZk6",
+    "Ciphertext(base64)": "jUwUhMMWxa42OfmKI2LW04/9yqUS6sPk7NBPVgJz78DtACUbqi4Zf13iqkGecsiBV7IeiJIkux/OJR3yYi96BRKhtpa4UeBwO8xkILOrQi2BjPN1zYNtaFmToDPOEduGPnZDs+4GGo3WtUryjy1VRRVj6Nf7YdpFi54QXl0kwZgr2UPv0oCjrJbxvl9gKSV7gQ==",
+    "AAD_len": 148,
+    "ephemeral_password": "SYarLc/nulSsv19Y",
+    "ephemeral_salt_b64": "MVW7fu3if3cjNd7eAiyAlg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:06.143965",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='cecDM0HJScNbQfWr' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:06.144717",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='cecDM0HJScNbQfWr', salt(b64)='Nhaz7SWT4RmzZuAdjik7Kg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:06.757692",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Nhaz7SWT4RmzZuAdjik7Kg==",
+      "ephemeral_password": "cecDM0HJScNbQfWr"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY=",
+      "derived_key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:06.956361",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "U98tlUq3l1SqLPg3",
+    "Ciphertext(base64)": "DuEzFO/CWse77fIMhD2H9zjQ9YVv/KzebyOqyBcS+e/1vMJbA19cJJZh/KybXYXVjj8zkTfhWy18Aq8MbYEaRvsh5GkH3Jz/NoBcfDpyb4fO97bIDqSrlQZYQroi7Tq5bhr33GvKIu1xP1YpxLhN/RLRn8SgBIlqGDlEgy7ymrPV",
+    "Tag(base64)": "y/RbZlqqwLnq+qS/9t85pA==",
+    "AAD_len": 141,
+    "ephemeral_password": "cecDM0HJScNbQfWr",
+    "ephemeral_salt_b64": "Nhaz7SWT4RmzZuAdjik7Kg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:07.151533",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='rkP949a0HFVpCKux' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:07.152299",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='rkP949a0HFVpCKux', salt(b64)='PAlFacifPXRQw0ZglgLOpA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:07.760800",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "PAlFacifPXRQw0ZglgLOpA==",
+      "ephemeral_password": "rkP949a0HFVpCKux"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M=",
+      "derived_key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:07.981008",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "paXcHhpuJlMqjaPJ",
+    "Ciphertext(base64)": "G2cJasI5KmX5NAg39onmCo/1osC5jW0gMr7TeNkjj3V/n1SuVP5ph0REo0hMnjmJTxVDWgLfuhfwQjzYBMNUwjZTdniVUFg7WfiwXRXvEraltDSvhkxbt68+Wp0AWfu8qwLkL2XoyLIE7orMVq3apczvb+Nsh05l8r/rc/DX0hA3",
+    "Tag(base64)": "oxpJqeLFHKTiHq2vB2B4Dg==",
+    "AAD_len": 141,
+    "ephemeral_password": "rkP949a0HFVpCKux",
+    "ephemeral_salt_b64": "PAlFacifPXRQw0ZglgLOpA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:08.193807",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='0HoZkezFSavUh/8u' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:08.194549",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='0HoZkezFSavUh/8u', salt(b64)='V1DniWdngHwXMvuoriRe9g=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:08.856400",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "V1DniWdngHwXMvuoriRe9g==",
+      "ephemeral_password": "0HoZkezFSavUh/8u"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8=",
+      "derived_key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:09.070484",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "JMXtYqF9oSU4v/X1",
+    "Ciphertext(base64)": "B6mpAtxSvMhKr7p+qMgpeyazukKpE95rcJB8K9V9Gt6aNIy95uzJFoLL7Vrm6zPMF8u064gTDtnw0I1PAm7jve5R62Q7HVJadlpbslvbAVH4MGkY9CMEVa7Cma1CyODcPSUHSXavreMHilWWn+wha0m+fsrORH+xFqeSXvWHliy3",
+    "Tag(base64)": "S8J8UhUk1fJbnC59s78q/w==",
+    "AAD_len": 141,
+    "ephemeral_password": "0HoZkezFSavUh/8u",
+    "ephemeral_salt_b64": "V1DniWdngHwXMvuoriRe9g==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:09.288740",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='zldQv5+3l0K6ILPg' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:09.289484",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='zldQv5+3l0K6ILPg', salt(b64)='H7OOa67gZiKMIcHpuVYGlg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:09.960218",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "H7OOa67gZiKMIcHpuVYGlg==",
+      "ephemeral_password": "zldQv5+3l0K6ILPg"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw=",
+      "derived_key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:10.156362",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "cL8AJVIQY+pPWLJM",
+    "Ciphertext(base64)": "mHJbRdt9/zYBcjXbL6Gwv6t6wFudKYLJMCxL+SxSlbm+e0Zoth5vPfvwDw+UzkpfNzbhjcBZZLwxiJtEZBZ1dpfHwkwPnc83tj5da1lj4+335ht8cZv2aPPzKZdPU1oJe0Q1vaV1nz9AUa63jd1pX98xwiyU8rrJIifF510hVTIzD5NuiAtSE6bAvjlSZL1wuw==",
+    "AAD_len": 148,
+    "ephemeral_password": "zldQv5+3l0K6ILPg",
+    "ephemeral_salt_b64": "H7OOa67gZiKMIcHpuVYGlg==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:10.348510",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='PRcWh2Q6N5pxlDfY' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:10.349192",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='PRcWh2Q6N5pxlDfY', salt(b64)='Fws6Id1d0v7426S1Dp4w6Q=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:10.991793",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Fws6Id1d0v7426S1Dp4w6Q==",
+      "ephemeral_password": "PRcWh2Q6N5pxlDfY"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI=",
+      "derived_key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:11.186685",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "ULvTTkCtJGeO07AC",
+    "Ciphertext(base64)": "SZEOCzXE23gPaVz5WOKPprN61XK/Za0ZF0pNMtbqzvBMAbIXL5o0vOmvyQK9hOzvP0wxPloR93Q2fwMTzss2CuMQi3vz5iJhZn5SUgGPL7qm/xF3EAr9onxutZ4kTRnHqH0/QKvgAkvc8j+kVIdDESYuxqJc9MuuoPTrQiCVw2ZWCyLKwqRMjFyc3IPR1VFI4A==",
+    "AAD_len": 148,
+    "ephemeral_password": "PRcWh2Q6N5pxlDfY",
+    "ephemeral_salt_b64": "Fws6Id1d0v7426S1Dp4w6Q==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:11.383857",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='2W1UiIbFfrTtulsy' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:11.384498",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='2W1UiIbFfrTtulsy', salt(b64)='c5uQH4Xgxs+hFNFr+SPGCQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:12.021058",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "c5uQH4Xgxs+hFNFr+SPGCQ==",
+      "ephemeral_password": "2W1UiIbFfrTtulsy"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4=",
+      "derived_key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:12.214395",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "B3N8vaBwoJWyNlda",
+    "Ciphertext(base64)": "98GKuARa2r8NxTPq0ljL333xk3ZnYn83lYAYWI1zI6ln+up2YuNQKUU8HaTS3P2vvwRGKIys0Rzo1ufBCtdCsYOqm9dAnHPyyQOhFHBVJGauB7EFoF+uklo5HrDsa+j+S7QuVofBgteEJ+/3PGAvXYVZ0Di43T0q3JUjNckzk5Cj",
+    "Tag(base64)": "sa/r3mwh6mnr86/GRq0l+w==",
+    "AAD_len": 141,
+    "ephemeral_password": "2W1UiIbFfrTtulsy",
+    "ephemeral_salt_b64": "c5uQH4Xgxs+hFNFr+SPGCQ==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:12.409171",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='5hWVqdU+ctAjETWE' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:12.409855",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='5hWVqdU+ctAjETWE', salt(b64)='xSHN+HuGf+MbievpxvXCqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:13.051533",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "xSHN+HuGf+MbievpxvXCqA==",
+      "ephemeral_password": "5hWVqdU+ctAjETWE"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus=",
+      "derived_key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:13.245662",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "z9oX7eEGFXJGAEK7",
+    "Ciphertext(base64)": "00GPcy5iUznWzJzUpvZfIdUgYz+w6ehvZQIB1i08C6goPJxXZeoa73xvGoNq4ezftvitqd1lAH6tWXzuvElQhKtYE6B6uyShFWAONoS1v5A4osuaNYiTe0B5H3pJYFVa0o58baTEEPjTQJKi9gENCRQmmBIYQDw6h2T3d5vhK3kuegj6R78agwqs1FbB1e0DqA==",
+    "AAD_len": 148,
+    "ephemeral_password": "5hWVqdU+ctAjETWE",
+    "ephemeral_salt_b64": "xSHN+HuGf+MbievpxvXCqA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:13.437023",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='f9CvrPw0joxBBek9' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:13.437722",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='f9CvrPw0joxBBek9', salt(b64)='Kh28mrjKv8NB75Q0bXH6Jw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:13.999438",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Kh28mrjKv8NB75Q0bXH6Jw==",
+      "ephemeral_password": "f9CvrPw0joxBBek9"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU=",
+      "derived_key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:14.197215",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "8Zg4Z9Q/rpg3qlJP",
+    "Ciphertext(base64)": "6wVz920WmG6W9HtagfRnX3/WrLRPVf0ZiW66sGYAgCssWJBwnozs+guaBOUTDVlaAc3bDqjLZdeNfEMvlJ1GdH++/U6Ii8wFRnJymyGvcA9+Q59C//Q1JmZe/EeBktwkG4DKTOt9gxBTy06c31uotuS0CpW0O6c7RrF73GGcOgtM",
+    "Tag(base64)": "tJgDuWuG6RzJ2IEsNKeqRg==",
+    "AAD_len": 141,
+    "ephemeral_password": "f9CvrPw0joxBBek9",
+    "ephemeral_salt_b64": "Kh28mrjKv8NB75Q0bXH6Jw==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:14.390537",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='7z+btO7gDyigMNeH' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:14.391286",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='7z+btO7gDyigMNeH', salt(b64)='M1YT6UoFu5RcPUb0Q3Ox0w=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:14.993856",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "M1YT6UoFu5RcPUb0Q3Ox0w==",
+      "ephemeral_password": "7z+btO7gDyigMNeH"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ=",
+      "derived_key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:15.190184",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "Te5r3eVc6wLBRTLf",
+    "Ciphertext(base64)": "nKctfg+tl64q7rB3NFmuaVMLcd9W8on0XQ14aNCs+uadkHpxnG+Xzkjhmkmb9xJMKvUlKMinNZj8E5CKp2q7x8CH82NvsqTblgNqsMpdQsExmeZJoqgkYbScRxxyVnecYROZeAvToqOFw+EyWEBomT6HOszmokySVgfzCEwkKt5x/Z4hrmaIPXLOZn7WpOTemw==",
+    "AAD_len": 148,
+    "ephemeral_password": "7z+btO7gDyigMNeH",
+    "ephemeral_salt_b64": "M1YT6UoFu5RcPUb0Q3Ox0w==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:15.383749",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='8lZXhReE5MoZKDLB' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:15.384496",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='8lZXhReE5MoZKDLB', salt(b64)='j7clnFRxKldLvCIAhJ0FNw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:16.019062",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "j7clnFRxKldLvCIAhJ0FNw==",
+      "ephemeral_password": "8lZXhReE5MoZKDLB"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck=",
+      "derived_key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:16.213463",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1rvIknN/Z1glECsj",
+    "Ciphertext(base64)": "mVDptNxpt3mu47FmSZ/HUAshAbm6pUe+Q171kJFtjjtZYSpcuo8HLZNM8sGJPkG/4EPG3c6X1PGv6qXVWmdE74KyTc4AaYGf84vxhGrPUTkSgCXS7GknqjnwkTAnBKo/a2m/c+v+Lq9oVtVSJuAtAx73MyJeiEakDgRLdJb0d0sDAbC0YWAmzvxyKSOmszRTEQ==",
+    "AAD_len": 148,
+    "ephemeral_password": "8lZXhReE5MoZKDLB",
+    "ephemeral_salt_b64": "j7clnFRxKldLvCIAhJ0FNw==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:16.405798",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='A6pycr0pTSWmqjkd' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:16.406444",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='A6pycr0pTSWmqjkd', salt(b64)='V3fsYG4EnJaBd/g/ZMFWiQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:17.043443",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "V3fsYG4EnJaBd/g/ZMFWiQ==",
+      "ephemeral_password": "A6pycr0pTSWmqjkd"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY=",
+      "derived_key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:17.241289",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "w9Td5NDiv4macfzj",
+    "Ciphertext(base64)": "mISxsdxU3E4o0bfFdrFfsa+k4c2lpLKgYI2qzbynJowPWvlJ85rZgzKw4T7USDgMFrPbjePFADpLgGo2m+EEpJUUowgC+QaGLzEDmq0ZKO3W+SUP0LqUWGhXdeOSrTjK4L9KJb0OTze5FJ+kmacPWxidV9vLEh2XLByvRgiqo/ow",
+    "Tag(base64)": "0t5LIrHmcw6C90vF7f2SWw==",
+    "AAD_len": 141,
+    "ephemeral_password": "A6pycr0pTSWmqjkd",
+    "ephemeral_salt_b64": "V3fsYG4EnJaBd/g/ZMFWiQ==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:17.434564",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='XH8UGA1yKr3n5zFh' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:17.435343",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='XH8UGA1yKr3n5zFh', salt(b64)='c+Aqgdz+aTtAzx7HDvnvCw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:18.070874",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "c+Aqgdz+aTtAzx7HDvnvCw==",
+      "ephemeral_password": "XH8UGA1yKr3n5zFh"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys=",
+      "derived_key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:18.267297",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "nQm8DiGdjhoW5bI+",
+    "Ciphertext(base64)": "GuFwlAlZxUpDgdLD5CT/Yzkr5P/V17P2mgmFxrxoCunkV+D2xe4wbF1ne1khviPcsSgi41TgviYR82TiyF0WD4nd9rlTiJkq7bIAaglKelNPjmq41YdVFoXrYfUn0FAa7Xvu2qzScnajhMqROT04NkkkrHNFJBDpe7lsMIWzjuoO",
+    "Tag(base64)": "aNugLro/th6NR+KXVbDvtQ==",
+    "AAD_len": 141,
+    "ephemeral_password": "XH8UGA1yKr3n5zFh",
+    "ephemeral_salt_b64": "c+Aqgdz+aTtAzx7HDvnvCw==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:18.459376",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='kKpJoWYJA+7GSCn7' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:18.460149",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='kKpJoWYJA+7GSCn7', salt(b64)='xBUXkqDoboV+4ln9ziMAPA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:19.018812",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "xBUXkqDoboV+4ln9ziMAPA==",
+      "ephemeral_password": "kKpJoWYJA+7GSCn7"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk=",
+      "derived_key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:19.215115",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "t/yr/zLUTF1WfCRR",
+    "Ciphertext(base64)": "T3rBziuNlFglCyEmyVxjmOt9Tmw6ukqGXvhidTxdlfxV/3/CcLzNEjV/BVjngSmGR9LB9UJ47lGry6QTyTxG0urLxByb3/1tKQXvA9+PKBzKNluk7NWBJxFZmf2M8tgyI3NywXPEw/HzJhe1Uf6FOGCIGMOdo9t7j/cSbWH7dgDyzmACtiJoNjFvXywl3MjefA==",
+    "AAD_len": 148,
+    "ephemeral_password": "kKpJoWYJA+7GSCn7",
+    "ephemeral_salt_b64": "xBUXkqDoboV+4ln9ziMAPA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:19.409695",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='lUbEyk7gINo1S/Oh' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:19.410564",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='lUbEyk7gINo1S/Oh', salt(b64)='z9/KVze3hGkO24mCIE2jtA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:20.042095",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "z9/KVze3hGkO24mCIE2jtA==",
+      "ephemeral_password": "lUbEyk7gINo1S/Oh"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8=",
+      "derived_key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:20.247652",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "Xzq/d2KSZ97x6BbK",
+    "Ciphertext(base64)": "HYNWubZQI1O1yQmWDwLEPY+Bw6ao33xclUXuGsK6sb4gsfWEWnf/qTpU1KwU904/b4m4ALRjZnFcQ4Jl/ib5aQZ9nvZ/kU/lPQyf1xlnUAOTi/l5ql7zWnOZ38zuk22hiYh/oIxUtDNfRt1ts4pEis76aJ7t0xP2SsDQhVkXuAjI",
+    "Tag(base64)": "5Mx5dYz0ZyQdRWVwNA2ZfA==",
+    "AAD_len": 141,
+    "ephemeral_password": "lUbEyk7gINo1S/Oh",
+    "ephemeral_salt_b64": "z9/KVze3hGkO24mCIE2jtA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:20.444580",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='+Sv4aJZCu63HcT7z' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:20.445355",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='+Sv4aJZCu63HcT7z', salt(b64)='qgIy1f6d/C9KVApbTG3HJw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:21.075026",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "qgIy1f6d/C9KVApbTG3HJw==",
+      "ephemeral_password": "+Sv4aJZCu63HcT7z"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM=",
+      "derived_key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:21.272397",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "ggL1Xp7dVfaMsN2h",
+    "Ciphertext(base64)": "pKRTBj0eao6cAM9Ss0pJ0urEwZsk2GZRSqhk07yXT044XOPMZJqDP33fQ4s7loU4rDR5tnLEz0LfT9LcpjgXTaluuyWt7m1qm5K1sWZaUh2TGR8s2mMVQiwFlhUMse4x9P3eRodYG22BvTlmkt/xhaA0Cr5gkzGIxLfAB7JD/TAk",
+    "Tag(base64)": "Wf/9GU8sxySEHUqutW9CVA==",
+    "AAD_len": 141,
+    "ephemeral_password": "+Sv4aJZCu63HcT7z",
+    "ephemeral_salt_b64": "qgIy1f6d/C9KVApbTG3HJw==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:21.470705",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='Fqhru1Q4gWU2aeT6' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:21.471520",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='Fqhru1Q4gWU2aeT6', salt(b64)='rPIY/O/zYbs6iRuHFMirqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:22.030458",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "rPIY/O/zYbs6iRuHFMirqA==",
+      "ephemeral_password": "Fqhru1Q4gWU2aeT6"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs=",
+      "derived_key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:22.227748",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "irbNB8E4VZN0teS4",
+    "Ciphertext(base64)": "qirvjb3uJJ2x9fyp8oohf0Ru1BHj6e93JY4iBMYyGKf+sG6K9J/GQt1OukVhMnUEb14nppXZONBbu2BwbFIhDfowsdpLcEgKdYBdJjpYlnIbKXB3vvBUNBOSI3PX7aleCyLnMakkkf9XLxLyQiySgMuZenBRMk0fnEaeLPLMSUW72BvslyhCQ0Jwnxk5s8kRuw==",
+    "AAD_len": 148,
+    "ephemeral_password": "Fqhru1Q4gWU2aeT6",
+    "ephemeral_salt_b64": "rPIY/O/zYbs6iRuHFMirqA==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:22.426186",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='ZerzODcno7Ni16PP' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:22.426925",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='ZerzODcno7Ni16PP', salt(b64)='5p5s4V5WodKpmogyzA1cCw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:23.064036",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "5p5s4V5WodKpmogyzA1cCw==",
+      "ephemeral_password": "ZerzODcno7Ni16PP"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo=",
+      "derived_key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:23.264740",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "m1LyAo6h13Z4iKT0",
+    "Ciphertext(base64)": "8PLQXt6AsjdnoG9/z/Prp2A3hmVwdUgO10W67buURUTzvrutu/E10xeZctqZL7q63i36KpZoictfqznIp4ASrZQ7YtIZInjN5Rl2+G/sxHa+Q3i3VbS+rSO7nAOmVBtIZXGSCIs+apnq6ZSKnvdE2V9SJbMvLE6qVsJYwZrxVW/D",
+    "Tag(base64)": "la4vbyjq1AiqNDnmXhJPAg==",
+    "AAD_len": 141,
+    "ephemeral_password": "ZerzODcno7Ni16PP",
+    "ephemeral_salt_b64": "5p5s4V5WodKpmogyzA1cCw==",
+    "crypto_details": {
+      "operation": "Encrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:25.385918",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:25.508996",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:25.694955",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:25.879967",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q4 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:26.002804",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q5 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:26.189909",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q6 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:26.314971",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q7 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:26.439733",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q8 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:26.870727",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q9 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:27.179880",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Q10 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:29.333101",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "User finalize => combine secrets now.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:29.333885",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='KueAPRxvOaQxPqci' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:29.334363",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='KueAPRxvOaQxPqci', salt(b64)='U/M5TIbnQW0YDC9eE9CDNA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:29.921996",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "U/M5TIbnQW0YDC9eE9CDNA==",
+      "ephemeral_password": "KueAPRxvOaQxPqci"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE=",
+      "derived_key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:29.922701",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "6RW7pxgXa2znD29r",
+    "Ciphertext(base64)": "qDMlIL1KE4RgtGm+j5BkHX3j2aJWM9XVvFXDDnSRQNgdLsGligC9d/Bv+f8AdQdotuVb0wMiZ1pH91GH5xHkkM7j3BRT1hCap1bSgl6MrVoueipN2wnM4tJfPGy3qEDR0GHYdwrQlaeyKPcu+L8AsX72MDUn3k/BF1fPoAMli1XWeuNem2rZfDYbFikaiSqtWQ==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "DqwDMLuXPSBm7d8n0pmAfOKTe4suRj7s9OVD2VPytGE="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:30.020927",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "f178f4beba626056b7d103c316c663d98ab383eb9655df0dbad97059ea303d5b",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:30.021728",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='IypXgaEkHQgj69HN' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:30.022168",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='IypXgaEkHQgj69HN', salt(b64)='KW8lzxwy434rQcJosxs1xA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:30.583241",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "KW8lzxwy434rQcJosxs1xA==",
+      "ephemeral_password": "IypXgaEkHQgj69HN"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M=",
+      "derived_key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:30.584000",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1cKx5M7PTBH9sinv",
+    "Ciphertext(base64)": "o9KdBR7v80hCxWKh53h7tzTKfXN+84AgVgkkceXwnCQIf7fylWl8aQLfTslb+coK2offKmjE9LmFS4flZ/YUPU5ko2iO9GNH1siaSKcchRZZTPzysb32iI3s/uk46n7fGaIzbnR1iXa36uB52kN6RHiIIjX+7CBcvzLVwjasc7cT",
+    "Tag(base64)": "zk88L/llAnOq97o2c855EA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "xfbEsROFE3+fLUDzaMi73b7+ckVXfR0I+TWXqSMj01M="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:30.680285",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "25d8d06b11013008868e4f8f7801cd1cffc3da09cb47b114b2038a1fd343fd11",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:30.680945",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='XwDmBO/pw0DAp8M8' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:30.681420",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='XwDmBO/pw0DAp8M8', salt(b64)='bcNZ9OTWxBuOmAb+bz7k2g=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:31.319423",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "bcNZ9OTWxBuOmAb+bz7k2g==",
+      "ephemeral_password": "XwDmBO/pw0DAp8M8"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI=",
+      "derived_key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:31.320189",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "y1uz66WzkGbkc+tM",
+    "Ciphertext(base64)": "NhwhzLBlF0cxk+OZt+PdqeMt5ePEUG6cA/yGj7WLkKRctN9yNsI3TibWHtwZIGdO/JsaNDBaxcyxfPc6CeI5WlOkPbsHCV9hvJ77U9zNmkDbML1VbhIC2SoI+5XlzsUoL8+W9f4eSe/3Ac7Cz010qWPkQjGF/rBHm+Jd1mMtPgFRHelxVDPdN8mpqKtTphb3hw==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "eQD9lMtVNn3zKvku1zD93eNfoK+uHeAzI5chUu/GKyI="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:31.418253",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "8469e89f2179c900b294195fb52c2f1de0138ab33186cc5b3b4a0c1e863a1a4b",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:31.418923",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='ahys0nGDn8uVrzix' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:31.419366",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='ahys0nGDn8uVrzix', salt(b64)='ACq31CroOdb4/ssyJZBRrA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:32.031047",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "ACq31CroOdb4/ssyJZBRrA==",
+      "ephemeral_password": "ahys0nGDn8uVrzix"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk=",
+      "derived_key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.031824",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "DM9ep39bAuoG2TjO",
+    "Ciphertext(base64)": "xKZ/pVZ6ladjJCMsGmDLqf7VD80HE82Zb+6twXPVHjWd/IvRHyf8+USGa6OA0XJ8pCf2IVphBNzxqk+blIp4tBjiDR65cE1KfsQIhxTapX3UN9n99J+rO1pf8CYVk31kWuH62qI+ATjp/bXMYFgKINuXvRMPXnW5/sGCqtUTBZ/E",
+    "Tag(base64)": "GZLpGJ6+7OlOArSierB1Bg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "dwl0buKDqh9acafl5il+V4TMtH4sx1QWIRPRLfPZ2Kk="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.129159",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "7b1b8d674d2687c1c920e9b1104efdb8788b5a4c07534e3e097dce59b7700fa1",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.129958",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='0WXHR+KCvv/dwsBa' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:32.130491",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='0WXHR+KCvv/dwsBa', salt(b64)='LiIVpfeIj9h4bbYKAYuvqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:32.770841",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "LiIVpfeIj9h4bbYKAYuvqA==",
+      "ephemeral_password": "0WXHR+KCvv/dwsBa"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60=",
+      "derived_key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.771656",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "c/Kvuq3tH+MadsFg",
+    "Ciphertext(base64)": "lvHuRQCXwW9mKw1uJ/OD9dlHMNAoTV+CPTdX7e2lwFRnE5JzOsAQ6uo9P8ISeQ9W0F2cyoMJ44qDvmH8DP+L0wiyGJZzU3mI8NQLcmGr84K0LvNFgNJ/4311o8BQwepKpu+6AZKMq9vo6hLkoVrBiuUr+xEqufhSRhMOwfgFY9Il4xIm0AaC0vBJw1yUqCR7wA==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "21F5vZpjt8RL5r8Y1TPwPM5DLrxAK6BAidcCI/oWM60="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.869094",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "f282fa388ed03ed450e272cbb85c5552f066c558cd7431c605fd48054238fd83",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:32.869850",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='BKOdFAshKzMrCxwV' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:32.870383",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='BKOdFAshKzMrCxwV', salt(b64)='m6cSeKyeqAB8rI/C1AWcOg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:33.513238",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "m6cSeKyeqAB8rI/C1AWcOg==",
+      "ephemeral_password": "BKOdFAshKzMrCxwV"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs=",
+      "derived_key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:33.514056",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "fo0y+T83OccXbx+N",
+    "Ciphertext(base64)": "GGrDUfoMQBib6qTM3JlMbPqQiEyhj2fH5ix3qbi78o2JoMGcccQCUuv7PB8603ocJLXc6KoEyKClhzCQAwthJM/AFClHTUJblQnatiOTQGcJJhou2/22MXM2ORJLPpAANWF26lKLguVoy7zMb56nd5RzmXqZ4u9jMAvdjbiL0K/VGNM/ZMHHxZhZL/gWAkWetg==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "3+xzjryN9xTSm0uf8LpUKcFt6b+mcE3Qkt1hydDyCqs="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:33.614995",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "6e5879b8b003ad5a247235f1c92301fd0fb03f04e225ba2ccdadc64c32cb3358",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:33.615756",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='vaV9llFZzUhNS9vq' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:33.616283",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='vaV9llFZzUhNS9vq', salt(b64)='Wxxe72mSZdsNdfedybznKQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:34.214785",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Wxxe72mSZdsNdfedybznKQ==",
+      "ephemeral_password": "vaV9llFZzUhNS9vq"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM=",
+      "derived_key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:34.215571",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "WjFz/ckpU3s46Q9k",
+    "Ciphertext(base64)": "m3BdjmIq3N5JNyjdveXEPn4fK/lt62ltxR9bxZ3/gR2wH3Z6E9iwnv4mhEcfwox0XlfJH6P6tjzgfTx0jnFzPbot+i9AnC4+yNHCGo0jXkZcIaSkboTjhYdlo59Zc+57VFTpqbmYJPWSHUJ2pPBmsfCaYqlKhwQTiWPWoM/ZlWO+1rYCb/YjCBfmFz0RzNQBkw==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "93yAzwv3XezdIKZ/0TvWDj36cSbebqp/kUN4DNHJsbM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:34.314371",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "c9a3d8968cffcddce680aca4301de3c08dac6843eb22f174ba9e7062bbfe53b4",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:34.315103",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='slsijp29QxZi+qWo' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:34.315624",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='slsijp29QxZi+qWo', salt(b64)='p1OtBE1RgJC2auu60TmjGg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:34.948330",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "p1OtBE1RgJC2auu60TmjGg==",
+      "ephemeral_password": "slsijp29QxZi+qWo"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0=",
+      "derived_key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:34.949136",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "wXW5LkN1lc5LiYkZ",
+    "Ciphertext(base64)": "uap1qv9s9jr6co9DhOl4LQaiJh/mbyzH0z/jfmXvwyNTttdfcgnZnqjYsy3beDF2QI6Q3arU31wAScxmeZfX8D6pKRgP1+swdQJ1Or4jkHwZGGw/PP45tGDMd5RXZ5QRSncnZUR1dk5gAkVOTMq7rEqwz7OkyYGItCMBlIHfm5+L",
+    "Tag(base64)": "pjWcy/orr68WghTy2C5X5g==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "KyJPVOA0330WIfbwfcE7kt70gTQ8KiyYAHOLIpybiP0="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:35.051138",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "147a05f6e0c9d6b3f4d0948ec85f26c59e83d2029e9f05b38a80f48965bfe8a1",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:35.051854",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='TLi2L/XwyAE0c4rj' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:35.052289",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='TLi2L/XwyAE0c4rj', salt(b64)='aKtxo++vLnEmm5r788u5EA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:35.658729",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "aKtxo++vLnEmm5r788u5EA==",
+      "ephemeral_password": "TLi2L/XwyAE0c4rj"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM=",
+      "derived_key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:35.659587",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1M7jD6cnL2mpsVyp",
+    "Ciphertext(base64)": "DtqsBwY82RJlD+zwmz7ICX8qA+gpjoCwytYwUCFmr2fXKGxTTxj5b9bCkAiOLYOLlYW3oZ1+MN45RVBmZBHBlT+YLsYgUUT8Qky2W2VMmJlEiB/NeZnnQQV1e0rFWr9OLXxg0VxvA50q46+3FxbreFVOrxPzM4Ec9CDFmF5OhjaL7m43HypMVMAw9kLzqNRA8Q==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "DaWfgpzgXDx5bZ4Xe3H17yNYpTYN7jeej2iCG2s0azM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:35.762582",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "468e73267b16b6e23fb7f34ee667025488d99194ba14410ba3fe5ad870a175d9",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:35.763258",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='AoMH/W9L1pnbhSbJ' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:35.763796",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='AoMH/W9L1pnbhSbJ', salt(b64)='YW90SPJL8SmRwlcQkLU0aA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:36.408246",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "YW90SPJL8SmRwlcQkLU0aA==",
+      "ephemeral_password": "AoMH/W9L1pnbhSbJ"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE=",
+      "derived_key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:36.408976",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "C61NgZLalMQq6Vdq",
+    "Ciphertext(base64)": "7ei4B1PPW2E5TPqEThf00lGAXVNMBQKGfKu+nmjLWV1l2nuBupdOpDzYIETIMs3Y9SzrB0yHKlYCRyZ4hTA2oK2tEmQfEjzAv74xiAsGj3iEAj3TJEkXwYnEkHPU9O9ulSCTVX3w7NSvfsBBTT/6D0Z5qZT7qlYbBT/lqXRNl7zuRM+are7rhKtof5edBWSGWA==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "n9uibdn0qTkx3+OA/aD5MRQvGqcTCw0byEdy6TQ08GE="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:36.507017",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "e40259e4a2956b186125c1479e8942c1b6444e2243c8ee837b6e86394b85fa0a",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:36.507788",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='2o6LUW3GpQv0K7Uz' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:36.508249",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='2o6LUW3GpQv0K7Uz', salt(b64)='7RWclGvtHkhqXP1MrFjkpg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:37.146986",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "7RWclGvtHkhqXP1MrFjkpg==",
+      "ephemeral_password": "2o6LUW3GpQv0K7Uz"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo=",
+      "derived_key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.147874",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "dbUDA76bJBuVy/fQ",
+    "Ciphertext(base64)": "1AlvSoy2jwgxz/plcqTNoiTjgr9X8r9h3MDBQ3D1TngfJNZsEapUNnA1SJRYekmPHSddeoTfTzQ7MNwSplqZjL/ALGFKPuJbQS/V6q0PJiL9VIsptpwWCZ8YlXalQdi74NKt6AqnNcvnqqNQf3825R84GG+LPXMHytTx+mSsMxRt",
+    "Tag(base64)": "DiC/5sVqZE9bcw+pjdPlLg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Jpo08+CbHndFV34kt+Bn50+pr+DYeoBZZSqlkzljFVo="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.246078",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "28d7f23100d0225656e204ba72c180b538113bdd5626282f27326db57a57b604",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.246763",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='SYarLc/nulSsv19Y' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:37.247196",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SYarLc/nulSsv19Y', salt(b64)='MVW7fu3if3cjNd7eAiyAlg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:37.887192",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "MVW7fu3if3cjNd7eAiyAlg==",
+      "ephemeral_password": "SYarLc/nulSsv19Y"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM=",
+      "derived_key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.887970",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "/NOgxwt4o4PAsZk6",
+    "Ciphertext(base64)": "jUwUhMMWxa42OfmKI2LW04/9yqUS6sPk7NBPVgJz78DtACUbqi4Zf13iqkGecsiBV7IeiJIkux/OJR3yYi96BRKhtpa4UeBwO8xkILOrQi2BjPN1zYNtaFmToDPOEduGPnZDs+4GGo3WtUryjy1VRRVj6Nf7YdpFi54QXl0kwZgr2UPv0oCjrJbxvl9gKSV7gQ==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "NU94vvEGj3adZbuQQru8/uGce7uM25XPypPWkdITKWM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.989037",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "afe64fb7b50879ed06949c50cdb42718ca9e1f3d688548301b6eb357b1788f54",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:37.989687",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='cecDM0HJScNbQfWr' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:37.990163",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='cecDM0HJScNbQfWr', salt(b64)='Nhaz7SWT4RmzZuAdjik7Kg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:38.613800",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Nhaz7SWT4RmzZuAdjik7Kg==",
+      "ephemeral_password": "cecDM0HJScNbQfWr"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY=",
+      "derived_key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:38.614516",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "U98tlUq3l1SqLPg3",
+    "Ciphertext(base64)": "DuEzFO/CWse77fIMhD2H9zjQ9YVv/KzebyOqyBcS+e/1vMJbA19cJJZh/KybXYXVjj8zkTfhWy18Aq8MbYEaRvsh5GkH3Jz/NoBcfDpyb4fO97bIDqSrlQZYQroi7Tq5bhr33GvKIu1xP1YpxLhN/RLRn8SgBIlqGDlEgy7ymrPV",
+    "Tag(base64)": "y/RbZlqqwLnq+qS/9t85pA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "2hrKig9yDRyxACntBUunfMsOEzYLrDNydzs9DA3bmOY="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:38.714272",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "25b0b57d0612e4217557d8d52f02aa69c5f79d0de75fd80cc6058167409f384b",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:38.715043",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='rkP949a0HFVpCKux' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:38.715513",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='rkP949a0HFVpCKux', salt(b64)='PAlFacifPXRQw0ZglgLOpA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:39.357221",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "PAlFacifPXRQw0ZglgLOpA==",
+      "ephemeral_password": "rkP949a0HFVpCKux"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M=",
+      "derived_key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:39.358049",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "paXcHhpuJlMqjaPJ",
+    "Ciphertext(base64)": "G2cJasI5KmX5NAg39onmCo/1osC5jW0gMr7TeNkjj3V/n1SuVP5ph0REo0hMnjmJTxVDWgLfuhfwQjzYBMNUwjZTdniVUFg7WfiwXRXvEraltDSvhkxbt68+Wp0AWfu8qwLkL2XoyLIE7orMVq3apczvb+Nsh05l8r/rc/DX0hA3",
+    "Tag(base64)": "oxpJqeLFHKTiHq2vB2B4Dg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "6dUu66r3ch5tb+6kfCmzxYB2D6SKojpxBpXodEXwX3M="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:39.457907",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "859e99126114af8eb0dcd84d8b6a92031bb266d6a5aca98a6947f2f894fab324",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:39.458615",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='0HoZkezFSavUh/8u' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:39.459047",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='0HoZkezFSavUh/8u', salt(b64)='V1DniWdngHwXMvuoriRe9g=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:40.060221",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "V1DniWdngHwXMvuoriRe9g==",
+      "ephemeral_password": "0HoZkezFSavUh/8u"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8=",
+      "derived_key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.061013",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "JMXtYqF9oSU4v/X1",
+    "Ciphertext(base64)": "B6mpAtxSvMhKr7p+qMgpeyazukKpE95rcJB8K9V9Gt6aNIy95uzJFoLL7Vrm6zPMF8u064gTDtnw0I1PAm7jve5R62Q7HVJadlpbslvbAVH4MGkY9CMEVa7Cma1CyODcPSUHSXavreMHilWWn+wha0m+fsrORH+xFqeSXvWHliy3",
+    "Tag(base64)": "S8J8UhUk1fJbnC59s78q/w==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "nXhYU1+8fKIQDzwTFjddjPVLc1lAZQGhSqnL0GyqLp8="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.159438",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "65f797fe384c4a766b773425e7d348768f82e68baf06c1c91d4afb561b94c256",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.160193",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='XH8UGA1yKr3n5zFh' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:40.160636",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='XH8UGA1yKr3n5zFh', salt(b64)='c+Aqgdz+aTtAzx7HDvnvCw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:40.807757",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "c+Aqgdz+aTtAzx7HDvnvCw==",
+      "ephemeral_password": "XH8UGA1yKr3n5zFh"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys=",
+      "derived_key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.808606",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "nQm8DiGdjhoW5bI+",
+    "Ciphertext(base64)": "GuFwlAlZxUpDgdLD5CT/Yzkr5P/V17P2mgmFxrxoCunkV+D2xe4wbF1ne1khviPcsSgi41TgviYR82TiyF0WD4nd9rlTiJkq7bIAaglKelNPjmq41YdVFoXrYfUn0FAa7Xvu2qzScnajhMqROT04NkkkrHNFJBDpe7lsMIWzjuoO",
+    "Tag(base64)": "aNugLro/th6NR+KXVbDvtQ==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "/B2fgfIfieREMmIeY1Ysa01HpBXTxQX6FuElE01nZys="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.909034",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "c372d365088d96c4ec190ce9c0f7024bf2f2228fb8f07924fc7bed096c9f54f7",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:40.909789",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='kKpJoWYJA+7GSCn7' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:40.910285",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='kKpJoWYJA+7GSCn7', salt(b64)='xBUXkqDoboV+4ln9ziMAPA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:41.517947",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "xBUXkqDoboV+4ln9ziMAPA==",
+      "ephemeral_password": "kKpJoWYJA+7GSCn7"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk=",
+      "derived_key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:41.518674",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "t/yr/zLUTF1WfCRR",
+    "Ciphertext(base64)": "T3rBziuNlFglCyEmyVxjmOt9Tmw6ukqGXvhidTxdlfxV/3/CcLzNEjV/BVjngSmGR9LB9UJ47lGry6QTyTxG0urLxByb3/1tKQXvA9+PKBzKNluk7NWBJxFZmf2M8tgyI3NywXPEw/HzJhe1Uf6FOGCIGMOdo9t7j/cSbWH7dgDyzmACtiJoNjFvXywl3MjefA==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "qBIaROSM12JEScp6xUEsHCoqp88tcfamNryavfSKlFk="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:41.617187",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "68883c2a9f70c252774d4570dc99bd99a00414b918125543e2b4c634f2d9fcfa",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:41.617883",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='lUbEyk7gINo1S/Oh' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:41.618320",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='lUbEyk7gINo1S/Oh', salt(b64)='z9/KVze3hGkO24mCIE2jtA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:42.230396",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "z9/KVze3hGkO24mCIE2jtA==",
+      "ephemeral_password": "lUbEyk7gINo1S/Oh"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8=",
+      "derived_key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:42.231140",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "Xzq/d2KSZ97x6BbK",
+    "Ciphertext(base64)": "HYNWubZQI1O1yQmWDwLEPY+Bw6ao33xclUXuGsK6sb4gsfWEWnf/qTpU1KwU904/b4m4ALRjZnFcQ4Jl/ib5aQZ9nvZ/kU/lPQyf1xlnUAOTi/l5ql7zWnOZ38zuk22hiYh/oIxUtDNfRt1ts4pEis76aJ7t0xP2SsDQhVkXuAjI",
+    "Tag(base64)": "5Mx5dYz0ZyQdRWVwNA2ZfA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "gtTyTeTNwXXr/7VZkzda2RkUkuW9wQogvJXh7ps2lQ8="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:42.327934",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "479be59956f96d13ddf318b97ca2dca56fa78f42d23a8e80ae605ea0e4ed248b",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:42.328604",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='zldQv5+3l0K6ILPg' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:42.329094",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='zldQv5+3l0K6ILPg', salt(b64)='H7OOa67gZiKMIcHpuVYGlg=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:42.974213",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "H7OOa67gZiKMIcHpuVYGlg==",
+      "ephemeral_password": "zldQv5+3l0K6ILPg"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw=",
+      "derived_key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:42.975029",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "cL8AJVIQY+pPWLJM",
+    "Ciphertext(base64)": "mHJbRdt9/zYBcjXbL6Gwv6t6wFudKYLJMCxL+SxSlbm+e0Zoth5vPfvwDw+UzkpfNzbhjcBZZLwxiJtEZBZ1dpfHwkwPnc83tj5da1lj4+335ht8cZv2aPPzKZdPU1oJe0Q1vaV1nz9AUa63jd1pX98xwiyU8rrJIifF510hVTIzD5NuiAtSE6bAvjlSZL1wuw==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "I1u6iBGhC2J/MTRmkvajP6BpyCj20kEPec3BEVc4+Qw="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:43.074342",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "87365555b8ff0d010dc0628525329efa29fd07d93536e40b5b06cbbfc8b2652b",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:43.075037",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='PRcWh2Q6N5pxlDfY' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:43.075537",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='PRcWh2Q6N5pxlDfY', salt(b64)='Fws6Id1d0v7426S1Dp4w6Q=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:43.679822",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Fws6Id1d0v7426S1Dp4w6Q==",
+      "ephemeral_password": "PRcWh2Q6N5pxlDfY"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI=",
+      "derived_key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:43.680598",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "ULvTTkCtJGeO07AC",
+    "Ciphertext(base64)": "SZEOCzXE23gPaVz5WOKPprN61XK/Za0ZF0pNMtbqzvBMAbIXL5o0vOmvyQK9hOzvP0wxPloR93Q2fwMTzss2CuMQi3vz5iJhZn5SUgGPL7qm/xF3EAr9onxutZ4kTRnHqH0/QKvgAkvc8j+kVIdDESYuxqJc9MuuoPTrQiCVw2ZWCyLKwqRMjFyc3IPR1VFI4A==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "uksA4dqWjeEPZQEliR4v/gqdGG7EUkCP27ZVuoX6CvI="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:43.777865",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "a663ab5b46d0167d5e3fcc54b8bcb18d62b39fb7e7b93f34c52504a1e9956c8c",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:43.778531",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='2W1UiIbFfrTtulsy' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:43.778982",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='2W1UiIbFfrTtulsy', salt(b64)='c5uQH4Xgxs+hFNFr+SPGCQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:44.394827",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "c5uQH4Xgxs+hFNFr+SPGCQ==",
+      "ephemeral_password": "2W1UiIbFfrTtulsy"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4=",
+      "derived_key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:44.395616",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "B3N8vaBwoJWyNlda",
+    "Ciphertext(base64)": "98GKuARa2r8NxTPq0ljL333xk3ZnYn83lYAYWI1zI6ln+up2YuNQKUU8HaTS3P2vvwRGKIys0Rzo1ufBCtdCsYOqm9dAnHPyyQOhFHBVJGauB7EFoF+uklo5HrDsa+j+S7QuVofBgteEJ+/3PGAvXYVZ0Di43T0q3JUjNckzk5Cj",
+    "Tag(base64)": "sa/r3mwh6mnr86/GRq0l+w==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "n9LldSP45Ion8tlFOq39ecBsFSsC8wLAxBVbEF9RUD4="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:44.492145",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "31df90a1c373e3e07fbe99c4c61430ad60e61b1880e2e861aa5c6b72be97cd77",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:44.492949",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='+Sv4aJZCu63HcT7z' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:44.493494",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='+Sv4aJZCu63HcT7z', salt(b64)='qgIy1f6d/C9KVApbTG3HJw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:45.137938",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "qgIy1f6d/C9KVApbTG3HJw==",
+      "ephemeral_password": "+Sv4aJZCu63HcT7z"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM=",
+      "derived_key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.138639",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "ggL1Xp7dVfaMsN2h",
+    "Ciphertext(base64)": "pKRTBj0eao6cAM9Ss0pJ0urEwZsk2GZRSqhk07yXT044XOPMZJqDP33fQ4s7loU4rDR5tnLEz0LfT9LcpjgXTaluuyWt7m1qm5K1sWZaUh2TGR8s2mMVQiwFlhUMse4x9P3eRodYG22BvTlmkt/xhaA0Cr5gkzGIxLfAB7JD/TAk",
+    "Tag(base64)": "Wf/9GU8sxySEHUqutW9CVA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "CiSn7/0bQQKpfrU4ZLgPWuH1rQWgGLN6mKkQGJb2dOM="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.236615",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "7d10579a6d1f8d3a33ab28abf7ab7e08f0cecb1643631e6dcd3a6ff849e547bf",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.237375",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='Fqhru1Q4gWU2aeT6' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:45.237806",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='Fqhru1Q4gWU2aeT6', salt(b64)='rPIY/O/zYbs6iRuHFMirqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:45.876940",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "rPIY/O/zYbs6iRuHFMirqA==",
+      "ephemeral_password": "Fqhru1Q4gWU2aeT6"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs=",
+      "derived_key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.877665",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "irbNB8E4VZN0teS4",
+    "Ciphertext(base64)": "qirvjb3uJJ2x9fyp8oohf0Ru1BHj6e93JY4iBMYyGKf+sG6K9J/GQt1OukVhMnUEb14nppXZONBbu2BwbFIhDfowsdpLcEgKdYBdJjpYlnIbKXB3vvBUNBOSI3PX7aleCyLnMakkkf9XLxLyQiySgMuZenBRMk0fnEaeLPLMSUW72BvslyhCQ0Jwnxk5s8kRuw==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "TlmjwKboElYF95k5suNTlnAt7MHI1bxMHI7yg0hc0Rs="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.975813",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "d92f9320fcef1abb355ba95961bfab3b5f39c031ecae7479eb0d26db267c65ce",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:45.976577",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='ZerzODcno7Ni16PP' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:45.977076",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='ZerzODcno7Ni16PP', salt(b64)='5p5s4V5WodKpmogyzA1cCw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:46.595135",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "5p5s4V5WodKpmogyzA1cCw==",
+      "ephemeral_password": "ZerzODcno7Ni16PP"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo=",
+      "derived_key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:46.595940",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "m1LyAo6h13Z4iKT0",
+    "Ciphertext(base64)": "8PLQXt6AsjdnoG9/z/Prp2A3hmVwdUgO10W67buURUTzvrutu/E10xeZctqZL7q63i36KpZoictfqznIp4ASrZQ7YtIZInjN5Rl2+G/sxHa+Q3i3VbS+rSO7nAOmVBtIZXGSCIs+apnq6ZSKnvdE2V9SJbMvLE6qVsJYwZrxVW/D",
+    "Tag(base64)": "la4vbyjq1AiqNDnmXhJPAg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "nNHc22113usCqawLU+zY6d1kqJcovlLewVX+Jgu7amo="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:46.693590",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "957b348dea20a8fd4156a1c37f07eb856bec6cd9ec2a840e784184b36c97e76d",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:46.694316",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='5hWVqdU+ctAjETWE' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:46.694762",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='5hWVqdU+ctAjETWE', salt(b64)='xSHN+HuGf+MbievpxvXCqA=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:47.257000",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "xSHN+HuGf+MbievpxvXCqA==",
+      "ephemeral_password": "5hWVqdU+ctAjETWE"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus=",
+      "derived_key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:47.257856",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "z9oX7eEGFXJGAEK7",
+    "Ciphertext(base64)": "00GPcy5iUznWzJzUpvZfIdUgYz+w6ehvZQIB1i08C6goPJxXZeoa73xvGoNq4ezftvitqd1lAH6tWXzuvElQhKtYE6B6uyShFWAONoS1v5A4osuaNYiTe0B5H3pJYFVa0o58baTEEPjTQJKi9gENCRQmmBIYQDw6h2T3d5vhK3kuegj6R78agwqs1FbB1e0DqA==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "QfiduZsJGb+/B7O2nijPJfo8gb2Qilidcnq6JTEwCus="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:47.356627",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "558ec8570520e6929accc84203dc0aba7a4a4b25d1d92d3237d1e98d7687db1f",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:47.357405",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='f9CvrPw0joxBBek9' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:47.357878",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='f9CvrPw0joxBBek9', salt(b64)='Kh28mrjKv8NB75Q0bXH6Jw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:47.976528",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "Kh28mrjKv8NB75Q0bXH6Jw==",
+      "ephemeral_password": "f9CvrPw0joxBBek9"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU=",
+      "derived_key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:47.977205",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "8Zg4Z9Q/rpg3qlJP",
+    "Ciphertext(base64)": "6wVz920WmG6W9HtagfRnX3/WrLRPVf0ZiW66sGYAgCssWJBwnozs+guaBOUTDVlaAc3bDqjLZdeNfEMvlJ1GdH++/U6Ii8wFRnJymyGvcA9+Q59C//Q1JmZe/EeBktwkG4DKTOt9gxBTy06c31uotuS0CpW0O6c7RrF73GGcOgtM",
+    "Tag(base64)": "tJgDuWuG6RzJ2IEsNKeqRg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "q5XuRdM9CH68x/uhh06f7WKRcEQx/WrMTPmMtv0UtGU="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:48.081720",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "4c893259d934ca90ea791824f60cb2cd5e1a98618e8801d7bc714c6dbf2c362a",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:48.082516",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='7z+btO7gDyigMNeH' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:48.082979",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='7z+btO7gDyigMNeH', salt(b64)='M1YT6UoFu5RcPUb0Q3Ox0w=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:48.695043",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "M1YT6UoFu5RcPUb0Q3Ox0w==",
+      "ephemeral_password": "7z+btO7gDyigMNeH"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ=",
+      "derived_key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:48.695836",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "Te5r3eVc6wLBRTLf",
+    "Ciphertext(base64)": "nKctfg+tl64q7rB3NFmuaVMLcd9W8on0XQ14aNCs+uadkHpxnG+Xzkjhmkmb9xJMKvUlKMinNZj8E5CKp2q7x8CH82NvsqTblgNqsMpdQsExmeZJoqgkYbScRxxyVnecYROZeAvToqOFw+EyWEBomT6HOszmokySVgfzCEwkKt5x/Z4hrmaIPXLOZn7WpOTemw==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "43AV42dj5ak1xhfZOt0efSO/6idoHw17WEuiiDHnIiQ="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:48.801997",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "184506c6d7b87631bbf4b6f7f3f7f767a08408aaedb42bf44a2302f9eabb88d7",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:48.802747",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='8lZXhReE5MoZKDLB' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:48.803275",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='8lZXhReE5MoZKDLB', salt(b64)='j7clnFRxKldLvCIAhJ0FNw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:49.383683",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "j7clnFRxKldLvCIAhJ0FNw==",
+      "ephemeral_password": "8lZXhReE5MoZKDLB"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck=",
+      "derived_key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:49.384574",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1rvIknN/Z1glECsj",
+    "Ciphertext(base64)": "mVDptNxpt3mu47FmSZ/HUAshAbm6pUe+Q171kJFtjjtZYSpcuo8HLZNM8sGJPkG/4EPG3c6X1PGv6qXVWmdE74KyTc4AaYGf84vxhGrPUTkSgCXS7GknqjnwkTAnBKo/a2m/c+v+Lq9oVtVSJuAtAx73MyJeiEakDgRLdJb0d0sDAbC0YWAmzvxyKSOmszRTEQ==",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "xp5B2Ts8LJehZN4tSccxHz0USyOhpzXykTgrk8DWrck="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:49.483537",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "c63b0ee0babd9ff7e45fe897e09f03d223c1c8f4bf1f77a955c5045e262b9f06",
+    "algorithm": "chacha20poly1305"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:49.484320",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using ephemeral password='A6pycr0pTSWmqjkd' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:49.484843",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='A6pycr0pTSWmqjkd', salt(b64)='V3fsYG4EnJaBd/g/ZMFWiQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:50.127657",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "V3fsYG4EnJaBd/g/ZMFWiQ==",
+      "ephemeral_password": "A6pycr0pTSWmqjkd"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": true,
+      "key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY=",
+      "derived_key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.128345",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "w9Td5NDiv4macfzj",
+    "Ciphertext(base64)": "mISxsdxU3E4o0bfFdrFfsa+k4c2lpLKgYI2qzbynJowPWvlJ85rZgzKw4T7USDgMFrPbjePFADpLgGo2m+EEpJUUowgC+QaGLzEDmq0ZKO3W+SUP0LqUWGhXdeOSrTjK4L9KJb0OTze5FJ+kmacPWxidV9vLEh2XLByvRgiqo/ow",
+    "Tag(base64)": "0t5LIrHmcw6C90vF7f2SWw==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Lr/pS0H9EkTFL3PwXox3k+OL4cuJz4yH43SPn43YSJY="
+    }
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.225762",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo path decrypted share.",
+  "details": {
+    "share_sha3_256_hex": "65a78385017f26eb52e6354356c9270cd1d1ecdf0b8a7a067c2e535c95e5389b",
+    "algorithm": "aes256gcm"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.227245",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_combine() via node-bridge",
+  "details": {
+    "num_shares": 14,
+    "share_len": 129
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.291585",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "sss_combine() complete.",
+  "details": {
+    "reconstructed_len": 4,
+    "reconstructed_sha3_256": "f187aff622503806999045f34d549ab857dbefdedc58e50528b01b086d14112e"
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.292501",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo combine succeeded.",
+  "details": {
+    "combined_len": 4
+  }
+}
+{
+  "timestamp": "2025-08-31T09:53:50.293140",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Demo final base64 decode OK.",
+  "details": {
+    "final_secret_len": 3
+  }
+}
+{
+  "manual_decryption_guide": [
+    "-------------------- MANUAL DECRYPTION GUIDE --------------------",
+    "1. Identify correct standard & critical picks and gather ephemeral-encrypted partials.",
+    "2. Decrypt each 95% chunk and 5% chunk (or single 100% chunk). Combine => full share.",
+    "3. Provide enough real shares to sss_combine() => base64-decode final secret.",
+    "-----------------------------------------------------------------"
+  ]
+}
+{
+  "timestamp": "2025-08-31T09:53:50.294074",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Done with main program.",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:50.391003",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Using user-provided password='SECQ_estimate' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:50.391715",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 189
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SECQ_estimate', salt(b64)='SC/pPlUNG9ugJEeZEjGGjw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-08-31T09:53:51.010523",
+  "run_id": "e6a8822d-a4b3-4f29-8b6a-91a098ddff76",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 218
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "SC/pPlUNG9ugJEeZEjGGjw==",
+      "ephemeral_password": "<not ephemeral>"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": false,
+      "key_b64": "ThXrD3VqH7BoT2qETtwNUKvbZVkTZmER7i2GPsO8+Kw=",
+      "derived_key_b64": "ThXrD3VqH7BoT2qETtwNUKvbZVkTZmER7i2GPsO8+Kw=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 32768,
+        "parallelism": 8,
+        "key_length": 32
+      }
+    }
+  }
+}

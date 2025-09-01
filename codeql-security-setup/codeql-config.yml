@@ -1,0 +1,22 @@
+name: "CodeQL Config"
+
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+  - uses: ./codeql-security-setup/.github/codeql/custom-queries/javascript.qls
+  
+paths-ignore:
+  - '**/node_modules/**'
+  - '**/dist/**'
+  - '**/test/**'
+  - '**/*.test.js'
+  - '**/*.test.ts'
+  
+query-filters:
+  - exclude:
+      id: js/insufficient-password-hash
+  - exclude:
+      id: js/insecure-randomness
+      
+paths:
+  - src
