@@ -72,4 +72,8 @@ $RECYCLE.BIN/
 *.env
 
 # --- Site/docs output (e.g., MkDocs)
-site/
+site/# --- Vendored JS (ignored by default; commit only if you truly need to track it)
+bridge/vendor/
+
+# --- Local inventory listings (ignore all such files)
+paths files*.txt
