@@ -1,0 +1,270 @@
+--- a/src/modules/__init__.py
++++ b/src/modules/__init__.py
+@@ -34,7 +34,6 @@
+     "debug_utils",
+     "input_utils",
+     "log_processor",
+-    "security_utils",
+-    "split_utils",
+-    "sss_bridge", # Use the new SSS bridge
+-    "ui_utils"
++    "security_utils", "split_utils",
++    "sss_bridge",  # Use the new SSS bridge
++    "ui_utils", "recovery_policy"
+ ]
+
+--- a/src/modules/decoy_input.py
++++ /dev/null
+@@ -1,38 +0,0 @@
+-#!/usr/bin/env python3
+-# src/policy/decoy_input.py
+-
+-from __future__ import annotations
+-from typing import List
+-
+-def prompt_decoy_count() -> int:
+-    print("\nHow many decoy secrets do you want to configure? (1..1000)")
+-    while True:
+-        raw = input("Decoy count: ").strip()
+-        try:
+-            n = int(raw)
+-            if 1 <= n <= 1000:
+-                return n
+-        except Exception:
+-            pass
+-        print("Invalid. Enter an integer between 1 and 1000.")
+-
+-def prompt_decoy_values(n: int) -> List[str]:
+-    decoys: List[str] = []
+-    seen_norm = set()
+-    print("\nEnter each decoy (must be non-blank and unique).")
+-    for i in range(1, n+1):
+-        while True:
+-            s = input(f"Decoy #{i}: ").strip()
+-            if not s:
+-                print("Decoy cannot be blank.")
+-                continue
+-            key = " ".join(s.split()).lower()
+-            if key in seen_norm:
+-                print("Duplicate decoy. Enter a unique value.")
+-                continue
+-            seen_norm.add(key)
+-            decoys.append(s)
+-            break
+-    return decoys
+-
+
+--- a/src/main.py
++++ b/src/main.py
+@@ -107,6 +107,7 @@
+ )
+ from modules.split_utils import split_secret_and_dummy
+ from modules.sss_bridge import sss_split, sss_combine
++from modules.recovery_policy import decide_output, _fingerprint_to_bytes
+ 
+ # === AEAD backends via runtime detection ======================================
+ # Import CipherForge as a module for feature detection (keeps backward-compat).
+@@ -522,7 +523,7 @@
+     return _sha3_hex(block)
+ 
+ def _alt_hash_for_kit(alt_text: str) -> str:
+-    return _sha3_hex(_norm_for_kit(alt_text))
++    return _sha3_hex(_normalize_for_comparison(alt_text))
+ 
+ def _aad_bytes(q_hash: str, alt_hash: str, algorithm: str, version: int = KIT_VERSION) -> bytes:
+     return f"{q_hash}|{alt_hash}|{algorithm}|{version}".encode("utf-8")
+@@ -796,8 +797,11 @@
+             if confirm == 'y':
+                 print("(All alternatives marked as correct)")
+                 return alternatives[:]
+-            else:
+-                print("Selection cancelled. Please select explicitly.")
+-                continue
++            print("Selection cancelled. Please select explicitly.")
++            continue
++
+         tokens = [t.strip() for chunk in raw.replace(",", " ").split() for t in [chunk] if t.strip()]
+         if not tokens:
+             print("Please provide a valid selection.")
+@@ -829,9 +833,6 @@
+         if c in ("j", "c"):
+             return c
+         print("Invalid choice.")
+-
+-# -------------- DECOYS + recovery kit (passwordless; AAD; AUTH-CATALOG) ------
+-def _prompt_decoy_count() -> int:
+-    return get_valid_int("How many decoy secrets? (1-1000): ", 1, 1000)
+ 
+ def _prompt_decoy_secrets(count: int, real_secret: str) -> list[str]:
+     decoys = []
+@@ -849,6 +850,9 @@
+ 
+         decoys.append(s); i += 1
+     return decoys
++
++def _prompt_decoy_count() -> int:
++    return get_valid_int("How many decoy secrets do you want to configure? (1-1000): ", 1, 1000)
+ 
+ def save_questions(questions):
+     """
+@@ -865,7 +869,7 @@
+     dte_real = DTE.encode(real_secret)
+     real_b64 = dte_real["seed_b64"]
+ 
+-    # Decoys
++    # Decoys (Fixes Error 1 & 5)
+     decoy_count = _prompt_decoy_count()
+     decoy_texts = _prompt_decoy_secrets(decoy_count, real_secret)
+     dte_decoys = [DTE.encode(d)["seed_b64"] for d in decoy_texts]
+@@ -957,11 +961,13 @@
+             out["tag"] = enc["tag"]
+         return out
+ 
+-    for global_idx, (q_hash, a_hash, q_text, alt_text, is_corr) in enumerate(all_items):
++    # Use a stable unique ID for each alt to pick AEAD, not its global index
++    for item_idx, (q_hash, a_hash, q_text, alt_text, is_corr) in enumerate(all_items):
+         encrypted_shares.setdefault(q_hash, {})
+         per_alt_block = {}
+ 
+         if is_corr:
+-            if real_idx < len(real_shares_correct):
+-                real_share = bytes(real_shares_correct[real_idx]); real_idx += 1
+-            else:
+-                log_error("Internal error: real_idx overflow",
+-                          details={"real_idx": real_idx, "len": len(real_shares_correct)})
+-                real_share = random_bytes(share_len)
+-        else:
+-            real_share = random_bytes(share_len)
++            real_share = bytes(real_shares_correct[real_idx])
++            real_idx += 1
++        else: # is_incorrect
++            real_share = random_bytes(share_len) # Placeholder bytes for s0 on incorrect paths
+ 
+-        alg_choice = aead_prefs[global_idx % len(aead_prefs)]
++        # Use a hash of the alt content to deterministically pick an AEAD
++        aead_picker_hash = int.from_bytes(hashlib.sha3_256(f"{q_hash}|{a_hash}".encode()).digest(), 'big')
++        alg_choice = aead_prefs[aead_picker_hash % len(aead_prefs)]
+         per_alt_block["s0"] = _enc_one_share(real_share, q_hash, alt_text, alg_choice)
+ 
+         for decoy_i, shares_list in enumerate(decoy_shares_by_idx, start=1):
+-            dec_share = bytes(shares_list[global_idx])
+-            alg_choice_d = aead_prefs[(global_idx + decoy_i) % len(aead_prefs)]
++            dec_share = bytes(shares_list[item_idx])
++            alg_choice_d = aead_prefs[(aead_picker_hash + decoy_i) % len(aead_prefs)]
+             per_alt_block[f"s{decoy_i}"] = _enc_one_share(dec_share, q_hash, alt_text, alg_choice_d)
+ 
+         encrypted_shares[q_hash][a_hash] = per_alt_block
+@@ -1026,16 +1032,18 @@
+ # ---------- Recovery UI Flow from a saved kit (with DTE decode) ---------------
+ def _try_combine_with_sampling(partials: list[bytes], r_thr: int) -> bytes | None:
+     n = len(partials)
+-    if n < r_thr:
+-        return None
++    if n < r_thr: return None
+     if n == r_thr:
+         try:
+             return asyncio.run(sss_combine(partials))
+         except Exception:
+             return None
+-    max_exhaustive = 5000
++
++    # Limit exhaustive search to avoid long hangs on large N
++    max_exhaustive = 5000 # C(n,k)
+     total_combos = math.comb(n, r_thr) if hasattr(math, "comb") else float("inf")
+     if total_combos <= max_exhaustive:
+         for idxs in combinations(range(n), r_thr):
+@@ -1044,8 +1052,6 @@
+             except Exception:
+                 continue
+-    return None
+ 
+     def sample_indices(nv: int, kv: int) -> tuple[int, ...]:
+         s = set()
+@@ -1054,12 +1060,11 @@
+         return tuple(sorted(s))
+ 
+     seen = set()
+-    for _ in range(200):
++    for _ in range(200): # fixed number of random samples
+         idxs = sample_indices(n, r_thr)
+         if idxs in seen: continue
+         seen.add(idxs)
+         try:
+-            return asyncio.run(sss_combine([partials[i] for i in idxs]))
+-        except Exception:
+-            continue
++            return asyncio.run(sss_combine([partials[i] for i in idxs])) # return on first success
++        except Exception: continue
+     return None
+ 
+ def run_recovery_kit_flow(kit: dict, kit_path: Path):
+@@ -1106,7 +1111,7 @@
+     for i, q in enumerate(questions, 1):
+         text = q.get("text", "")
+         alts = list(q.get("alternatives", []))
+-        picks = curses.wrapper(lambda st: arrow_select_no_toggle(st, i, text, alts, pre_selected=None))
++        picks = curses.wrapper(lambda st: arrow_select_no_toggle(st, i, text, alts, pre_selected=[])) # Fix Error 2
+         chosen.append({"q": q, "picks": picks})
+         log_debug("Recovery UI picks for question.", level="INFO", component="GENERAL",
+                   details={"q_id": q.get("id"), "q_text": text, "picked": picks})
+@@ -1141,11 +1146,12 @@
+     secret_variant_used = "REAL"
+ 
+     # If real fails, deterministically reconstruct a decoy. (Fix Error 7)
+-    if combined_bytes is None:
++    if combined_bytes is None and secrets_count > 1:
+         idx = _decoy_pick_index([(qh, ah) for (qh, ah, _, _) in selected_pairs], max(0, secrets_count - 1))
+-        decoy_index = max(1, idx)
++        # decoy index in file is s1, s2...
++        decoy_index = idx + 1
+         secret_variant_used = f"DECOY_{decoy_index}"
+-        log_debug(f"Real reconstruction failed or insufficient shares. Falling back to {secret_variant_used}.", level="INFO")
++        log_debug(f"Real reconstruction failed. Falling back to {secret_variant_used}.", level="INFO")
+ 
+         decoy_partials: list[bytes] = []
+         for (q_hash, a_hash, q_text, alt_text) in selected_pairs:
+@@ -1158,11 +1164,12 @@
+                                            qid=None, qtext=q_text, alt_text=alt_text)
+             if sb is not None:
+                 decoy_partials.append(sb)
+-        combined_bytes = _try_combine_with_sampling(decoy_partials, 1)
++        # Decoy 1 (index 0) has threshold 1, others mirror real
++        decoy_thr = 1 if decoy_index == 1 else r_thr
++        combined_bytes = _try_combine_with_sampling(decoy_partials, decoy_thr)
+ 
+     if combined_bytes is None:
+-        log_error("FATAL: Both real and decoy reconstruction failed. This may indicate a kit corruption.",
+-                  details={"variant_tried": secret_variant_used})
++        log_error("FATAL: Both real and decoy reconstruction failed.", details={"variant_tried": secret_variant_used})
+         print("\nAn unexpected error occurred during reconstruction. Unable to recover a secret.")
+         return
+ 
+@@ -1170,7 +1177,7 @@
+         recovered_b64 = combined_bytes.decode("utf-8")
+         # DTE decode (seed -> plausible secret); auth is over seed bytes
+         final_secret_seed_bytes = base64.b64decode(recovered_b64.encode("utf-8"), validate=True)
+-        # Auth against catalog (constant-time)
++        # Auth against catalog
+         matched = False
+         for entry in auth_catalog:
+             try:
+@@ -1182,7 +1189,7 @@
+                 if consttime_equal(calc, expected):
+                     matched = True
+             except Exception:
+-                continue
++                pass # Ignore malformed entries
+ 
+         # Produce final secret text via DTE
+         final_secret_text = DTE.decode(recovered_b64)
+@@ -1193,8 +1200,7 @@
+         log_debug("Final secret reconstructed.", level="INFO", component="CRYPTO",
+                   details={"final_secret_len": len(final_secret_text), "variant": secret_variant_used, "auth_ok": matched})
+     except Exception as e:
+-        log_exception(e, "Final base64/utf-8 decode or auth failed.")
+-        print("\nShares combined, but final decode or authentication failed.\n")
++        log_exception(e, "Final base64/utf-8 decode or auth failed. Outputting raw combined bytes for manual recovery.")
++        print(f"\nShares combined, but final decode failed. Raw b64: {reconstructed_real_b64}\n")
+ 
+     append_recovery_guide()
+     log_debug("Recovery Mode complete.", level="INFO")

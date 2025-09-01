@@ -1,0 +1,30 @@
+# PS C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain>
+Write-Host "Running Core Crypto Regression Tests..."
+
+# Test 1: Argon2id Derivation
+try {
+    $key = python -c "from src.modules.crypto_bridge import argon2id; print(argon2id(b'password', b'saltsaltsaltsalt', m_cost=8192, t=1, p=1, dk_len=32).hex())"
+    if ($key.Length -eq 64) {
+        Write-Host "[PASS] Argon2id derivation successful."
+    } else {
+        Write-Host "[FAIL] Argon2id derivation returned unexpected length."
+    }
+} catch {
+    Write-Host "[FAIL] Argon2id derivation failed: $_"
+}
+
+# Test 2: AES-GCM Encrypt/Decrypt
+try {
+    $pt = "the quick brown fox"
+    $ct_b64 = python -c "from src.modules.crypto_bridge import aes_gcm_encrypt; print(aes_gcm_encrypt(b'0123456789abcdef0123456789abcdef', b'12bytesnonce', b'$($pt)').hex())"
+    $decrypted = python -c "from src.modules.crypto_bridge import aes_gcm_decrypt; print(aes_gcm_decrypt(b'0123456789abcdef0123456789abcdef', b'12bytesnonce', bytes.fromhex('$($ct_b64)')).decode())"
+    if ($decrypted -eq $pt) {
+        Write-Host "[PASS] AES-GCM roundtrip successful."
+    } else {
+        Write-Host "[FAIL] AES-GCM roundtrip failed. Decrypted: $decrypted"
+    }
+} catch {
+    Write-Host "[FAIL] AES-GCM roundtrip failed: $_"
+}
+
+Write-Host "Regression Tests Complete."
