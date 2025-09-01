@@ -1,0 +1,22 @@
+# Text files: normalize to LF in repo
+* text=auto
+
+# Windows-friendly line endings on checkout for common text
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Unix-style scripts remain LF (avoid breaking shebangs)
+*.sh  text eol=lf
+*.py  text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md  text eol=lf
+*.json text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
