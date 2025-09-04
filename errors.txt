@@ -1,0 +1,112 @@
+[2025-09-04 05:14:52] BUILD FAIL
+Command: python -m zipapp . -o C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz -m src.main:main -p /usr/bin/env python3 -c --exclude __pycache__ --exclude *.pyc --exclude .git* --exclude .venv* --exclude build --exclude dist --exclude node_modules --exclude *.log --exclude *.ipynb_checkpoints*
+ExitCode: 2
+Output:
+usage: zipapp.py [-h] [--output OUTPUT] [--python PYTHON] [--main MAIN]                  [--compress] [--info]                  source zipapp.py: error: unrecognized arguments: --exclude __pycache__ --exclude *.pyc --exclude .git* --exclude .venv* --exclude build --exclude dist --exclude node_modules --exclude *.log --exclude *.ipynb_checkpoints*
+
+[2025-09-04 05:15:08] BUILD FAIL
+Command: py -3 -m zipapp . -o C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz -m src.main:main -p /usr/bin/env python3 -c --exclude __pycache__ --exclude *.pyc --exclude .git* --exclude .venv* --exclude build --exclude dist --exclude node_modules --exclude *.log --exclude *.ipynb_checkpoints*
+ExitCode: 2
+Output:
+usage: zipapp.py [-h] [--output OUTPUT] [--python PYTHON] [--main MAIN]                  [--compress] [--info]                  source zipapp.py: error: unrecognized arguments: --exclude __pycache__ --exclude *.pyc --exclude .git* --exclude .venv* --exclude build --exclude dist --exclude node_modules --exclude *.log --exclude *.ipynb_checkpoints*
+
+
+=== RUN [2025-09-04 05:16:15] ===
+Application exited with code 1
+Traceback (most recent call last):   File "<frozen runpy>", line 198, in _run_module_as_main   File "<frozen runpy>", line 88, in _run_code   File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\__main__.py", line 2, in <module>   File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\src\main.py", line 71, in <module> ModuleNotFoundError: No module named 'modules'
+
+
+=== TRAP [2025-09-04 05:16:15] ===
+Unhandled error
+Run failed with exit code 1 (details logged if errors.txt was writable).
+
+---- ERR BLOCK ----
+[2025-09-04T05:17:06.7680089+02:00] Stage: RUN
+Command: C:\Users\deskt\.pyenv\pyenv-win\shims\python.bat "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz"
+Details:
+
+-------------------
+---- ERR BLOCK ----
+[2025-09-04T05:17:15.1551752+02:00] Stage: RUN
+Command: C:\Users\deskt\.pyenv\pyenv-win\shims\python.bat "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz"
+Details:
+
+-------------------
+
+===== AnswerChain zipapp Preflight Failure @ 2025-09-04 05:20:28 =====
+Command: C:\Windows\py.exe -c "import sys,importlib,zipapp,inspect; sys.path.insert(0, r'C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain'); m=importlib.import_module('src.main'); ok=hasattr(m,'main') and callable(m.main); print('HAS_MAIN='+str(ok)); sys.exit(0 if ok else 12)"
+---- Error Output Start ----
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys,importlib,zipapp,inspect; sys.path.insert(0, r'C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain'); m=importlib.import_module('src.main'); ok=hasattr(m,'main') and callable(m.main); print('HAS_MAIN='+str(ok)); sys.exit(0 if ok else 12)
+                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\src\main.py", line 71, in <module>
+    from modules.crypto_bridge import (
+    ...<4 lines>...
+    )
+ModuleNotFoundError: No module named 'modules'
+
+---- Error Output End ----
+
+===== AnswerChain zipapp Runtime Error @ 2025-09-04 05:20:45 =====
+Command: C:\Windows\py.exe "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz"
+---- Error Output Start ----
+Traceback (most recent call last):
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 722, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\tools\\AnswerChain.pyz\\logs\\debug_logs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 722, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\tools\\AnswerChain.pyz\\logs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\__main__.py", line 2, in <module>
+    import main
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\main.py", line 79, in <module>
+    from modules.debug_utils import (
+    ...<5 lines>...
+    )
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\modules\debug_utils.py", line 49, in <module>
+    DEBUG_COLLECTION_DIR.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 726, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 726, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deskt\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 722, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\tools\\AnswerChain.pyz'
+
+---- Error Output End ----
+==== 2025-09-04 05:21:52 [runtime] ====
+Command: python3 "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz"
+Error (first 2000 chars):
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\__main__.py", line 2, in <module>
+  File "C:\Users\deskt\Desktop\Project_SECQ_CLI\AnswerChain\tools\AnswerChain.pyz\src\main.py", line 71, in <module>
+ModuleNotFoundError: No module named 'modules'
+ExitCode=1
