@@ -44,11 +44,22 @@ import traceback
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.resolve()
+
+# Determine if running from a zipapp (.pyz) and set log dir accordingly
+import sys
+if getattr(sys, 'frozen', False) or (hasattr(sys, 'argv') and sys.argv[0].endswith('.pyz')):
+    # Running from a .pyz: use user home directory for logs
+    BASE_DIR = Path.home() / "AnswerChain_logs"
+else:
+    BASE_DIR = Path(__file__).parent.parent.resolve()
 DEBUG_COLLECTION_DIR = BASE_DIR / "logs" / "debug_logs"
-DEBUG_COLLECTION_DIR.mkdir(parents=True, exist_ok=True)
+# DEBUG_COLLECTION_DIR.mkdir(parents=True, exist_ok=True)  # Moved to ensure_debug_dir()
 
 RUN_ID = str(uuid.uuid4())
+
+def _ensure_debug_collection_dir():
+    """Ensure debug collection directory exists (lazy creation)"""
+    DEBUG_COLLECTION_DIR.mkdir(parents=True, exist_ok=True)
 
 VERBOSITY_LEVELS = {
     "DEBUG": 10,
@@ -62,6 +73,28 @@ CURRENT_VERBOSITY = VERBOSITY_LEVELS.get(LOG_VERBOSITY, 10)
 
 DEBUG_FILE_JSON = None
 DEBUG_FILE_TXT = None
+
+# Ensure log files are initialized before any logging
+def _ensure_log_files():
+    global DEBUG_FILE_JSON, DEBUG_FILE_TXT
+    if DEBUG_FILE_JSON is None or DEBUG_FILE_TXT is None:
+        _ensure_debug_collection_dir()  # Ensure directory exists
+        c = get_next_log_counter()
+        ts = get_timestamp()
+        DEBUG_FILE_JSON = DEBUG_COLLECTION_DIR / f"debug_info{c}_{ts}.json"
+        DEBUG_FILE_TXT  = DEBUG_COLLECTION_DIR / f"debug_info{c}_{ts}.txt"
+        # Write initial record
+        start_entry = {
+            "timestamp": datetime.now().isoformat(),
+            "run_id": RUN_ID,
+            "component": "SYSTEM",
+            "level": "INFO",
+            "message": "Start new run (auto-init)",
+            "details": {"event": "Run Initialization (auto)"}
+        }
+        with open(DEBUG_FILE_JSON, "a", encoding="utf-8") as jf, open(DEBUG_FILE_TXT, "a", encoding="utf-8") as tf:
+            jf.write(json.dumps(start_entry, indent=2) + "\n")
+            tf.write(f"[{start_entry['timestamp']}] [INFO] [SYSTEM] Start new run (run_id={RUN_ID})\n")
 log_lock = threading.Lock()
 
 
@@ -69,6 +102,7 @@ def get_next_log_counter() -> int:
     """
     Find next incremental integer for debug file naming.
     """
+    _ensure_debug_collection_dir()  # Ensure directory exists
     counter = 1
     for file in DEBUG_COLLECTION_DIR.iterdir():
         if file.is_file() and file.name.startswith("debug_info") and file.name.endswith(".json"):
@@ -91,6 +125,7 @@ def archive_all_existing_logs():
     """
     Move all existing debug_info .json and .txt logs from debug_logs/ into debug_logs/archive/.
     """
+    _ensure_debug_collection_dir()  # Ensure directory exists
     arch = DEBUG_COLLECTION_DIR / "archive"
     arch.mkdir(exist_ok=True)
     
@@ -107,6 +142,9 @@ def ensure_debug_dir():
       2) Create brand-new JSON/TXT debug log files for this run
     """
     global DEBUG_FILE_JSON, DEBUG_FILE_TXT
+
+    # Ensure directory exists first
+    _ensure_debug_collection_dir()
 
     # 1) Archive *all* existing logs so only new logs remain
     archive_all_existing_logs()
@@ -136,11 +174,13 @@ def ensure_debug_dir():
 
 
 def _write_log_json(entry: dict):
+    _ensure_log_files()
     with open(DEBUG_FILE_JSON, "a", encoding="utf-8") as jf:
         jf.write(json.dumps(entry, indent=2) + "\n")
 
 
 def _write_log_txt(entry: dict):
+    _ensure_log_files()
     timestamp = entry.get("timestamp", "N/A")
     lvl = entry.get("level", "N/A")
     comp = entry.get("component", "N/A")
@@ -154,7 +194,6 @@ def _write_log_txt(entry: dict):
     if "event" in details:
         ev = f" (event={details['event']})"
     line_txt = f"[{timestamp}] [{lvl}] [{comp}] {file_}:{func_}:{line_}{ev} - {msg}\n"
-
     with open(DEBUG_FILE_TXT, "a", encoding="utf-8") as tf:
         tf.write(line_txt)
 

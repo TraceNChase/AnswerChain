@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # sss_bridge.py — async adapter that keeps your 2-byte length + pad semantics
 # and delegates Shamir math to the audited Node CLI.
-
 from __future__ import annotations
 import asyncio, json, base64
 from pathlib import Path
@@ -17,16 +16,24 @@ def pack_len(n: int) -> bytes:
 def unpack_len(b: bytes) -> int:
     return int.from_bytes(b, "big")
 
-# Compute filesystem locations relative to this file
-SRC_DIR = Path(__file__).resolve().parents[1]      # ...\SECQ_CLI\SECQ_CLI\src
-ROOT_DIR = SRC_DIR.parent                           # ...\SECQ_CLI\SECQ_CLI
-BRIDGE_JS = ROOT_DIR / "bridge" / "sss-bridge.js"   # our Node CLI
+# Compute filesystem locations relative to this file for robustness
+import sys
+if getattr(sys, 'frozen', False) or (hasattr(sys, 'argv') and sys.argv[0].endswith('.pyz')):
+    # Running from .pyz: bridge is next to the .pyz file
+    ROOT_DIR = Path(sys.argv[0]).parent
+else:
+    # Normal mode: compute relative paths
+    MODULE_DIR = Path(__file__).resolve().parent
+    SRC_DIR = MODULE_DIR.parent
+    ROOT_DIR = SRC_DIR.parent
+# **UPDATED** to point to the .cjs file for CommonJS compatibility
+BRIDGE_CJS = ROOT_DIR / "bridge" / "sss-bridge.cjs"
 
 def _assert_bridge_exists() -> None:
-    if not BRIDGE_JS.exists():
+    if not BRIDGE_CJS.exists():
         raise FileNotFoundError(
-            f"Node bridge not found at '{BRIDGE_JS}'. "
-            "Expected layout: <repo_root>\\bridge\\sss-bridge.js"
+            f"Node bridge not found at '{BRIDGE_CJS}'. "
+            "Expected layout: <repo_root>\\bridge\\sss-bridge.cjs"
         )
 
 async def _node_call(payload: dict, timeout: float = 15.0) -> dict:
@@ -34,7 +41,7 @@ async def _node_call(payload: dict, timeout: float = 15.0) -> dict:
     _assert_bridge_exists()
     proc = await asyncio.create_subprocess_exec(
         "node",
-        str(BRIDGE_JS),
+        str(BRIDGE_CJS),
         stdin=asyncio.subprocess.PIPE,
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,

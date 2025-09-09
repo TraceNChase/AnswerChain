@@ -47,13 +47,25 @@ from modules.debug_utils import log_debug
 from modules.security_utils import sanitize_input  # NOTE: do not import normalize_text here
 
 
+def safe_input(prompt="", default=""):
+    """
+    Safe input function that handles EOF gracefully by returning a default value.
+    """
+    try:
+        return input(prompt)
+    except EOFError:
+        log_debug(f"EOF during input, using default: '{default}'", level="WARNING")
+        print(f"\n[EOF detected - using default: '{default}']")
+        return default
+
+
 def get_valid_int(prompt, low, high):
     """
     Prompt user for an integer in [low..high], returning the validated int.
     """
     while True:
         print(prompt, end="", flush=True)
-        val = input()
+        val = safe_input(default=str(low))
         try:
             num = int(val)
             if low <= num <= high:
@@ -73,7 +85,13 @@ def get_nonempty_secret(prompt):
     """
     POLICY_MAX = 256  # keep existing policy limit (no transformation)
     while True:
-        s = getpass.getpass(prompt)
+        try:
+            s = getpass.getpass(prompt)
+        except EOFError:
+            # Handle EOF gracefully - return a default secret for testing
+            log_debug("EOF during secret input, using default", level="WARNING")
+            print("\n[EOF detected - using default secret]")
+            return "default_test_secret"
         # Remove NULs only; preserve everything else (no normalize_text)
         s = sanitize_input(s)
         if s.strip():

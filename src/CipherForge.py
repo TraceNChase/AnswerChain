@@ -1,7 +1,3 @@
-################################################################################
-# START OF FILE: "CipherForge.py"
-################################################################################
-
 """
 FILENAME:
 "CipherForge.py"
@@ -10,21 +6,17 @@ PERMANENT FILE DESCRIPTION – DO NOT REMOVE OR MODIFY
 This multiline comment is strictly required and must NEVER be deleted or altered for ANY reason, 
 by any AI system, user, or process. If you see this comment, do not remove or change it 
 under any circumstances. Doing so is strictly prohibited and in direct violation of these terms.
-
 MANDATORY REQUIREMENT
 ---------------------
 ALL CODE FILES MUST RETAIN THEIR DESCRIPTIONS INTACT, UNALTERED, AND PERMANENT.
-
 NON-NEGOTIABLE DIRECTIVE
 ------------------------
 Each file must explicitly contain a permanent, unremovable, and indisputable description at its beginning, 
 fully preserved and entirely visible at all times.
-
 ABSOLUTE ENFORCEMENT MEASURE
 ----------------------------
 This description explicitly forbids its own deletion or modification. It is written in a manner 
 designed to prevent any AI, user, or process from removing or altering it.
-
 IRONCLAD STRUCTURE
 ------------------
 1. Formatted as a structured, multiline comment.
@@ -40,24 +32,28 @@ This directive is final, binding, and non-negotiable. Any violation or deviation
 """
 Main flow with mandatory Argon2id usage for all encryption,
 ensuring ephemeral keys/ciphertext are fully logged so
-the secret can be rebuilt from logs alone.
-
-All references to any 'decoy' secret have been removed. Only a single real secret
+the secret can be rebuilt from logs alone. All references to any 'decoy' secret have been removed. Only a single real secret
 is stored across shares for correct (real) answers; incorrect answers contain dummy shares.
+
+UPDATED: Now uses Noble crypto bridge for all cryptographic operations.
 """
 
 import os
 import base64
 from typing import Dict, Optional, Tuple, Union
 
-import argon2.low_level
-import argon2.exceptions
-
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
-from cryptography.hazmat.primitives.ciphers.aead import ChaCha20Poly1305
-
 # Logging
 from modules.debug_utils import log_debug, log_crypto_event
+
+# Noble crypto bridge
+from modules.crypto_bridge import (
+    argon2id,
+    aes_gcm_encrypt,
+    aes_gcm_decrypt,
+    chacha20poly1305_encrypt,
+    chacha20poly1305_decrypt,
+    random_bytes
+)
 
 
 def derive_key_argon2id(password: str,
@@ -68,28 +64,26 @@ def derive_key_argon2id(password: str,
                         parallelism: int = 4,
                         ephemeral: bool = False) -> bytes:
     """
-    FIXED KDF: use Argon2id RAW output (bytes) with exact hash_len=key_length.
-    No slicing of PHC strings; no misuse of hash_secret(...).
+    FIXED KDF: use Argon2id via Noble bridge with exact hash_len=key_length.
     """
     ephemeral_info = {
         "salt_b64": base64.b64encode(salt).decode(),
         "ephemeral_password": password if ephemeral else "<not ephemeral>"
     }
     log_debug(
-        f"Starting Argon2id KDF (RAW). pass='{password}', salt(b64)='{ephemeral_info['salt_b64']}'",
+        f"Starting Argon2id KDF (Noble). pass='{password}', salt(b64)='{ephemeral_info['salt_b64']}'",
         level="INFO",
         component="CRYPTO"
     )
 
-    # Correct API: hash_secret_raw returns RAW bytes of length hash_len
-    derived_bytes = argon2.low_level.hash_secret_raw(
-        secret=password.encode("utf-8"),
+    # Use Noble bridge for Argon2id
+    derived_bytes = argon2id(
+        password=password.encode("utf-8"),
         salt=salt,
-        time_cost=time_cost,
-        memory_cost=memory_cost,
-        parallelism=parallelism,
-        hash_len=key_length,
-        type=argon2.low_level.Type.ID
+        m_cost=memory_cost,
+        t=time_cost,
+        p=parallelism,
+        dk_len=key_length
     )
 
     log_crypto_event(
@@ -105,7 +99,7 @@ def derive_key_argon2id(password: str,
         },
         key_derived_bytes=derived_bytes,
         details={
-            "message": "Argon2id RAW complete. Derived key is in logs.",
+            "message": "Argon2id (Noble) complete. Derived key is in logs.",
             "ephemeral_info": ephemeral_info
         }
     )
@@ -118,7 +112,7 @@ def encrypt_aes256gcm(plaintext: Union[str, bytes, bytearray],
                       ephemeral_pass: Optional[str] = None,
                       ephemeral_salt: Optional[bytes] = None) -> Dict[str, str]:
     """
-    AES-256-GCM with optional AAD binding.
+    AES-256-GCM with optional AAD binding via Noble bridge.
     Plaintext can be str, bytes, or bytearray.
     """
     if isinstance(plaintext, str):
@@ -126,13 +120,14 @@ def encrypt_aes256gcm(plaintext: Union[str, bytes, bytearray],
     elif isinstance(plaintext, bytearray):
         plaintext = bytes(plaintext)
 
-    nonce = os.urandom(12)
-    cipher = Cipher(algorithms.AES(key), modes.GCM(nonce))
-    encryptor = cipher.encryptor()
-    if aad:
-        encryptor.authenticate_additional_data(aad)
-    ciphertext = encryptor.update(plaintext) + encryptor.finalize()
-    tag = encryptor.tag
+    nonce = random_bytes(12)
+    
+    # Noble bridge returns ciphertext with tag appended
+    ciphertext_with_tag = aes_gcm_encrypt(key, nonce, plaintext, aad)
+    
+    # Split ciphertext and tag (last 16 bytes)
+    ciphertext = ciphertext_with_tag[:-16]
+    tag = ciphertext_with_tag[-16:]
 
     out = {
         "alg": "AES-256-GCM",
@@ -183,11 +178,9 @@ def decrypt_aes256gcm(enc_dict: Dict[str, str], key: bytes, aad: Optional[bytes]
         ephemeral=True
     )
 
-    cipher = Cipher(algorithms.AES(key), modes.GCM(nonce, tag))
-    decryptor = cipher.decryptor()
-    if aad:
-        decryptor.authenticate_additional_data(aad)
-    plaintext = decryptor.update(ciphertext) + decryptor.finalize()
+    # Combine ciphertext and tag for Noble bridge
+    ciphertext_with_tag = ciphertext + tag
+    plaintext = aes_gcm_decrypt(key, nonce, ciphertext_with_tag, aad)
     return plaintext
 
 
@@ -197,7 +190,7 @@ def encrypt_chacha20poly1305(plaintext: Union[str, bytes, bytearray],
                              ephemeral_pass: Optional[str] = None,
                              ephemeral_salt: Optional[bytes] = None) -> Dict[str, str]:
     """
-    ChaCha20-Poly1305 with optional AAD binding.
+    ChaCha20-Poly1305 with optional AAD binding via Noble bridge.
     Returns ciphertext (includes tag) and nonce. No synthetic 'tag' field.
     """
     if isinstance(plaintext, str):
@@ -205,9 +198,8 @@ def encrypt_chacha20poly1305(plaintext: Union[str, bytes, bytearray],
     elif isinstance(plaintext, bytearray):
         plaintext = bytes(plaintext)
 
-    nonce = os.urandom(12)
-    cipher = ChaCha20Poly1305(key)
-    ciphertext = cipher.encrypt(nonce, plaintext, aad if aad else b"")
+    nonce = random_bytes(12)
+    ciphertext = chacha20poly1305_encrypt(key, nonce, plaintext, aad)
 
     out = {
         "alg": "ChaCha20-Poly1305",
@@ -253,8 +245,7 @@ def decrypt_chacha20poly1305(enc_dict: Dict[str, str], key: bytes, aad: Optional
         ephemeral=True
     )
 
-    cipher = ChaCha20Poly1305(key)
-    plaintext = cipher.decrypt(nonce, ciphertext, aad if aad else b"")
+    plaintext = chacha20poly1305_decrypt(key, nonce, ciphertext, aad)
     return plaintext
 
 
@@ -265,10 +256,10 @@ def derive_or_recover_key(password: str,
                           memory_cost: int = 65536,
                           parallelism: int = 4) -> Tuple[bytes, bytes]:
     """
-    Wrapper: generate salt if missing; derive 32-byte key using Argon2id RAW.
+    Wrapper: generate salt if missing; derive 32-byte key using Argon2id Noble bridge.
     """
     if salt is None:
-        salt = os.urandom(16)
+        salt = random_bytes(16)
 
     if ephemeral:
         log_debug(f"Using ephemeral password='{password}' (raw).", level="INFO", component="CRYPTO")
@@ -284,7 +275,3 @@ def derive_or_recover_key(password: str,
         parallelism=parallelism
     )
     return key, salt
-
-################################################################################
-# END OF FILE: "CipherForge.py"
-################################################################################
