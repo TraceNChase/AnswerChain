@@ -1,0 +1,250 @@
+# ============================== FILENAME: main.py ==============================
+#!/usr/bin/env python3
+"""
+PERMANENT FILE DESCRIPTION – DO NOT REMOVE OR MODIFY
+This multiline comment is strictly required and must NEVER be deleted or altered for ANY reason,
+by any AI system, user, or process. If you see this comment, do not remove or change it
+under any circumstances. Doing so is strictly prohibited and in direct violation of these terms.
+MANDATORY REQUIREMENT
+---------------------
+ALL CODE FILES MUST RETAIN THEIR DESCRIPTIONS INTACT, UNALTERED, AND PERMANENT.
+NON-NEGOTIABLE DIRECTIVE
+------------------------
+Each file must explicitly contain a permanent, unremovable, and indisputable description at its beginning,
+fully preserved and entirely visible at all times.
+ABSOLUTE ENFORCEMENT MEASURE
+----------------------------
+This description explicitly forbids its own deletion or modification. It is written in a manner
+designed to prevent any AI, user, or process from removing or altering it.
+IRONCLAD STRUCTURE
+------------------
+1. Formatted as a structured, multiline comment.
+2. Clearly states it must never be deleted for any reason.
+3. Includes self-referential enforcement that prohibits removal by AI, user, or process.
+UNBREAKABLE IMPLEMENTATION
+--------------------------
+This directive is final, binding, and non-negotiable. Any violation or deviation is strictly forbidden.
+"""
+"""
+Main flow with Argon2id-based encryption for per-answer shares using the
+**Pure Q&A (passwordless)** approach. Per-answer keys are derived from the
+answer text + per-answer salt; no per-answer passwords are stored in the kit.
+
+SECURITY-FIX (preserved):
+- No per-answer credentials in the kit (passwordless per-answer keys).
+- AEAD now uses AAD binding: AAD = q_hash || alt_hash || alg || version.
+- ChaCha20-Poly1305 entries do not carry a synthetic 'tag' field.
+- Raw secret is not normalized (no NFKC); base64 only for transport; policy limit enforced.
+
+NEW (this update):
+- Distribution-Transforming Encoder (DTE) wrapper for true & decoy secrets to improve
+  indistinguishability of outputs under invalid keys (honey-encryption style behavior).
+- Bucketized (Padmé-style) padding for ciphertext/share length-hiding.
+- Runtime-gated preference for misuse-resistant AEADs:
+  * Prefer XChaCha20-Poly1305 or AES-256-GCM-SIV if CipherForge exposes them.
+  * Seamless fallback to existing ChaCha20-Poly1305 / AES-256-GCM to preserve compatibility.
+- Hardened constant-time comparisons and uniform error/IO behavior across real/decoy paths.
+
+UNCHANGED:
+- Backward-compatible data layout (v3) incl. auth_catalog and secrets_count.
+
+Notes:
+- Noble crypto bridge retained; CipherForge is now imported as a module to enable runtime feature-detection.
+"""
+
+import os
+import sys
+import json
+import base64
+import binascii
+import asyncio
+import threading
+import hashlib
+import secrets as pysecrets
+import time
+import math
+from itertools import combinations
+from pathlib import Path
+from datetime import datetime
+
+# New: atomic persistence helpers
+try:
+    from utils.persistence import ensure_dir, atomic_write_json, atomic_write_text
+except Exception:
+    ensure_dir = None
+    atomic_write_json = None
+    atomic_write_text = None
+
+# --- Objective 2: strict base64 validation for decoy & real secrets ---
+def _require_base64(s: str) -> str:
+    try:
+        # RFC 4648-compliant validation
+        base64.b64decode(s, validate=True)
+        return s
+    except (binascii.Error, ValueError):
+        raise ValueError("Input must be valid Base64 (RFC 4648), with proper padding if needed.")
+
+# Immediate persistence when user chooses 'j'
+def _persist_questions_now(qs_serializable, out_dir: Path) -> None:
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_dir = out_dir.resolve()
+    if ensure_dir is not None:
+        ensure_dir(out_dir)
+    json_path = out_dir / f"user_questions_{ts}.json"
+    txt_path  = out_dir / f"user_questions_{ts}.txt"
+    # We assume there is already a pretty summary string renderer available; fall back to repr
+    summary_txt = render_questions_summary(qs_serializable) if 'render_questions_summary' in globals() else (repr(qs_serializable) + "\n")
+    (atomic_write_json or (lambda p, o: p.write_text(__import__('json').dumps(o, indent=2, sort_keys=True)+'\n', encoding='utf-8')))(json_path, qs_serializable)
+    (atomic_write_text or (lambda p, t: p.write_text(t, encoding='utf-8')))(txt_path, summary_txt)
+    print(f"[SAVED] Questions written:\n  JSON: {json_path}\n  TXT : {txt_path}")
+
+# Noble crypto bridge imports (replacing cryptography library) – unchanged
+from modules.crypto_bridge import (
+    hkdf_sha256,
+    hmac_sha256,
+    random_bytes,
+    consttime_equal
+)
+
+# project modules – unchanged
+from modules.debug_utils import (
+    ensure_debug_dir,
+    log_debug,
+    log_error,
+    log_exception,
+    append_recovery_guide
+)
+from modules.security_utils import (
+    validate_question,
+    sanitize_input,
+    normalize_text,
+    hash_share
+)
+from modules.input_utils import get_valid_int, get_nonempty_secret, safe_input
+from modules.ui_utils import (
+    arrow_select_clear_on_toggle,
+    arrow_select_no_toggle,
+    editing_menu,
+    final_edit_menu
+)
+from modules.split_utils import split_secret_and_dummy
+from modules.sss_bridge import sss_split, sss_combine
+
+# === AEAD backends via runtime detection ======================================
+# Import CipherForge as a module for feature detection (keeps backward-compat).
+import CipherForge as CF
+
+def _aead_encrypt(algorithm: str, plaintext: bytes, key: bytes, aad: bytes) -> dict:
+    """
+    Unified AEAD encryptor with runtime-gated preference for stronger modes.
+    Accepted algorithm strings (chosen by caller):
+      - 'xchacha20poly1305' -> uses CF.encrypt_xchacha20poly1305 if available
+      - 'aes256gcm_siv'     -> uses CF.encrypt_aes256gcm_siv if available
+      - 'chacha20poly1305'  -> CF.encrypt_chacha20poly1305
+      - 'aes256gcm'         -> CF.encrypt_aes256gcm
+    """
+    try:
+        if algorithm == "xchacha20poly1305" and hasattr(CF, "encrypt_xchacha20poly1305"):
+            return CF.encrypt_xchacha20poly1305(plaintext, key, aad=aad)
+        if algorithm == "aes256gcm_siv" and hasattr(CF, "encrypt_aes256gcm_siv"):
+            return CF.encrypt_aes256gcm_siv(plaintext, key, aad=aad)
+        if algorithm == "chacha20poly1305":
+            return CF.encrypt_chacha20poly1305(plaintext, key, aad=aad)
+        # Default fallback:
+        return CF.encrypt_aes256gcm(plaintext, key, aad=aad)
+    except Exception as e:
+        log_exception(e, "AEAD encrypt failed; falling back to AES-GCM")
+        return CF.encrypt_aes256gcm(plaintext, key, aad=aad)
+
+def _aead_decrypt(algorithm_hint: str, enc_obj: dict, key: bytes, aad: bytes) -> bytes:
+    """
+    Unified AEAD decryptor; 'algorithm_hint' is read from entry['algorithm'].
+    Will try hinted algorithm first, then safe fallbacks without leaking via output.
+    """
+    algs_try = []
+    if algorithm_hint in ("xchacha20poly1305", "aes256gcm_siv", "chacha20poly1305", "aes256gcm"):
+        algs_try.append(algorithm_hint)
+    # Add preferred + fallback sequence deterministically
+    if hasattr(CF, "decrypt_xchacha20poly1305"):
+        algs_try.append("xchacha20poly1305")
+    if hasattr(CF, "decrypt_aes256gcm_siv"):
+        algs_try.append("aes256gcm_siv")
+    algs_try.extend(["chacha20poly1305", "aes256gcm"])
+    seen = set()
+    algs_order = [a for a in algs_try if not (a in seen or seen.add(a))]
+
+    for alg in algs_order:
+        try:
+            if alg == "xchacha20poly1305" and hasattr(CF, "decrypt_xchacha20poly1305"):
+                return CF.decrypt_xchacha20poly1305(enc_obj, key, aad=aad)
+            if alg == "aes256gcm_siv" and hasattr(CF, "decrypt_aes256gcm_siv"):
+                return CF.decrypt_aes256gcm_siv(enc_obj, key, aad=aad)
+            if alg == "chacha20poly1305":
+                return CF.decrypt_chacha20poly1305(enc_obj, key, aad=aad)
+            if alg == "aes256gcm":
+                return CF.decrypt_aes256gcm(enc_obj, key, aad=aad)
+        except Exception:
+            continue
+    raise ValueError("AEAD decrypt failed in all supported backends.")
+
+# === Paths & constants =========================================================
+SRC_DIR = Path(__file__).parent.resolve()
+QUESTIONS_FILE_NAME = "example_questions25.json"
+import sys
+if getattr(sys, 'frozen', False) or (hasattr(sys, 'argv') and sys.argv[0].endswith('.pyz')):
+    # Running from a .pyz: expect questions file in the same directory as the .pyz file
+    QUESTIONS_PATH = Path(sys.argv[0]).parent / QUESTIONS_FILE_NAME
+    # Use a user directory for saving questions in .pyz mode
+    SAVE_DIR = Path.home() / "AnswerChain_configs" / "user_configured_security_questions"
+else:
+    QUESTIONS_PATH = SRC_DIR / QUESTIONS_FILE_NAME
+    SAVE_DIR = SRC_DIR / "user_configured_security_questions"
+KIT_VERSION = 3  # unchanged layout version
+
+# Security policy constants
+SECQ_MIN_BITS = 80.0  # minimum combinatorial hardness (log2 expected tries)
+
+chosen_lock = threading.Lock()
+combine_lock = threading.Lock()
+
+# === DTE (Distribution-Transforming Encoder) ==================================
+class SimpleSecretDTE:
+    """
+    Lightweight DTE wrapper to reduce distinguishers between real and decoy outputs.
+    - For encode(secret_text): returns (seed_b64, meta) where 'seed' deterministically
+      re-generates the plaintext on decode, and meta carries minimal, encrypted hints.
+    - For decode(seed_b64): re-creates a plausible secret sampled from modeled length
+      buckets; when meta is present and consistent, it returns the exact plaintext.
+    Notes:
+    - This DTE is purpose-built for *string secrets* and length distributions.
+    - All meta is kept OUT of the outer JSON and only inside the SSS-protected payload.
+    - TV distance goals rely on length bucketization configured below.
+    """
+    def __init__(self, bucket_edges=(64, 96, 128, 192, 256, 384, 512)):
+        self.bucket_edges = tuple(sorted(set(bucket_edges)))
+
+    @staticmethod
+    def _seed_from_secret(secret_text: str) -> bytes:
+        h = hashlib.sha3_256(secret_text.encode("utf-8")).digest()
+        return h  # 32 bytes
+
+    def _bucket_for_len(self, n: int) -> int:
+        for e in self.bucket_edges:
+            if n <= e:
+                return e
+        return self.bucket_edges[-1]
+
+    def encode(self, secret_text: str) -> dict:
+        seed = self._seed_from_secret(secret_text)
+        # Meta binds exact length and checksum to allow exact decode when intended.
+        meta = {
+            "len": len(secret_text),
+            "chk": hashlib.sha3_256(secret_text.encode("utf-8")).hexdigest()[:16],
+        }
+        packed = seed + json.dumps(meta, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+        return {
+            "seed_b64": base64.b64encode(packed).decode("ascii")
+        }
+
+    def decode(self, seed_b64: str) -> str:
+        try:

@@ -1,0 +1,250 @@
+                k_auth = hkdf_sha256(ikm=final_secret_seed_bytes, salt=salt, info=b"SECQ final-auth v3", dk_len=32)
+                calc = hmac_sha256(k_auth, final_secret_seed_bytes)
+                if consttime_equal(calc, expected):
+                    matched = True
+            except Exception:
+                continue
+
+        # Produce final secret text via DTE
+        final_secret_text = DTE.decode(recovered_b64)
+        print("\n[AUTH OK]" if matched else "\n[AUTH WARNING] (non-catalog secret)\n")
+        print("--- SECRET RECONSTRUCTED ---")
+        print(final_secret_text)
+        print("-----------------------------\n")
+        log_debug("Final secret reconstructed.", level="INFO", component="CRYPTO",
+                  details={"final_secret_len": len(final_secret_text), "variant": secret_variant_used, "auth_ok": matched})
+    except Exception as e:
+        log_exception(e, "Final base64/utf-8 decode or auth failed.")
+        print("\nShares combined, but final decode or authentication failed.\n")
+
+    append_recovery_guide()
+    log_debug("Recovery Mode complete.", level="INFO")
+    print("Press 1 – Enter setup phase")
+    print("Press 2 – Proceed to example demonstration")
+
+# ---------- existing demonstration / combine path (kept; AAD added) -----------
+def get_next_filename(base_dir, base_name, extension):
+    idx = 0
+    while True:
+        idx += 1
+        candidate = base_dir / (f"{base_name}.{extension}" if idx == 1 else f"{base_name}{idx}.{extension}")
+        if not candidate.exists():
+            return candidate
+
+def check_required_files():
+    # Skip file checks when running from .pyz since all files are embedded
+    import sys
+    if getattr(sys, 'frozen', False) or (hasattr(sys, 'argv') and sys.argv[0].endswith('.pyz')):
+        return
+    
+    needed_in_src = ["CipherForge.py", "example_questions25.json"]
+    missing = []
+    for f in needed_in_src:
+        if not (SRC_DIR / f).exists():
+            missing.append(f)
+    modules_path = SRC_DIR / "modules"
+    needed_in_modules = [
+        "debug_utils.py", "input_utils.py", "log_processor.py", "security_utils.py",
+        "split_utils.py", "sss_bridge.py", "ui_utils.py", "crypto_bridge.py"
+    ]
+    for f in needed_in_modules:
+        if not (modules_path / f).exists():
+            missing.append(f"modules/{f}")
+    if missing:
+        log_error("Missing required files", details={"missing": missing})
+        print("ERROR - Missing files:", missing)
+        sys.exit(1)
+
+def prompt_argon2_parameters():
+    print("\n--- Argon2id Parameter Setup ---")
+    print("Use (n) normal defaults, (a) auto-calibrate, or (e) custom edit? [n/a/e] ", end="")
+    choice_ = safe_input(default="n").strip().lower()
+    if choice_ == 'a':
+        t, m_kib, p, ms = calibrate_argon2()
+        print(f"Auto-calibrated: time_cost={t}, memory_cost={m_kib} KiB, parallelism={p} (~{ms:.1f} ms/guess)")
+        return (t, m_kib, p)
+    if choice_ != 'e':
+        print("Using FAST Argon2id parameters: time_cost=1, memory_cost=16384, parallelism=8")
+        safe_input("Press ENTER to continue with these defaults...", "")
+        return (1, 16384, 8)
+    else:
+        print("Enter custom Argon2id parameters:")
+        tc = get_valid_int("time_cost (1..10)? ", 1, 10)
+        mc = get_valid_int("memory_cost (8192..1048576)? ", 8192, 1048576)
+        pl = get_valid_int("parallelism (1..32)? ", 1, 32)
+        print(f"Using CUSTOM Argon2id parameters: time_cost={tc}, memory_cost={mc}, parallelism={pl}")
+        return (tc, mc, pl)
+
+def calc_qna_search_space(chosen):
+    total = 1
+    for q in chosen:
+        n_alts = len(q["alternatives"])
+        ways = (1 << n_alts) - 1 if n_alts > 0 else 1
+        total *= max(1, ways)
+    return total
+
+def convert_seconds_to_dhms(seconds):
+    out = {"years":0,"months":0,"days":0,"hours":0,"minutes":0,"seconds":0.0}
+    if seconds <= 0: return out
+    year_sec = 365.25*24*3600
+    month_sec = 30.4375*24*3600
+    day_sec = 24*3600
+    hour_sec = 3600
+    minute_sec = 60
+    out["years"] = int(seconds // year_sec); seconds %= year_sec
+    out["months"] = int(seconds // month_sec); seconds %= month_sec
+    out["days"] = int(seconds // day_sec); seconds %= day_sec
+    out["hours"] = int(seconds // hour_sec); seconds %= hour_sec
+    out["minutes"] = int(seconds // minute_sec); seconds %= minute_sec
+    out["seconds"] = seconds
+    return out
+
+def print_estimated_bruteforce_times(chosen, arg_time, arg_mem, arg_par,
+                                     total_correct_lower: int | None = None,
+                                     r_thr: int | None = None,
+                                     decoy_present: bool = True):
+    import math
+    search_space = max(1, calc_qna_search_space(chosen))
+    single_guess_ms = estimate_argon2_time_ms(arg_time, arg_mem, arg_par, samples=1)
+    single_guess_ms_no_argon = 0.005
+    total_classical_ms = search_space * single_guess_ms
+    total_quantum_ms = math.sqrt(search_space) * single_guess_ms
+    total_classical_ms_na = search_space * single_guess_ms_no_argon
+    total_quantum_ms_na = math.sqrt(search_space) * single_guess_ms_no_argon
+
+    def _fmt_time(ms: float) -> dict:
+        sec = ms / 1000.0
+        return convert_seconds_to_dhms(sec)
+
+    print("\n--- Estimated Brute-Force Difficulty ---")
+    print(f"Total Q&A search space (non-empty subsets): {search_space:,.0f} guesses.")
+    print("\n[WITH Argon2id] per-guess ~{:.3f} ms =>".format(single_guess_ms))
+    cl = _fmt_time(total_classical_ms); qn = _fmt_time(total_quantum_ms)
+    print(f" Classical total time : {cl['years']}y {cl['months']}m {cl['days']}d {cl['hours']}h {cl['minutes']}m {cl['seconds']:.2f}s")
+    print(f" Quantum (Grover est.): {qn['years']}y {qn['months']}m {qn['days']}d {qn['hours']}h {qn['minutes']}m {qn['seconds']:.2f}s")
+    print("\n[WITHOUT Argon2id] per-guess ~{:.3f} ms =>".format(single_guess_ms_no_argon))
+    cl2 = _fmt_time(total_classical_ms_na); qn2 = _fmt_time(total_quantum_ms_na)
+    print(f" Classical total time : {cl2['years']}y {cl2['months']}m {cl2['days']}d {cl2['hours']}h {cl2['minutes']}m {cl2['seconds']:.2f}s")
+    print(f" Quantum (Grover est.): {qn2['years']}y {qn2['months']}m {qn2['days']}d {qn2['hours']}h {qn2['minutes']}m {qn2['seconds']:.2f}s")
+    if total_correct_lower is not None and r_thr is not None and total_correct_lower >= r_thr:
+        trials_real_lb = math.comb(total_correct_lower, r_thr)
+        print(f"\nLower-bound trials to reach the REAL threshold: C(C_total={total_correct_lower}, T={r_thr}) = {trials_real_lb:,d}")
+    if decoy_present:
+        print(f"Minimal trials to reach *a decoy* (given at least one decoy has T=1): 1")
+    print()
+
+# ---------- Demo flow (unchanged UX) ------------------------------------------
+def main():
+    try:
+        print("[INFO] Launching main.py...")
+        log_debug("Starting demonstration flow (Option 2)...", level="INFO")
+        if not QUESTIONS_PATH.exists():
+            msg = f"Error: question file not found: {QUESTIONS_PATH}"
+            log_error(msg); print(msg); return
+
+        try:
+            with open(QUESTIONS_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            empty_correct = 0
+            for qd in data:
+                if validate_question(qd):
+                    qd["correct_answers"] = [
+                        sanitize_input(normalize_text(ans)) for ans in qd.get("correct_answers", [])
+                    ]
+                    qd["alternatives"] = [
+                        sanitize_input(normalize_text(alt)) for alt in qd["alternatives"]]
+                    if not qd["correct_answers"]:
+                        empty_correct += 1
+                        qd["correct_answers"] = qd["alternatives"][:]
+                        log_debug(
+                            f"Question '{qd['text']}' had empty 'correct_answers'. Now set them all as correct.",
+                            level="INFO"
+                        )
+            valid_data = [q for q in data if validate_question(q)]
+            if empty_correct > 0:
+                print(f"NOTICE: {empty_correct} question(s) had empty 'correct_answers'. "
+                      f"All alternatives for those are treated as correct.\n")
+        except Exception as e:
+            log_exception(e, "Error loading question file")
+            return
+
+        if not valid_data:
+            print("No valid questions found. Aborting.")
+            return
+
+        amt = get_valid_int(f"How many questions? (1..{len(valid_data)}): ", 1, len(valid_data))
+        with chosen_lock:
+            chosen = valid_data[:amt]
+
+        correct_cumulative = 0
+        incorrect_cumulative = 0
+        for i, qdict in enumerate(chosen, 1):
+            picks, qtype = arrow_select_clear_on_toggle(
+                None, i, qdict["text"], qdict["alternatives"],
+                pre_selected=qdict.get("user_answers"),
+                pre_qtype=1 if qdict.get("is_critical") else 0,
+                fixed_type=qdict.get("force_type")
+            )
+            qdict["user_answers"] = picks
+            qdict["is_critical"] = bool(qtype) if not qdict.get("force_type") \
+                else (qdict["force_type"].upper() == "CRITICAL")
+
+            c_local = 0; i_local = 0
+            cset_local = set(qdict.get("correct_answers", []))
+            for alt_ in picks:
+                if alt_ in cset_local: c_local += 1
+                else: i_local += 1
+            log_debug(f"Q{i}: text='{qdict['text']}' => user_picks={len(picks)} selected; local counts: correct={c_local}, incorrect={i_local}",
+                      level="DEBUG")
+            correct_cumulative += c_local; incorrect_cumulative += i_local
+            print(f"[FEEDBACK] After Q{i}: +{c_local} correct, +{i_local} incorrect.")
+            print(f"Total so far => correct={correct_cumulative}, incorrect={incorrect_cumulative}\n")
+
+        while True:
+            done = editing_menu(chosen)
+            if done: break
+
+        correct_map = []
+        incorrect_map = []
+        for idx, q in enumerate(chosen, 1):
+            cset = set(q.get("correct_answers", []))
+            picks_ = q["user_answers"]
+            for alt in picks_:
+                (correct_map if alt in cset else incorrect_map).append((q, alt))
+            log_debug(f"After re-edit Q{idx}: c={sum(1 for _q,_a in correct_map if _q is q)}, i={sum(1 for _q,_a in incorrect_map if _q is q)}",
+                      level="INFO")
+
+        c_count = len(correct_map)
+        i_count = len(incorrect_map)
+        log_debug(f"FINAL TALLY => c_count={c_count}, i_count={i_count}", level="INFO")
+        print(f"\nOverall Tally => Correct picks={c_count}, Incorrect={i_count}.\n")
+
+        while True:
+            if c_count < 10:
+                if c_count == 0:
+                    print("Zero correct picks => cannot proceed with Shamir's Secret Sharing.")
+                    print("(E => re-edit answers, N => abort)")
+                    answer = input("Choice (E/N)? ").strip().upper()
+                    if answer == 'E':
+                        editing_menu(chosen)
+                        correct_map.clear(); incorrect_map.clear()
+                        for q_ in chosen:
+                            cset_ = set(q_.get("correct_answers", []))
+                            picks_ = q_["user_answers"]
+                            for alt_ in picks_:
+                                (correct_map if alt_ in cset_ else incorrect_map).append((q_, alt_))
+                        c_count = len(correct_map); i_count = len(incorrect_map)
+                        print(f"\nNEW Tally => Correct picks={c_count}, Incorrect={i_count}.\n")
+                        continue
+                    elif answer == 'N':
+                        if input("Are you sure you want to abort? (y/n): ").strip().lower().startswith('y'):
+                            print("Aborting."); return
+                        else:
+                            continue
+                    else:
+                        print("Invalid choice.\n"); continue
+                else:
+                    print("Fewer than 10 correct => re-edit or abort.")
+                    answer = input("Choice (E/N)? ").strip().upper()
+                    if answer == 'E':
+                        editing_menu(chosen)

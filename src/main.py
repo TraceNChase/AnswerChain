@@ -1239,7 +1239,15 @@ def run_recovery_kit_flow(kit: dict, kit_path: Path):
         return
 
     try:
-        recovered_b64 = combined_bytes.decode("utf-8")
+        # Primary path: combined bytes are a UTF-8 base64 string (as produced during split)
+        try:
+            recovered_b64 = combined_bytes.decode("utf-8")
+        except UnicodeDecodeError:
+            # Fallback: Some environments may return the full padded buffer
+            # (2-byte len header + secret + zero padding). Strip header and NULs.
+            cand = combined_bytes[2:] if len(combined_bytes) >= 2 else combined_bytes
+            cand = cand.rstrip(b"\x00")
+            recovered_b64 = cand.decode("ascii")
         # DTE decode (seed -> plausible secret); auth is over seed bytes
         final_secret_seed_bytes = base64.b64decode(recovered_b64.encode("utf-8"), validate=True)
         # Auth against catalog (constant-time)

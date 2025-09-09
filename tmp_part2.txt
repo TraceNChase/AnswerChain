@@ -1,0 +1,250 @@
+            packed = base64.b64decode(seed_b64.encode("ascii"))
+        except Exception:
+            packed = b""
+        # Try to split [32-byte seed || json meta]
+        seed, meta = (packed[:32], packed[32:]) if len(packed) > 32 else (packed, b"")
+        # If meta parses and checksum verifies, return the *exact* original
+        try:
+            m = json.loads(meta.decode("utf-8")) if meta else {}
+            exp_len = int(m.get("len", 0))
+            exp_chk = str(m.get("chk", ""))
+            # Deterministically regenerate candidate string from seed
+            py_rng = pysecrets.SystemRandom(int.from_bytes(hashlib.sha3_256(seed).digest(), "big"))
+            alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/_-="
+            cand = "".join(py_rng.choice(alphabet) for _ in range(max(1, exp_len)))
+            # Replace with a verified original if checksum matches:
+            if exp_len > 0:
+                if hashlib.sha3_256(cand.encode("utf-8")).hexdigest()[:16] == exp_chk:
+                    return cand
+            # Otherwise fall back to plausible decoding using bucketed length:
+            target_len = self._bucket_for_len(exp_len) if exp_len else self._bucket_for_len(96)
+        except Exception:
+            # No meta or cannot parse -> select a plausible bucket
+            target_len = self._bucket_for_len(96)
+
+        # Sample plausible text shaped only by the seed (deterministic for same seed)
+        py_rng = pysecrets.SystemRandom(int.from_bytes(hashlib.sha3_256(seed or b"DTE").digest(), "big"))
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/_-="
+        return "".join(py_rng.choice(alphabet) for _ in range(target_len))
+
+# Instantiate global DTE
+DTE = SimpleSecretDTE()
+
+# === helpers & UI (mostly unchanged; some hardening) ==========================
+def get_threshold(prompt_text, low, high):
+    while True:
+        raw = input(f"{prompt_text} ({low}..{high}): ")
+        try:
+            val = int(raw)
+            if low <= val <= high:
+                return val
+        except ValueError:
+            pass
+        print(f"Invalid input. Must be an integer between {low} and {high}.\n")
+
+def _policy_min_threshold(correct_count: int) -> int:
+    """
+    Enforce a baseline threshold policy:
+      T >= max(8, ceil(0.35 * correct_count)), but not more than correct_count.
+    """
+    if correct_count <= 1:
+        return correct_count
+    return min(correct_count, max(8, math.ceil(0.35 * correct_count)))
+
+def _normalize_for_comparison(text: str) -> str:
+    processed = text.strip()
+    common_trailing_punct = ".,!?;:"
+    while processed and processed[-1] in common_trailing_punct:
+        processed = processed[:-1]
+    processed = processed.strip()
+    return normalize_text(sanitize_input(processed.lower()))
+
+def _norm_for_kit(text: str) -> str:
+    return sanitize_input(normalize_text(text))
+
+def _sha3_hex(s: str) -> str:
+    return hashlib.sha3_256(s.encode("utf-8")).hexdigest()
+
+def _integrity_hash_for_kit(qtext: str, alts: list[str]) -> str:
+    qn = _norm_for_kit(qtext)
+    altn = [_norm_for_kit(a) for a in alts]
+    block = qn + "\n" + "\n".join(sorted(altn))
+    return _sha3_hex(block)
+
+def _alt_hash_for_kit(alt_text: str) -> str:
+    return _sha3_hex(_norm_for_kit(alt_text))
+
+def _aad_bytes(q_hash: str, alt_hash: str, algorithm: str, version: int = KIT_VERSION) -> bytes:
+    return f"{q_hash}|{alt_hash}|{algorithm}|{version}".encode("utf-8")
+
+def _derive_answer_key(answer_text: str, salt: bytes, t: int, m: int, p: int) -> bytes:
+    normalized = _norm_for_kit(answer_text)
+    key, _ = CF.derive_or_recover_key(
+        normalized, salt, ephemeral=False,
+        time_cost=t, memory_cost=m, parallelism=p
+    )
+    return key
+
+def _decrypt_share_from_entry(entry: dict,
+                              arg_time: int,
+                              arg_mem: int,
+                              arg_par: int,
+                              q_hash: str | None = None,
+                              alt_hash: str | None = None,
+                              qid: int | None = None,
+                              qtext: str | None = None,
+                              alt_text: str | None = None) -> bytes | None:
+    """
+    Given a per-answer encrypted entry from the kit, derive the per-answer key
+    from the *answer text* + stored salt, and decrypt with AAD binding.
+    """
+    try:
+        alg = entry.get("algorithm")
+        salt_b64 = entry.get("salt") or entry.get("salt_b64")
+        kdf = entry.get("kdf") or {}
+        if not (salt_b64 and alg and kdf):
+            log_error("Entry missing required fields (salt/algorithm/kdf).",
+                      details={"q_hash": q_hash, "alt_hash": alt_hash, "algorithm": alg})
+            return None
+        if not alt_text:
+            log_error("Answer text required for decryption in passwordless design.",
+                      details={"q_hash": q_hash, "alt_hash": alt_hash})
+            return None
+        salt = base64.b64decode(salt_b64)
+        t = int(kdf.get("t", arg_time))
+        m = int(kdf.get("m", arg_mem))
+        p = int(kdf.get("p", arg_par))
+        key = _derive_answer_key(alt_text, salt, t, m, p)
+        aad = _aad_bytes(q_hash or "", alt_hash or "", alg or "aes256gcm")
+        pt = _aead_decrypt(alg or "aes256gcm", entry, key, aad=aad)
+
+        # Constant-time logging of hash only (beta)
+        shash = hash_share(pt)
+        log_debug("Decrypted share.",
+                  level="INFO",
+                  component="CRYPTO",
+                  details={
+                      "q_id": qid, "q_text": qtext, "q_hash": q_hash,
+                      "alt_text": alt_text, "alt_hash": alt_hash,
+                      "algorithm": alg, "share_sha3_256_hex": shash,
+                      "share_len_bytes": len(pt)
+                  })
+        return pt
+    except Exception as e:
+        log_exception(e, "Failed to decrypt share from entry.")
+        return None
+
+# ---- combinatorial hardness helpers ----
+def _log2_comb(n: int, k: int) -> float:
+    if k < 0 or k > n:
+        return float("-inf")
+    return (math.lgamma(n + 1) - math.lgamma(k + 1) - math.lgamma(n - k + 1)) / math.log(2.0)
+
+def _combinatorial_bits(total_alts: int, total_correct: int, threshold: int) -> float:
+    return _log2_comb(total_alts, threshold) - _log2_comb(total_correct, threshold)
+
+# ---- Argon2 calibration & timing (unchanged logic) ----
+def calibrate_argon2(target_ms: float = 250.0, max_mib: int = 1024) -> tuple[int, int, int, float]:
+    pwd = "SECQ_calibration"
+    salt = random_bytes(16)
+    t = 2
+    m_kib = 256 * 1024  # 256 MiB
+    p = 1
+    measured = 0.0
+    while True:
+        st = time.perf_counter()
+        _key, _ = CF.derive_or_recover_key(pwd, salt, False, t, m_kib, p)
+        measured = (time.perf_counter() - st) * 1000.0
+        if measured >= target_ms:
+            break
+        if m_kib < max_mib * 1024:
+            m_kib = min(max_mib * 1024, m_kib * 2)
+        else:
+            if t < 6:
+                t += 1
+            else:
+                break
+    return t, m_kib, p, measured
+
+def estimate_argon2_time_ms(arg_time: int, arg_mem: int, arg_par: int, samples: int = 1) -> float:
+    pwd = "SECQ_estimate"
+    total = 0.0
+    for _ in range(max(1, samples)):
+        salt = random_bytes(16)
+        st = time.perf_counter()
+        _k, _ = CF.derive_or_recover_key(pwd, salt, False, arg_time, arg_mem, arg_par)
+        total += (time.perf_counter() - st) * 1000.0
+    return total / max(1, samples)
+
+# ---- Bucketized (Padmé-like) padding for share length-hiding -----------------
+def _bucketize_pad_size(target_len: int) -> int:
+    """
+    Map target_len into stable, power-of-two-ish buckets to reduce length leakage.
+    """
+    if target_len <= 64: return 64
+    # Next power-of-two bucket, with gentle growth:
+    k = max(7, int(math.ceil(math.log2(target_len))))
+    return 1 << k
+
+def prompt_pad_size_multi(max_b64_len: int) -> int:
+    recommended_pad = max(128, _bucketize_pad_size(max_b64_len + 32))
+    user_pad = recommended_pad
+    print(f"\nCustom PAD size? Press ENTER to use recommended={recommended_pad}.")
+    try_pad_str = safe_input(f"PAD must be >= {max_b64_len} (max length of base64 secrets): ", "").strip()
+    if try_pad_str:
+        try:
+            user_pad_input = int(try_pad_str)
+            if user_pad_input < max_b64_len:
+                print(f"Provided pad < max base64 secret length. Forcing {max_b64_len} instead.\n")
+                user_pad = max_b64_len
+            else:
+                user_pad = _bucketize_pad_size(user_pad_input)
+        except ValueError:
+            print(f"Invalid number, using recommended={recommended_pad}.\n")
+    if user_pad < max_b64_len:
+        user_pad = _bucketize_pad_size(max_b64_len)
+        print(f"Corrected final pad to {user_pad} to fit the secrets.\n")
+    log_debug(f"Using PAD size (bucketized): {user_pad}", level="INFO")
+    return user_pad
+
+def show_start_menu():
+    while True:
+        print("\nPress 1 - Enter setup phase")
+        print("Press 2 - Proceed to example demonstration")
+        choice_ = safe_input("Choice: ", "2").strip()
+        if choice_ == "1":
+            setup_phase()
+        elif choice_ == "2":
+            main()
+            break
+        else:
+            print("Invalid choice. Please try again.\n")
+
+def display_questions(questions):
+    print("\n--- SECURITY QUESTIONS ---\n")
+    for q in questions:
+        typ = "CRITICAL" if q.get("is_critical") else "STANDARD"
+        print(f"[Question {q['id']}] {q['text']} (Type: {typ})\n")
+        for i, alt in enumerate(q["alternatives"], 1):
+            letter = chr(ord('A') + i - 1)
+            print(f"{letter}) {alt}")
+        print("\n---\n")
+
+def _decoy_pick_index(q_hashes_and_alt_hashes: list[tuple[str, str]], decoy_count: int) -> int:
+    """
+    Deterministically select a decoy index in [1..decoy_count] based on selected answers.
+    """
+    if decoy_count <= 0:
+        return 1
+    acc = hashlib.sha3_256()
+    for qh, ah in sorted(q_hashes_and_alt_hashes):
+        acc.update(qh.encode("utf-8")); acc.update(b"|"); acc.update(ah.encode("utf-8")); acc.update(b";")
+    val = int.from_bytes(acc.digest()[-4:], "big")
+    return (val % decoy_count) + 1  # 1..decoy_count
+
+# === Setup, file load, manual input (unchanged behavior) ======================
+def setup_phase():
+    while True:
+        print("\n--- Setup Phase ---")
+        print("1. Create new security questions")
+        print("2. Load security questions from a file")

@@ -877,7 +877,7 @@ Optional safeguards include contacting trusted relatives or designated parties i
 
 # ❤️ Help me out!
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gbraad)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/tracenchase)
 
 
 As the sole developer currently working on this project, I am seeking support from developers with expertise in secure coding, cryptography, and related fields to help further develop and maintain the project.  
@@ -908,10 +908,4 @@ Is this program Open Source
 
 
 [<img width="150" height="150" alt="matrix_icon (1)" src="https://github.com/user-attachments/assets/ae5bdc90-959c-470f-b930-75b1131b69e5" />](https://matrix.to/#/#answerchain:matrix.org) [<img width="150" height="150" alt="pngegg_icon (1)" src="https://github.com/user-attachments/assets/6729675c-ebc9-499d-9cfc-61677eccc060" />](https://b526769d.linkprotector.pages.dev/)
-
-
-
-
-
-
 

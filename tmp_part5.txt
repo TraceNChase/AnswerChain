@@ -1,0 +1,250 @@
+                real_share = bytes(real_shares_correct[real_idx]); real_idx += 1
+            else:
+                log_error("Internal error: real_idx overflow",
+                          details={"real_idx": real_idx, "len": len(real_shares_correct)})
+                real_share = random_bytes(share_len)
+        else:
+            real_share = random_bytes(share_len)
+
+        alg_choice = aead_prefs[global_idx % len(aead_prefs)]
+        per_alt_block["s0"] = _enc_one_share(real_share, q_hash, alt_text, alg_choice)
+
+        for decoy_i, shares_list in enumerate(decoy_shares_by_idx, start=1):
+            dec_share = bytes(shares_list[global_idx])
+            alg_choice_d = aead_prefs[(global_idx + decoy_i) % len(aead_prefs)]
+            per_alt_block[f"s{decoy_i}"] = _enc_one_share(dec_share, q_hash, alt_text, alg_choice_d)
+
+        encrypted_shares[q_hash][a_hash] = per_alt_block
+        log_debug("Mapped Q/A to encrypted multi-secret shares.",
+                  level="INFO", component="CRYPTO",
+                  details={"q_text": q_text, "alt_text": alt_text, "q_hash": q_hash, "alt_hash": a_hash,
+                           "real_valid": bool(is_corr), "decoy_variants": len(decoy_shares_by_idx)})
+
+    questions_out = [{
+        "id": q["id"], "text": q["text"], "alternatives": q["alternatives"],
+        "is_critical": bool(q.get("is_critical", False)),
+        "integrity_hash": _integrity_hash_for_kit(q["text"], q["alternatives"])
+    } for q in questions]
+
+    recovery_kit = {
+        "config": {
+            "real_threshold": r_thr, "pad_size": pad_size,
+            "argon2_params": {"time_cost": arg_time, "memory_cost": arg_mem, "parallelism": arg_par},
+            "version": KIT_VERSION, "secrets_count": 1 + len(decoy_bytes_list),
+            "auth_catalog": auth_catalog,
+            "final_auth": final_auth
+        },
+        "questions": questions_out,
+        "encrypted_shares": encrypted_shares
+    }
+    log_debug(
+        "Recovery kit constructed in-memory.",
+        level="INFO",
+        component="CRYPTO",
+        details={
+            "questions": len(questions_out),
+            "shares_per_question": "variable",
+            "secrets_count": 1 + len(decoy_bytes_list),
+            "aead_pref": aead_prefs,
+        },
+    )
+    # IMPORTANT: At this point, the recovery_kit is fully constructed in-memory.
+    # Now prompt user if they want to save the ENCRYPTED kit to disk.
+    decision = prompt_save_decision()
+    if decision == 'j':
+        SAVE_DIR.mkdir(parents=True, exist_ok=True)
+        default_name = f"recovery_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        base_name = input(f"Enter a base name for the save files (or press Enter for '{default_name}'): ").strip() or default_name
+        json_file = SAVE_DIR / f"{base_name}.json"
+        txt_file = SAVE_DIR / f"{base_name}.txt"
+
+        with open(json_file, "w", encoding="utf-8") as jf:
+            json.dump(recovery_kit, jf, indent=2)
+        with open(txt_file, "w", encoding="utf-8") as tf:
+            tf.write("--- CRYPTOGRAPHIC CONFIGURATION ---\n")
+            tf.write("Secret: [encoded via DTE + SSS; not stored in JSON]\n")
+            tf.write(f"Shamir Threshold (real path): {r_thr}\n")
+            tf.write(f"Pad Size (bucketized): {pad_size}\n")
+            tf.write("Argon2id Parameters:\n")
+            tf.write(f" - Time Cost: {arg_time}\n")
+            tf.write(f" - Memory Cost: {arg_mem} KiB\n")
+            tf.write(f" - Parallelism: {arg_par}\n")
+            tf.write(f"\nAuth Catalog Entries (real+decoys, shuffled): {len(auth_catalog)}\n")
+            tf.write("\n--- SECURITY QUESTIONS ---\n\n")
+            for q in questions:
+                qtype = "CRITICAL" if q.get("is_critical") else "STANDARD"
+                tf.write(f"[Question {q['id']}] {q['text']} (Type: {qtype})\n\n")
+                for i, alt in enumerate(q['alternatives'], 1):
+                    letter = chr(ord('A') + i - 1)
+                    tf.write(f"{letter}) {alt}\n")
+                tf.write("\n---\n\n")
+
+        print(f"\nOK Encrypted configuration saved successfully!")
+        print(f"JSON file: {json_file}")
+        print(f"Text file: {txt_file}")
+        log_debug(
+            "Recovery kit saved to disk.",
+            level="INFO",
+            component="CRYPTO",
+            details={"json_file": str(json_file), "txt_file": str(txt_file)},
+        )
+    else:
+        print("\nEncrypted configuration was NOT saved (per your choice). You can re-run saving later.")
+        log_debug(
+            "User opted not to save the encrypted kit.",
+            level="INFO",
+            component="GENERAL",
+        )
+
+    return recovery_kit
+
+# ---------- Recovery UI Flow from a saved kit (with DTE decode) ---------------
+def _try_combine_with_sampling(partials: list[bytes], r_thr: int) -> bytes | None:
+    n = len(partials)
+    if n < r_thr:
+        return None
+    if n == r_thr:
+        try:
+            return asyncio.run(sss_combine(partials))
+        except Exception:
+            return None
+    max_exhaustive = 5000
+    total_combos = math.comb(n, r_thr) if hasattr(math, "comb") else float("inf")
+    if total_combos <= max_exhaustive:
+        for idxs in combinations(range(n), r_thr):
+            try:
+                return asyncio.run(sss_combine([partials[i] for i in idxs]))
+            except Exception:
+                continue
+        return None
+
+    def sample_indices(nv: int, kv: int) -> tuple[int, ...]:
+        s = set()
+        while len(s) < kv:
+            s.add(pysecrets.randbelow(nv))
+        return tuple(sorted(s))
+
+    seen = set()
+    for _ in range(200):
+        idxs = sample_indices(n, r_thr)
+        if idxs in seen: continue
+        seen.add(idxs)
+        try:
+            return asyncio.run(sss_combine([partials[i] for i in idxs]))
+        except Exception:
+            continue
+    return None
+
+def run_recovery_kit_flow(kit: dict, kit_path: Path):
+    try:
+        cfg = kit.get("config") or {}
+        questions = kit.get("questions") or []
+        enc_shares = kit.get("encrypted_shares") or {}
+        r_thr = int(cfg.get("real_threshold"))
+        arg = cfg.get("argon2_params") or {}
+        arg_time = int(arg.get("time_cost"))
+        arg_mem = int(arg.get("memory_cost"))
+        arg_par = int(arg.get("parallelism"))
+        secrets_count = int(cfg.get("secrets_count", 1))
+        auth_catalog = list(cfg.get("auth_catalog", []))
+    except Exception as e:
+        log_exception(e, "Invalid kit structure.")
+        print("ERROR: Kit structure invalid or missing fields.")
+        return
+
+    print("\n--- LOADED RECOVERY KIT ---\n")
+    print(f"File : {kit_path.name}")
+    print(f"Threshold (T) : {r_thr} [real path]")
+    print(f"Pad Size : {cfg.get('pad_size')}")
+    print("Argon2id Params:")
+    print(f" - Time Cost : {arg_time}")
+    print(f" - Memory Cost: {arg_mem} KiB")
+    print(f" - Parallelism: {arg_par}")
+    print(f"Auth Catalog : {len(auth_catalog)} entries\n")
+    log_debug("Loaded recovery kit.",
+              level="INFO", component="CRYPTO",
+              details={"kit_file": str(kit_path), "threshold": r_thr, "pad_size": cfg.get("pad_size"),
+                       "argon2": {"time_cost": arg_time, "memory_cost": arg_mem, "parallelism": arg_par},
+                       "q_count": len(questions), "secrets_count": secrets_count})
+
+    if not questions or not enc_shares:
+        print("ERROR: Kit missing questions or encrypted_shares.")
+        log_error("Kit missing essential arrays.", details={"has_questions": bool(questions), "has_enc_shares": bool(enc_shares)})
+        return
+
+    # Present questions via multi-select
+    print("--- Answer the security questions ---\n")
+    chosen = []
+    for i, q in enumerate(questions, 1):
+        text = q.get("text", "")
+        alts = list(q.get("alternatives", []))
+        picks = arrow_select_no_toggle(None, i, text, alts, pre_selected=None)
+        chosen.append({"q": q, "picks": picks})
+        log_debug("Recovery UI picks for question.", level="INFO", component="GENERAL",
+                  details={"q_id": q.get("id"), "q_text": text, "picked": picks})
+
+    partials_s0: list[bytes] = []
+    selected_pairs: list[tuple[str, str, str, str]] = []  # (q_hash, a_hash, q_text, alt_text)
+    for item in chosen:
+        qobj = item["q"]
+        picks = item["picks"]
+        q_text = qobj.get("text", "")
+        alts = qobj.get("alternatives", [])
+        q_hash = qobj.get("integrity_hash") or _integrity_hash_for_kit(q_text, alts)
+        q_block = enc_shares.get(q_hash)
+        if not q_block:
+            log_error("Missing encrypted_shares block for question hash.", details={"q_hash": q_hash})
+            continue
+        for alt in picks:
+            alt_hash = _alt_hash_for_kit(alt)
+            sblock = q_block.get(alt_hash) or {}
+            entry = sblock.get("s0")
+            if not entry:
+                log_error("No encrypted entry for selected alternative (s0).", details={"q_hash": q_hash, "alt_hash": alt_hash, "alt_text": alt})
+                continue
+            selected_pairs.append((q_hash, alt_hash, q_text, alt))
+            share_bytes = _decrypt_share_from_entry(entry, arg_time, arg_mem, arg_par,
+                                                    q_hash=q_hash, alt_hash=alt_hash,
+                                                    qid=qobj.get("id"), qtext=q_text, alt_text=alt)
+            if share_bytes is not None:
+                partials_s0.append(share_bytes)
+
+    combined_bytes = _try_combine_with_sampling(partials_s0, r_thr)
+    secret_variant_used = "REAL"
+
+    # If real fails, deterministically reconstruct a decoy.
+    if combined_bytes is None:
+        idx = _decoy_pick_index([(qh, ah) for (qh, ah, _, _) in selected_pairs], max(0, secrets_count - 1))
+        decoy_index = max(1, idx)
+        secret_variant_used = f"DECOY_{decoy_index}"
+        log_debug(f"Real reconstruction failed or insufficient shares. Falling back to {secret_variant_used}.", level="INFO")
+
+        decoy_partials: list[bytes] = []
+        for (q_hash, a_hash, q_text, alt_text) in selected_pairs:
+            block = enc_shares.get(q_hash, {}).get(a_hash, {})
+            entry = block.get(f"s{decoy_index}")
+            if not entry:
+                continue
+            sb = _decrypt_share_from_entry(entry, arg_time, arg_mem, arg_par,
+                                           q_hash=q_hash, alt_hash=a_hash,
+                                           qid=None, qtext=q_text, alt_text=alt_text)
+            if sb is not None:
+                decoy_partials.append(sb)
+        combined_bytes = _try_combine_with_sampling(decoy_partials, 1)
+
+    if combined_bytes is None:
+        log_error("FATAL: Both real and decoy reconstruction failed. This may indicate a kit corruption.",
+                  details={"variant_tried": secret_variant_used})
+        print("\nAn unexpected error occurred during reconstruction. Unable to recover a secret.")
+        return
+
+    try:
+        recovered_b64 = combined_bytes.decode("utf-8")
+        # DTE decode (seed -> plausible secret); auth is over seed bytes
+        final_secret_seed_bytes = base64.b64decode(recovered_b64.encode("utf-8"), validate=True)
+        # Auth against catalog (constant-time)
+        matched = False
+        for entry in auth_catalog:
+            try:
+                salt = base64.b64decode(entry.get("salt", ""))
+                expected = base64.b64decode(entry.get("hmac_sha256", ""))

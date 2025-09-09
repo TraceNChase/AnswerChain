@@ -1,0 +1,250 @@
+        print("b. Back to main menu")
+        choice = input("Choice: ").strip().lower()
+        if choice == '1':
+            manual_questions = manual_input_mode()
+            if manual_questions:
+                # Build the encrypted recovery kit FIRST, then ask if user wants to save it.
+                try:
+                    kit = save_questions(manual_questions)  # returns kit after building; handles save prompt
+                except Exception as e:
+                    log_exception(e, "Error during encrypted kit preparation")
+                # Regardless of save decision, return to setup menu
+            return
+        elif choice == '2':
+            file_load_phase()
+            return
+        elif choice == 'b':
+            return
+        else:
+            print("Invalid choice. Please enter '1', '2', or 'b'.")
+
+def file_load_phase():
+    SAVE_DIR.mkdir(parents=True, exist_ok=True)
+    all_json = sorted(f for f in SAVE_DIR.glob("*.json") if f.is_file())
+    if not all_json:
+        print(f"\nNo configuration files found in the '{SAVE_DIR.name}' directory.")
+        input("Press Enter to go back: ")
+        return
+    print("\nAvailable configuration files:\n")
+    for idx, fobj in enumerate(all_json, 1):
+        print(f"{idx}) {fobj.name}")
+    print("\nEnter the number of the file you'd like to load, or press b to go back.")
+    while True:
+        user_pick = input("Choice: ").strip().lower()
+        if user_pick == 'b':
+            return
+        try:
+            pick_val = int(user_pick)
+            if 1 <= pick_val <= len(all_json):
+                chosen_file = all_json[pick_val - 1]
+                print(f"\nYou selected: {chosen_file.name}")
+                try:
+                    with open(chosen_file, "r", encoding="utf-8") as jf:
+                        kit = json.load(jf)
+                    run_recovery_kit_flow(kit, chosen_file)
+                except Exception as e:
+                    log_exception(e, f"Failed to load or process kit: {chosen_file}")
+                    print("ERROR: Could not load/process the selected kit file.")
+                return
+            else:
+                print("Invalid selection. Try again, or press b to go back.")
+        except ValueError:
+            print("Invalid input. Try again, or press b to go back.")
+
+def manual_input_mode():
+    """
+    Returns list of questions:
+      {
+        "id": int,
+        "text": str,
+        "alternatives": [str],
+        "correct_answers": [str], # used internally, not exported
+        "is_critical": bool
+      }
+    """
+    questions = []
+    while True:
+        current_qnum = len(questions) + 1
+        print(f"\nEnter your security question #{current_qnum} (2..100 total):")
+        question_text = ""
+        while not question_text:
+            question_text = input("[Your question here]: ").strip()
+            if not question_text:
+                print("Question text cannot be blank.")
+
+        # number of alternatives
+        while True:
+            print("\nHow many answer alternatives should this question have?")
+            print("Enter a number between 2 and 20")
+            alt_count_str = input("Number of alternatives: ").strip()
+            try:
+                alt_count = int(alt_count_str)
+                if 2 <= alt_count <= 20:
+                    break
+                print("Please enter a value between 2 and 20.")
+            except ValueError:
+                print("Invalid integer.")
+
+        # alternatives
+        alternatives = []
+        norm_seen = set()
+        print("\nEnter the alternatives:")
+        for i in range(alt_count):
+            while True:
+                alt_raw = input(f"Alternative {i+1}: ").strip()
+                if not alt_raw:
+                    print("Alternative cannot be blank.")
+                    continue
+                norm = _normalize_for_comparison(alt_raw)
+                if norm in norm_seen:
+                    print("Duplicate or too similar alternative. Please enter a unique value.")
+                    continue
+                alternatives.append(alt_raw)
+                norm_seen.add(norm)
+                break
+
+        # type select
+        is_critical = False
+        print("\nSelect question type:")
+        print("Standard is selected by default.")
+        print("If you want to mark this question as critical, press c.")
+        print("(Otherwise, press Enter to keep it as Standard)")
+        while True:
+            type_choice = input("Choice: ").strip().lower()
+            if type_choice == '':
+                break
+            elif type_choice == 'c':
+                is_critical = True
+                break
+            else:
+                print("Invalid choice. Press 'c' for Critical or Enter for Standard.")
+
+        # correct answers selection
+        correct_answers = _prompt_correct_answers_for_question(alternatives)
+
+        # re-edit loop
+        while True:
+            print("\nWould you like to re-edit anything for the current question before proceeding?")
+            print("Press q – Re-edit the security question text")
+            print("Press a – Re-edit all answer alternatives")
+            print(f"Press # (1..{alt_count}) – Re-edit a single alternative by its number")
+            print("Press r – Re-select the correct answer(s)")
+            print("(Or press Enter to continue to next step/question)")
+            e = input("Re-edit choice: ").strip().lower()
+            if e == "":
+                break
+            if e == "q":
+                new_text = ""
+                while not new_text:
+                    new_text = input("\nRe-enter security question text:\n").strip()
+                    if not new_text:
+                        print("Question text cannot be blank.")
+                question_text = new_text
+                print("(Question updated.)\n")
+            elif e == "a":
+                new_alts = []
+                new_seen = set()
+                print("\nRe-entering all alternatives...")
+                for i in range(alt_count):
+                    while True:
+                        v = input(f"Re-enter Alternative {i+1}: ").strip()
+                        if not v:
+                            print("Alternative cannot be blank.")
+                            continue
+                        n = _normalize_for_comparison(v)
+                        if n in new_seen:
+                            print("Duplicate or too similar alternative. Please enter a unique value.")
+                            continue
+                        new_alts.append(v)
+                        new_seen.add(n)
+                        break
+                alternatives = new_alts
+                norm_seen = new_seen
+                print("(Alternatives updated.)\n")
+                correct_answers = _prompt_correct_answers_for_question(alternatives)
+            elif e == "r":
+                correct_answers = _prompt_correct_answers_for_question(alternatives)
+            else:
+                try:
+                    idx = int(e)
+                    if 1 <= idx <= alt_count:
+                        while True:
+                            nv = input(f"Re-enter Alternative {idx}: ").strip()
+                            if not nv:
+                                print("Alternative cannot be blank.")
+                                continue
+                            n = _normalize_for_comparison(nv)
+                            others = set(_normalize_for_comparison(x) for j, x in enumerate(alternatives) if j != idx-1)
+                            if n in others:
+                                print("Duplicate or too similar to another existing alternative.")
+                                continue
+                            old_val = alternatives[idx-1]
+                            alternatives[idx-1] = nv
+                            if old_val in correct_answers:
+                                correct_answers = [nv if x == old_val else x for x in correct_answers]
+                            print("(Alternative updated.)\n")
+                            break
+                    else:
+                        print(f"Alternative number must be between 1 and {alt_count}.")
+                except ValueError:
+                    print("Unrecognized re-edit choice.\n")
+
+        questions.append({
+            "id": current_qnum,
+            "text": question_text,
+            "alternatives": alternatives,
+            "correct_answers": correct_answers,
+            "is_critical": is_critical
+        })
+        print("\nNavigation options:")
+        print("Press n – Proceed to the next question")
+        if len(questions) > 1:
+            print("Press b – Go back and revise the previous question")
+        if len(questions) >= 2:
+            print("Press d – Done (finish input)")
+        print(f"(You must have at least 2 questions to finish, you currently have {len(questions)}.)")
+        nav = input("Choice: ").strip().lower()
+        if nav == "n" or nav == "":
+            if len(questions) >= 100:
+                print("You have reached the maximum of 100 questions. Finishing input now.")
+                break
+        elif nav == "b":
+            if questions:
+                questions.pop()
+            if questions:
+                print("\nRevising the previous question (it will be re-entered)...")
+                questions.pop()
+                continue
+        elif nav == "d":
+            if len(questions) >= 2:
+                print("\n--- Manual input complete. ---\n")
+                break
+            else:
+                print("You must have at least 2 questions. Continue adding more.")
+        else:
+            if len(questions) >= 100:
+                print("You have reached the maximum of 100 questions. Finishing input now.")
+                break
+
+    if questions:
+        print("Summary of your manually entered questions:\n")
+        for qd in questions:
+            typ = "CRITICAL" if qd["is_critical"] else "STANDARD"
+            print(f"[Question {qd['id']}] {qd['text']}")
+            for i, alt in enumerate(qd["alternatives"], 1):
+                letter = chr(ord('A') + i - 1)
+                print(f" {letter}) {alt}")
+            print(f" Type: {typ}")
+            print(f" Correct: {', '.join(qd['correct_answers'])}\n")
+    else:
+        print("No questions were entered.\n")
+    return questions
+
+def _prompt_correct_answers_for_question(alternatives: list[str]) -> list[str]:
+    if not alternatives:
+        return []
+    print("\nMark the correct answer(s) for this question.")
+    print("Enter letters or numbers separated by commas (e.g., A,C or 1,3).")
+    print("You can also type 'all' to select all alternatives.")
+    legend = ", ".join(f"{chr(ord('A')+i)}={i+1}" for i in range(len(alternatives)))
+    print("Legend:", legend)

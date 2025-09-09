@@ -1,0 +1,250 @@
+
+    while True:
+        raw = input("Correct selection(s): ").strip()
+        if not raw:
+            print("Select at least one correct alternative. Blank input is not allowed.")
+            continue
+        if raw.lower() == "all":
+            confirm = input("Are you sure you want to mark ALL alternatives as correct? (y/n): ").strip().lower()
+            if confirm == 'y':
+                print("(All alternatives marked as correct)")
+                return alternatives[:]
+            else:
+                print("Selection cancelled. Please select explicitly.")
+                continue
+        tokens = [t.strip() for chunk in raw.replace(",", " ").split() for t in [chunk] if t.strip()]
+        if not tokens:
+            print("Please provide a valid selection.")
+            continue
+
+        picks = set()
+        ok = True
+        for t in tokens:
+            if len(t) == 1 and t.isalpha():
+                idx = (ord(t.upper()) - ord('A')) + 1
+            else:
+                try:
+                    idx = int(t)
+                except ValueError:
+                    print(f"Unrecognized token '{t}'."); ok = False; break
+            if not (1 <= idx <= len(alternatives)):
+                print(f"Out of range: '{t}'."); ok = False; break
+            picks.add(idx)
+        if not ok or not picks:
+            continue
+
+        selected = [alternatives[i-1] for i in sorted(picks)]
+        print(f"(Selected: {', '.join(selected)})")
+        return selected
+
+def prompt_save_decision():
+    while True:
+        print("\nWould you like to save the ENCRYPTED configuration?")
+        print("Press j - Save as both JSON and text file")
+        print("Press c - Continue without saving")
+        c = input("Choice: ").strip().lower()
+        if c in ("j", "c"):
+            return c
+        print("Invalid choice.")
+
+# -------------- DECOYS + recovery kit (passwordless; AAD; AUTH-CATALOG) ------
+def _prompt_decoy_count() -> int:
+    return get_valid_int("How many decoy secrets? (0-3): ", 0, 3)
+
+def _prompt_decoy_secrets(count: int, real_secret: str) -> list[str]:
+    decoys = []
+    if count > 0:
+        print("\n--- Configure Decoy Secrets ---")
+        print("A decoy is returned when real restoration criteria are not met.")
+        print("They must look plausible and be Base64-encoded (RFC 4648).")
+        for i in range(1, count + 1):
+            while True:
+                d = input(f"Enter decoy secret #{i} of {count}: ").strip()
+                try:
+                    decoys.append(_require_base64(d))
+                    break
+                except ValueError as e:
+                    print(f"[Invalid] {e}")
+    # Store decoys indistinguishably: same container as the real secret (no flags)
+    # e.g., secrets_list = [secret] + decoys  (downstream selection logic chooses which to reveal)
+    return decoys
+
+def save_questions(questions):
+    """
+    Builds a SELF-CONTAINED recovery kit (passwordless per-answer keys) and then
+    prompts the user whether to save it. The .json content is encrypted via per-answer
+    AEAD-wrapped Shamir shares and is only unlockable by entering the correct sequence
+    of answers to the security questions. No user-supplied password is used.
+
+    Returns the in-memory recovery_kit dict regardless of save decision.
+    """
+    print("\n--- Cryptographic Parameter Setup ---")
+    secret = input("Enter the secret to be protected:\n").strip()
+    # Objective 2: allow 0-3 decoys, not 1-1000
+    num_decoys = _prompt_decoy_count()
+    decoys = []
+    if num_decoys > 0:
+        print("--- Configure Decoy Secrets ---")
+        print("A decoy is returned when real restoration criteria are not met.")
+        print("They must look plausible and be Base64-encoded (RFC 4648).")
+        for i in range(1, num_decoys + 1):
+            while True:
+                d = input(f"Enter decoy secret #{i} of {num_decoys}: ").strip()
+                try:
+                    decoys.append(_require_base64(d))
+                    break
+                except ValueError as e:
+                    print(f"[Invalid] {e}")
+    # Store decoys indistinguishably: same container as the real secret (no flags)
+    # e.g., secrets_list = [secret] + decoys  (downstream selection logic chooses which to reveal)
+
+    # DTE-encode the secret; we keep transport as base64 of the DTE seed package
+    real_secret = secret
+    dte_real = DTE.encode(real_secret)
+    real_b64 = dte_real["seed_b64"]
+
+    # Process decoys with DTE encoding
+    dte_decoys = [DTE.encode(d)["seed_b64"] for d in decoys]
+
+    real_bytes = real_b64.encode("utf-8")
+    decoy_bytes_list = [db64.encode("utf-8") for db64 in dte_decoys]
+
+    total_correct = sum(len(q.get("correct_answers", [])) for q in questions)
+    total_alts = sum(len(q.get("alternatives", [])) for q in questions)
+    total_incorrect = max(0, total_alts - total_correct)
+    log_debug("Counts computed for kit build.",
+              level="INFO", component="CRYPTO",
+              details={"total_correct": total_correct, "total_alternatives": total_alts, "total_incorrect": total_incorrect})
+
+    if total_correct == 0:
+        print("ERROR: No correct answers were defined across your questions. At least one is required.")
+        return
+
+    min_thr = _policy_min_threshold(total_correct)
+    max_thr = total_correct
+    print(f"\n[Policy] Minimum threshold for your {total_correct} real share(s) is {min_thr}.")
+    r_thr = get_threshold("Enter the real threshold", min_thr, max_thr)
+
+    try:
+        max_b64_len = max([len(real_b64)] + [len(db64) for db64 in dte_decoys])
+    except Exception as e:
+        log_exception(e, "Failed to compute max base64 length across real/decoy secrets")
+        # Fallback safely to real secret length
+        max_b64_len = len(real_b64)
+    log_debug(
+        "Base64 length bounds computed for pad selection.",
+        level="INFO",
+        component="CRYPTO",
+        details={"real_len": len(real_b64), "decoy_count": len(dte_decoys), "max_len": max_b64_len},
+    )
+    pad_size = prompt_pad_size_multi(max_b64_len)
+
+    # Argon2 parameters
+    arg_time, arg_mem, arg_par = prompt_argon2_parameters()
+    log_debug("Argon2id parameters confirmed for kit.",
+              level="INFO", component="CRYPTO",
+              details={"time_cost": arg_time, "memory_cost": arg_mem, "parallelism": arg_par})
+
+    bits = _combinatorial_bits(total_alts, total_correct, r_thr)
+    if not math.isfinite(bits) or bits < SECQ_MIN_BITS:
+        log_debug(
+            "Combinatorial hardness below policy threshold.",
+            level="WARNING",
+            component="CRYPTO",
+            details={"bits": bits, "N": total_alts, "C": total_correct, "T": r_thr, "policy_min_bits": SECQ_MIN_BITS},
+        )
+        print(f"\n[WARNING] Combinatorial hardness low: ~{bits:.1f} bits for N={total_alts}, C={total_correct}, T={r_thr}.")
+        print("Add more questions/alternatives and/or increase the threshold for stronger security.")
+        proceed = input("Proceed anyway and build the ENCRYPTED kit? (y/N): ").strip().lower()
+        if proceed != 'y':
+            print("Aborted per your choice. No kit was built or saved.")
+            return
+        print("Proceeding with kit build despite low hardness (per your choice).")
+    else:
+        print(f"[OK] Combinatorial hardness: ~{bits:.1f} bits.")
+    log_debug(
+        "Combinatorial hardness evaluation complete.",
+        level="INFO",
+        component="CRYPTO",
+        details={"bits": bits, "N": total_alts, "C": total_correct, "T": r_thr},
+    )
+
+    # Flatten (q,alt) with correctness flags
+    all_items: list[tuple[str, str, str, str, bool]] = []
+    for q in questions:
+        q_text = q["text"]
+        alts = q["alternatives"]
+        q_hash = _integrity_hash_for_kit(q_text, alts)
+        correct_set_norm = set(_norm_for_kit(a) for a in q.get("correct_answers", []))
+        for alt in alts:
+            is_correct = _norm_for_kit(alt) in correct_set_norm
+            all_items.append((q_hash, _alt_hash_for_kit(alt), q_text, alt, is_correct))
+    total_alts = len(all_items)
+
+    # Split real-only shares across correct alts; decoys across all alts
+    try:
+        real_shares_correct = asyncio.run(
+            sss_split(real_b64.encode("utf-8"), sum(1 for it in all_items if it[4]), r_thr, pad=pad_size)
+        )
+    except Exception as e:
+        log_exception(e, "Error splitting REAL secret")
+        return
+
+    # First decoy gets threshold 1; others match real r_thr (unchanged behavior)
+    decoy_thresholds = [1] + [r_thr] * (len(decoy_bytes_list) - 1)
+    decoy_shares_by_idx: list[list[bytearray]] = []
+    try:
+        for db64, thr in zip(dte_decoys, decoy_thresholds):
+            shares = asyncio.run(sss_split(db64.encode("utf-8"), total_alts, thr, pad=pad_size))
+            decoy_shares_by_idx.append(shares)
+    except Exception as e:
+        log_exception(e, "Error splitting DECOY secret(s)")
+        return
+
+    # Auth catalog (unchanged semantics; now authenticates DTE-decoded outputs)
+    def _auth_entry(secret_seed_b64: str) -> dict:
+        secret_bytes = base64.b64decode(secret_seed_b64.encode("utf-8"), validate=True)
+        salt = random_bytes(16)
+        k_auth = hkdf_sha256(ikm=secret_bytes, salt=salt, info=b"SECQ final-auth v3", dk_len=32)
+        tag = hmac_sha256(k_auth, secret_bytes)
+        return {"salt": base64.b64encode(salt).decode(), "hmac_sha256": base64.b64encode(tag).decode()}
+
+    auth_catalog = [_auth_entry(real_b64)] + [_auth_entry(db64) for db64 in dte_decoys]
+    perm = list(range(len(auth_catalog)))
+    pysecrets.SystemRandom().shuffle(perm)
+    auth_catalog = [auth_catalog[i] for i in perm]
+    # Also expose a single final_auth for compatibility with prior tooling
+    final_auth = _auth_entry(real_b64)
+
+    encrypted_shares: dict[str, dict[str, dict]] = {}
+    real_idx = 0
+    share_len = pad_size + 1
+
+    # AEAD algorithm preference list (runtime gated)
+    aead_prefs = []
+    if hasattr(CF, "encrypt_xchacha20poly1305"): aead_prefs.append("xchacha20poly1305")
+    if hasattr(CF, "encrypt_aes256gcm_siv"):     aead_prefs.append("aes256gcm_siv")
+    aead_prefs.extend(["chacha20poly1305", "aes256gcm"])
+
+    def _enc_one_share(plaintext_share: bytes, q_hash: str, alt_text: str, alg_choice: str) -> dict:
+        salt = random_bytes(16)
+        key = _derive_answer_key(alt_text, salt, arg_time, arg_mem, arg_par)
+        aad = _aad_bytes(q_hash, _alt_hash_for_kit(alt_text), alg_choice)
+        enc = _aead_encrypt(alg_choice, plaintext_share, key, aad=aad)
+        out = {
+            "ciphertext": enc["ciphertext"],
+            "nonce": enc["nonce"],
+            "algorithm": alg_choice,
+            "salt": base64.b64encode(salt).decode(),
+            "kdf": {"type": "argon2id", "t": arg_time, "m": arg_mem, "p": arg_par, "len": 32}
+        }
+        if "tag" in enc:  # AES-GCM may include tag; XChaCha+Poly1305 does not separate
+            out["tag"] = enc["tag"]
+        return out
+
+    for global_idx, (q_hash, a_hash, q_text, alt_text, is_corr) in enumerate(all_items):
+        encrypted_shares.setdefault(q_hash, {})
+        per_alt_block = {}
+
+        if is_corr:
+            if real_idx < len(real_shares_correct):
