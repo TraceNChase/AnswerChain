@@ -309,7 +309,7 @@ if they want even stronger security.
 
 ## [noble-hashes](https://github.com/paulmillr/noble-hashes)
 - **Software audit:** ✅ 
-- **Algorithm audit:** ✅ Yes  
+- **Algorithm audit:** ✅  
 - **Version:** 1.0.0 (Sep 2024) by [cure53](https://cure53.de/)  
 - **PDFs:** [pentest report](https://cure53.de/pentest-report_hashing-libs.pdf), [in-repo](https://github.com/paulmillr/noble-hashes/blob/main/audit/2022-01-05-cure53-audit-nbl2.pdf)  
 - **Changes since audit:** [Compare changes](https://github.com/paulmillr/noble-hashes/compare/1.0.0..main)
@@ -318,7 +318,7 @@ if they want even stronger security.
 
 ## [noble-ciphers](https://github.com/paulmillr/noble-ciphers)
 - **Software audit:** ✅ 
-- **Algorithm audit:** ✅ Yes  
+- **Algorithm audit:** ✅  
 - **Version:** 1.0.0 (Sep 2024) by [cure53](https://cure53.de/)  
 - **PDFs:** [pentest report](https://cure53.de/audit-report_noble-crypto-libs.pdf), [in-repo](https://github.com/paulmillr/noble-ciphers/blob/main/audit/2024-09-cure53-audit-nbl4.pdf)  
 - **Changes since audit:** [Compare changes](https://github.com/paulmillr/noble-ciphers/compare/1.0.0..main)
