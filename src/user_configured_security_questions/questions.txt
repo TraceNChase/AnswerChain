@@ -1,13 +1,13 @@
 --- CRYPTOGRAPHIC CONFIGURATION ---
 Secret: [encoded via DTE + SSS; not stored in JSON]
-Shamir Threshold (real path): 32
+Shamir Threshold (real path): 34
 Pad Size (bucketized): 128
 Argon2id Parameters:
  - Time Cost: 1
  - Memory Cost: 16384 KiB
  - Parallelism: 8
 
-Auth Catalog Entries (real+decoys, shuffled): 2
+Auth Catalog Entries (real+decoys, shuffled): 1
 
 --- SECURITY QUESTIONS ---
 

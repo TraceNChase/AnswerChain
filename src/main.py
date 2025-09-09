@@ -503,19 +503,12 @@ def setup_phase():
         if choice == '1':
             manual_questions = manual_input_mode()
             if manual_questions:
-                print("\nWould you like to save your questions?")
-                print("Press j – Save as both JSON and text file")
-                print("Press c – Continue without saving")
-                choice = input("Choice: ").strip().lower()
-                if choice == "j":
-                    # NEW: persist immediately and unconditionally (before crypto)
-                    # Determine output directory relative to this file
-                    out_dir = Path(__file__).resolve().parent / "user_configured_security_questions"
-                    # The variable holding the questions should be serializable (list/dicts).
-                    # Replace `questions_collected` with your actual in-memory data structure.
-                    _persist_questions_now(manual_questions, out_dir)
-                else:
-                    pass  # continue without saving
+                # Build the encrypted recovery kit FIRST, then ask if user wants to save it.
+                try:
+                    kit = save_questions(manual_questions)  # returns kit after building; handles save prompt
+                except Exception as e:
+                    log_exception(e, "Error during encrypted kit preparation")
+                # Regardless of save decision, return to setup menu
             return
         elif choice == '2':
             file_load_phase()
@@ -796,9 +789,9 @@ def _prompt_correct_answers_for_question(alternatives: list[str]) -> list[str]:
 
 def prompt_save_decision():
     while True:
-        print("\nWould you like to save your questions?")
-        print("Press j – Save as both JSON and text file")
-        print("Press c – Continue without saving")
+        print("\nWould you like to save the ENCRYPTED configuration?")
+        print("Press j - Save as both JSON and text file")
+        print("Press c - Continue without saving")
         c = input("Choice: ").strip().lower()
         if c in ("j", "c"):
             return c
@@ -828,16 +821,16 @@ def _prompt_decoy_secrets(count: int, real_secret: str) -> list[str]:
 
 def save_questions(questions):
     """
-    Builds and saves a SELF-CONTAINED recovery kit (passwordless per-answer keys).
-    Enforces a minimum combinatorial hardness before allowing kit generation.
-    Enhanced with:
-    - DTE encoding for all secrets (real + decoys)
-    - Bucketized padding for share-length indistinguishability
-    - Runtime-gated AEAD preference (XChaCha20-Poly1305 / AES-256-GCM-SIV)
+    Builds a SELF-CONTAINED recovery kit (passwordless per-answer keys) and then
+    prompts the user whether to save it. The .json content is encrypted via per-answer
+    AEAD-wrapped Shamir shares and is only unlockable by entering the correct sequence
+    of answers to the security questions. No user-supplied password is used.
+
+    Returns the in-memory recovery_kit dict regardless of save decision.
     """
     print("\n--- Cryptographic Parameter Setup ---")
     secret = input("Enter the secret to be protected:\n").strip()
-    # Objective 2: allow 0–3 decoys, not 1–1000
+    # Objective 2: allow 0-3 decoys, not 1-1000
     num_decoys = _prompt_decoy_count()
     decoys = []
     if num_decoys > 0:
@@ -855,9 +848,6 @@ def save_questions(questions):
     # Store decoys indistinguishably: same container as the real secret (no flags)
     # e.g., secrets_list = [secret] + decoys  (downstream selection logic chooses which to reveal)
 
-    # ... rest of Argon2id / threshold workflow ...
-    # NOTE: persistence is already done; even if checks abort, artifacts exist.
-    
     # DTE-encode the secret; we keep transport as base64 of the DTE seed package
     real_secret = secret
     dte_real = DTE.encode(real_secret)
@@ -885,7 +875,18 @@ def save_questions(questions):
     print(f"\n[Policy] Minimum threshold for your {total_correct} real share(s) is {min_thr}.")
     r_thr = get_threshold("Enter the real threshold", min_thr, max_thr)
 
-    max_b64_len = max(len(real_b64), *(len(db64) for db64 in dte_decoys))
+    try:
+        max_b64_len = max([len(real_b64)] + [len(db64) for db64 in dte_decoys])
+    except Exception as e:
+        log_exception(e, "Failed to compute max base64 length across real/decoy secrets")
+        # Fallback safely to real secret length
+        max_b64_len = len(real_b64)
+    log_debug(
+        "Base64 length bounds computed for pad selection.",
+        level="INFO",
+        component="CRYPTO",
+        details={"real_len": len(real_b64), "decoy_count": len(dte_decoys), "max_len": max_b64_len},
+    )
     pad_size = prompt_pad_size_multi(max_b64_len)
 
     # Argon2 parameters
@@ -896,12 +897,27 @@ def save_questions(questions):
 
     bits = _combinatorial_bits(total_alts, total_correct, r_thr)
     if not math.isfinite(bits) or bits < SECQ_MIN_BITS:
-        print(f"\n[ABORT] Combinatorial hardness too low: ~{bits:.1f} bits "
-              f"for N={total_alts}, C={total_correct}, T={r_thr}.")
-        print("Add more questions/alternatives and/or increase the threshold, then try again.\n")
-        return
+        log_debug(
+            "Combinatorial hardness below policy threshold.",
+            level="WARNING",
+            component="CRYPTO",
+            details={"bits": bits, "N": total_alts, "C": total_correct, "T": r_thr, "policy_min_bits": SECQ_MIN_BITS},
+        )
+        print(f"\n[WARNING] Combinatorial hardness low: ~{bits:.1f} bits for N={total_alts}, C={total_correct}, T={r_thr}.")
+        print("Add more questions/alternatives and/or increase the threshold for stronger security.")
+        proceed = input("Proceed anyway and build the ENCRYPTED kit? (y/N): ").strip().lower()
+        if proceed != 'y':
+            print("Aborted per your choice. No kit was built or saved.")
+            return
+        print("Proceeding with kit build despite low hardness (per your choice).")
     else:
         print(f"[OK] Combinatorial hardness: ~{bits:.1f} bits.")
+    log_debug(
+        "Combinatorial hardness evaluation complete.",
+        level="INFO",
+        component="CRYPTO",
+        details={"bits": bits, "N": total_alts, "C": total_correct, "T": r_thr},
+    )
 
     # Flatten (q,alt) with correctness flags
     all_items: list[tuple[str, str, str, str, bool]] = []
@@ -947,6 +963,8 @@ def save_questions(questions):
     perm = list(range(len(auth_catalog)))
     pysecrets.SystemRandom().shuffle(perm)
     auth_catalog = [auth_catalog[i] for i in perm]
+    # Also expose a single final_auth for compatibility with prior tooling
+    final_auth = _auth_entry(real_b64)
 
     encrypted_shares: dict[str, dict[str, dict]] = {}
     real_idx = 0
@@ -1013,43 +1031,72 @@ def save_questions(questions):
             "real_threshold": r_thr, "pad_size": pad_size,
             "argon2_params": {"time_cost": arg_time, "memory_cost": arg_mem, "parallelism": arg_par},
             "version": KIT_VERSION, "secrets_count": 1 + len(decoy_bytes_list),
-            "auth_catalog": auth_catalog
+            "auth_catalog": auth_catalog,
+            "final_auth": final_auth
         },
         "questions": questions_out,
         "encrypted_shares": encrypted_shares
     }
+    log_debug(
+        "Recovery kit constructed in-memory.",
+        level="INFO",
+        component="CRYPTO",
+        details={
+            "questions": len(questions_out),
+            "shares_per_question": "variable",
+            "secrets_count": 1 + len(decoy_bytes_list),
+            "aead_pref": aead_prefs,
+        },
+    )
+    # IMPORTANT: At this point, the recovery_kit is fully constructed in-memory.
+    # Now prompt user if they want to save the ENCRYPTED kit to disk.
+    decision = prompt_save_decision()
+    if decision == 'j':
+        SAVE_DIR.mkdir(parents=True, exist_ok=True)
+        default_name = f"recovery_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        base_name = input(f"Enter a base name for the save files (or press Enter for '{default_name}'): ").strip() or default_name
+        json_file = SAVE_DIR / f"{base_name}.json"
+        txt_file = SAVE_DIR / f"{base_name}.txt"
 
-    SAVE_DIR.mkdir(parents=True, exist_ok=True)
-    default_name = f"recovery_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-    base_name = input(f"Enter a base name for the save files (or press Enter for '{default_name}'): ").strip() or default_name
-    json_file = SAVE_DIR / f"{base_name}.json"
-    txt_file = SAVE_DIR / f"{base_name}.txt"
+        with open(json_file, "w", encoding="utf-8") as jf:
+            json.dump(recovery_kit, jf, indent=2)
+        with open(txt_file, "w", encoding="utf-8") as tf:
+            tf.write("--- CRYPTOGRAPHIC CONFIGURATION ---\n")
+            tf.write("Secret: [encoded via DTE + SSS; not stored in JSON]\n")
+            tf.write(f"Shamir Threshold (real path): {r_thr}\n")
+            tf.write(f"Pad Size (bucketized): {pad_size}\n")
+            tf.write("Argon2id Parameters:\n")
+            tf.write(f" - Time Cost: {arg_time}\n")
+            tf.write(f" - Memory Cost: {arg_mem} KiB\n")
+            tf.write(f" - Parallelism: {arg_par}\n")
+            tf.write(f"\nAuth Catalog Entries (real+decoys, shuffled): {len(auth_catalog)}\n")
+            tf.write("\n--- SECURITY QUESTIONS ---\n\n")
+            for q in questions:
+                qtype = "CRITICAL" if q.get("is_critical") else "STANDARD"
+                tf.write(f"[Question {q['id']}] {q['text']} (Type: {qtype})\n\n")
+                for i, alt in enumerate(q['alternatives'], 1):
+                    letter = chr(ord('A') + i - 1)
+                    tf.write(f"{letter}) {alt}\n")
+                tf.write("\n---\n\n")
 
-    with open(json_file, "w", encoding="utf-8") as jf:
-        json.dump(recovery_kit, jf, indent=2)
-    with open(txt_file, "w", encoding="utf-8") as tf:
-        tf.write("--- CRYPTOGRAPHIC CONFIGURATION ---\n")
-        tf.write("Secret: [encoded via DTE + SSS; not stored in JSON]\n")
-        tf.write(f"Shamir Threshold (real path): {r_thr}\n")
-        tf.write(f"Pad Size (bucketized): {pad_size}\n")
-        tf.write("Argon2id Parameters:\n")
-        tf.write(f" - Time Cost: {arg_time}\n")
-        tf.write(f" - Memory Cost: {arg_mem} KiB\n")
-        tf.write(f" - Parallelism: {arg_par}\n")
-        tf.write(f"\nAuth Catalog Entries (real+decoys, shuffled): {len(auth_catalog)}\n")
-        tf.write("\n--- SECURITY QUESTIONS ---\n\n")
-        for q in questions:
-            qtype = "CRITICAL" if q.get("is_critical") else "STANDARD"
-            tf.write(f"[Question {q['id']}] {q['text']} (Type: {qtype})\n\n")
-            for i, alt in enumerate(q['alternatives'], 1):
-                letter = chr(ord('A') + i - 1)
-                tf.write(f"{letter}) {alt}\n")
-            tf.write("\n---\n\n")
+        print(f"\nOK Encrypted configuration saved successfully!")
+        print(f"JSON file: {json_file}")
+        print(f"Text file: {txt_file}")
+        log_debug(
+            "Recovery kit saved to disk.",
+            level="INFO",
+            component="CRYPTO",
+            details={"json_file": str(json_file), "txt_file": str(txt_file)},
+        )
+    else:
+        print("\nEncrypted configuration was NOT saved (per your choice). You can re-run saving later.")
+        log_debug(
+            "User opted not to save the encrypted kit.",
+            level="INFO",
+            component="GENERAL",
+        )
 
-    print(f"\nOK Configuration saved successfully!")
-    print(f"JSON file: {json_file}")
-    print(f"Text file: {txt_file}")
-    log_debug("Recovery kit saved (passwordless; with DTE; auth catalog; decoy-enabled).", level="INFO")
+    return recovery_kit
 
 # ---------- Recovery UI Flow from a saved kit (with DTE decode) ---------------
 def _try_combine_with_sampling(partials: list[bytes], r_thr: int) -> bytes | None:

@@ -33,6 +33,16 @@ UNBREAKABLE IMPLEMENTATION
 This directive is final, binding, and non-negotiable. Any violation or deviation is strictly forbidden.
 """
 
+# WARNING — CORE MODULE IMMUTABILITY & USAGE GUARANTEE
+# ----------------------------------------------------
+# This module provides baseline logging infrastructure for AnswerChain.
+# It MUST NOT be overwritten or removed. Only additive, backward-compatible
+# improvements are allowed. The initialization functions (archive_all_existing_logs,
+# ensure_debug_dir, and internal _ensure_log_files) must continue to be invoked
+# at startup so that debug logs are always collected. Do not bypass, stub, or
+# deprecate these entry points. If refactoring is ever required, preserve the
+# public function names and semantics to avoid breaking dependents.
+
 import os
 import json
 import uuid
