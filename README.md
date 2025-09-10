@@ -23,7 +23,10 @@
 [![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen)](https://github.com/foolshopedemocrazy/AnswerChain/commits)
 
 ## Project Documentation and Guide
+
 Visit the project site (under construction):
+
+
 [![d96115b3](https://github.com/user-attachments/assets/a0b0d896-3e30-43ca-bb4b-8defa45783c1)](https://tracenchase.github.io/AnswerChain)
 
 
