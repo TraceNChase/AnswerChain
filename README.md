@@ -9,7 +9,7 @@
 ***🛡️🔒🔑 Securely encrypt & decrypt data with custom security questions — all processed offline 🔑🔒🛡️***
 
 
-<img width="102" height="102" alt="d96115b3-6ca2-4c43-9bf8-98f7e8dd591e (1)" src="https://github.com/user-attachments/assets/52de8430-93c1-416b-a9dc-ba51a8dade9e" />
+<img width="205" height="205" alt="d96115b3-6ca2-4c43-9bf8-98f7e8dd591e (2)" src="https://github.com/user-attachments/assets/8484fa6b-ad52-4683-8231-8b2f0c47d07a" />
 
 
 
