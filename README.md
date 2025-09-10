@@ -9,7 +9,6 @@
 ***🛡️🔒🔑 Securely encrypt & decrypt data with custom security questions — all processed offline 🔑🔒🛡️***
 
 
-<img width="205" height="205" alt="d96115b3-6ca2-4c43-9bf8-98f7e8dd591e (2)" src="https://github.com/user-attachments/assets/8484fa6b-ad52-4683-8231-8b2f0c47d07a" />
 
 
 
@@ -25,6 +24,7 @@
 ## Project Documentation and Guide
 Visit the project site: [AnswerChain GitHub Pages](https://tracenchase.github.io/AnswerChain/)
 
+<img width="205" height="205" alt="d96115b3-6ca2-4c43-9bf8-98f7e8dd591e (2)" src="https://github.com/user-attachments/assets/bb334af4-5a18-4c92-8a57-8d9c0d754008" />
 
 
 # 📑 Table of Contents
