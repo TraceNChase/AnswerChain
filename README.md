@@ -24,7 +24,7 @@
 ## Project Documentation and Guide
 Visit the project site: [AnswerChain GitHub Pages](https://tracenchase.github.io/AnswerChain/)
 
-[![a1122](https://github.com/user-attachments/assets/085df38b-f3af-4ccc-91e9-4257d89b2ebd)](https://tracenchase.github.io/AnswerChain)
+[<img width="1536" height="1024" alt="a1122" src="https://github.com/user-attachments/assets/085df38b-f3af-4ccc-91e9-4257d89b2ebd" />](https://tracenchase.github.io/AnswerChain)
 
 
 # 📑 Table of Contents
