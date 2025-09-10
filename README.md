@@ -10,7 +10,6 @@
 
 
 
-[![d96115b3](https://github.com/user-attachments/assets/a0b0d896-3e30-43ca-bb4b-8defa45783c1)](https://tracenchase.github.io/AnswerChain)
 
 
 
@@ -24,9 +23,9 @@
 [![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen)](https://github.com/foolshopedemocrazy/AnswerChain/commits)
 
 ## Project Documentation and Guide
-Visit the project site: [AnswerChain GitHub Pages](https://tracenchase.github.io/AnswerChain/)
+Visit the project site (under construction):
+[![d96115b3](https://github.com/user-attachments/assets/a0b0d896-3e30-43ca-bb4b-8defa45783c1)](https://tracenchase.github.io/AnswerChain)
 
-[<img width="1536" height="1024" alt="a1122" src="https://github.com/user-attachments/assets/085df38b-f3af-4ccc-91e9-4257d89b2ebd" />](https://tracenchase.github.io/AnswerChain)
 
 
 # 📑 Table of Contents
