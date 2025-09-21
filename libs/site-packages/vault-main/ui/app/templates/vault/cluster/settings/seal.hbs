@@ -1,0 +1,18 @@
+{{!
+  Copyright (c) HashiCorp, Inc.
+  SPDX-License-Identifier: BUSL-1.1
+}}
+
+<PageHeader as |p|>
+  <p.levelLeft>
+    <h1 class="title is-3">
+      Seal this Vault
+    </h1>
+  </p.levelLeft>
+</PageHeader>
+
+{{#if this.model.seal.canUpdate}}
+  <SealAction @onSeal={{action "seal"}} />
+{{else}}
+  <EmptyState @title="This token does not have sufficient capabilities to seal this vault" />
+{{/if}}

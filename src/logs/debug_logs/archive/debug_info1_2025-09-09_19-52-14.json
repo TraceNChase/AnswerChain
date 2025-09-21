@@ -1,0 +1,184 @@
+{
+  "timestamp": "2025-09-09T19:52:14.757761",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-09T19:52:18.015486",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\user_config.json",
+    "threshold": 32,
+    "pad_size": 128,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 16384,
+      "parallelism": 8
+    },
+    "q_count": 14,
+    "secrets_count": 2
+  }
+}
+{
+  "timestamp": "2025-09-09T19:52:58.172778",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T19:52:58.172778",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "First pet?",
+    "picked_count": 3
+  }
+}
+{
+  "timestamp": "2025-09-09T19:52:59.912824",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T19:52:59.912824",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 2,
+    "q_text": "Rex Alternative",
+    "picked_count": 3
+  }
+}
+{
+  "timestamp": "2025-09-09T19:53:01.297821",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T19:53:01.298821",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 3,
+    "q_text": "Rex Alternative",
+    "picked_count": 3
+  }
+}
+{
+  "timestamp": "2025-09-09T19:53:03.073106",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q4 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T19:53:03.074107",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 4,
+    "q_text": "Rex Alternative",
+    "picked_count": 3
+  }
+}
+{
+  "timestamp": "2025-09-09T19:53:05.945223",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q5 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T19:53:05.946223",
+  "run_id": "49df425e-07c5-4fc5-872b-f4b6a46341cc",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 5,
+    "q_text": "Rex Alternative",
+    "picked_count": 3
+  }
+}

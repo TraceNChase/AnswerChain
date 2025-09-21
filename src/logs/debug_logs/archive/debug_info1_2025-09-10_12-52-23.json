@@ -1,0 +1,330 @@
+{
+  "timestamp": "2025-09-10T12:52:23.234303",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:52:57.518998",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:52:57.519999",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-10T12:52:59.554768",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Base64 length bounds computed for pad selection.",
+  "details": {
+    "real_len": 88,
+    "decoy_count": 0,
+    "max_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:05.051725",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using PAD size (bucketized): 128",
+  "details": {
+    "min_pad": 90,
+    "max_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:08.886557",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using user-provided password='SECQ_param_check' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:53:08.892498",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='kmYloNOnDALma7cbh4wcLw=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:53:09.017069",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "kmYloNOnDALma7cbh4wcLw==",
+      "ephemeral_password": "<not ephemeral>"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": false,
+      "key_b64": "IL2LElFqxkaVIlvcCs8Y2y+0kCKOV2iY8S2wIk2LdbA=",
+      "derived_key_b64": "IL2LElFqxkaVIlvcCs8Y2y+0kCKOV2iY8S2wIk2LdbA=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 1024,
+        "parallelism": 1,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:09.018070",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Argon2id parameters confirmed for kit.",
+  "details": {
+    "time_cost": 1,
+    "memory_cost": 1024,
+    "parallelism": 1
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:09.018070",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "WARNING",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness below policy threshold.",
+  "details": {
+    "bits": 19.59453202228287,
+    "N": 93,
+    "C": 42,
+    "T": 15,
+    "policy_min_bits": 80.0
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.583065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness evaluation complete.",
+  "details": {
+    "bits": 19.59453202228287,
+    "N": 93,
+    "C": 42,
+    "T": 15
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.584066",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 1,
+    "pad": 128,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.586065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 1 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 996, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.587065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 2,
+    "pad": 256,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.588065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 2 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 996, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.588065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 3,
+    "pad": 384,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.589065",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 3 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 996, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.590064",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 4,
+    "pad": 512,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:53:11.590064",
+  "run_id": "e6715c7b-4e17-4ed9-8e7c-ba90c847cd4a",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 4 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 996, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "timestamp": "2025-09-21T18:57:15.052426",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-21T18:57:15.053851",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting demonstration flow (Option 2)...",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.054826",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What are your favorite hobbies?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.055350",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What is your favorite subject in school?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.056004",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What type of food do you like?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.056499",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What is your favorite mode of transportation?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.057040",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'Which language(s) would you like to learn?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.057560",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of places do you enjoy visiting?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.058072",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of beverages do you prefer?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.058606",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'Which color(s) do you like the most?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.059099",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of movies do you enjoy?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.059601",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What type of games do you like to play?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.060127",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of music instruments do you enjoy playing or listening to?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.060610",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What are your favorite types of flowers?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.061206",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of clothes do you prefer wearing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.061680",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of pets would you like to have?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.062177",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What is your favorite type of dessert?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.062648",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What type of jobs or careers are you interested in?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.063135",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What are your favorite kinds of drinks?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.063628",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of landscapes do you find most beautiful?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.064117",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What are your favorite fruits to eat?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.064594",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of places do you like to shop at?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.065141",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What kind of animals do you find fascinating?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.065636",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What is your favorite type of beverage?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.066146",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'Which outdoor place(s) would you love to explore?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.066629",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'What is your favorite type of cuisine?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.067133",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Question 'Which kind of exercise do you enjoy doing?' had empty 'correct_answers'. Now set them all as correct.",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.067644",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.068155",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "DEBUG",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1: text='What are your favorite hobbies?' => user_picks=7 selected; local counts: correct=7, incorrect=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.068687",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "After re-edit Q1: c=7, i=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:15.069171",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "FINAL TALLY => c_count=7, i_count=0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T18:57:53.730729",
+  "run_id": "1d8d3de9-8257-4ea9-a250-f0e5cdec6962",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "Fatal error in main()",
+  "details": {
+    "exception_type": "OSError",
+    "exception_str": "[Errno 22] Invalid argument",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 1892, in main\n    print(\"Fewer than 10 correct => re-edit or abort.\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: [Errno 22] Invalid argument\n"
+  }
+}

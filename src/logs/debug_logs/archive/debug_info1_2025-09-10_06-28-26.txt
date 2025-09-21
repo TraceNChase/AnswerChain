@@ -1,0 +1,22 @@
+[2025-09-10T06:28:26.132375] [INFO] [SYSTEM] Start new run (run_id=0968184d-d340-4fe3-aa3b-246094fc3744)
+[2025-09-10T06:28:51.775471] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 3
+[2025-09-10T06:29:00.910527] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Counts computed for kit build.
+[2025-09-10T06:29:05.776207] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Base64 length bounds computed for pad selection.
+[2025-09-10T06:29:09.205446] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using PAD size (bucketized): 128
+[2025-09-10T06:29:12.028213] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T06:29:12.799823] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T06:29:13.636725] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T06:29:13.637725] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Argon2id parameters confirmed for kit.
+[2025-09-10T06:29:13.638724] [WARNING] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness below policy threshold.
+[2025-09-10T06:29:15.886040] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness evaluation complete.
+[2025-09-10T06:29:15.888042] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() via node-bridge
+[2025-09-10T06:29:16.249003] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() complete.
+[2025-09-10T06:29:16.250004] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() via node-bridge
+[2025-09-10T06:29:16.320520] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() complete.
+[2025-09-10T06:29:16.321520] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() via node-bridge
+[2025-09-10T06:29:17.013183] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() complete.
+[2025-09-10T06:29:17.014185] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() via node-bridge
+[2025-09-10T06:29:17.703017] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() complete.
+[2025-09-10T06:29:19.492043] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Rex' (raw).
+[2025-09-10T06:29:19.493048] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Rex', salt(b64)='N4YMm8UMy4+rgSSFJYFgeg=='
+[2025-09-10T06:29:19.604639] [ERROR] [GENERAL] debug_utils.py:log_exception:286 - Error during encrypted kit preparation

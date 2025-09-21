@@ -1,0 +1,79 @@
+# =========================
+# Root .gitignore (full)
+# =========================
+
+# --- Python environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# --- Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Type checking / linters / analysis
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# --- Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Build & packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+sdist/
+wheels/
+
+# --- Tool caches
+.tox/
+.nox/
+.cache/
+
+# --- Jupyter
+.ipynb_checkpoints/
+
+# --- Node (if present anywhere)
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+
+# --- IDE / Editor
+.vscode/
+.idea/
+.spyproject
+.ropeproject
+*.code-workspace
+
+# --- OS files (Windows/macOS)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# --- Logs & env files
+*.log
+.env
+.env.*
+*.env
+
+# --- Site/docs output (e.g., MkDocs)
+site/# --- Vendored JS (ignored by default; commit only if you truly need to track it)
+bridge/vendor/
+
+# --- Local inventory listings (ignore all such files)
+paths files*.txt

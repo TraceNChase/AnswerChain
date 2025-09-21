@@ -1,0 +1,690 @@
+{
+  "timestamp": "2025-09-10T06:17:00.234552",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:27.351512",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 3",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:36.055109",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:39.714019",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Base64 length bounds computed for pad selection.",
+  "details": {
+    "real_len": 88,
+    "decoy_count": 3,
+    "max_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:44.309486",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using PAD size (bucketized): 128",
+  "details": {
+    "min_pad": 90,
+    "max_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:47.936898",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:49.265801",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:50.020194",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:50.021194",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Argon2id parameters confirmed for kit.",
+  "details": {
+    "time_cost": 1,
+    "memory_cost": 1,
+    "parallelism": 1
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:50.022194",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "WARNING",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness below policy threshold.",
+  "details": {
+    "bits": 21.12504673898166,
+    "N": 93,
+    "C": 42,
+    "T": 16,
+    "policy_min_bits": 80.0
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.465300",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness evaluation complete.",
+  "details": {
+    "bits": 21.12504673898166,
+    "N": 93,
+    "C": 42,
+    "T": 16
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.467310",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 88,
+    "shares": 42,
+    "threshold": 16,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.766459",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "sample_share_hashes": [
+      "8c9f143f1ac8ab016cd8ce8f223bb3439493e57d17082ec86ac5d487ef38f200",
+      "132a1040768c34ee2eebbd1e357da9b7032f698fbe37317ca70935b2e77266a8",
+      "1c9c806822d8d817069dea3a551cfa9650896daca48593a44cd629d11764e8a9"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.768459",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 88,
+    "shares": 93,
+    "threshold": 1,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.836479",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "sample_share_hashes": [
+      "f7108ea7b687b50a64c0f8e8b59344e357254f55855c96b913417963e2427859",
+      "e99cce637d360b3a1a8090798e04b8186ad758053e2b13b5f98aedc0c8986c4d",
+      "4e3fc75c87645cd8526fd32d241f1c4336f1662845867c162f029bcdb488cf9c"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:52.837480",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 88,
+    "shares": 93,
+    "threshold": 16,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:53.390375",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "sample_share_hashes": [
+      "3aca577eab065f6ebce13b6129c539cd8d219c0433ffa86a0d225622e0711f75",
+      "098ee9bb649029437848666d3244e5295457806e156ae495c6a94fe5f6c04c2e",
+      "538dc64c2d50c4652d5e8c8eb4715f4d84bc3540a97b8c5e64af82244621967d"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:53.393367",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() via node-bridge",
+  "details": {
+    "secret_len": 88,
+    "shares": 93,
+    "threshold": 16,
+    "pad": 128
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:53.946482",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_split() complete.",
+  "details": {
+    "share_len": 129,
+    "xcoords": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "sample_share_hashes": [
+      "e7c2f8eb7e76cd65d6fe4c5bfee1ae625992ecc501c6edc88fd3135901671d57",
+      "f1fb5f9a1b4944409f0dbf02798f39447353c3adc6061721d978314ee5de512c",
+      "1da047b0eecd3670baace72f58576332356137eb7fa363d3755d84dff71e63d5"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-10T06:17:55.596067",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using user-provided password='Rex' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:55.597068",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='Rex', salt(b64)='YA8Fk7l+xjRLPUF9hEwO3A=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:17:55.723093",
+  "run_id": "626c9061-6ec0-4ab8-bcb3-5567d6cc6e0f",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "Error during encrypted kit preparation",
+  "details": {
+    "exception_type": "RuntimeError",
+    "exception_str": "bridge error: memory should be at least 8*p bytes",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 516, in setup_phase\n    kit = save_questions(manual_questions)  # returns kit after building; handles save prompt\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 1019, in save_questions\n    per_alt_block[\"s0\"] = _enc_one_share(real_share, q_hash, alt_text, alg_choice)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 990, in _enc_one_share\n    key = _derive_answer_key(alt_text, salt, arg_time, arg_mem, arg_par)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 333, in _derive_answer_key\n    key, _ = CF.derive_or_recover_key(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\CipherForge.py\", line 269, in derive_or_recover_key\n    key = derive_key_argon2id(\n          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\CipherForge.py\", line 80, in derive_key_argon2id\n    derived_bytes = argon2id(\n                    ^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 67, in argon2id\n    resp = _call({\n           ^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 61, in _call\n    raise RuntimeError(f\"bridge error: {resp.get('error')}\")\nRuntimeError: bridge error: memory should be at least 8*p bytes\n"
+  }
+}

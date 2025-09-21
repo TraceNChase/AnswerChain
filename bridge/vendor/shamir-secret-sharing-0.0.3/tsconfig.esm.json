@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "esm",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "inlineSources": false,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "paths": {
+      "shamir-secret-sharing/csprng": ["src/csprng"],
+    },
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

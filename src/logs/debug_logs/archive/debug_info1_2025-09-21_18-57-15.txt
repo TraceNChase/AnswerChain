@@ -1,0 +1,32 @@
+[2025-09-21T18:57:15.052426] [INFO] [SYSTEM] Start new run (run_id=1d8d3de9-8257-4ea9-a250-f0e5cdec6962)
+[2025-09-21T18:57:15.053851] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Starting demonstration flow (Option 2)...
+[2025-09-21T18:57:15.054826] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What are your favorite hobbies?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.055350] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What is your favorite subject in school?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.056004] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What type of food do you like?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.056499] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What is your favorite mode of transportation?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.057040] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'Which language(s) would you like to learn?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.057560] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of places do you enjoy visiting?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.058072] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of beverages do you prefer?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.058606] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'Which color(s) do you like the most?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.059099] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of movies do you enjoy?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.059601] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What type of games do you like to play?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.060127] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of music instruments do you enjoy playing or listening to?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.060610] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What are your favorite types of flowers?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.061206] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of clothes do you prefer wearing?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.061680] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of pets would you like to have?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.062177] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What is your favorite type of dessert?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.062648] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What type of jobs or careers are you interested in?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.063135] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What are your favorite kinds of drinks?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.063628] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of landscapes do you find most beautiful?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.064117] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What are your favorite fruits to eat?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.064594] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of places do you like to shop at?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.065141] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What kind of animals do you find fascinating?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.065636] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What is your favorite type of beverage?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.066146] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'Which outdoor place(s) would you love to explore?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.066629] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'What is your favorite type of cuisine?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.067133] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Question 'Which kind of exercise do you enjoy doing?' had empty 'correct_answers'. Now set them all as correct.
+[2025-09-21T18:57:15.067644] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-21T18:57:15.068155] [DEBUG] [GENERAL] debug_utils.py:log_debug:238 - Q1: text='What are your favorite hobbies?' => user_picks=7 selected; local counts: correct=7, incorrect=0
+[2025-09-21T18:57:15.068687] [INFO] [GENERAL] debug_utils.py:log_debug:238 - After re-edit Q1: c=7, i=0
+[2025-09-21T18:57:15.069171] [INFO] [GENERAL] debug_utils.py:log_debug:238 - FINAL TALLY => c_count=7, i_count=0
+[2025-09-21T18:57:53.730729] [ERROR] [GENERAL] debug_utils.py:log_exception:286 - Fatal error in main()

@@ -1,0 +1,136 @@
+{
+  "timestamp": "2025-09-09T20:30:11.000994",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-09T20:30:14.030533",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\user_config.json",
+    "threshold": 32,
+    "pad_size": 128,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 16384,
+      "parallelism": 8
+    },
+    "q_count": 14,
+    "secrets_count": 2
+  }
+}
+{
+  "timestamp": "2025-09-09T20:30:15.992922",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T20:30:15.994428",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "First pet?",
+    "picked": [
+      "Rex",
+      "Mia",
+      "Ziv"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-09T20:30:17.428532",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T20:30:17.429534",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 2,
+    "q_text": "Rex Alternative",
+    "picked": [
+      "Fav color?",
+      "Tan",
+      "Cyan"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-09T20:30:18.930336",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T20:30:18.930336",
+  "run_id": "bbe9aa1b-32f9-4049-a386-7edb95984039",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 3,
+    "q_text": "Rex Alternative",
+    "picked": [
+      "Birth city?",
+      "Lima",
+      "Riga"
+    ]
+  }
+}

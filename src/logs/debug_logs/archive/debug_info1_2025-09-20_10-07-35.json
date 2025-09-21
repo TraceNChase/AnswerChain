@@ -1,0 +1,2512 @@
+{
+  "timestamp": "2025-09-20T10:07:35.087799",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:39.093098",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\test_q.json",
+    "threshold": 19,
+    "pad_size": 256,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 1024,
+      "parallelism": 1
+    },
+    "q_count": 14,
+    "secrets_count": 1
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:40.812687",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:40.813684",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "First pet?",
+    "picked": [
+      "Rex",
+      "Mia",
+      "Ziv"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:42.233183",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:42.233712",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 2,
+    "q_text": "Fav color?",
+    "picked": [
+      "Tan",
+      "Cyan",
+      "Moss"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:43.471811",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:43.472813",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 3,
+    "q_text": "Birth city?",
+    "picked": [
+      "Lima",
+      "Riga",
+      "Oslo"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:44.793357",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q4 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:44.793357",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 4,
+    "q_text": "First car?",
+    "picked": [
+      "Saab",
+      "VW",
+      "Ford"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:46.134731",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q5 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:46.135731",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 5,
+    "q_text": "Lucky number?",
+    "picked": [
+      "7",
+      "13",
+      "21"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:47.440421",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q6 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:47.441421",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 6,
+    "q_text": "Childhood toy?",
+    "picked": [
+      "Kite",
+      "Lego",
+      "Yo-yo"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:48.788677",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q7 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:48.789679",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 7,
+    "q_text": "School mascot?",
+    "picked": [
+      "Wolf",
+      "Shark",
+      "Falcon"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:50.117344",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q8 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:50.118343",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 8,
+    "q_text": "Street lived?",
+    "picked": [
+      "Elm",
+      "Oak",
+      "Pine"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:51.480625",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q9 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:51.481626",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 9,
+    "q_text": "Mother mid name?",
+    "picked": [
+      "Ann",
+      "Mae",
+      "Lyn"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:52.806627",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q10 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:52.807629",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 10,
+    "q_text": "Best friend?",
+    "picked": [
+      "Max",
+      "Zoe",
+      "Arun"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:54.081602",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q11 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:54.082604",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 11,
+    "q_text": "Dream job?",
+    "picked": [
+      "Pilot",
+      "Chef",
+      "Coder"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:55.354082",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q12 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:55.354082",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 12,
+    "q_text": "First concert?",
+    "picked": [
+      "ABBA",
+      "Muse",
+      "Blur"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:56.638686",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q13 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:56.639685",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 13,
+    "q_text": "Fav fruit?",
+    "picked": [
+      "Fig",
+      "Pear",
+      "Plum"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:57.861495",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q14 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-20T10:07:57.862495",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 14,
+    "q_text": "Secret hobby?",
+    "picked": [
+      "Ski",
+      "Bake",
+      "Chess"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.632922",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "AOL1iAEddG8Sd8lO",
+    "Ciphertext(base64)": "A427jccCo4HdDeEp27pfiZHc6QVt1t+CusjKv8CAwbH41H27u74MdeEadErKcE4M6PUKM5Kx/XsOl67glYK98c0tlLJ/ox9xDBlUZ7Xm07tLrhWtipZfRnFADDzr+IRHrdBdNlhuSCpGFfeVAt4tTudc8hwAK5wXojOk3amVklX0FR2V1GyzPGSdZ4PiqOtSTbgZmx5ZAceiODlwvs911ZIXPDq7TMPFFtMDT68BKBxK8LY3vDOg4n757xAYv1C6GTMyedsoFduhSvqFDLrA1LHINE7oPgOjVlzlTEHYiFWDljx0SAlZZiQAvY/slDb9vAr3rUHG463jbQUrQgkw4+8CDmeFlWUORcmYlmaEzcdb",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "M1wleQIBeS32CZ1iwOVpZu6i/t8y0/OkZhJX9Dkv/1g="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.729961",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "1d7d6144a71ab35cbbc6662b0d00cb085131e1ec3b313fdeba38bf7e56dc1a8b",
+    "alt_text": "Rex",
+    "alt_hash": "f1dd8c646ff809155b61cf152dddc935ca93768f0a1b5faae9add85b555d5a60",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "d95fb28ae88f8e317ee0cf13c48dc96d9fe4b7f1061fb8b429d18a5f5c7e855d",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.729961",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "WKmZkAbYJHrHZC/C",
+    "Ciphertext(base64)": "M5RyiSSivdmPnK7umEJ8IXL6OdDdxuCW98654TPX9+OnYONMpfI67avaJQRJQ6xb6ujv03uHo5INC5wRW/G88Qw1hr1uQ+byub8egJbNyml53YAqak0bfSgmaQVMZc/0N/OudPl3I3rIkJ9n52s79yXmWjrlM98H6aMbFELkw3og11islsJSsrUs56aIii6QgWxD9pGx2EM/gwig6k4KxN587Kb2Qg/H1TurwyJbnGtUWM9T6otDYkgoRQdOjxbph51IPDhr7gKmCvgBZbtsVdU7+lNAwsUbOOBUnPHLyfUj2mkoudpVwv6H3xE1uvnLEfxhj8vUSCIPF5W3fSzCCek=",
+    "Tag(base64)": "4rt9MmcgDFhL0pLmxmxQLA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "ErM9ZGJlmTF06V89zQ420SC2Ljq/YksoDIjqi1PW7PA="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.825476",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "1d7d6144a71ab35cbbc6662b0d00cb085131e1ec3b313fdeba38bf7e56dc1a8b",
+    "alt_text": "Mia",
+    "alt_hash": "317774ee22c192abf7c0b2156bb2ca23dfdf0ad1418c9c241bd89894f013d660",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "7c4000cad1369055f539e0845e6e24a81aab5e17a3a019ff25b80d0612083d12",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.826476",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "hOBL2pinDA/zDgTo",
+    "Ciphertext(base64)": "y97szTL7BL/OVGlp0DZKc5tdR7cYkTrvSoMcN0aDBAO/RT3MzWJfIO9/lxE0oXGzCxWR/uhHulifTfdrcjORyXH9+a5O/0e5AB//ffCUCbeI9o6EpWr5MJCoV29fJ28evg0+FqCLJP5NRVY5fbP6jsEebQ234TyTZD081MAF5b5a9yMLaH640BMos23TrDnh1JEP5RF0Av3JZRJz0GZJqQqffU1w6wkotGsCsM6FyJzZ0Ua0s7KGhXgTCfjFpZlYXXXpGPDCLEDoeNg0Q4O/GlZt0DnXepAfX/ivIvujrHNryn+BmsFbv7sP2B/N+nrPxJ65BzniqXSp+xkhYA8ivb7Djmf1Pumbr6hSVF68iiCh",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "gJ+Sk13rcl/XVF/uDBRc/Vy03dEfXBGVpmZEEfR9nIs="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.921498",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "1d7d6144a71ab35cbbc6662b0d00cb085131e1ec3b313fdeba38bf7e56dc1a8b",
+    "alt_text": "Ziv",
+    "alt_hash": "48fa1b708b62c608e02432f37aa709ace5df79f50cef5bd8d25f01bbbea865fb",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "09b57a08b8034bc1a04765a047b68836cb6b2b8b8d020fa8d63c0bb1236113ad",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:58.921498",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "/MZ3grM7e2xlZL2v",
+    "Ciphertext(base64)": "rMS3gNJ4Qr1gGyKAqwlmBBXDSePz+vZ0rlvWV8gpRIfmamoinYtukma3y9sr9Pbet/MOStW53/c+ddw0ucif714FrXfc7WwspbQFzIgEAW+aLUpCFvWAIIuQGkI9Y0FlsJSScyNqBTHF0wj6gQqy1KyL4s3MHN6OgWM5nhCM3idNawUn+whefEJNvTIsVCFcB/IgKS5hB7o/TQdD8UPaW9DOAoG6Sdrd5O3j/B5tnv997URZK56cyfnF5jyybF8X9xtbcPydhIfxK3NOx72s42Yk4saypfj+V7yc1Owtt1GrbtcBcnyyHpBfM1Db/iRWYT/Nwp3B5nJNSpciXnv7bYo=",
+    "Tag(base64)": "w1YPC11pxSGdCMq+BN5aXQ==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "/Gf1Sej5e0+JL/bo0OYirw7FRwTMNt9mI7PJAMBdmZA="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.017011",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f35bb3da36a887f012a0687e601f31752892960e35b183e336b6f0d2e71a44d8",
+    "alt_text": "Tan",
+    "alt_hash": "7d8b7ccf7ff5bbcf7cd2eec00f0a27df2694fbfb1616ff514bca356e8873f02f",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "eb36a430678a134292ae72af412a1ea9dc527f8246f6fb182faa29d18497f238",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.017011",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "N7mfEQeHOmxhpgiq",
+    "Ciphertext(base64)": "9vazt2mvIX2yoTjCMszYRWmpny/GvE+GwcGneuy+VxECgoGUXgyz/ab/x6kfUtkvy4ZZyr1Cyv/IYlXpgDTrMHeLLDqe8hPUzbVXe/OpKlOKR85DsoXVfL3wecimZkJiY31tfRV7rs1TZLzBp3pG9D2Q+D8L30SQ6FB7+56E2fc/IlJqBsiiw459lzmWcAtUngqxpVKOSro96AMd/wGlAVxEnUPZn+hOgFyPNyoAtuvYr9i6rZFYUBmzhyJ6kXwoeApFIe8uo29JMK7nLPzu7yIRsBVeVsOBo6sUN7eD5mK+QPmonQROeB4TlN69NPdOr5QifLObFtJKp4y1haAuixmIuTTdsUzgaRtO1G4Y/nI0",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "dJceXFTys3+IkNlDmslCJwxiR2k+w2IYQghgBI9vrC4="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.111553",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f35bb3da36a887f012a0687e601f31752892960e35b183e336b6f0d2e71a44d8",
+    "alt_text": "Cyan",
+    "alt_hash": "e525338696edfc2cb584f198081666bd7388e929a7d0962c5f81e8b0315be4e0",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "bff07073a99748e4359ef1d190c4f3cefa3f0ce0ef396fc63f0ee41323228b6e",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.112553",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "8vC0/tCbfkJBFYuI",
+    "Ciphertext(base64)": "C8iWKQqxVcRzdMSucG8kb38+SOruMvI1aT0zKDCFVPbTG5hFtGzrXXz8yAa+lqymBKikggCDoV6h+8/o3ZRO1ji4MHCMhh2nHX1/dgo2SloxWL1ai5VK5kkxsgO/fQm0YfX8ztkjWaasXt9GIIaI+74fSq0oubtiv1iUzSiXWlFfbchWhfxHKrCS92s8KuJTyXLdCijqOO6xWwfYOGLkeOTApgSofz/5i1smLizFyHM2WKrFAA0dPdB1jvhTagBv5dXOC9ohvtxIqk1JUZocHGL9eOTO0VhghGH4VS7vn3z3nn+uj5Snm+1km6aLExppGmsyPv54Hr+9DAjWYrOoCCA=",
+    "Tag(base64)": "81/WfeFmuJD9Z4u1lQBs4g==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "SIvqk31ME1GdV1LcGZ1AMQrDMN57HdYJ8sC0Cymd+xQ="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.206581",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f35bb3da36a887f012a0687e601f31752892960e35b183e336b6f0d2e71a44d8",
+    "alt_text": "Moss",
+    "alt_hash": "af4970636b368b26e785fafb58c21b6ed9942341bff21527d2b90103c41c6380",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "92e02e30404d5255cf93872be023c61aa9589af1a0e14792d6ece25f8d30bd57",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.207581",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "rppoi7+1Mo2QdaRT",
+    "Ciphertext(base64)": "DuJC7/9tzNYdW2XXa7dkzWJuaajsYcNRJMhzmEaTeXUol7EtSY0t/FERtOTnmimxLuHy/2Dloj+T62xczv06haDLY29SCwFym/tsCGsITOW9v+LeGVQm9hba9jvOu9OCF9feoLYUO60j/M1SB4gwPHpGsFr+VwghmLuw6gVelqvA971kbc/O83VrV3BPwsVQXSZBiwQy5NNm7Pgf7C2OSqnk3F7t1HR8uxFDd8Go7Cu1ZSm00oKgoY1O+K34VEgofCwHl3BIq8Nqd+jQhCEH7uBm/XGVDt1ATSsJFOGSOiJUpviXldvo22TxeXAMOA1VGKCWiRCjGYgYmNcCXzioe2Y=",
+    "Tag(base64)": "jqLRdTCZm5GeOl4ewkroMQ==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "ElPg6EW6UPuWjVSs6GBKJX3UdI4XBGRGyz6zrrzDzBY="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.304133",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "5f72efefdb55e47f28dfb82fb3e3bcd4f8fe4b440b01e2d159e2605148f985af",
+    "alt_text": "Lima",
+    "alt_hash": "484c2239dac129c25be8a5ff2e8f3aa06e6aa0b4c5f0458c60eb32e2409e7bfd",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "fe1bb9f6edd18e98a0a02e45034badcd3fbb1861437f07d5955439335bff1ec6",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.305138",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "mAy1HKSgD6+Bz7Zj",
+    "Ciphertext(base64)": "rfAwElK+ZpqVTiHFKD+V/LO466j/5g1aAwa3cvupL/2ZZAIlGRIifJmUh+3TbzJgChBL97Cn0BuIRXOiRX8cI5njR8j2wQ2CkYiwBB2jNvxNoJm9kq6GMXVIFfytRiC9wnxEzj0yrSNsPKF40oQD+tEoe/V5rxOVdg//z2HH7UnEAcY50NeV5PiGa3A5BKPVDTbvIruEgVIS/cf13P+CLJOroH/WZLoqTxZ5p9KEMnryqwM2zmAD2dvn66SvXaqtajFsiZz+1joiPPs/GIMF8CpBLVM6rGeE6acTba9OLZIloxYdlQZS8viDAKWs9PwoUtpkyUf//a+olcmQdRzbZ0yyMYTDJZLxrcNkGZyxmxmL",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "a0fsDHaSoNdnOpa6gkrQQNgw1QxAMiDIrWOqfM5Pzvo="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.401142",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "5f72efefdb55e47f28dfb82fb3e3bcd4f8fe4b440b01e2d159e2605148f985af",
+    "alt_text": "Riga",
+    "alt_hash": "8af153d8480b5c2840df992296c5f9fd2014d4cdfe371beeab236d8312b3a614",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "1674d248b64fca299881f346d9d5045623620134fc3bc79c374f3e1df802b697",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.402143",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "AQy+SsCYPEK7i/Z6",
+    "Ciphertext(base64)": "LNno/alBJY4CUwFJT24tq07Sbaq7ubh5VyRS4kCqlKTeE8/W3C7tJNvR3JUwMkA9pDTh6ZCtIOF9TMtkn/GVLkC4C4+eqUnmZeA3GyFz9lV2m0IwuizJ004WQlgZAQBHTze95M5sZScNCGsEV5lfIdTdxYZ1cdtLGvwvNqieYYnopdVciDfMrZhFc0gdz1eXl0b5pOFvkM1B5VvMTLCkHGUXeuxzre10IYCutjXvNfsdljCo9uJ+o6tihMvk8ZfSTw1oAU6wb/u44ebOY7q0Uis7dfhTXe54+JC2do36B4dqA7ckuu6KBnuqpxMBKbGK5bSUxEmke9SLKztNlz7vvKI=",
+    "Tag(base64)": "WVN/wYrMCLVgzz/bRE+akQ==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "21H1+OsBVpGVStTdLAmpyL9bGo4BD5kXWXBIzB/LvvU="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.496165",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "5f72efefdb55e47f28dfb82fb3e3bcd4f8fe4b440b01e2d159e2605148f985af",
+    "alt_text": "Oslo",
+    "alt_hash": "a8d337844f4687a9497927e0a2ee1b9f627bf154a29aa9079537925ebc8a084f",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "2251e5204ad1a209519bff72a99b46f928c6feffd73bf80b3def411e448f99e0",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.497168",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "+9qmMatQR0aCyWXE",
+    "Ciphertext(base64)": "Lx0hATezM9WbzqRCoSZKfCNEi6tPeLRyjEJjymgKNfQT3axXQo1PVxELaUC67z7A1HjVbHRkeCEoc+/hytX42XomwQWbCTKRylqF+Maw9qt31DUPSOEBQbbG5l9aQIF4/W6A9fs4c08hwgrWaPtfWEP4DvGXKog7dL0PvbE15yQIhV1op4Qb32VzfpKT2uo4EMBqcRvA0MLaWJSCsC7uSVeStcfLkcCE1Ewl7szArAHZWNy7IuwxG5b71OB7Yl0z23UPQP8kFUdO1k9NkUUB1s6hCZFpatdYQ5OamSrybAUcN8tDispDAYLcjptTX8IcjWgcu2wcKF5lWfdzUBE4HmEcPWz6QmzNbXI27p9uht4z",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "xe10sVUB66bnSmOXqx2yAtiKO7S3e9enbbGY7wdFyO0="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.591194",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "b12a14ab16e3b1aa47c7c804e3fb67dc66c2b8fd4c62783f6f113355e7a21c51",
+    "alt_text": "Saab",
+    "alt_hash": "17a41de06a7b0e470f425bd690ff9db2afd631524feeb82b776ba75a8125b305",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "abdc39c06989519a0dfbd9fdf1f63a122d398229a05a0cec36c75451ded204e8",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.592196",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "gIAjg5+Y9b+yt2R/",
+    "Ciphertext(base64)": "tyJ+2tNMiwoiWmcl5oEtZQbk1r3QC8+7dPppRP3P2NrBcFXoExZ7S7CSGGrxBa8ECKdKrLTeCQNOphA2ra28gLAa6x+39N5EYA8sWxcP5ru5JPXo6+aydQmFYWOiRAcn6aIzppMtjJEDfrd82VrpE6Sqko77ND3Mp+XXYSs07ePoyXfJkn809Qdo0x5sd/XESjB5kptwrmWqetClgW3HXkWBr3Ww+rPTpxsLUvREhfRO1BwRlAjCtDanFepv+zYmmvFMgHnC2FxtvV9BkzBXS8JWKDdj3Jf3KowY0JFGashsRQ8BbCrzOI4dsM40L6qknJqfra9Gz8eed/dgZ6gA37A=",
+    "Tag(base64)": "8JS47UGVmKkIstU1x81KCg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "oKCTu6gf/OqFRewZf/PNgd4xLOLDzBs6KdEsxEq/Ubk="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.687219",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "b12a14ab16e3b1aa47c7c804e3fb67dc66c2b8fd4c62783f6f113355e7a21c51",
+    "alt_text": "VW",
+    "alt_hash": "b6815eddae1110e471945167f7e836fb73555333df2a3a3eac178bcc42360360",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "265ae510ae5c2d2e9c05bfb885ba1d89b50a4c1dc647066d143b7a98f73eaabb",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.688218",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "yNHdv1/0GnetpOzj",
+    "Ciphertext(base64)": "h1neK9lBoICU+l8zsV8ePRw1hE5qJmDtvQ6NU4FgVnHvKNiJbvNl0WeBdBmDNWx1BCK0gbHwo9jLQt0HTsww28gtDMulMMSMclo2zoYIsRcg4MwrNXiGf2QDMxAopNY0CYCU6yDFSmJEFxUlj5mB2PWnJtj35PAd599YBh0vEGbL20dq+/u3z1Fz9GMz0x2euYI9A0HM65RaFSApnwYFiPJBPES6EV6DxEed5uiJZgs7LY67xFRFWBIDs7cmj/BZM1DKKIT00BYsc6IMrecmHyxgD84u12g/lqRIS0nvwbJ2iHcrkRMQ9iqGbZ99ZE8z/XeIlSjBbX5EQYlNVFqQoAK9psHBNVw6D9ur2vKKDBrx",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "2fmNCWMoj7W2rLaIckZbMEDhec/q23siDYs97SwkB1U="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.781731",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "b12a14ab16e3b1aa47c7c804e3fb67dc66c2b8fd4c62783f6f113355e7a21c51",
+    "alt_text": "Ford",
+    "alt_hash": "96e18563bbc5016cfaf571cbb2fbe4f8be586cfca9be09432ad7730f4f3bff8c",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "fd0735cd20e0487febd479919573e3135b57a2a6a4af56f7f91d8d6ee8424b30",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.782733",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "rtGvlGuLUVhnbMna",
+    "Ciphertext(base64)": "ZQPWx1+8siB9IPqXaGwT/59FUWN5CzlfRv7+PpH4WGfvQuv93Jc/uE3OBG71ep7fZp7clVXZjh6+qPtXU39EF/Q6pTG++1MmCxTA1EL+xHLepuc5XmVAv2/Nxs4rQ/465vtElUbw3pqOfOMhrIC8Vedk9WPRsnfO5sE02sK5YqBYWj2WAMeHQDdgYgALtIkG/vShLKSn0KqoErdFTL6MtE3Nklq5sVAbwEx+7PDVRe7+KjNwL8o88sQpVdt7QCu4cmumVigHxjVioXGX9Uw8hpx6bCJyU89oh7lE6dfYcA8ujh0o2QfE3aTo/LjVa1fVA/TXNh4yuZAibp/t7OQM+/beBzvdHO8p5K0jqhVfuf7G",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "zVtS1vGafxoPkaBrcF93G8Z2xRSmdOG4oPTPzPrrQUA="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.876457",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "85f93fa870d62e8736c1b2ad336b1b17c90688cffc267a46d68cecb24e871c34",
+    "alt_text": "7",
+    "alt_hash": "8f9b51ce624f01b0a40c9f68ba8bb0a2c06aa7f95d1ed27d6b1b5e1e99ee5e4d",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "4acae01d6d10beb01b7b6ec249ca2f42ea7c25687f02194fb70cf03cfb1000bd",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.877459",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "px83e1bb7/F33pc4",
+    "Ciphertext(base64)": "Dja9u9v+Huc080WwB/j67DWgJDu/vyd/w+TGZ41tN9ilLnJ7vYDNuAQWMeihT4kLgfIK0PSgww/O4lC7ZFjAUfYx8bNgnUbtAZlUklxFFKq/sJtJV4ZwGK33DUfvOjdnG8qq4iFr7XrTvfoaI8L32BJWE0Mt3qqTcHeFotr/LnVnWOOOkX//BEJn6cI3VWkvWooFaP7p6/1vZoZt/m3OhZxJuryAtRmqKqHjQS99lrIkLBOhDHmHTuMj6cFv+xSWUJVulMU/JDZaMqZmKOrk2rKgnovX2sho+pVKbZFaGB95J+Iq55tXFz+XF3R9V1II70OdjHgckc8fOkWXhYGAPk0=",
+    "Tag(base64)": "226e+fL1G+CWmWYWj4dnrw==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "5XJzEunPuKSEDFoRHmJL5Yqyj+mTBgn11u20m358tvU="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.974486",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "85f93fa870d62e8736c1b2ad336b1b17c90688cffc267a46d68cecb24e871c34",
+    "alt_text": "13",
+    "alt_hash": "1ad7a51ebb6db8cfd0f40d83e398f0a8ad6e7fd4b98e6623b92cfc7c18c4325a",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "bdbecc6881f69192f0a67c53068dc5acf83648a69bcef2def4cc02c8d8978422",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:07:59.974486",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "C7+14Z2p2MxcDf7f",
+    "Ciphertext(base64)": "gXXogT5hDEM0OYQSdPG6VrNHwR84+IaQUMwLJvfAWu0+44+XVRrNtOkBTSCkOwIlI+Tkix6Ld32GcoaVowPQDAxGhLT5I13aEemA7sxaxS4+HzPg1ZCNYmC20kN9sZiPnRWe7jbri9wKK0JIVqZzuikRWlBZGGtPP08IT5VbJ2RoC1oPNKuteX1atlaOPJHQoBcz2AU/Nk0bNCgqIbUso2Gpat0HmTAeQkxedDl7ZkRa7H7EPazhFmuD6BulVENUq90F7UGtPjzCrOHVyuR34ZcXOJbsSi2bapu/0cCYeNkttUEHhyvS0x+bdHG1A1yGxQISlrO4Rg811Q5myuFwBVOZusxHhu5Mx9CZasIc55uk",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "cYQY+/TnOMeT7MPYIJztJhaXPyg2N9NVUSA+QKsT2QI="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.072012",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "85f93fa870d62e8736c1b2ad336b1b17c90688cffc267a46d68cecb24e871c34",
+    "alt_text": "21",
+    "alt_hash": "7faeca1b13d1a7f909f21989ff203fa36abb4be730336186f9c49c6e56a890c0",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "74e86af21bbbdd73a641fe7d0621872415a243944c7344b6cdb5fd9109be7124",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.073517",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "luVSe2SHu0kQQ2Yb",
+    "Ciphertext(base64)": "OCxNhtmsU/q/4zC9nl3FkpC3s6Ybn8n0TdwcImQMPn1Zy/gKjqim42fBCxAt0CynWys36TVWNoKtUT29KJDNcscde6X8B7tupUyIihffRw5xou/a/KBJKR1x5WSTUP/ChsDyMXFGD4D52qwG287BpkvMvSpJb/HoZNaY76jTnQIwTL0AXt9qjZAOHO4JywSxdbR18c6wKgWZ5li67rZfsvdkFkmwcjn82fuibFH06+kyZPFf8OF8RR8yKNnRc+ax3p/B9UHS/MCuO3YRhDVftOdFOkSn4TYZXlasNjxSGdSCRKuvGoPF4cViERPuOuU4BsTv/W7yq21hfELU8EcI1/Q=",
+    "Tag(base64)": "2W73KYyxFTSfJ12CvZzBLg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Jmcs+CwDxsB2+7Vt8ASMUngxDVSdgK6hZTeEyrSXduk="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.169546",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f561bf14776bfa8f034780925ae06904a7652b68127bd387defaecf477e21481",
+    "alt_text": "Kite",
+    "alt_hash": "8e02ce790b261d55a5ab7fda7a0532be90317ccd970ce2d743bf1157b76a098b",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "84c632a49511636ebc14311bb186ccace734b0d8cbb8edb6f091ecc3c37b3924",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.169546",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "tlh4G3z1KzxGc0Yn",
+    "Ciphertext(base64)": "RKHXIwsP3R8FsJPyz1q1mcVwRBZ87Yi17mKY+QzdL1WhzwyZ5dq4yRXDoYADTB/ojYHpMPUssSsQUA8dp29teRPL5ERSp65WaGs9A7/6eSwMUTl4RUZlA2YCPKzDMzf67aAB+j3ewwl8mN32UBmndFr+oNW/aAy224qLZ1NugyOm3+H/qEUjnFzXiheMLUDbL3ofKOTUdusDymbpXZkUxi1W9CHt0g8oBETVa2btvS7UYY6Z5e4EnBEeyT9NjcsTT9dU2XOAtW6kjfD/B9LaJCga8O0WFZFyZA7h3gKkUOG1vx2e93ZAUXEP6qCsVoZugrervTH3r2truk+9kYS0mRLADUeUhPfK1f8/dI0B1vUJ",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "aHmtt1sOSfpKswoRyn2cRzqrSEAw9K/n4hPJCiyRvBg="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.266080",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f561bf14776bfa8f034780925ae06904a7652b68127bd387defaecf477e21481",
+    "alt_text": "Lego",
+    "alt_hash": "b373cc827096d38043d0eba9969907b7421e292a4391c697dcc376d129fb6400",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "e02bbad0917de47544755f22d7fa984615736c281f69ef69d360037f9967f0c7",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.266080",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "bL2aPvI+v47FzZue",
+    "Ciphertext(base64)": "u2a3+dvz77lj4vALgQjAGBxlkjxV5aiymjNf90aznnZcE6ycZCB1BRF0eBQ2E0kAiWY7SB9krqIsFSPK3CmF/H41+fhw+o1VTNH3LMITMeENhjnKAGuRtEQaYLfdUaOqtyG5DXV/YLlfE3Vqv5/KssErrd0Mw2Jz3Zt15n3eFi6iVvgGDpuQSnKUN8zHwfSKmOZFEnC9CaHdiL5W2I9jJkVPZCLN03Hw9lX1SBgZmhtNejV0b99psglQauba1qRlH0rYjTBPQILqwF91mODNYHvA+rYKxrRKlWX0nyzm4zhbktQhr7m6mHuHyoX5BWdoDztALJfflUiU1n4f4MsSE8M=",
+    "Tag(base64)": "gRCDNN86HABYLKCwSWtC+Q==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "kMyTJllgLXiDhfDQ1TDS2f0+lPS4uiLLX2yZrxKpa24="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.360592",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f561bf14776bfa8f034780925ae06904a7652b68127bd387defaecf477e21481",
+    "alt_text": "Yo-yo",
+    "alt_hash": "6d0742c348d8ae9c87f815e8cd8e606244427de268fa3f71793cf1a1017449ad",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "13973072132382de5cfb292c85712888ed2a4aff1dc14b6c9d18598ffb768c74",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.361592",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "EK2t0URvDrWIo58K",
+    "Ciphertext(base64)": "a4OarRIvIoSE6UsF9+fqfu4oXuBWJKjAA0SPZTdZn/4lyaAD55loCyi0rzHlTVuy8Dro0GK55IO9SfD1ez+W/tg0pyavb8rOF4MrXll0YD0Qr8yZCAdDp6SDeOfuWx9tg/UMBQaWqFsT6YvJUDxTo3yQyY/Z31SSKrE7kH3oR6Xe8o3700B+yWaY26zBtHADWdE+kfsN2ZHBujWH5ZhgyroMHWiSzwKffov3d2qmLuwe7JySwqJEHc73ctK8ZrVeIcDIVc4s472n9lVbUiAL376CoQLu6Tc6w2A0AWeIFDckzHuJxR3Sp+tyaJdrt8O0RhKRuoAh8GBYLpuR6q91dDrTGilhkaKZP+ggQ6IsHoon",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "5kqxQg2r+j2QM9/yQWb8y+lq5qU+pBD7ZUCkK8rjKn0="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.457108",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "11b280c048ae60e2d851845af817449b65c1c337d1f3ab7ff95fb37af4fbd101",
+    "alt_text": "Wolf",
+    "alt_hash": "9fe2637e218faedf24d680e9c404778b66777a14ab3b19c1d67d47256fb1f877",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "353edb8c3946430499aed377f1130b0f39efba5587ff44539c6fabfc59f15d4e",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.457108",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "8gFQXlu/i4GXRusO",
+    "Ciphertext(base64)": "rWQPV5zNYlNVoHpoTAWaDH3n/Hde0CZmLqpx0zDtD8oxIHsnnJoTUfiTBxjVxwOkg5DZCrM6JBnOzJz59SR6PFYgkD6qxvDjGDV9toS5To3QiiAAhOqNtgDu9hHh+/WMVF9OhKhdEmfP1XLYsDMdIZ9PHDWb0XYzxYHaTD4YGEGe86EBKemcHG7Ut3MmRW1TYv1eK2Ecj9+WGrIpSmPBj6KpbfF/s4ZL/XQZFlgKRkD6VECl2ax9ESRGODpl42xos6Gl4tnvim0iMPaA4/gb53Fw17e/Dc8czbxVKrRXj3N9vEbAFcBQa7NijhcYCsqP/5xIsvLMBhAHQe5CUOLLgdI=",
+    "Tag(base64)": "FTZVyz3XLY1pdL31zoq8+Q==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "ABGA2s1vjzjXG+peLV8+zyLvmRBRZ2daAZSPVBrlKHk="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.555758",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "11b280c048ae60e2d851845af817449b65c1c337d1f3ab7ff95fb37af4fbd101",
+    "alt_text": "Shark",
+    "alt_hash": "6b62a35923c848333f9097e3abf2e8315eb9e0c39b1e979c29aaf1545506c2f5",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "5a83e3f43967cf2fdf9cd1f66fa0cba9b6bfc6d27adf0b046721b3f1c33ce743",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.556808",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "K0xbJQDuyPTzQO1T",
+    "Ciphertext(base64)": "mEe496Ke6DlU1T3Tj7k4p3nBpMJdv9iN1Rtf9D3ExEciGgbK/f3WEonFY5lpro0Ia/53DlKn5LvptzS/q0EKIyQwT0pjH3hKFj52axdb39iu//NIM8A+T92FEiCfhM3g5QsfY5AEx4d3Unc85XIoAYaZkgO/FLI2syIxK9ro4HznCITYUjWPDbmuad5qFXIYbzLQGCXd73A+Hmya9gJEQvArrIMCh+V+/YkXNxV2h98U6a5CMGCKxqYLiGeMOvMW2nqXb/Q9Ia5B7QP24CGw6+6eBxb+kRVzMQ2y70qmDKI6LGqpsVkXifzWev/RrDVRwrAKuBeHq9nReEiGNKy/fDIWGZdAdoEW6YKsDeSWMwJ0",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "WQ7LHsMKwji8b1JClMINpLL9ZDVTGRtgfKc+TQ8CRGw="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.655771",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "11b280c048ae60e2d851845af817449b65c1c337d1f3ab7ff95fb37af4fbd101",
+    "alt_text": "Falcon",
+    "alt_hash": "b37aef501d55bc6e1f6708e35fff601472b51daaf9e9e3348581df2dc84b8093",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "4e77d4bd0995f5b6557e5672634ad926816307bc4cfd26460234893f761f19ea",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.655771",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "Ja7baldXX98Dvg6d",
+    "Ciphertext(base64)": "TPAov/MXG0ET8O5iJKzZwIMxv7ZKbZ4tM9O3tM//4z6bBqTbji8FRM1W5sW4ymgO+RCYCM10GrwYZzg6WPEc9MIK38feuQaaTaQICXc1KJsbEM+oLLFb3Z8/7mbFab3NRpHajEft7AdbgaWPw654jrvIn0eP7vx9JoouWP/pwdSY4pp2I7oDdN6vAhlKqqq2KeuyBeyQzxTcbUVeBCyZefGxogLmfORVg8ifkn7m6IdGu1CIoANUptLkWm5NgM1OLKIjt8aKHCv8k9Rosq0uIuUvokXpJJ3gOGXV9oZCXwbg7RhdGq0nyiL0ruNIcBxRNwLYsbQb9N87WIc6EiJx9LsaONRG2eBeoD7HXSNei0zh",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "ZxUbwdptYoBuEMsFMqeqBHldZw3qlCp3K05FPSy/zU0="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.751626",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "805d563de318fbf9bdcf3b541843ff158c98bb7c343cfae0b85fcd3e6b4445b3",
+    "alt_text": "Elm",
+    "alt_hash": "061b56447af0d5fc3d319823abe4dbb2bcbd937d55cfd57aa6d6bc47494b15c0",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "a143e9376b31f564b27511bd1abc74371d24939c6d4dfae33122eb6f48d92459",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.752626",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "EhBCyMxDDgVRZZbN",
+    "Ciphertext(base64)": "jZYFU7NRp8SuBO50CrJushqPrwn882uhenmin+ubCH2vZ25+UXcWrJDtcXsXRxPM5BGqJBi8tR/sqFq3Yp+zsgVhfd8nrJZta83oN27ViaBTz4wn1F1nUB1ny12/OiTeCAW6e6oBzo8Zv+uhgFrMk9M4UUCIeO45yOGSA00ldITNdmAMvSoTcinkZ2n7zF7Yl9XBOfqU4f1mNbc5I9VcRRGv7B8/bwL24C4dTeepvj+I7WkkQIsOZxGah7P+JSNY5QY7FCOgN9XIjojE9j6531on0xqWL9g2ufNGj7agzqi9b1pzDM7oMPjia7sPbH8jpPlar8JNWYg5xRBsicXII58=",
+    "Tag(base64)": "nHNv0L6NLZk0SR1Qc7SR1Q==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Ek3xGbgPT9d+mrzPHEuoWXmRaaWTEGCtDVK5P6t+k54="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.854141",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "805d563de318fbf9bdcf3b541843ff158c98bb7c343cfae0b85fcd3e6b4445b3",
+    "alt_text": "Oak",
+    "alt_hash": "978bac923188745cf3aadb39759701d790dc58e5494d1dedbc0e79b0bd082a2d",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "bd30de3d731ed23ea0b98ae966dd16f856f9ccbe5e9394e9a02219ba7cd2bb86",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.855141",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "/XKesvMh8W9UNCp4",
+    "Ciphertext(base64)": "TNuvcxAyEHL3d3n1bST8FT+IuZbEnae61RaGPfHC3EMiTNghU3zjlzQFTB2824/FmTz38YWk4rhQQZTwirTfmosIRya/bbruS7iYkEfqMBPGHKyHhhYlEyejbi/R9cA11EXyLgL12nqZ7VVq98roiDZlN1hiKIw7Mf/WJqKb0U3vONKYtDIuNo+6dw5ynLVnTGC+uvaijtJuzJn+lTa3wDnJjOcEuUIVPOqYDstAWfIK4jQhrQS1G3EYJ+OSyZD3PIkZZxzkYwgm9fB+cdiOIJ4k80CbBXkDZHph2pMqARNrzkXWz/5u1ECVRFoJsTYWxtPfdBqh0Unrt7uRfEuhHfe8tmRJxgvwcvdBsiJqhptR",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "UHBTcMnvcF6945LRODeOniLw4UVpYFGDiAYYv3taSyI="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.954170",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "805d563de318fbf9bdcf3b541843ff158c98bb7c343cfae0b85fcd3e6b4445b3",
+    "alt_text": "Pine",
+    "alt_hash": "02d7162d4a6800a16ccc91b2664ae51723117f20cb42fa4d3022c96c402b5d7e",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "aab442f87afc5f5823547232dcd95c456a23b92551ee562c9a2f25109d53ec46",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:00.955170",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "zAUSssU/IkV5bHVO",
+    "Ciphertext(base64)": "eSHRvZmWoiwqdSmwR7RUFmSHmWrKz/9umOZ4J1UvE+Eh3tCcIBhqnxOG8Lr/oUNDeMgWrpgeWoEOge+G6s2ZtoTlImhY9QJbkFRnmeJlBdPnrTol2tBj/zBh8p5h+irRdrLzEqPbisJLVkiK2Ohz75VTERsIi9mEA0rr8Bt/ARessycCPWH38f+3hgMppWtyHHahQbr+0EmI+fLt4VveKkIcPcGQlC0AFoE5fKqpupSckBJrVDv+RALsJ+d+S6nAQlmXXOPszfKNsnd5KFaDNyiUOpSePbHtQKBFVMuJIUA3XDt5Hto8hr+15giRBbk/qevX8FloGKxnER45BmSTmEY=",
+    "Tag(base64)": "zlOglQIPxkd/WmlVJM2haA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "3HXcxi//pIoDWTVu+MynkP7/um/g1l/uraIypeFKwgs="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.054196",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "a8ce92eae8f30382678e1a5694f610e3ed1e9dad19fa63736f015529ff7a833e",
+    "alt_text": "Ann",
+    "alt_hash": "7a79e667473e7c5ce630463c8b38b420e55c1d16cc86d8dfb78e3eb64ca4cdbe",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "c23ba1ab2d41396ccabf9e5aa5e608bd3485838e02d6a80184c57f70ed512d1b",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.054196",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "ZsudXWepfOBVYn3l",
+    "Ciphertext(base64)": "//TaqNdFLQGHI1jmik3zZZDQG6Ky8Vo1RGfCms2Xai75Schs7kXJrasPulz85cBA/nGCriPbuj4uqahPBdkyBAmLCvyNxMKbKjbKnfw9bASPMj9+Xd2Pa5gNs0A17qQTpPFOvK8PeNL1xEqhMqoracrHAYp2HN8k0ovcJy/tw9kB/wrkIY1yt5y9WUO5C59NZrl/RRPoMOCXDUGuzdbXYCVcx4VVskbi/F8jRKH0zqxkZW7QBJ7Fr/iHaoCwHIAdw3eHA/SO2SmG4TeuuqudoeIJDPakpPdNXeuYFjiF0BLU05tXih4jHQeSaNh+7TlP1E8lukofNg1OK25aubs5rM+fScPKOWRZfPH0H8tTz+9B",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "CudHJm/fe+JNqAhK1tp0ctrI5HGDjALN1tKrl/RO/BQ="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.149224",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "a8ce92eae8f30382678e1a5694f610e3ed1e9dad19fa63736f015529ff7a833e",
+    "alt_text": "Mae",
+    "alt_hash": "0a204dbb8d1c6ca68435910b69b2d34733696d7cde4a0a2f5e315d62b6353018",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "2e0d431c1c3fa6ce583e77dd27e1ba0f44cbe3c741d4c613b788727e21df2ad3",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.149224",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "plVVkbKIcZiJhcph",
+    "Ciphertext(base64)": "q9g39oXkwpcAHl6ySX3qsXJxjbOKUeMqab1pChNtELfMabXdVRNyuGa4vlosko4RNCEuf97lFM5nDbBDVGpl/xEdGxxATrUU5Yuu32csbfEc/mFnu+6fgWLDEJJBnGN12X6Lo0d3PI1arhU5ej6UmdfCFmxB75UvXuiWQSNUf4D3sZopRhTvhj5KG6Hieqi9qYCd3cs53XiympLkvfNgpBnQ7bWKkJQ0ZMLSOOy6X+HzxXUpnoKQf/X/QyfxsNvdu6qNAreW0+g21d7Wjgq+eWMG9pfeTvOTxkyIsNcg/edChMa2SH1bCvgtxaabOpT7B79e5GjcU7I4+gss2yG1HDI=",
+    "Tag(base64)": "Vhgz8poqzx5K4aP8i/C4Fw==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "Ysgb9dQnRK4v3lFXefdpZ+NThmVkQtFY019/DMvTL50="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.252420",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "a8ce92eae8f30382678e1a5694f610e3ed1e9dad19fa63736f015529ff7a833e",
+    "alt_text": "Lyn",
+    "alt_hash": "17aa7c1d1145c1eb6e610ab2cd0de944a5cc669fdcad0ad7f6062632539eba9a",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "f81c32dc6460c08cdae64d67a52f459d475d4132f3e2adf5d2f075da8c1e638a",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.252420",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "0vWMNxg+YFsovvS+",
+    "Ciphertext(base64)": "UZCJkxXifTzhlME/Z52Q++S9KcJAdp5tZmkXEjRwlZ++v+KbX0C0TdsCh1/Yd8b6TRwrgBI9k+i/Q2nMChPz7PKleQzVfOa/ojg2+OhOMdelWPUACBmAOOzVo9QSKTNoziP/MzGFYLRwv+6LtNQKmHsVi6V7XSOFfLv0KJDVymDmjlQRJW7Y2LGSMVsEkVWW3UtucpFH2Ww3cPlQ3IYYjVAOOkJTS28bNlh1ISlmXoGKdJfkJZuELgN9VSP9g+WitxJGdR4V+IgoM2G76bI3Nx2rWg+o8GqfFpsYnb+3mZNqrYf1N/TMr4T/GnbD1awOpXjJjN8jYPxlqVRqNdfMhzE=",
+    "Tag(base64)": "BK/VyiVKfME0B1IeofRUPA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "DwjXMXYyCFhy+bCjK5VAbiP3OageSExyt3BYvnjqcdw="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.347932",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "d38ec7d54d5435df7cd06061803838ca295b5f3a5e7b4c02c08d7d1f9975c571",
+    "alt_text": "Max",
+    "alt_hash": "d66dca628b2b327213614adc9fb6e3802ce052497f9f89143658cad083d7aa0c",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "08e770a04a3771fa0e3a698f5de31025d262ff3a3a6764b7749da9286a2ceee4",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.348933",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "n7VqudHEg5SKdn0e",
+    "Ciphertext(base64)": "fvJrZ25uej+RcqfuFcko/gxKKDGvNaX5aokk4WsGy4ijg8ho7XUDPscLBko49SKqrm3IcEu4LCf9pHdNStsG83+1y3LI2sFLpxQrlKh+SogJvM08Jc7TUyF4N119GudjJzhI68OOjyn+Vu+doDMDwZa5BqqIK4bgaFa8uYUJj/C+3GUK1hC/r0BRY65DW8VPhtzWeISVS00LpRXTAxHV47U2XkO6ATRZR3BoYgDdf7Y6iofEppqBw97rhpfFv9HbiE2ATHYkwT05JU8mszhjDRg5yUhgQeRjE+x1XyZ7OTF2z4zt10+2Qm5yf9FwQTqDvdUv3DjSqVRx1XGjkCg2JgQOmUxw1KeDSsoQHshVYNTe",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "w3vVXlZ6FhrvRKSfbfpxzYqupeHeRGNow0RVki3uDXo="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.441959",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "d38ec7d54d5435df7cd06061803838ca295b5f3a5e7b4c02c08d7d1f9975c571",
+    "alt_text": "Zoe",
+    "alt_hash": "e63f823c2f6453e36e8aff3f529af3ecccfa6f419c8d25dcd56ea9d7df3968c8",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "517e1d83040994cd50edc6f8603374fd3fafd98b9103567042673ecacd806447",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.442960",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "nudtXV6J4IXC0Tqu",
+    "Ciphertext(base64)": "6JwIS5PF1bm6sV+xvScUGBP+I9ZcJNzP6j+q2czqHNgL8xS5x07NjojXM+zlPYge8SJWTVYLLQGbFIAhtsTUXbWvoqOX9OrtMX5MzoX3aABGoZ+HVJVPIuDBmyUVGmFv6bjrTyoz1tpYcmeS+ymt9UFDPjl26poJiQHdXr3+KE1xS4wAC7zg0TUNlJAPuq9LAa4/J8mZ/+oYkK27Gtt/xAwdJABcZ1CO0Iqv9B/F2sVovQ1btTAPYwCvkAZAcIy3TNIMqIHbQNszisQGTQQKbWUe9cfG9zO6jpuTPcf4/Cbyv2k1CNIzblbuJhL2Hmnck1Zt35UY2ORHRhrST+9NGzQ=",
+    "Tag(base64)": "rCUiDTpNrO+VB26A81FCww==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "6jU0b7f3svz15Jl3Wjw8C9v2wOe6l7mfh0djZmSkT70="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.537477",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "d38ec7d54d5435df7cd06061803838ca295b5f3a5e7b4c02c08d7d1f9975c571",
+    "alt_text": "Arun",
+    "alt_hash": "d9be6e7569b8d485bd838cac35852b7266625b5f35af69a6b7a45727806bd6a7",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "98b2cb56944613d155e6acfa4bdf61a54afc53a5cd7aef83aa01740cdb97d3ce",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.538477",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "kLcj9BlI2r3sNpuv",
+    "Ciphertext(base64)": "CbnS5/GU8E8ddzKfu00OK6Ex2c6ejEHczEhExV2yuiByO+uqLJ3Y2JahMVfKel++Fsl+QeK8k3zzlkOV7TajknsygUfGJn8TqBJ7lew3CWk7zifl9oEjYoUBnWMCpg+7sa6bC2ymqJxxb3sZn9LdADdQYrgS634Un1+N5eweN2fDR5DGcujQwGoouFjdlQIKJhwZ7Qqa6nVdf31pEVC5qWmCnf6hGdX2O68ysrNDnbJVDmoWT7hB8WUoD2eTZOzgDETqlMglXpqZccihHjtKxEeZkmX1w39p9oe6gFkhSj8H4e2jbUlAni+EQBNoAwJMQ2SSO0uvoM1q6ZgntWAamLXPCX9Qel44QkYFwrPPIglz",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "6i6CYhtU77XKSlNeCT7Scao0C8KdBBGZQ/RvkxmEiqs="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.635677",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "4ff57765150a33a5e2de2d83a63f974caeaa14c0bb2a9103dc5894db4a293749",
+    "alt_text": "Pilot",
+    "alt_hash": "22681af91add2807765c77794cf199f7a5024d3275e8a8177d919adc6027bcd6",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "8fc6b1b0fe73a8c16999c01adb91da20579b37aaae12c182103bfc7087960622",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.636678",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "QXyYk9BqEDSMRDw1",
+    "Ciphertext(base64)": "LSwKW4t/9Q0nrORTNn5G1T5/Eu5KPlcMKkBogLjPXMOFvGQhb7s8Mmb919HrrIAxabNQ2mHAM0t+eIVRLFjxAWSmgKuWpOrarOZd1Yaub1HE0ILEfC09MlmNAIlT/UHoMlJdoY2lEDuxrb8XmoY18GLQ/YIgp+84sFXWnNqA8T8qEcTt1wwRYwZ7lo/XiiB6AhcdDI2lbv0kYtWq1VOMVCITndnLluUrsDjfCM5TdPfi61iGgQtocbQAuqkULqw219vG4EqdIojrpw5+B/bq5TJ3ce3rMp8rlHaGBMB9q944MV2e07B15PD3c6NMzta6aJWypqjdDrHbP1xMJ5xamN0=",
+    "Tag(base64)": "c8wM6L49cesuitQe2u6Prg==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "SB0/vo0X8M4FNPzMqsV+MIJiPuRpc9B1NCon+DkuLzM="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.732190",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "4ff57765150a33a5e2de2d83a63f974caeaa14c0bb2a9103dc5894db4a293749",
+    "alt_text": "Chef",
+    "alt_hash": "60028796324a6b0f725d5c539b2769d4e969d9b3a5b05532fac68be6b3fe1add",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "72e7865f0c3d59ea65e655f976659580e09ab10c97eda15f215346827600ee12",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.733190",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "kJ0rH7cV+0rDwLbu",
+    "Ciphertext(base64)": "7xJBGEB0AtojaNWq7MvyvcWT+jCgolt4bpxZMbvjLXe2DcveLCC17VETnxtZVCutLQTNU8LBJo5GIH/1w41JRc1MndAjIkllQdE8p4sUcrC8zfjqed5Uh5bHcrpcJ54gsp6H2RrrFhCVWjqe2Q/X5TXz01HQm6bZTa4CdKhQUWkoh4Gk2a9juDl32tPa7WUSrv1UY54Wg17sJ2GfCQ6f4Y740Xip5/CGUArz8GBOX9DiBEFm0A0w4P8jo8K3pX9vTe35CmZwPCredX1PXSKmYLiqgpy5+ot6ksKXeGvggdGJQCrcB+NoNnpgHqBNdCiZCmZYwQ0J0tkc4D1foIBm26Wuv/QCd33VCMDvFw4wIdcc",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "mhuYHK82XKmkcCYgwj6ND42YfTjJroTeb7cjUSCy5z4="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.829705",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "4ff57765150a33a5e2de2d83a63f974caeaa14c0bb2a9103dc5894db4a293749",
+    "alt_text": "Coder",
+    "alt_hash": "9e3715b6204c0f83024012106cde95b4f9f90504a5790d4c594701c7e703c25f",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "203f2a4d29aa05ccf50d5bf7b82453606d03a1dc5fb10e04d3b2cacc7735b159",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.830705",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "MmoruT60tzJe07jN",
+    "Ciphertext(base64)": "FLiWUXXrk2VRG8qqGgeZ9wtcmEb1vbVaRDU8uVPu5mt8fUg9VbMRl8p2yCKYuTY3k4T/wQIUzMaOGEF8kHKsxjjvhQhZ2nZRTZi55wZomWuRWk4bs8emByaHL+NACITzwIAKjjv6Xnbx5IWhh4Af62o9kmaIcxfE5YpLawIp/sxAR7J5ubMydJ4hfEm70piCRpF9BkraMjP82BQWbRI5/i659sQ2aWEAIM0RC9fM1thpRlN67SDP2sB8yqB2RpLtMbkVIePcj7FHN9wZjiwdG2osRZWQ1vFnSSVmhCoU5xec7ZeZS6pkaM4uu+a2XXwYEo/ABtmigazrBIpl255tV5g=",
+    "Tag(base64)": "wfUfxpL5Vaw8/ZGZXst0IA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "kTF+vDwCErj2UJ1E9FT/bl8WGY7XnSbAwO1K9D6j4cM="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.927218",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "058c5d711eb45621c57e957443c6fc1437745db84f936c2ec31f2fddc48ee5f4",
+    "alt_text": "ABBA",
+    "alt_hash": "92732ed7b25f7534d7eb7b52f0e4f0eb2566ad4a6bf3c0a65e6ac647bcba5d1a",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "56751aa8b08d963766372ea9ec42742b833fb66bc016385c49a594a2270f5ccf",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:01.928218",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "jLs4rGsG4zB76JUX",
+    "Ciphertext(base64)": "MC2BQlf7A3Beol5+YCrxnQG5Ft3px8SygcDYql5c/0MxBRR/+lkiMIphtsjzNERanwjuUpi+vQs136e1ccJwDBrnJ/BA+8vg3A7i10CccefhL47JYNFEmTiomdttF/RE2Tpipmm1vxkdYS1+oe1np0Y3cNzFDi4+vtdWghO1TsJ2MzDbhIfXSJv8WLfKTIr1NJXH2tUTRA2j9UHa7nYlnR+m3u7rXxwQhxVPeOn2MySdbJY4oHFtIlgTXlJ5bstZbvGJ7ImukoqNOc1CjqtRGhiQVzx6iuHIftwrzer0I0oVt5ra6M+UsbGHtGpAfZZzv0HjdKJHAdj3wJqhMZpbmsyjBG4fJ6Mjzb4e640nNKZx",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "MayNm72oux1qX3PdDFo9d7Rg32uLUEl/nQ0DLgAjpM8="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.023549",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "058c5d711eb45621c57e957443c6fc1437745db84f936c2ec31f2fddc48ee5f4",
+    "alt_text": "Muse",
+    "alt_hash": "df2e5fbc3913f709d466805ddde890fbf634d54a7488e7a745125d3467d7263c",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "cc15e17cd9de39ca5e7d34e2763b554c9ad19634081fce125d4d70b464807a13",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.024549",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "mSnAtmtOtRtOQCsz",
+    "Ciphertext(base64)": "j2g4ACk9SkrFJOR6zs2jwB51VD8eEHiO+Pqn12wU1zldUZly7aIVtNZYL0YSi2hih6CC70R3GwHYQD+v9PL+P1y/0ER2ClulvM0LAWXSKZ6EdhXPs2DYFHDbCGXZ9PR0I2ebHGt1IbJrkK8r3R1+ASpESJJe4ALkXjFHOzJjRspWtKKPbp8MPMk3zKLs13aIxIkfhAuwyZGYtCIdF1E5gjGqYxV1anVGhScYvtNuwyb3OqAHNVGpHe5WwvpymwNcdCyxkVEkBvpsUpHsr839ty0HeADyS8qzYDpPwElnOSEDE4CRgVM/1Ghrk4ARWjLC2rCwB7P16oeHQNAQJ4wTNhc=",
+    "Tag(base64)": "pd8G/yWRALH+U0rxjAmi8Q==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "+hEx3ER/ATW8eVNOAHJ7U7RzWZqzXy/tPFbYm3i7W9U="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.119093",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "058c5d711eb45621c57e957443c6fc1437745db84f936c2ec31f2fddc48ee5f4",
+    "alt_text": "Blur",
+    "alt_hash": "e9cea9af9c7d4f9f4e996fe2b37ee14d8dbb4068609b3c06d9cc6d7dd6967a92",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "65fa8ed488f84ac649390e0b5a0abc2070a2abfbd4acbe0227c74db8ae34563e",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.119093",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "e/CVsKRRuOiVBpGq",
+    "Ciphertext(base64)": "lbBR3SPj7noMUll53j0gShp2BwaanxQVWCOEcwV34J3VakwOaZ6zQyLXrJ9qqKeUqXf7Sk8o9AgzIxZgWIbWp2TWrd9auKy2IF8FyegoHxltN1sSbxKks1jSMZu/+tOd9Kz2IXxg/eE73G8NvAMJyo7N4IKcRTFlXvOSIp7skr0h0409RsAb9CHjd9O6xqRPR1+rCj4DvksislwBHwg0xGXH5QR4wHEcnqs2T8Uc582HmfYa2BquAgyboprkPXQu7YXm9fYYfLVyPGIG7M12lZHCMcO/cIag9EzOdo+Eml02LO//I3/c2VKjr8ZU7RZAslzCcRuzHiAbax6emVX5rW4=",
+    "Tag(base64)": "kZk9ZEAJ0hlNvKyaPG8i4Q==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "xPKjybKGYQpief0DbBWJGs0G4Lyk8aEJmavDVhNa1mY="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.215113",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f2b96d6708ee5d504ceb1cb8aa9f6e331a267a40a7bb670273f7bf4ff7c7c741",
+    "alt_text": "Fig",
+    "alt_hash": "539bc068fb4ba55302b9007ba0b181fbb56786872a3f18d56de3b85478f75043",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "c228ac9ca5e936088e66f4007ab4db9dc2de050022e0978184796db52bf0a5a5",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.216116",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "zWd0L3tUDHtaiHUQ",
+    "Ciphertext(base64)": "RwvMfk/r/np8YqCvDGx3jkNJ9hNs0h/SPj9mb28zAeI/r0IlOF9XvdIuXG/A42QUZo6kxLbUCNyoh18Ps8wRgc8NCsqffEuqGAZkZwsn51ytdDGiDBVapOdgFu5BHKiRonN9I8URyhMTHMwKrB6EEaIyojVpcVEgZ3ZxCyiagTNagHRVvbp+swMVZjcL9i1SZywWa1JyJqTUloSqJb5FFkzqO07cko18MdgTa+RVLOmzKddzrVOk73nw+H5trobDmzZBBRSP7YKjgQYjUNbo2VF7GzvX58a86Y6KB5UxdfMTf16zmBOIS+i+58LxqKzWuweBK1KV4zIA0agfrgCCtMsEtjuROMoK9dS1gNoavY1z",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "9UAHgsywRKsMlymhgb+bNq5heLWT6lufKeduS3BAtQw="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.312340",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f2b96d6708ee5d504ceb1cb8aa9f6e331a267a40a7bb670273f7bf4ff7c7c741",
+    "alt_text": "Pear",
+    "alt_hash": "ee0c763ac82134d87a4cb6258adcc11712dc0a55de446a0a80ba6dcaf519fc87",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "a2df7c1f64c0d01959031d355cc78c126625c24537c56096ca746f6f0f7b8689",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.312340",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "DZxrV2AkbHxFrAT8",
+    "Ciphertext(base64)": "KmWHpzKqMCkLbgjBn6LGtkiL8A2eZlp0OtwxH/4Odm6f0Eqd0idv1NFZV9IoG6G5JID9zxgJYJ1gfyEyAd9j+dFzntRIYO30A5dBJuhDv6oeXbnrvZHyHZnakpvsZWIQUn0bHKrgS55hKXWCpzvH9KnkXubBg9czYYM6mUEWmGnn8qc5e43HjPo7B7DwX5ZfM2yfSI4bIPSn7qRvxGsM19zGpzqFDprc89FEw5ipkc2z8oZLOUgi+bhw11ORy8UP/g6L55nkjZwC5vUE/yB8EBjSRlLmy9Xcccn7wStlVUaAR1+Vz0oJT1P/d3DXows5nGAuhXDFJ3lICeNF0UpqzKI=",
+    "Tag(base64)": "/oyCwXlU6RXLnu6xQAPveA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "LDfm6H0I+ELNFdTmwm60HuiyZQUzI54KxI1v2to8MBk="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.408427",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "f2b96d6708ee5d504ceb1cb8aa9f6e331a267a40a7bb670273f7bf4ff7c7c741",
+    "alt_text": "Plum",
+    "alt_hash": "e11c327b04a4eb614ab1d8b2c7715488a5b8c15e17be5ecd7fc03629a7ab3775",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "211b2f92d17511a3a091f003f174a821f3c39a59d186c126773c62d951aff01c",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.409428",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "7jNruuzxw3ZgaOEx",
+    "Ciphertext(base64)": "lG0UHOOlpPy9cLm24fJEnqTcuepo/eGEPHBuaIj48jf4D+FrbFNkaT3Df6EqvWySD/yFDSFHeDphd4hWMHOhJ0dvVXr3WvoHgMKS86lJxw6brhVRogIGh4FFavmRHydhOK+KW5+PNcyHt8vpqFHtaqh3bLO7yqWcDedaBgZY9PgI8CRRmD8lE1oFXWxkm940MzZkCOUz8L1qm0Kp+dvSyqMyUg8+rdaqDOytvUpjULxCU1xORtiHb/qgEcqETN1Zmj5YgDlXxNnejg+5x9OZhQx5cHjutb0osYk018RuCmdWQ+YAItSN5jkeP9lKfLpmiuV66U35WV8WNUh+UpE6dcQ2e0xDF3J8GxhficLzV8u5",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "+mYX2MwUsfh7il9JLBDzCHL5/Px/gLQSvPO/HnfYQ9o="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.505934",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "3354a6b32672c8637d5f606d94f3c3f73388ec720641e2f15606bd35564d7d10",
+    "alt_text": "Ski",
+    "alt_hash": "10b9a888333ab26279d84a0be3fed598a61fc43f003f5365caab6d3c4ac829eb",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "66b4febf84a7c93ed5d3d88bc111bbd48068ebf2236a7a019bb96a030dae47d2",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.505934",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "1BcvxuQ3vHCUrG8r",
+    "Ciphertext(base64)": "250opuewrp+NZVTq0YyF93NqZF93oSswxAbBoaZ/SbglbSnJqD4KA/BIYnF39Bk2fO5Uiv4IH2jYTNxjS4tgu2AodB//iote1K7kIdT/QC1R4DPFKGT7gHgcasKJ2iW9Em4k3qcmTxg4bWhPsRDcqCDdyxmGFZSjIOuReVj/I0eMZmmGFuzB3YH7uAkJMPnrwLRuZGwUzNoWDJTwym4qQcw5YgACa935PHWy7frCYyfeKUAl2SgYW0KBqLNJ0EEBsOLEujcOuKXW6R3hfJPNEf6NV9NED6GV28+qVBC/t6wOI5DuPZQMmvHPZbu9BNpflrzPEKbTXf1jy5oyDNBcLJE=",
+    "Tag(base64)": "Yof928lyR8QYSYX5K1mtVA==",
+    "AAD_len": 141,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "AES-256",
+      "mode": "GCM",
+      "ephemeral": true,
+      "key_b64": "75gP3co6g1S6zw2D1LFSiDWnLjPJneN5wGLZeuc6Cj4="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.600529",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "3354a6b32672c8637d5f606d94f3c3f73388ec720641e2f15606bd35564d7d10",
+    "alt_text": "Bake",
+    "alt_hash": "4aab5445716e7cf14404427741f8358144ab20d06d6f2cd56bee1a864763c189",
+    "algorithm": "aes256gcm",
+    "share_sha3_256_hex": "1ffb777d26c08eca36ed0169b02977d62e1a655873a2bae5196b8a129cf0d357",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.600529",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "Nonce(base64)": "kHMFMvWd9vlA2sJG",
+    "Ciphertext(base64)": "Vjsi8Ljhg+bH1LqR2BArdxWkoUviJyp9vqGchPRL3XmpmWsOHa+IkD35SoxShdzB0DA4BeaJBY2/+w7aUS4wrLXb5ofupCYnpDULznXDuNQwpO6bDhlJCnEKLHt9uv9nEFWLeZu3mA7Or3i4Y7rEaNi2W26WSuxrmbTKSUv2Dg7F+VKWDihRDU4OdkwABsBo/my+PZtd4xv31V6DqmIMBSCXnXGHrCvueKPL/VkoKUxyr+6dIQVr1se0tRZHCL0RlXne7sEp82lED3ilf6wUq1N0TjNQHGT/HO2nh24ZyWgTcvJpa+S7Ot7cyiwCgQBIAZhZqmurs6AtX2CdEbPBUCOJ8XqTjTUDHfC78fJfI7cs",
+    "AAD_len": 148,
+    "crypto_details": {
+      "operation": "Decrypt",
+      "algorithm": "ChaCha20-Poly1305",
+      "mode": "Poly1305",
+      "ephemeral": true,
+      "key_b64": "fNPxp0c9ZoNALxK/rVR5hQ62heE3h9KkOxAh4LjX5KU="
+    }
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.697562",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Decrypted share.",
+  "details": {
+    "q_id": null,
+    "q_text": null,
+    "q_hash": "3354a6b32672c8637d5f606d94f3c3f73388ec720641e2f15606bd35564d7d10",
+    "alt_text": "Chess",
+    "alt_hash": "192676b339e74ae2a2ef929a137b85408a269f33bda8921b079e5c0e89e91319",
+    "algorithm": "chacha20poly1305",
+    "share_sha3_256_hex": "410fe12542dd3a692d1733b5ea365959c8b4246a09b5f484ffd00658d53853a0",
+    "share_len_bytes": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.699562",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_combine() via node-bridge",
+  "details": {
+    "num_shares": 42,
+    "share_len": 257
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:02.758072",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "sss_combine() complete.",
+  "details": {
+    "reconstructed_len": 160,
+    "reconstructed_sha3_256": "d912d8d031f44251cf949dc3a5eed0030f7fde16090a8365a5c46e761727fb99"
+  }
+}
+{
+  "timestamp": "2025-09-20T10:08:03.043125",
+  "run_id": "efd12b1f-dd67-4700-b5a3-2b81247eab96",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Final secret reconstructed (all-shares fast path).",
+  "details": {
+    "final_secret_len": 23,
+    "variant": "REAL",
+    "auth_ok": true
+  }
+}

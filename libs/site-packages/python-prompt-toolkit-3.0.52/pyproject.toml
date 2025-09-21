@@ -1,0 +1,123 @@
+[project]
+name = "prompt_toolkit"
+version = "3.0.52"  # Also update in `docs/conf.py`.
+description="Library for building powerful interactive command lines in Python"
+readme = "README.rst"
+authors = [{ name = "Jonathan Slenders" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "wcwidth",
+]
+
+[project.urls]
+Homepage = "https://github.com/prompt-toolkit/python-prompt-toolkit"
+Documentation = "https://python-prompt-toolkit.readthedocs.io/en/stable/"
+
+[tool.ruff]
+target-version = "py37"
+lint.select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "C",  # flake8-comprehensions
+    "T",  # Print.
+    "I",  # isort
+    # "B",  # flake8-bugbear
+    "UP",  # pyupgrade
+    "RUF100",  # unused-noqa
+    "Q", # quotes
+]
+lint.ignore = [
+    "E501",  # Line too long, handled by black
+    "C901",  # Too complex
+    "E731",  # Assign lambda.
+    "E402", # Module level import not at the top.
+    "E741", # Ambiguous variable name.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"examples/*" = ["UP031", "T201"]  # Print allowed in examples.
+"src/prompt_toolkit/application/application.py" = ["T100", "T201", "F821"]  # pdb and print allowed.
+"src/prompt_toolkit/contrib/telnet/server.py" = ["T201"]  # Print allowed.
+"src/prompt_toolkit/key_binding/bindings/named_commands.py" = ["T201"]  # Print allowed.
+"src/prompt_toolkit/shortcuts/progress_bar/base.py" = ["T201"]  # Print allowed.
+"tools/*" = ["T201"]  # Print allowed.
+"src/prompt_toolkit/filters/__init__.py" = ["F403", "F405"]  # Possibly undefined due to star import.
+"src/prompt_toolkit/filters/cli.py" = ["F403", "F405"]  # Possibly undefined due to star import.
+"src/prompt_toolkit/shortcuts/progress_bar/formatters.py" = ["UP031"] # %-style formatting.
+"src/*" = ["UP031", "UP032"]  # f-strings instead of format calls.
+
+[tool.ruff.lint.isort]
+known-first-party = ["prompt_toolkit"]
+known-third-party = ["pygments", "asyncssh"]
+
+[tool.typos.default]
+extend-ignore-re = [
+    "Formicidae",
+    "Iterm",
+    "goes",
+    "iterm",
+    "prepend",
+    "prepended",
+    "prev",
+    "ret",
+    "rouble",
+    "x1b\\[4m",
+    "Vertica",  # Database.
+    # Deliberate spelling mistakes in autocorrection.py
+    "wolrd",
+    "impotr",
+    # Lorem ipsum.
+    "Nam",
+    "varius",
+]
+
+locale = 'en-us'  # US English.
+
+[tool.typos.files]
+extend-exclude = [
+    "tests/test_buffer.py",
+    "tests/test_cli.py",
+    "tests/test_regular_languages.py",
+    # complains about some spelling in human right declaration.
+    "examples/prompts/multiline-autosuggest.py",
+]
+
+[tool.mypy]
+# --strict.
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+no_implicit_reexport = true
+strict_equality = true
+strict_optional = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

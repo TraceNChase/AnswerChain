@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-09-09T16:49:11.985238",
+  "run_id": "f9bc31ff-e09d-4436-8b4c-8ddc17f06b0f",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-09T16:49:49.690168",
+  "run_id": "f9bc31ff-e09d-4436-8b4c-8ddc17f06b0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "User int input valid: 2",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T16:52:25.510164",
+  "run_id": "f9bc31ff-e09d-4436-8b4c-8ddc17f06b0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-09T16:52:31.690247",
+  "run_id": "f9bc31ff-e09d-4436-8b4c-8ddc17f06b0f",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "Using PAD size (bucketized): 128",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T16:52:35.825356",
+  "run_id": "f9bc31ff-e09d-4436-8b4c-8ddc17f06b0f",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "Argon2id parameters confirmed for kit.",
+  "details": {
+    "time_cost": 1,
+    "memory_cost": 16384,
+    "parallelism": 8
+  }
+}

@@ -1,0 +1,39 @@
+name: "CodeQL Java Configuration"
+
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+
+paths:
+  - "src"
+  - "lib"
+  - "**/*.java"
+
+paths-ignore:
+  - "src/test"
+  - "test"
+  - "tests"
+  - "**/src/test/**"
+  - "**/*Test.java"
+  - "**/*Tests.java"
+  - "target"
+  - "build"
+  - "**/target/**"
+  - "**/build/**"
+  - ".gradle"
+  - ".mvn"
+  - "**/generated/**"
+  - "**/*.generated.*"
+  - "vendor"
+  - "third_party"
+  - ".idea"
+  - "*.iml"
+  - "docs"
+  - "*.md"
+
+disable-default-path-filters: true
+
+# Enable buildless extraction for repositories without standard build files
+extraction:
+  java:
+    buildless: "true"

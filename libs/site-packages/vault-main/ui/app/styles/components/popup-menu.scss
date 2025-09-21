@@ -1,0 +1,199 @@
+@use '../utils/box-shadow_variables';
+@use '../utils/color_variables';
+@use '../utils/font_variables';
+@use '../utils/size_variables';
+
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: BUSL-1.1
+ */
+
+// Popup menu no longer exists, but these styles are still used in some places
+.popup-menu-content,
+.ember-power-select-options {
+  border-radius: size_variables.$radius;
+  margin: -2px 0 0 0;
+
+  & > .box {
+    border-radius: size_variables.$radius;
+    box-shadow: box-shadow_variables.$box-shadow, box-shadow_variables.$box-shadow-middle;
+    padding: 0;
+    position: relative;
+    width: 210px;
+  }
+
+  &.is-wide > .box {
+    width: size_variables.$drawer-width;
+  }
+
+  .confirm-action span .button {
+    display: block;
+    margin: 0.25rem auto;
+    width: 95%;
+  }
+
+  .menu {
+    padding: size_variables.$spacing-4 0;
+  }
+
+  button.link,
+  a,
+  .ember-power-select-option,
+  .ember-power-select-option[aria-current='true'],
+  .menu-item {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    display: block;
+    height: auto;
+    font-size: size_variables.$size-7;
+    font-weight: font_variables.$font-weight-semibold;
+    padding: size_variables.$spacing-10 size_variables.$spacing-12;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  // TODO HDS polish - temp styling fix for ConfirmAction dropdown buttons
+  // so they match other dropdown elements until we replace popup-menu with Hds::Dropdown
+  .hds-confirm-action-critical {
+    &:hover {
+      background-color: color_variables.$ui-gray-050;
+    }
+    div,
+    span {
+      margin-left: -(size_variables.$spacing-4);
+      font-size: size_variables.$size-7;
+      font-weight: font_variables.$font-weight-semibold;
+    }
+  }
+
+  button.link,
+  .ember-power-select-option,
+  .ember-power-select-option[aria-current='true'],
+  a {
+    background-color: color_variables.$white;
+    color: color_variables.$grey-darkest;
+
+    &:hover {
+      background-color: color_variables.$ui-gray-050;
+      color: color_variables.$ui-gray-900;
+    }
+
+    &.active,
+    &.is-active {
+      background-color: transparent;
+      color: color_variables.$blue;
+    }
+
+    &.is-destroy {
+      color: color_variables.$red;
+
+      &:hover {
+        background-color: color_variables.$red;
+        color: color_variables.$white;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+
+      &:hover {
+        background: transparent;
+        cursor: default;
+      }
+    }
+    &.loading-dropdown {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .menu-label {
+    color: color_variables.$grey-dark;
+    font-size: size_variables.$size-9;
+    font-weight: font_variables.$font-weight-normal;
+    letter-spacing: 0;
+    margin: 0;
+    padding: size_variables.$spacing-8 size_variables.$spacing-12 0;
+    text-transform: uppercase;
+  }
+
+  .menu-content {
+    padding: size_variables.$spacing-8 size_variables.$spacing-12;
+  }
+
+  hr {
+    background-color: color_variables.$ui-gray-200;
+    margin: 0;
+  }
+}
+
+.popup-menu-content p {
+  box-shadow: none;
+  padding-top: size_variables.$spacing-8;
+  font-weight: font_variables.$font-weight-semibold;
+}
+
+.popup-menu-content .level-left {
+  flex-shrink: 1;
+}
+
+// when you need to limit the height and have dropdown scroll in child nav element
+.popup-menu-content > nav.scroll {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.list-item-row,
+.info-table-row {
+  .popup-menu-trigger {
+    height: 2.5rem;
+    min-width: 0;
+    padding: 0;
+    width: 2.5rem;
+  }
+}
+
+.ember-basic-dropdown-content {
+  background-color: transparent;
+
+  &--left.popup-menu {
+    margin: 0px 0 0 -8px;
+  }
+
+  &--below {
+    &.ember-basic-dropdown--transitioning-in {
+      animation: drop-fade-above 0.15s;
+    }
+
+    &.ember-basic-dropdown--transitioning-out {
+      animation: drop-fade-above 0.15s reverse;
+    }
+  }
+
+  &--above {
+    &.ember-basic-dropdown--transitioning-in {
+      animation: drop-fade-below 0.15s;
+    }
+
+    &.ember-basic-dropdown--transitioning-out {
+      animation: drop-fade-below 0.15s reverse;
+    }
+  }
+}
+
+// Match HDS styling for namespace ink
+a.ns-dropdown-item {
+  color: var(--token-color-foreground-primary);
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 9px 7px 0px;
+  border: 1px solid transparent;
+  outline-style: solid;
+  outline-color: transparent;
+  text-decoration: none;
+  &:hover {
+    color: var(--token-color-foreground-action-hover);
+  }
+}

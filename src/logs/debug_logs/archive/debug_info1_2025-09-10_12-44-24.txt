@@ -1,0 +1,22 @@
+[2025-09-10T12:44:24.405350] [INFO] [SYSTEM] Start new run (run_id=de3664a7-d81f-4e8d-9c79-33991df93d74)
+[2025-09-10T12:44:46.731107] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 0
+[2025-09-10T12:44:46.731107] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Counts computed for kit build.
+[2025-09-10T12:44:49.503595] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Base64 length bounds computed for pad selection.
+[2025-09-10T12:44:51.538296] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using PAD size (bucketized): 128
+[2025-09-10T12:44:53.031791] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T12:44:53.589137] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T12:44:54.164922] [INFO] [GENERAL] debug_utils.py:log_debug:238 - User int input valid: 1
+[2025-09-10T12:44:54.255972] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='SECQ_param_check' (raw).
+[2025-09-10T12:44:54.256973] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='hmh3oT34qMHx/DXGL2b4cQ=='
+[2025-09-10T12:44:54.347979] [ERROR] [GENERAL] debug_utils.py:log_exception:286 - Argon2 param check failed for m=1
+[2025-09-10T12:44:54.347979] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='SECQ_param_check' (raw).
+[2025-09-10T12:44:54.348979] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='hmh3oT34qMHx/DXGL2b4cQ=='
+[2025-09-10T12:44:54.574015] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-10T12:44:54.574015] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Argon2 params adjusted for compatibility.
+[2025-09-10T12:44:54.575014] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Argon2id parameters confirmed for kit.
+[2025-09-10T12:44:54.576013] [WARNING] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness below policy threshold.
+[2025-09-10T12:44:56.493837] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness evaluation complete.
+[2025-09-10T12:44:56.496108] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Attempting sss_split for REAL path.
+[2025-09-10T12:44:56.496108] [ERROR] [GENERAL] debug_utils.py:log_exception:286 - REAL sss_split attempt 1 failed
+[2025-09-10T12:44:56.497107] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Attempting sss_split for REAL path.
+[2025-09-10T12:44:56.498107] [ERROR] [GENERAL] debug_utils.py:log_exception:286 - REAL sss_split attempt 2 failed

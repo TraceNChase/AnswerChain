@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-09-21T18:46:06.769398",
+  "run_id": "5e0aba08-ee4e-4157-acf5-dfc9639017dc",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-21T18:46:27.063359",
+  "run_id": "5e0aba08-ee4e-4157-acf5-dfc9639017dc",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-21T18:46:28.704372",
+  "run_id": "5e0aba08-ee4e-4157-acf5-dfc9639017dc",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Base64 length bounds computed for pad selection.",
+  "details": {
+    "real_len": 132
+  }
+}
+{
+  "timestamp": "2025-09-21T18:46:29.982563",
+  "run_id": "5e0aba08-ee4e-4157-acf5-dfc9639017dc",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using PAD size (bucketized): 256",
+  "details": {
+    "min_pad": 134,
+    "max_b64_len": 132
+  }
+}

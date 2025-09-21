@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-09-09T16:58:51.316652",
+  "run_id": "da809875-79d8-4a68-8aad-28c061ed7b2c",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-09T16:59:17.288048",
+  "run_id": "da809875-79d8-4a68-8aad-28c061ed7b2c",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "User int input valid: 0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-09T16:59:17.289418",
+  "run_id": "da809875-79d8-4a68-8aad-28c061ed7b2c",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 228
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-09T16:59:21.135319",
+  "run_id": "da809875-79d8-4a68-8aad-28c061ed7b2c",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 276
+  },
+  "message": "Error during encrypted kit preparation",
+  "details": {
+    "exception_type": "TypeError",
+    "exception_str": "'int' object is not iterable",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 508, in setup_phase\n    kit = save_questions(manual_questions)  # returns kit after building; handles save prompt\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 878, in save_questions\n    max_b64_len = max(len(real_b64), *(len(db64) for db64 in dte_decoys))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'int' object is not iterable\n"
+  }
+}

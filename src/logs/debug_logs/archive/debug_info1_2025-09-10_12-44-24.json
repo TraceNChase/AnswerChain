@@ -1,0 +1,358 @@
+{
+  "timestamp": "2025-09-10T12:44:24.405350",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:46.731107",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 0",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:46.731107",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Counts computed for kit build.",
+  "details": {
+    "total_correct": 42,
+    "total_alternatives": 93,
+    "total_incorrect": 51
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:49.503595",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Base64 length bounds computed for pad selection.",
+  "details": {
+    "real_len": 88,
+    "decoy_count": 0,
+    "max_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:51.538296",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using PAD size (bucketized): 128",
+  "details": {
+    "min_pad": 90,
+    "max_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:53.031791",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:53.589137",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.164922",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 1",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.255972",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using user-provided password='SECQ_param_check' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.256973",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='hmh3oT34qMHx/DXGL2b4cQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.347979",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "Argon2 param check failed for m=1",
+  "details": {
+    "exception_type": "RuntimeError",
+    "exception_str": "bridge error: memory should be at least 8*p bytes",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 447, in _ensure_working_argon2_params\n    _k, _ = CF.derive_or_recover_key(pwd, salt, False, t, mv, p)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\CipherForge.py\", line 269, in derive_or_recover_key\n    key = derive_key_argon2id(\n          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\CipherForge.py\", line 80, in derive_key_argon2id\n    derived_bytes = argon2id(\n                    ^^^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 67, in argon2id\n    resp = _call({\n           ^^^^^^^\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\modules\\crypto_bridge.py\", line 61, in _call\n    raise RuntimeError(f\"bridge error: {resp.get('error')}\")\nRuntimeError: bridge error: memory should be at least 8*p bytes\n"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:54.347979",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Using user-provided password='SECQ_param_check' (raw).",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.348979",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='hmh3oT34qMHx/DXGL2b4cQ=='",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T12:44:54.574015",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_crypto_event",
+    "line": 267
+  },
+  "message": "Crypto operation",
+  "details": {
+    "message": "Argon2id (Noble) complete. Derived key is in logs.",
+    "ephemeral_info": {
+      "salt_b64": "hmh3oT34qMHx/DXGL2b4cQ==",
+      "ephemeral_password": "<not ephemeral>"
+    },
+    "crypto_details": {
+      "operation": "KDF Derive",
+      "algorithm": "Argon2id",
+      "mode": null,
+      "ephemeral": false,
+      "key_b64": "wzqrx7k1cZp5p2cBA/YIQmV/vRq/dDigB5Ta8Dn1l8Y=",
+      "derived_key_b64": "wzqrx7k1cZp5p2cBA/YIQmV/vRq/dDigB5Ta8Dn1l8Y=",
+      "Argon2_Parameters": {
+        "time_cost": 1,
+        "memory_cost": 8192,
+        "parallelism": 1,
+        "key_length": 32
+      }
+    }
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:54.574015",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Argon2 params adjusted for compatibility.",
+  "details": {
+    "old_m": 1,
+    "new_m": 8192,
+    "time_cost": 1,
+    "parallelism": 1
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:54.575014",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Argon2id parameters confirmed for kit.",
+  "details": {
+    "time_cost": 1,
+    "memory_cost": 8192,
+    "parallelism": 1
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:54.576013",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "WARNING",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness below policy threshold.",
+  "details": {
+    "bits": 19.59453202228287,
+    "N": 93,
+    "C": 42,
+    "T": 15,
+    "policy_min_bits": 80.0
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:56.493837",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Combinatorial hardness evaluation complete.",
+  "details": {
+    "bits": 19.59453202228287,
+    "N": 93,
+    "C": 42,
+    "T": 15
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:56.496108",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 1,
+    "pad": 128,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:56.496108",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 1 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 986, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:56.497107",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Attempting sss_split for REAL path.",
+  "details": {
+    "attempt": 2,
+    "pad": 256,
+    "shares": 42,
+    "threshold": 15,
+    "seed_b64_len": 88
+  }
+}
+{
+  "timestamp": "2025-09-10T12:44:56.498107",
+  "run_id": "de3664a7-d81f-4e8d-9c79-33991df93d74",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_exception",
+    "line": 286
+  },
+  "message": "REAL sss_split attempt 2 failed",
+  "details": {
+    "exception_type": "UnboundLocalError",
+    "exception_str": "cannot access local variable 'asyncio' where it is not associated with a value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\main.py\", line 986, in save_questions\n    real_shares_correct = asyncio.run(\n                          ^^^^^^^\nUnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value\n"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-09-10T06:16:41.711688",
+  "run_id": "b694168d-9b6d-4b5a-96bd-40eb7797ee7e",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-10T06:16:45.043120",
+  "run_id": "b694168d-9b6d-4b5a-96bd-40eb7797ee7e",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\user_config2.json",
+    "threshold": 15,
+    "pad_size": 128,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 8192,
+      "parallelism": 1
+    },
+    "q_count": 14,
+    "secrets_count": 4
+  }
+}
+{
+  "timestamp": "2025-09-10T06:16:46.612638",
+  "run_id": "b694168d-9b6d-4b5a-96bd-40eb7797ee7e",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-10T06:16:46.612638",
+  "run_id": "b694168d-9b6d-4b5a-96bd-40eb7797ee7e",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "First pet?",
+    "picked": [
+      "Rex",
+      "Mia",
+      "Ziv"
+    ]
+  }
+}

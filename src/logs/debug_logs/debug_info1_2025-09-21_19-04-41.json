@@ -1,0 +1,522 @@
+{
+  "timestamp": "2025-09-21T19:04:41.956948",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:45.808242",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\test_q.json",
+    "threshold": 40,
+    "pad_size": 256,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 1024,
+      "parallelism": 1
+    },
+    "q_count": 14,
+    "secrets_count": 1
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:48.166359",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:48.166359",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "First pet?",
+    "picked": [
+      "Rex",
+      "Mia",
+      "Bo",
+      "Puck"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:49.683605",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:49.684606",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 2,
+    "q_text": "Fav color?",
+    "picked": [
+      "Cyan",
+      "Rose",
+      "Onyx"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:51.091446",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:51.092445",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 3,
+    "q_text": "Birth city?",
+    "picked": [
+      "Oslo",
+      "Doha",
+      "Minsk"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:52.601548",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q4 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:52.602549",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 4,
+    "q_text": "First car?",
+    "picked": [
+      "Ford",
+      "Kia",
+      "Audi"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:54.366511",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q5 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:54.366511",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 5,
+    "q_text": "Lucky number?",
+    "picked": [
+      "21",
+      "88",
+      "9"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:55.638206",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q6 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:55.639208",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 6,
+    "q_text": "Childhood toy?",
+    "picked": [
+      "Yo-yo",
+      "Robot"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:57.155332",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q7 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:57.156337",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 7,
+    "q_text": "School mascot?",
+    "picked": [
+      "Falcon",
+      "Dragon",
+      "Bee"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:04:58.771608",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q8 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:04:58.772606",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 8,
+    "q_text": "Street lived?",
+    "picked": [
+      "Hill",
+      "Maple",
+      "King"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:00.407442",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q9 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:00.408442",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 9,
+    "q_text": "Mother mid name?",
+    "picked": [
+      "Joy",
+      "Eve",
+      "Rae"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:02.294306",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q10 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:02.295306",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 10,
+    "q_text": "Best friend?",
+    "picked": [
+      "Kim",
+      "Tom",
+      "Ira"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:03.631279",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q11 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:03.632281",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 11,
+    "q_text": "Dream job?",
+    "picked": [
+      "Coder",
+      "Judge"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:05.215206",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q12 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:05.216207",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 12,
+    "q_text": "First concert?",
+    "picked": [
+      "Korn",
+      "Kiss"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:06.766001",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q13 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:06.767002",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 13,
+    "q_text": "Fav fruit?",
+    "picked": [
+      "Lime",
+      "Mango"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:08.287142",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q14 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-21T19:05:08.288142",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 14,
+    "q_text": "Secret hobby?",
+    "picked": [
+      "Chess",
+      "Code"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-21T19:05:08.288142",
+  "run_id": "5b1e12fd-cb2b-4f9a-86d5-42ea655cca14",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_error",
+    "line": 276
+  },
+  "message": "Insufficient selections to meet threshold.",
+  "details": {
+    "selected": 38,
+    "threshold": 40
+  }
+}

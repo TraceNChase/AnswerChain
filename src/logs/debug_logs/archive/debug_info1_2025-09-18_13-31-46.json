@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-09-18T13:31:46.887481",
+  "run_id": "18280fc9-f656-4007-9024-2934e898f149",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-18T13:32:38.205028",
+  "run_id": "18280fc9-f656-4007-9024-2934e898f149",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "User int input valid: 3",
+  "details": {}
+}
