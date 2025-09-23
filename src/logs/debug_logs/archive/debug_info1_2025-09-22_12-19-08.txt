@@ -1,0 +1,700 @@
+[2025-09-22T12:19:08.273923] [INFO] [SYSTEM] Start new run (run_id=ae0a5f77-c63e-4453-a3f0-82794f47b207)
+[2025-09-22T12:19:36.124465] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Counts computed for kit build.
+[2025-09-22T12:19:38.159419] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Base64 length bounds computed for pad selection.
+[2025-09-22T12:19:38.964439] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using PAD size (bucketized): 256
+[2025-09-22T12:19:39.966123] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='SECQ_param_check' (raw).
+[2025-09-22T12:19:39.967129] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='SECQ_param_check', salt(b64)='Ol5maJG1FFcrmiyibi8AnA=='
+[2025-09-22T12:19:40.104545] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:40.105547] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Argon2id parameters confirmed for kit.
+[2025-09-22T12:19:40.106547] [WARNING] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness below policy threshold.
+[2025-09-22T12:19:41.228383] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Combinatorial hardness evaluation complete.
+[2025-09-22T12:19:41.229383] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Attempting sss_split for REAL path.
+[2025-09-22T12:19:41.230381] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() via node-bridge
+[2025-09-22T12:19:41.323583] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_split() complete.
+[2025-09-22T12:19:41.719126] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Rex' (raw).
+[2025-09-22T12:19:41.720126] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Rex', salt(b64)='nugWbBYDdPYcZrf2BkR1Jg=='
+[2025-09-22T12:19:41.857147] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.060885] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.061885] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:42.160467] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mia' (raw).
+[2025-09-22T12:19:42.161467] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mia', salt(b64)='OJHC4wLS5xtSTp1JS/C5Pg=='
+[2025-09-22T12:19:42.296467] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.495466] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.496467] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:42.595467] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ziv' (raw).
+[2025-09-22T12:19:42.596467] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ziv', salt(b64)='SfcY7NBZvHf1aWZME+MFJw=='
+[2025-09-22T12:19:42.732178] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.931201] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:42.931201] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:43.130715] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bo' (raw).
+[2025-09-22T12:19:43.131714] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bo', salt(b64)='wA7t8P0LFQiJ3NRH6TNVgg=='
+[2025-09-22T12:19:43.267714] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:43.468227] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:43.469227] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:43.667688] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Puck' (raw).
+[2025-09-22T12:19:43.668689] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Puck', salt(b64)='WiH7WrLlMhfzKYQCWZWEKw=='
+[2025-09-22T12:19:43.803226] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.002462] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.003461] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:44.103980] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Tan' (raw).
+[2025-09-22T12:19:44.104981] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Tan', salt(b64)='PSZlo1a78YK4CJsUqBBTvA=='
+[2025-09-22T12:19:44.244652] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.451310] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.452310] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:44.552311] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Cyan' (raw).
+[2025-09-22T12:19:44.553310] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Cyan', salt(b64)='UsGJDIZ/5VT1D4w5iNJfTA=='
+[2025-09-22T12:19:44.689334] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.887360] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:44.888363] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:44.988362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Moss' (raw).
+[2025-09-22T12:19:44.988362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Moss', salt(b64)='kqVTlAVg511sEnGGVfLBvA=='
+[2025-09-22T12:19:45.124875] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:45.324890] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:45.325891] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:45.523891] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Rose' (raw).
+[2025-09-22T12:19:45.524891] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Rose', salt(b64)='qSxklFqLjC3IcREaZPr5JQ=='
+[2025-09-22T12:19:45.663919] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:45.861455] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:45.862456] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:46.068953] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Onyx' (raw).
+[2025-09-22T12:19:46.068953] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Onyx', salt(b64)='jrGCO6BY060+Rr5DYqft6Q=='
+[2025-09-22T12:19:46.207483] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:46.406995] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:46.407994] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:46.613434] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lilac' (raw).
+[2025-09-22T12:19:46.614435] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lilac', salt(b64)='OWPfQGoN+yjHpvaioNz9+w=='
+[2025-09-22T12:19:46.751139] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:46.950673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:46.951674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:47.051674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lima' (raw).
+[2025-09-22T12:19:47.052674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lima', salt(b64)='q9DJFWPq5hsY2hKiQDpxhw=='
+[2025-09-22T12:19:47.190190] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:47.392191] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:47.393192] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:47.492191] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Riga' (raw).
+[2025-09-22T12:19:47.493192] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Riga', salt(b64)='29Z67XSc6JRzXlhcVlYmUw=='
+[2025-09-22T12:19:47.629191] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:47.828246] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:47.829247] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:47.928247] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Oslo' (raw).
+[2025-09-22T12:19:47.929247] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Oslo', salt(b64)='ZyA5yO5fTs4OajBw+e92og=='
+[2025-09-22T12:19:48.065254] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:48.269048] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:48.269048] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:48.468558] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pune' (raw).
+[2025-09-22T12:19:48.468558] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pune', salt(b64)='EFTE6ade1hhw2oreSLvHOQ=='
+[2025-09-22T12:19:48.606323] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:48.811953] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:48.812954] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:49.013051] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Doha' (raw).
+[2025-09-22T12:19:49.014051] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Doha', salt(b64)='yNVk5FzJA6tNFfpoXrXRRg=='
+[2025-09-22T12:19:49.151069] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:49.349580] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:49.350581] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:49.548651] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Minsk' (raw).
+[2025-09-22T12:19:49.549651] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Minsk', salt(b64)='/7kY4NlL6es8bGNBbkldQA=='
+[2025-09-22T12:19:49.685188] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:49.887213] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:49.888213] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:50.087726] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bonn' (raw).
+[2025-09-22T12:19:50.088726] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bonn', salt(b64)='nt3LHYRh3uH9ZChWnYcj3Q=='
+[2025-09-22T12:19:50.225241] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:50.426241] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:50.427241] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:50.528241] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Saab' (raw).
+[2025-09-22T12:19:50.528241] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Saab', salt(b64)='tTFKf0slqYWV1IOJjzBBYg=='
+[2025-09-22T12:19:50.665756] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:50.868091] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:50.868091] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:50.974677] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='VW' (raw).
+[2025-09-22T12:19:50.975203] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='VW', salt(b64)='G9gI9PuOfBzmgOK0p68dAA=='
+[2025-09-22T12:19:51.117941] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:51.328023] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:51.329023] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:51.429543] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ford' (raw).
+[2025-09-22T12:19:51.430542] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ford', salt(b64)='8fMaDoQWPhB7TsDzOlrVjw=='
+[2025-09-22T12:19:51.565542] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:51.764079] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:51.765080] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:51.964106] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mini' (raw).
+[2025-09-22T12:19:51.964106] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mini', salt(b64)='ucstkSEAjeh4clPjg7AbCQ=='
+[2025-09-22T12:19:52.102624] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:52.301332] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:52.302333] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:52.499843] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kia' (raw).
+[2025-09-22T12:19:52.500844] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kia', salt(b64)='gcaUPVy0ViEucJPjEEQ54w=='
+[2025-09-22T12:19:52.637844] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:52.835895] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:52.836896] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:53.037895] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Seat' (raw).
+[2025-09-22T12:19:53.038896] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Seat', salt(b64)='Pco1bpnZwH/akP38IUggXQ=='
+[2025-09-22T12:19:53.175409] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:53.381194] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:53.381194] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:53.581346] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Audi' (raw).
+[2025-09-22T12:19:53.582347] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Audi', salt(b64)='CWNhOJa2ajckacfIaGuo9w=='
+[2025-09-22T12:19:53.718371] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:53.917909] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:53.918909] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:54.117951] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lada' (raw).
+[2025-09-22T12:19:54.118951] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lada', salt(b64)='VUVZf0jB/YIc5Cad6eX7mQ=='
+[2025-09-22T12:19:54.253951] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:54.454727] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:54.455728] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:54.556237] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='7' (raw).
+[2025-09-22T12:19:54.557237] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='7', salt(b64)='hDBVyYuhx7QzmjFTl5v+jw=='
+[2025-09-22T12:19:54.693264] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:54.892291] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:54.893292] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:54.992463] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='13' (raw).
+[2025-09-22T12:19:54.993464] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='13', salt(b64)='aAmFt1AHsSgEVK7r12iVUQ=='
+[2025-09-22T12:19:55.128491] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:55.328489] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:55.329489] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:55.430490] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='21' (raw).
+[2025-09-22T12:19:55.431489] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='21', salt(b64)='iZ6bPKnojrWVaqWWKBTZTg=='
+[2025-09-22T12:19:55.572224] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:55.771325] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:55.772325] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:55.972750] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='42' (raw).
+[2025-09-22T12:19:55.973750] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='42', salt(b64)='J2me5DkfRjdv6c1oD6uwQw=='
+[2025-09-22T12:19:56.113250] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:56.314765] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:56.315765] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:56.516277] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='88' (raw).
+[2025-09-22T12:19:56.517277] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='88', salt(b64)='d+x1r2V3wC53r/oKte8fCg=='
+[2025-09-22T12:19:56.657281] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:56.857334] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:56.858334] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:57.058848] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='3' (raw).
+[2025-09-22T12:19:57.059848] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='3', salt(b64)='TDrSePA+Ffl7cqNz609WIQ=='
+[2025-09-22T12:19:57.194360] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:57.395359] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:57.396360] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:57.594711] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='9' (raw).
+[2025-09-22T12:19:57.594711] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='9', salt(b64)='8F7yKkuTkB/NYexk9jmhHw=='
+[2025-09-22T12:19:57.732518] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:57.932336] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:57.933336] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:58.134362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='27' (raw).
+[2025-09-22T12:19:58.135363] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='27', salt(b64)='zVmY+xv5YS7wDb4ogxf2cA=='
+[2025-09-22T12:19:58.269362] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:58.469362] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:58.469362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:58.671052] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='99' (raw).
+[2025-09-22T12:19:58.672053] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='99', salt(b64)='fERvEGG/jlHMc8UE4Zt5nA=='
+[2025-09-22T12:19:58.809560] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.010150] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.010150] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:59.111174] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kite' (raw).
+[2025-09-22T12:19:59.112175] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kite', salt(b64)='RnFjrEuOWlkOqlNGtuVfMA=='
+[2025-09-22T12:19:59.248686] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.449197] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.450039] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:59.551362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lego' (raw).
+[2025-09-22T12:19:59.552361] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lego', salt(b64)='RTrecRlVOxJJIgdmPICfZA=='
+[2025-09-22T12:19:59.690898] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.889928] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:19:59.890930] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:19:59.996470] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Yo-yo' (raw).
+[2025-09-22T12:19:59.996470] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Yo-yo', salt(b64)='duJMkobIhE8RSGoX7zszhw=='
+[2025-09-22T12:20:00.141646] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:00.343647] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:00.343647] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:00.542727] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bear' (raw).
+[2025-09-22T12:20:00.543727] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bear', salt(b64)='26wOYDyc+EI5eJ+jzlDgAQ=='
+[2025-09-22T12:20:00.683018] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:00.889061] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:00.889061] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:01.094268] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Robot' (raw).
+[2025-09-22T12:20:01.095269] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Robot', salt(b64)='GPPDQzAFZFcw2Ae949twqQ=='
+[2025-09-22T12:20:01.234201] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:01.436202] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:01.437201] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:01.537201] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Wolf' (raw).
+[2025-09-22T12:20:01.538202] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Wolf', salt(b64)='FRPbWiqktI6tQ3vr1BcjTQ=='
+[2025-09-22T12:20:01.675717] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:01.875433] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:01.876433] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:01.978036] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Shark' (raw).
+[2025-09-22T12:20:01.979036] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Shark', salt(b64)='8p+5Xloebn6I95m1LqUsRw=='
+[2025-09-22T12:20:02.116062] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:02.322555] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:02.322555] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:02.422113] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Falcon' (raw).
+[2025-09-22T12:20:02.423112] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Falcon', salt(b64)='KqlPNEfFakdYEe7CmUil/Q=='
+[2025-09-22T12:20:02.562112] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:02.762630] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:02.763630] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:02.961145] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ox' (raw).
+[2025-09-22T12:20:02.962146] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ox', salt(b64)='q3Sg2QvQ9Ge5w8k516Uifw=='
+[2025-09-22T12:20:03.100423] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:03.302935] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:03.303934] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:03.503933] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Dragon' (raw).
+[2025-09-22T12:20:03.504934] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Dragon', salt(b64)='5Q8xT/WspbmRmoFDqLn6lQ=='
+[2025-09-22T12:20:03.641640] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:03.840217] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:03.841216] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:04.039216] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bee' (raw).
+[2025-09-22T12:20:04.040219] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bee', salt(b64)='e1UrE5SC0pCzQcaodyp7hQ=='
+[2025-09-22T12:20:04.176765] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:04.378276] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:04.379277] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:04.480319] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Elm' (raw).
+[2025-09-22T12:20:04.480858] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Elm', salt(b64)='02YHYqqZn5qq/D5OWTZ7Yw=='
+[2025-09-22T12:20:04.619007] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:04.819622] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:04.820621] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:04.921131] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Oak' (raw).
+[2025-09-22T12:20:04.921131] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Oak', salt(b64)='eXO00be/h8gMOPhL0GdDpw=='
+[2025-09-22T12:20:05.061132] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:05.261645] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:05.262645] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:05.362645] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pine' (raw).
+[2025-09-22T12:20:05.363645] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pine', salt(b64)='/6/dexhcCL1fY5nE6/Q5Lg=='
+[2025-09-22T12:20:05.501645] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:05.701129] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:05.702129] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:05.901741] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Hill' (raw).
+[2025-09-22T12:20:05.902267] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Hill', salt(b64)='EZiZlK3VadH/NFexzE76hQ=='
+[2025-09-22T12:20:06.044415] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:06.245954] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:06.246955] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:06.445957] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lake' (raw).
+[2025-09-22T12:20:06.445957] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lake', salt(b64)='HJTT4xq3rAVJYpB6K5e1vg=='
+[2025-09-22T12:20:06.583954] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:06.787347] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:06.788347] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:07.000384] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Maple' (raw).
+[2025-09-22T12:20:07.001384] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Maple', salt(b64)='Y5gny473ByiiUYyveAHSTg=='
+[2025-09-22T12:20:07.139897] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:07.341053] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:07.342054] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:07.543080] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='King' (raw).
+[2025-09-22T12:20:07.543080] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='King', salt(b64)='7E7W8GDKyJxjcKgzl5opWA=='
+[2025-09-22T12:20:07.680596] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:07.880136] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:07.881134] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:07.982133] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ann' (raw).
+[2025-09-22T12:20:07.983134] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ann', salt(b64)='r0g1QrMdNN/HcffJzMWnHg=='
+[2025-09-22T12:20:08.120160] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:08.319161] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:08.320160] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:08.419161] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mae' (raw).
+[2025-09-22T12:20:08.420160] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mae', salt(b64)='pfj1SPR6r24Z2FZsR6Kifw=='
+[2025-09-22T12:20:08.556321] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:08.757861] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:08.758862] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:08.858894] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lyn' (raw).
+[2025-09-22T12:20:08.858894] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lyn', salt(b64)='MDgJls54gLDWsasN0IgQhw=='
+[2025-09-22T12:20:09.003160] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:09.205396] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:09.205396] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:09.403906] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Joy' (raw).
+[2025-09-22T12:20:09.404907] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Joy', salt(b64)='l46VxVDkfVDNQRv/8ideIQ=='
+[2025-09-22T12:20:09.542907] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:09.744941] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:09.746447] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:09.945131] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Sue' (raw).
+[2025-09-22T12:20:09.945131] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Sue', salt(b64)='Q7/lR1rfBIoiK6p0yOWC6g=='
+[2025-09-22T12:20:10.084648] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:10.283669] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:10.284671] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:10.483670] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Eve' (raw).
+[2025-09-22T12:20:10.483670] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Eve', salt(b64)='38quUkiNLRweFQsyLAnNQA=='
+[2025-09-22T12:20:10.622670] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:10.823216] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:10.824216] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:11.027284] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lux' (raw).
+[2025-09-22T12:20:11.028284] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lux', salt(b64)='wUzCTobQZn/G/vlXiHVo4Q=='
+[2025-09-22T12:20:11.166530] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:11.370256] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:11.370256] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:11.570275] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Rae' (raw).
+[2025-09-22T12:20:11.571276] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Rae', salt(b64)='/k8iMZgFiiCxmdAVL6b1UQ=='
+[2025-09-22T12:20:11.709306] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:11.909855] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:11.910857] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:12.012855] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Max' (raw).
+[2025-09-22T12:20:12.013855] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Max', salt(b64)='j3EJBgBnkp+SvjE7I+Py+g=='
+[2025-09-22T12:20:12.152883] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:12.351882] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:12.352884] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:12.451883] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Zoe' (raw).
+[2025-09-22T12:20:12.451883] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Zoe', salt(b64)='MKOlRomMTaw5HeiucaUJow=='
+[2025-09-22T12:20:12.589882] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:12.790590] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:12.791591] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:12.891107] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Arun' (raw).
+[2025-09-22T12:20:12.891107] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Arun', salt(b64)='xUOU94ximEDq8dcgwtjuGw=='
+[2025-09-22T12:20:13.028617] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:13.229133] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:13.230132] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:13.432133] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kim' (raw).
+[2025-09-22T12:20:13.432133] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kim', salt(b64)='FgY15O7pL+D72P5D2AZQHQ=='
+[2025-09-22T12:20:13.570792] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:13.769899] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:13.770900] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:13.969926] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Nia' (raw).
+[2025-09-22T12:20:13.969926] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Nia', salt(b64)='PtphhpF18IGbQR+tcnSX/g=='
+[2025-09-22T12:20:14.108974] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:14.308867] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:14.309867] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:14.508866] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Tom' (raw).
+[2025-09-22T12:20:14.509867] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Tom', salt(b64)='T+M+AuUJosC5/eUlCytTFw=='
+[2025-09-22T12:20:14.648867] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:14.850926] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:14.851925] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:15.050926] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Leo' (raw).
+[2025-09-22T12:20:15.050926] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Leo', salt(b64)='8mDpIrxBHdMQ4dwjwhEVAA=='
+[2025-09-22T12:20:15.190439] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:15.390342] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:15.391343] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:15.591856] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ira' (raw).
+[2025-09-22T12:20:15.592857] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ira', salt(b64)='Rn8aPFdJWDKS958bdYGCTA=='
+[2025-09-22T12:20:15.732464] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:15.936470] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:15.936470] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:16.139230] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bea' (raw).
+[2025-09-22T12:20:16.140231] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bea', salt(b64)='AjDqBwVaolxnSAMKPqDDPw=='
+[2025-09-22T12:20:16.279743] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:16.480741] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:16.481743] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:16.580742] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pilot' (raw).
+[2025-09-22T12:20:16.581743] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pilot', salt(b64)='0cpV6D8+IkusqGFrrUG9qQ=='
+[2025-09-22T12:20:16.719773] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:16.920046] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:16.921045] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:17.021560] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Chef' (raw).
+[2025-09-22T12:20:17.022558] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Chef', salt(b64)='pB1SSawZEfcs9ZsNumFoLw=='
+[2025-09-22T12:20:17.161072] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:17.360072] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:17.361072] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:17.460072] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Coder' (raw).
+[2025-09-22T12:20:17.461072] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Coder', salt(b64)='1v1JnRgeq2pf3c6zQeHobg=='
+[2025-09-22T12:20:17.598072] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:17.796611] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:17.797612] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:17.999602] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Nurse' (raw).
+[2025-09-22T12:20:17.999602] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Nurse', salt(b64)='sSoCzwEPImHYKwKp6ZNV7g=='
+[2025-09-22T12:20:18.138517] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:18.340515] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:18.341517] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:18.539028] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Judge' (raw).
+[2025-09-22T12:20:18.540031] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Judge', salt(b64)='qDSB6eQMRDHs/Tow6K4X5A=='
+[2025-09-22T12:20:18.675063] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:18.874597] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:18.875599] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:18.976110] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='ABBA' (raw).
+[2025-09-22T12:20:18.976110] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='ABBA', salt(b64)='2tjYFL0+nXD53jCPjHOKew=='
+[2025-09-22T12:20:19.115156] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:19.314156] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:19.315156] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:19.415156] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Muse' (raw).
+[2025-09-22T12:20:19.416156] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Muse', salt(b64)='7Jv+rqUO1xxhAY5FyvEGKw=='
+[2025-09-22T12:20:19.553849] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:19.753904] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:19.753904] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:19.853419] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Blur' (raw).
+[2025-09-22T12:20:19.854419] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Blur', salt(b64)='BDpBpWzw+3J1q+DKl2rlnw=='
+[2025-09-22T12:20:19.991628] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:20.193680] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:20.193680] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:20.394965] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Korn' (raw).
+[2025-09-22T12:20:20.395966] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Korn', salt(b64)='p9NOL+9mLZBCBBvTzLA7dg=='
+[2025-09-22T12:20:20.531965] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:20.731992] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:20.731992] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:20.932110] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Tool' (raw).
+[2025-09-22T12:20:20.932110] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Tool', salt(b64)='FgreT7ff5rV6Bh5GMwqGtg=='
+[2025-09-22T12:20:21.074367] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:21.273900] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:21.274900] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:21.473900] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kiss' (raw).
+[2025-09-22T12:20:21.473900] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kiss', salt(b64)='K1gVhTXhWuuYed8568IAFw=='
+[2025-09-22T12:20:21.610900] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:21.808449] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:21.809449] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:21.909033] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Fig' (raw).
+[2025-09-22T12:20:21.909033] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Fig', salt(b64)='Q6owLtuQSiCGI0bDM69k9w=='
+[2025-09-22T12:20:22.049033] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:22.251797] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:22.252799] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:22.351796] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pear' (raw).
+[2025-09-22T12:20:22.352797] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pear', salt(b64)='nn80T36bXu4uKFf5jxGx+Q=='
+[2025-09-22T12:20:22.492095] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:22.694267] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:22.695267] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:22.793784] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Plum' (raw).
+[2025-09-22T12:20:22.794783] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Plum', salt(b64)='EB8I7igrvY7OBEvmalns6Q=='
+[2025-09-22T12:20:22.933302] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:23.135816] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:23.136817] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:23.334817] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lime' (raw).
+[2025-09-22T12:20:23.335817] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lime', salt(b64)='r2smDZp+opOnhyNr2hq+JA=='
+[2025-09-22T12:20:23.473817] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:23.676050] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:23.677054] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:23.874588] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kiwi' (raw).
+[2025-09-22T12:20:23.875589] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kiwi', salt(b64)='uEzRpRwtDd3DjNYN8Z+cYg=='
+[2025-09-22T12:20:24.013099] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:24.214142] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:24.215142] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:24.413653] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mango' (raw).
+[2025-09-22T12:20:24.414653] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mango', salt(b64)='Yk97W5gww9fcArXXByBaqQ=='
+[2025-09-22T12:20:24.553653] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:24.758360] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:24.759362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:24.965160] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Date' (raw).
+[2025-09-22T12:20:24.966160] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Date', salt(b64)='3pOkgdQxYQ3uEDw/A8tCIQ=='
+[2025-09-22T12:20:25.106673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:25.306187] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:25.307187] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:25.408187] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ski' (raw).
+[2025-09-22T12:20:25.409187] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ski', salt(b64)='bE3eb59BxrdopIOVm65ClQ=='
+[2025-09-22T12:20:25.548188] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:25.750215] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:25.750215] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:25.850241] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bake' (raw).
+[2025-09-22T12:20:25.850241] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bake', salt(b64)='ijjE1ltgnWL+sBNvgffzQA=='
+[2025-09-22T12:20:25.990649] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:26.195090] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:26.196091] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:26.294826] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Chess' (raw).
+[2025-09-22T12:20:26.295829] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Chess', salt(b64)='t9tZb4xcNYQDC/0GbrwRQA=='
+[2025-09-22T12:20:26.433828] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:26.634353] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:26.635353] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:26.834918] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Code' (raw).
+[2025-09-22T12:20:26.834918] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Code', salt(b64)='LrctFUzTiJfwRLxh6V4EHg=='
+[2025-09-22T12:20:26.976261] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.184959] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.185959] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:27.385960] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Run' (raw).
+[2025-09-22T12:20:27.386960] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Run', salt(b64)='GGGyzysiIfWG/cppOOu7dA=='
+[2025-09-22T12:20:27.524958] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.726223] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.727223] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Mapped Q/A to encrypted shares.
+[2025-09-22T12:20:27.727223] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Recovery kit constructed in-memory.
+[2025-09-22T12:20:27.728223] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Rex' (raw).
+[2025-09-22T12:20:27.729223] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Rex', salt(b64)='nugWbBYDdPYcZrf2BkR1Jg=='
+[2025-09-22T12:20:27.866762] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.866762] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:27.967761] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mia' (raw).
+[2025-09-22T12:20:27.968762] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mia', salt(b64)='OJHC4wLS5xtSTp1JS/C5Pg=='
+[2025-09-22T12:20:28.109592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.110593] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.211616] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ziv' (raw).
+[2025-09-22T12:20:28.212616] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ziv', salt(b64)='SfcY7NBZvHf1aWZME+MFJw=='
+[2025-09-22T12:20:28.347617] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.348618] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.448615] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Tan' (raw).
+[2025-09-22T12:20:28.449616] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Tan', salt(b64)='PSZlo1a78YK4CJsUqBBTvA=='
+[2025-09-22T12:20:28.587616] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.588616] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.693132] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Cyan' (raw).
+[2025-09-22T12:20:28.696362] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Cyan', salt(b64)='UsGJDIZ/5VT1D4w5iNJfTA=='
+[2025-09-22T12:20:28.835396] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.836397] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:28.936908] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Moss' (raw).
+[2025-09-22T12:20:28.937908] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Moss', salt(b64)='kqVTlAVg511sEnGGVfLBvA=='
+[2025-09-22T12:20:29.074582] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.075583] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.178099] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lima' (raw).
+[2025-09-22T12:20:29.179099] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lima', salt(b64)='q9DJFWPq5hsY2hKiQDpxhw=='
+[2025-09-22T12:20:29.319050] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.320049] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.431049] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Riga' (raw).
+[2025-09-22T12:20:29.432049] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Riga', salt(b64)='29Z67XSc6JRzXlhcVlYmUw=='
+[2025-09-22T12:20:29.570050] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.571050] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.671054] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Oslo' (raw).
+[2025-09-22T12:20:29.671054] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Oslo', salt(b64)='ZyA5yO5fTs4OajBw+e92og=='
+[2025-09-22T12:20:29.809593] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.810593] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:29.911108] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Saab' (raw).
+[2025-09-22T12:20:29.912108] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Saab', salt(b64)='tTFKf0slqYWV1IOJjzBBYg=='
+[2025-09-22T12:20:30.050108] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.051108] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.151134] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='VW' (raw).
+[2025-09-22T12:20:30.152135] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='VW', salt(b64)='G9gI9PuOfBzmgOK0p68dAA=='
+[2025-09-22T12:20:30.289134] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.290134] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.392229] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ford' (raw).
+[2025-09-22T12:20:30.392229] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ford', salt(b64)='8fMaDoQWPhB7TsDzOlrVjw=='
+[2025-09-22T12:20:30.528229] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.529230] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.629229] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='7' (raw).
+[2025-09-22T12:20:30.630228] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='7', salt(b64)='hDBVyYuhx7QzmjFTl5v+jw=='
+[2025-09-22T12:20:30.765286] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.766289] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:30.868802] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='13' (raw).
+[2025-09-22T12:20:30.868802] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='13', salt(b64)='aAmFt1AHsSgEVK7r12iVUQ=='
+[2025-09-22T12:20:31.012300] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.013299] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.115417] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='21' (raw).
+[2025-09-22T12:20:31.115417] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='21', salt(b64)='iZ6bPKnojrWVaqWWKBTZTg=='
+[2025-09-22T12:20:31.250442] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.251442] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.352442] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Kite' (raw).
+[2025-09-22T12:20:31.353442] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Kite', salt(b64)='RnFjrEuOWlkOqlNGtuVfMA=='
+[2025-09-22T12:20:31.495688] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.495688] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.612983] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lego' (raw).
+[2025-09-22T12:20:31.612983] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lego', salt(b64)='RTrecRlVOxJJIgdmPICfZA=='
+[2025-09-22T12:20:31.750017] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.751019] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.852046] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Yo-yo' (raw).
+[2025-09-22T12:20:31.853046] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Yo-yo', salt(b64)='duJMkobIhE8RSGoX7zszhw=='
+[2025-09-22T12:20:31.991073] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:31.992072] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.093588] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Wolf' (raw).
+[2025-09-22T12:20:32.094588] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Wolf', salt(b64)='FRPbWiqktI6tQ3vr1BcjTQ=='
+[2025-09-22T12:20:32.230103] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.231103] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.331102] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Shark' (raw).
+[2025-09-22T12:20:32.332103] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Shark', salt(b64)='8p+5Xloebn6I95m1LqUsRw=='
+[2025-09-22T12:20:32.471103] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.472104] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.573103] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Falcon' (raw).
+[2025-09-22T12:20:32.573103] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Falcon', salt(b64)='KqlPNEfFakdYEe7CmUil/Q=='
+[2025-09-22T12:20:32.711131] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.712131] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.811649] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Elm' (raw).
+[2025-09-22T12:20:32.812650] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Elm', salt(b64)='02YHYqqZn5qq/D5OWTZ7Yw=='
+[2025-09-22T12:20:32.951167] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:32.951167] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.051166] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Oak' (raw).
+[2025-09-22T12:20:33.052168] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Oak', salt(b64)='eXO00be/h8gMOPhL0GdDpw=='
+[2025-09-22T12:20:33.188299] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.189298] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.289811] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pine' (raw).
+[2025-09-22T12:20:33.290811] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pine', salt(b64)='/6/dexhcCL1fY5nE6/Q5Lg=='
+[2025-09-22T12:20:33.428811] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.429811] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.530810] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ann' (raw).
+[2025-09-22T12:20:33.531811] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ann', salt(b64)='r0g1QrMdNN/HcffJzMWnHg=='
+[2025-09-22T12:20:33.668815] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.669816] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.773456] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Mae' (raw).
+[2025-09-22T12:20:33.773456] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Mae', salt(b64)='pfj1SPR6r24Z2FZsR6Kifw=='
+[2025-09-22T12:20:33.912548] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:33.913550] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.013548] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Lyn' (raw).
+[2025-09-22T12:20:34.014549] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Lyn', salt(b64)='MDgJls54gLDWsasN0IgQhw=='
+[2025-09-22T12:20:34.151592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.152592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.253593] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Max' (raw).
+[2025-09-22T12:20:34.254592] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Max', salt(b64)='j3EJBgBnkp+SvjE7I+Py+g=='
+[2025-09-22T12:20:34.393592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.394592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.495591] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Zoe' (raw).
+[2025-09-22T12:20:34.496592] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Zoe', salt(b64)='MKOlRomMTaw5HeiucaUJow=='
+[2025-09-22T12:20:34.632592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.632592] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.734126] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Arun' (raw).
+[2025-09-22T12:20:34.734126] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Arun', salt(b64)='xUOU94ximEDq8dcgwtjuGw=='
+[2025-09-22T12:20:34.871156] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.872156] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:34.974155] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pilot' (raw).
+[2025-09-22T12:20:34.975155] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pilot', salt(b64)='0cpV6D8+IkusqGFrrUG9qQ=='
+[2025-09-22T12:20:35.112673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.112673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.214674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Chef' (raw).
+[2025-09-22T12:20:35.215674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Chef', salt(b64)='pB1SSawZEfcs9ZsNumFoLw=='
+[2025-09-22T12:20:35.351673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.352673] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.453673] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Coder' (raw).
+[2025-09-22T12:20:35.454674] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Coder', salt(b64)='1v1JnRgeq2pf3c6zQeHobg=='
+[2025-09-22T12:20:35.592672] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.593674] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.693698] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='ABBA' (raw).
+[2025-09-22T12:20:35.694700] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='ABBA', salt(b64)='2tjYFL0+nXD53jCPjHOKew=='
+[2025-09-22T12:20:35.831893] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.832890] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:35.937031] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Muse' (raw).
+[2025-09-22T12:20:35.938089] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Muse', salt(b64)='7Jv+rqUO1xxhAY5FyvEGKw=='
+[2025-09-22T12:20:36.086417] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.087417] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.188951] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Blur' (raw).
+[2025-09-22T12:20:36.189949] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Blur', salt(b64)='BDpBpWzw+3J1q+DKl2rlnw=='
+[2025-09-22T12:20:36.327463] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.328463] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.428463] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Fig' (raw).
+[2025-09-22T12:20:36.429463] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Fig', salt(b64)='Q6owLtuQSiCGI0bDM69k9w=='
+[2025-09-22T12:20:36.569463] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.570465] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.670469] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Pear' (raw).
+[2025-09-22T12:20:36.671469] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Pear', salt(b64)='nn80T36bXu4uKFf5jxGx+Q=='
+[2025-09-22T12:20:36.809000] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.809999] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:36.910023] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Plum' (raw).
+[2025-09-22T12:20:36.911024] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Plum', salt(b64)='EB8I7igrvY7OBEvmalns6Q=='
+[2025-09-22T12:20:37.050023] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.051024] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.151536] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Ski' (raw).
+[2025-09-22T12:20:37.151536] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Ski', salt(b64)='bE3eb59BxrdopIOVm65ClQ=='
+[2025-09-22T12:20:37.288226] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.288226] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.388735] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Bake' (raw).
+[2025-09-22T12:20:37.389738] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Bake', salt(b64)='ijjE1ltgnWL+sBNvgffzQA=='
+[2025-09-22T12:20:37.524736] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.525737] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.628737] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Using user-provided password='Chess' (raw).
+[2025-09-22T12:20:37.629736] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Starting Argon2id KDF (Noble). pass='Chess', salt(b64)='t9tZb4xcNYQDC/0GbrwRQA=='
+[2025-09-22T12:20:37.767275] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.768276] [INFO] [CRYPTO] debug_utils.py:log_crypto_event:267 - Crypto operation
+[2025-09-22T12:20:37.869792] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Self-test: decrypt summary.
+[2025-09-22T12:20:37.870793] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_combine() via node-bridge
+[2025-09-22T12:20:37.935792] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - sss_combine() complete.
+[2025-09-22T12:20:38.239756] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Self-test: combine/auth result.
+[2025-09-22T12:20:52.811862] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Recovery kit saved to disk.
+[2025-09-22T12:21:01.366685] [INFO] [CRYPTO] debug_utils.py:log_debug:238 - Loaded recovery kit.
+[2025-09-22T12:21:02.634733] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q1 final picks
+[2025-09-22T12:21:02.635734] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:02.635734] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:02.995622] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q2 final picks
+[2025-09-22T12:21:02.996622] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:02.996622] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:03.356647] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q3 final picks
+[2025-09-22T12:21:03.357646] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:03.357646] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:03.717939] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q4 final picks
+[2025-09-22T12:21:03.718937] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:03.718937] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:04.046555] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q5 final picks
+[2025-09-22T12:21:04.047562] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:04.047562] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:04.439665] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q6 final picks
+[2025-09-22T12:21:04.439665] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:04.440663] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:04.834357] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q7 final picks
+[2025-09-22T12:21:04.834357] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:04.835358] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:05.194605] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q8 final picks
+[2025-09-22T12:21:05.195606] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:05.195606] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:05.735564] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q9 final picks
+[2025-09-22T12:21:05.736565] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:05.736565] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:06.129969] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q10 final picks
+[2025-09-22T12:21:06.129969] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:06.130970] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:06.523658] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q11 final picks
+[2025-09-22T12:21:06.524659] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:06.524659] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:06.951651] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q12 final picks
+[2025-09-22T12:21:06.951651] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:06.952652] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:07.344185] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q13 final picks
+[2025-09-22T12:21:07.344712] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:07.345238] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:07.811518] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Q14 final picks
+[2025-09-22T12:21:07.812519] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_question_picks
+[2025-09-22T12:21:07.812519] [INFO] [GENERAL] debug_utils.py:log_debug:238 - Recovery UI picks for question.
+[2025-09-22T12:21:07.813519] [ERROR] [GENERAL] debug_utils.py:log_error:276 - Insufficient selections to meet threshold.
+[2025-09-22T12:21:07.813519] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - recovery_threshold_shortfall
+[2025-09-22T12:21:07.814519] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - anchor_material_derived
+[2025-09-22T12:21:07.814519] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - dummy_recovery_work
+[2025-09-22T12:21:08.011174] [DEBUG] [HARDENING] debug_utils.py:log_debug:238 - latency_shaping_applied

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-09-22T12:17:10.669473",
+  "run_id": "03645853-d8b3-475d-9d5d-86bcc39ad815",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-22T12:17:11.981821",
+  "run_id": "03645853-d8b3-475d-9d5d-86bcc39ad815",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Starting demonstration flow (Option 2)...",
+  "details": {}
+}

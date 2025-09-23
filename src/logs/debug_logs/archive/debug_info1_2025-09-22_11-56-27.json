@@ -1,0 +1,531 @@
+{
+  "timestamp": "2025-09-22T11:56:27.125673",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "component": "SYSTEM",
+  "level": "INFO",
+  "message": "Start new run",
+  "details": {
+    "event": "Run Initialization"
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:30.667337",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "DEBUG",
+  "component": "GENERATOR",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Derived kit identifier",
+  "details": {
+    "kit_id_prefix": "deda59e90615c49d",
+    "question_count": 14,
+    "has_final_auth": true
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:30.870489",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "DEBUG",
+  "component": "GENERATOR",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Deterministic generator created from kit.",
+  "details": {
+    "kit_id_prefix": "deda59e90615c49d",
+    "k_map_provided": false
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:30.871496",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "CRYPTO",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Loaded recovery kit.",
+  "details": {
+    "kit_file": "C:\\Users\\deskt\\Desktop\\Project_SECQ_CLI\\AnswerChain\\src\\user_configured_security_questions\\test_q.json",
+    "threshold": 33,
+    "pad_size": 256,
+    "argon2": {
+      "time_cost": 1,
+      "memory_cost": 1024,
+      "parallelism": 1
+    },
+    "q_count": 14,
+    "secrets_count": 1
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:31.982355",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q1 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:31.983356",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 1,
+    "q_text": "1",
+    "picked": [
+      "Rex"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:32.458601",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q2 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:32.459601",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 2,
+    "q_text": "Fav color?",
+    "picked": [
+      "Tan"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:32.779193",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q3 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:32.779193",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 3,
+    "q_text": "Birth city?",
+    "picked": [
+      "Lima"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:33.106631",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q4 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:33.106631",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 4,
+    "q_text": "First car?",
+    "picked": [
+      "Saab"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:33.468209",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q5 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:33.469208",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 5,
+    "q_text": "Lucky number?",
+    "picked": [
+      "7"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:33.812339",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q6 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:33.813337",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 6,
+    "q_text": "Childhood toy?",
+    "picked": [
+      "Kite"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:34.157231",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q7 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:34.158228",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 7,
+    "q_text": "School mascot?",
+    "picked": [
+      "Wolf"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:34.485007",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q8 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:34.486007",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 8,
+    "q_text": "Street lived?",
+    "picked": [
+      "Elm"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:34.847285",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q9 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:34.847285",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 9,
+    "q_text": "Mother mid name?",
+    "picked": [
+      "Ann"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:35.175792",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q10 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:35.175792",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 10,
+    "q_text": "Best friend?",
+    "picked": [
+      "Max"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:35.519138",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q11 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:35.520140",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 11,
+    "q_text": "Dream job?",
+    "picked": [
+      "Pilot"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:36.267127",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q12 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:36.267127",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 12,
+    "q_text": "First concert?",
+    "picked": [
+      "ABBA"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:36.725944",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q13 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:36.726945",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 13,
+    "q_text": "Fav fruit?",
+    "picked": [
+      "Fig"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:37.143855",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Q14 final picks",
+  "details": {}
+}
+{
+  "timestamp": "2025-09-22T11:56:37.144855",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "INFO",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_debug",
+    "line": 238
+  },
+  "message": "Recovery UI picks for question.",
+  "details": {
+    "q_id": 14,
+    "q_text": "Secret hobby?",
+    "picked": [
+      "Ski"
+    ]
+  }
+}
+{
+  "timestamp": "2025-09-22T11:56:37.147855",
+  "run_id": "5addaf92-cf26-4184-b2da-75ec486a7bad",
+  "level": "ERROR",
+  "component": "GENERAL",
+  "caller": {
+    "file": "debug_utils.py",
+    "function": "log_error",
+    "line": 276
+  },
+  "message": "Insufficient selections to meet threshold.",
+  "details": {
+    "selected": 14,
+    "threshold": 33
+  }
+}
